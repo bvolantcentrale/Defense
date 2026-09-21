@@ -1,0 +1,4105 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="presentation_files/libs/clipboard/clipboard.min.js"></script>
+<script src="presentation_files/libs/quarto-html/tabby.min.js"></script>
+<script src="presentation_files/libs/quarto-html/popper.min.js"></script>
+<script src="presentation_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="presentation_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="presentation_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="presentation_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.10.18">
+
+  <title>presentation</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="presentation_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="custom.css">
+  <link href="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="presentation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="section" class="slide level2 cover">
+<h2></h2>
+<div class="cover-kicker">
+SOUTENANCE DE THÈSE · 2026
+</div>
+<div class="cover-title">
+Organisation des Parties Prenantes et Recommandation De Substitution Technologique Respectueuse de l’Environnement : Application à la Décarbonation Ferroviaire Régionale
+</div>
+<div class="cover-subtitle">
+Méthodologie de réduction des risques des interactions publiques–privées<br>Méthodologie de recommandation de technologie de décarbonation
+</div>
+<div class="cover-footer">
+<div>
+<strong>Benoît Volant</strong><br>CentraleSupélec · LGI · IKOS
+</div>
+<div>
+Franck Marle · Yann Leroy · Jeanne-Marie Dalbavie
+</div>
+</div>
+</section>
+<section id="section-1" class="slide level2 editorial part-divider" data-part="1" data-subpart="1">
+<h2></h2>
+<div class="divider-number">
+PARTIE 01
+</div>
+<div class="divider-title">
+Introduction
+</div>
+<div class="divider-subtitle">
+Pourquoi la décarbonation ferroviaire régionale appelle un support à la décision transparent et interprétable.
+</div>
+</section>
+<section id="décision-publique-de-décarbonation-cadres-climatiques" class="slide level2 editorial" data-part="1" data-subpart="1">
+<h2>Décision publique de décarbonation : cadres climatiques</h2>
+<div class="slide-title">
+Décision publique de décarbonation : cadres climatiques
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" data-id="climate-image10" style="left:38%;top:12%;width:24%;height:66%;" src="figures/paris.png" alt="Image 11"> <img class="ppt-image" data-id="climate-image11" style="left:71%;top:27%;width:24%;height:66%;" src="figures/green_deal.png" alt="Image 13"> <img class="ppt-image" data-id="climate-image12" style="left:4%;top:-6%;width:24%;height:66%;" src="figures/SNBC3.png" alt="Image 15">
+</div>
+</section>
+<section id="décarbonation-ferroviaire-changement-technologique" class="slide level2 editorial" data-part="1" data-subpart="1">
+<h2>Décarbonation ferroviaire : changement technologique</h2>
+<div class="slide-title">
+Décarbonation ferroviaire : changement technologique
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" data-id="climate-image10" style="left:4%;top:-6%;width:24%;height:66%;" src="figures/paris.png" alt="Image 9"> <img class="ppt-image" data-id="climate-image11" style="left:4%;top:14%;width:24%;height:66%;" src="figures/green_deal.png" alt="Image 11"> <img class="ppt-image" data-id="climate-image12" style="left:4%;top:33%;width:24%;height:66%;" src="figures/SNBC3.png" alt="Image 13"> <img class="ppt-image" style="left:34%;top:19%;width:66%;height:57%;" src="figures/intro_scope.svg" alt="Groupe 78">
+</div>
+</section>
+<section id="décideurs-et-niveaux-institutionnels" class="slide level2 editorial" data-part="1" data-subpart="1">
+<h2>Décideurs et niveaux institutionnels</h2>
+<div class="slide-title">
+Décideurs et niveaux institutionnels
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:3%;top:0%;width:28%;height:100%;" src="figures/public_actors.svg" alt="Groupe 78"> <img class="ppt-image" style="left:34%;top:19%;width:66%;height:57%;" src="figures/intro_scope.svg" alt="Groupe 78">
+</div>
+</section>
+<section id="contraintes-des-services-techniques-régionaux" class="slide level2 editorial" data-part="1" data-subpart="1">
+<h2>Contraintes des services techniques régionaux</h2>
+<div class="slide-title">
+Contraintes des services techniques régionaux
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:5%;top:67%;width:90%;height:27%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Le </span><span style="font-size:var(--content-size);font-weight:700">manque de ressources </span><span style="font-size:var(--content-size)">a été identifié comme leur principale contrainte.</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Besoin de </span><span style="font-size:var(--content-size);font-weight:700">transparence </span><span style="font-size:var(--content-size)">et de </span><span style="font-size:var(--content-size);font-weight:700">facilité d’interprétation</span>
+</div>
+</div>
+<img class="ppt-image" style="left:14%;top:20%;width:72%;height:42%;" src="figures/process_decision.svg" alt="Graphique 1">
+<div class="ppt-text" style="left:9%;top:9%;width:82%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Les services techniques de décarbonation des trains régionaux ont été interrogés à l'aide d'entretiens </span><span style="font-size:var(--content-size);font-weight:700">semi-structurés</span><span style="font-size:var(--content-size)">. </span>
+</div>
+</div>
+</div>
+</section>
+<section id="risques-des-interactions-publiquesprivées" class="slide level2 editorial" data-part="1" data-subpart="1">
+<h2>Risques des interactions publiques–privées</h2>
+<div class="slide-title">
+Risques des interactions publiques–privées
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text risk-list" style="left:5%;top:15%;width:90%;height:73%;">
+<ol type="1">
+<li><p><strong>Asymétrie d’information et dépendance technique</strong><br>
+Dépendance aux données industrielles<br>
+Biais d’évaluation<br>
+Alliances imposées</p></li>
+<li><p><strong>Lobbying et captation des décisions</strong><br>
+Avantage du premier entrant<br>
+Négociations opaques<br>
+Déséquilibre d’influence</p></li>
+<li><p><strong>Inadéquation temporelle des interventions</strong><br>
+Participation trop précoce ou trop tardive<br>
+Sous-représentation aux moments clés</p></li>
+<li><p><strong>Paralysie décisionnelle et fatigue participative</strong><br>
+Surcharge bureaucratique<br>
+Désengagement des acteurs</p></li>
+<li><p><strong>Incohérences stratégiques et inefficacité financière</strong><br>
+Cloisonnement des connaissances<br>
+Contradictions internes<br>
+Gaspillage de ressources publiques</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="gap-de-littérature-sur-lorganisation-de-la-décision" class="slide level2 editorial has-slide-references" data-part="1" data-subpart="1" data-refs="literature-1,literature-2,literature-3,literature-4,literature-5,literature-6">
+<h2>Gap de littérature sur l’organisation de la décision</h2>
+<div class="slide-title">
+Gap de littérature sur l’organisation de la décision
+</div>
+<div class="ppt-canvas">
+<div class="ppt-table-wrap references-table" style="left:3%;top:20%;width:45%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>N°</strong></th>
+<th style="text-align: left;"><strong>Approach</strong></th>
+<th style="text-align: left;"><strong>Reference</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>1</strong></td>
+<td style="text-align: left;">Participatory approach and local governance</td>
+<td style="text-align: left;">(Guillemot, 2012)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>2</strong></td>
+<td style="text-align: left;">Graphical modeling and stakeholder zoning</td>
+<td style="text-align: left;">(Bonin et al., 2001)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>3</strong></td>
+<td style="text-align: left;">Organizational impact assessment for change</td>
+<td style="text-align: left;">(Cameron et al., 2011)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>4</strong></td>
+<td style="text-align: left;">Strategies for assessing And managing Organizational Stakeholders</td>
+<td style="text-align: left;">(Savage et al., 1991)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>5</strong></td>
+<td style="text-align: left;">Lobbying and asymmetric information</td>
+<td style="text-align: left;">(Potters &amp; van Winden, 1992b)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>6</strong></td>
+<td style="text-align: left;">Business stakeholders modeling</td>
+<td style="text-align: left;">(A. Tsvetkova et al., 2019)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="ppt-table-wrap references-table" style="left:55%;top:20%;width:45%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;"><strong>Stakeholders’ analysis</strong></th>
+<th style="text-align: left;"><strong>Stakeholders’ relationship organization</strong></th>
+<th style="text-align: left;"><strong>Decision process organization</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Public stakeholders</strong></td>
+<td style="text-align: left;">2-3-5</td>
+<td style="text-align: left;">1-2-4</td>
+<td style="text-align: left;">1-2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Industry stakeholders</strong></td>
+<td style="text-align: left;">3-5-6</td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="slide-references" role="note" aria-label="Références de la diapositive"><a href="#/references-part-1-1">[1] Guillemot, 2012</a><span class="reference-separator"> · </span><a href="#/references-part-1-1">[2] Bonin et al., 2001</a><span class="reference-separator"> · </span><a href="#/references-part-1-1">[3] Cameron et al., 2011</a><span class="reference-separator"> · </span><a href="#/references-part-1-1">[4] Savage et al., 1991</a><span class="reference-separator"> · </span><a href="#/references-part-1-1">[5] Potters &amp; van Winden, 1992b</a><span class="reference-separator"> · </span><a href="#/references-part-1-1">[6] A. Tsvetkova et al., 2019</a></div>
+</section>
+<section id="references-part-1-1" class="slide level2 editorial references-slide" data-subpart="1" data-part="1">
+<h2>Références · Partie 01</h2>
+<div class="slide-title">Références · Partie 01</div><ol class="part-reference-list" start="1"><li id="reference-1-1">Guillemot, 2012. Approche : Participatory approach and local governance.</li><li id="reference-1-2">Bonin et al., 2001. Approche : Graphical modeling and stakeholder zoning.</li><li id="reference-1-3">Cameron et al., 2011. Approche : Organizational impact assessment for change.</li><li id="reference-1-4">Savage et al., 1991. Approche : Strategies for assessing And managing Organizational Stakeholders.</li><li id="reference-1-5">Potters &amp; van Winden, 1992b. Approche : Lobbying and asymmetric information.</li><li id="reference-1-6">A. Tsvetkova et al., 2019. Approche : Business stakeholders modeling.</li></ol>
+</section>
+<section id="section-2" class="slide level2 editorial part-divider" data-part="2" data-subpart="1">
+<h2></h2>
+<div class="divider-number">
+PARTIE 02
+</div>
+<div class="divider-title">
+Organisation &amp; parties prenantes
+</div>
+<div class="divider-subtitle">
+Formaliser les interactions, mesurer l’influence des acteurs et positionner leurs interventions dans le processus de décision.
+</div>
+</section>
+<section id="formalisation-de-la-méthodologie-dorganisation-de-la-décision" class="slide level2 editorial" data-part="2" data-subpart="1">
+<h2>Formalisation de la méthodologie d’organisation de la décision</h2>
+<div class="slide-title">
+Formalisation de la méthodologie d’organisation de la décision
+</div>
+<div class="ppt-canvas methodology-content">
+<!-- DIAPO 10 — Guide de modification
+Textes : modifier le contenu entre les balises span.
+Images : modifier src pour remplacer le fichier.
+Position : left = distance depuis la gauche ; top = distance depuis le haut.
+Dimensions : width = largeur ; height = hauteur, en % du canevas.
+
+<!-- Bandeau : les quatre étapes de la méthodologie -->
+<div class="methodology-steps" role="img" aria-label="Data collection, Modélisation, Analyse, Réorganisation : progression de gauche à droite.">
+<div class="methodology-step">
+<span>Collecte de données</span>
+</div>
+<div class="methodology-step">
+<span>Modélisation</span>
+</div>
+<div class="methodology-step">
+<span>Analyse</span>
+</div>
+<div class="methodology-step">
+<span>Réorganisation</span>
+</div>
+</div>
+<!-- Tableau de pondération : libellés, couleurs et poids -->
+<div class="ppt-table-wrap" style="left:22%;top:39%;width:9%;height:13%;">
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span style="font-weight:700">Type de relation</span></th>
+<th style="text-align: left;"><span style="font-weight:700">Poids</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span style="color:#FFC000">Interdépendance</span></td>
+<td style="text-align: left;"><span style="font-weight:700">1</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span style="color:#4472C4">Dépendance séquentielle</span></td>
+<td style="text-align: left;"><span style="font-weight:700">2</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span style="color:#C00000">Réciprocité conflictuelle</span></td>
+<td style="text-align: left;"><span style="font-weight:700">3</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span style="color:#70AD47">Réciprocité compatible</span></td>
+<td style="text-align: left;"><span style="font-weight:700">-1</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Matrice DSM : image centrale -->
+<p><img class="ppt-image" style="left:33%;top:41%;width:21%;height:30%;" src="assets/vector/s09_Image_1.svg" alt="Image 1"></p>
+<!-- Schéma des indicateurs -->
+<p><img class="ppt-image" style="left:43%;top:25%;width:40%;height:40%;" src="figures/poids.svg" alt="Groupe 38"></p>
+<!-- Schéma des clusters -->
+<p><img class="ppt-image" style="left:50%;top:65%;width:35%;height:35%;" src="figures/clusters.svg"></p>
+<!-- Matrice de relation : image à gauche -->
+<p><img class="ppt-image" style="left:1%;top:43%;width:19%;height:23%;" src="assets/vector/s09_Groupe_38.svg" alt="Groupe 38"></p>
+<!-- Illustration de la réorganisation : image à droite -->
+<div class="ppt-text" style="left:70%;top:35%;width:25%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size)">Allocation temporelle</span>
+</div>
+</div>
+<p><img class="ppt-image" style="left:70%;top:40%;width:25%;height:45%;" src="figures/decision_steps_org.svg" alt="Image 55"></p>
+<!-- Temporalité de la décision : schéma et libellé -->
+<img class="ppt-image" style="left:4%;top:70%;width:30%;height:32%;" src="figures/decision_steps.svg" alt="Diagramme 57">
+<div class="ppt-text" style="left:11%;top:72%;width:16%;height:8%;font-size:var(--content-size);">
+<!-- Libellés : matrice, pondération, DSM, regroupement et indicateurs -->
+<div class="ppt-p" style="text-align:right">
+<span style="font-size:var(--content-size)">Temporalité de la décision</span>
+</div>
+</div>
+<div class="ppt-text" style="left:0%;top:38%;width:16%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Matrice de relation</span>
+</div>
+</div>
+<div class="ppt-text" style="left:19%;top:34%;width:14%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size)">pondération</span>
+</div>
+</div>
+<div class="ppt-text" style="left:35%;top:36%;width:14%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size)">Design Structure Matrix (DSM)</span>
+</div>
+</div>
+<div class="ppt-text" style="left:60%;top:59%;width:14%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Regroupement</span>
+</div>
+</div>
+<div class="ppt-text" style="left:59%;top:29%;width:14%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Indicateurs</span>
+</div>
+</div>
+</div>
+</section>
+<section id="étapes-de-décision" class="slide level2 editorial" data-part="2" data-subpart="1">
+<h2>Étapes de décision</h2>
+<div class="slide-title">
+Étapes de décision
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:12%;top:4%;width:80%;height:87%;" src="figures/decision_steps.svg" alt="Diagramme 7">
+</div>
+</section>
+<section id="modélisation-du-réseau-dacteurs" class="slide level2 editorial has-slide-references" data-part="2" data-subpart="1" data-refs="tsvetkova-ouarda-2019">
+<h2>Modélisation du réseau d’acteurs</h2>
+<div class="slide-title">
+Modélisation du réseau d’acteurs
+</div>
+<!-- Grand tableau : une cellule par ligne ; bloc HTML brut pour conserver l'indentation. -->
+<div class="ppt-canvas">
+<div class="ppt-table-wrap actor-matrix-small" style="left:4%;top:6%;width:90%;height:66%;">
+
+<table class="ppt-table caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td></td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Region</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Ministry in charge of transportation</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">French government</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">European union</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Local authorities under regions<br>
+(departments, EPCI, cities…)</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">DGTIM</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">EPSF</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">SNCF Réseau</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">railway network operator</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Rolling stock manufacturer</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Industry actors</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Infrastructures constructors</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Electricity producers and distributors</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Diesel producers</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Hydrogen producers</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Engineering consultancy</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Régions de France</td>
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Other territory stakeholders<br>
+Associations (users, environnemental…)</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Région</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">Regions align with national development plans<br>
+The concerned voters are different leading to conflicts of objectives</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">The concerned voters are different leading to conflicts of objectives</td>
+<td style="color: #C00000; font-size: var(--content-size)">The concerned voters are different leading to conflicts of objectives</td>
+<td style="color: #C00000; font-size: var(--content-size)">DGITM development objectives for national trains can come into conflict with the regional objectives. These objectives can also synergize</td>
+<td style="color: #C00000; font-size: var(--content-size)">Region’s financial objectives are opposed to EPSF security objectives. Their objectives can also synergize</td>
+<td style="color: #FFC000; font-size: var(--content-size)">SNCF réseau exploit energy supply infrastructures according to the region's choices<br>
+SNCF réseau advise Authorities on renewal and construction needs. Their budget evolves with these infrastructures.</td>
+<td style="color: #FFC000; font-size: var(--content-size)">The operator operate region's trains<br>
+The operator advises the region on train decarbonation and associated infrastructures. The budget allocated by regions for operators evolves with the amount of trains affected. This induces a objective conflict.</td>
+<td style="color: #C00000; font-size: var(--content-size)">Sell trains to AOT<br>
+Advise AOT on rolling stock fleet renewal</td>
+<td style="color: #C00000; font-size: var(--content-size)">Influence territory stakeholders as a industrial and economic actor</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)"><br>
+Sharing ressources during the decision process</td>
+<td style="color: #C00000; font-size: var(--content-size)">Territory actors provide complaints and opinions to influence elected officials' decisions<br>
+Deciders are elected by local users, they are interested by their opinions</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Ministry in charge of transportation</td>
+<td style="color: #C00000; font-size: var(--content-size)">Regions influence the government on coming strategic choices, they can block local investments.<br>
+Regions opinion is taken into account for national plans development<br>
+These authorities distribute fundings according to financing plans</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">The ministry participates to financing plans and strategic lines developments</td>
+<td></td>
+<td style="color: #FFC000; font-size: var(--content-size)">The ministry distributes fundings according to financing plans</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">EPSF participate to security rules elaboration on European and national levels</td>
+<td style="color: #FFC000; font-size: var(--content-size)">SNCF réseau follows railway devlopment laws and directives.<br>
+SNCF réseau exploite energy infrastructures for railway.<br>
+SNCF réseau advise Authorities on renewal and construction needs. Their budget evolves with these infrastructures.</td>
+<td style="color: #FFC000; font-size: var(--content-size)">The operator follows railway devlopment laws and directives.<br>
+The operator advise authorities on rolling stock fleet renewal, operating schedules and lines devlopment. Their budget evolves proportionnaly.</td>
+<td style="color: #C00000; font-size: var(--content-size)">Industrialized technologies influence action plans</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #70AD47; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">French government</td>
+<td></td>
+<td style="color: #FFC000; font-size: var(--content-size)">Transportation Minister follow its government directives</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">The government influence European union evolution objectives according to their objectives</td>
+<td style="color: #FFC000; font-size: var(--content-size)">The government distributes fundings according to financing plans</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td style="color: #FFC000; font-size: var(--content-size)">SNCF réseau follows railway devlopment laws and directives.</td>
+<td style="color: #FFC000; font-size: var(--content-size)">The operator follows railway devlopment laws and directives.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">European union</td>
+<td style="color: #C00000; font-size: var(--content-size)">The concerned voters are different leading to conflicts of objectives<br>
+The European union finances regional development projects</td>
+<td style="color: #FFC000; font-size: var(--content-size)">European union gives the strategic lines to follow</td>
+<td></td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">The European union distributes fundings according to financing plans</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Local authorities under regions<br>
+(departments, EPCI, cities…)</td>
+<td style="color: #C00000; font-size: var(--content-size)">The region considers collectivities will for strategic plans creations and evolutions even though these entities have different electors and objectives</td>
+<td style="color: #FFC000; font-size: var(--content-size)">Local authorities follow directives and earn fundings<br>
+They can block projects on their territory if their will is ignored</td>
+<td></td>
+<td style="color: #FFC000; font-size: var(--content-size)">Local authorities follow directives and earn fundings<br>
+Local authorities inform the European union on their evolution will</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">DGITM conveys transportation evolution plans to local authorities</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">DGTIM</td>
+<td style="color: #70AD47; font-size: var(--content-size)">Acquisition synergies exist between regions and DGITM</td>
+<td style="color: #FFC000; font-size: var(--content-size)">DGITM adds European unions’ evolution plans to norms and national objectives to develop local evolution plans</td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">SNCF réseau exploite energy infrastructures for railway.<br>
+The operator advise authorities on rolling stock fleet renewal, operating schedules and lines devlopment. Their budget evolves proportionnaly.</td>
+<td style="color: #FFC000; font-size: var(--content-size)">The operator operate DGTIM's trains<br>
+The operator advise authorities on rolling stock fleet renewal, operating schedules and lines devlopment. Their budget evolves proportionnaly.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">EPSF</td>
+<td style="color: #C00000; font-size: var(--content-size)">EPSF certificates have a direct influence on rolling stock prices, development schedule and disponible technologies</td>
+<td style="color: #C00000; font-size: var(--content-size)">EPSF delivers authorizations defined in collaboration with the European agency for railway and the government<br>
+They security objectives can constrain authorities’ choices</td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">EPSF:<br>
+– delivers security certificates<br>
+– controles autorisations compliances<br>
+– Follows security evolution needs</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">EPSF controles railway security equipment</td>
+<td></td>
+<td></td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">SNCF Réseau</td>
+<td style="color: #C00000; font-size: var(--content-size)">SNCF réseau builds railway infrastructures</td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Local infrastructure construction is under the supervision of local authorities</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">The operator pay a toll to SNCF réseau</td>
+<td style="color: #C00000; font-size: var(--content-size)">SNCF réseau informations and advises are linked to technologies development</td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">SNCF réseau informations and advises are linked to energies technologies development</td>
+<td></td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">railway network operator</td>
+<td style="color: #C00000; font-size: var(--content-size)">The operator handles rolling stocks exploitation following AOTs' rules. Their financial objectives can be opposed.</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">The operator handles rolling stocks exploitation following AOTs' rules. Their financial objectives can be opposed.</td>
+<td style="color: #C00000; font-size: var(--content-size)">The operator comply with EPSF rules</td>
+<td style="color: #C00000; font-size: var(--content-size)">Infrastructures installed by SNCF réseau must correspond to trains energy technology but these actors financial objectives can be opposed</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Operator's informations and advises are linked to energies &amp; technologies development</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Rolling stock manufacturer</td>
+<td style="color: #C00000; font-size: var(--content-size)">The region buys rolling stocks. Their financial objectives can be opposed.</td>
+<td style="color: #C00000; font-size: var(--content-size)">TET rolling stock are bought by the ministry in accordance with transport evolution plans</td>
+<td style="color: #C00000; font-size: var(--content-size)">Evolution strategic plans &amp; norms influence these industries</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">These industries development can be influenced by local authorities according to their objectives which can be opposed to industrials objectives</td>
+<td style="color: #C00000; font-size: var(--content-size)">DGTIM establishes transports evolution plans</td>
+<td style="color: #C00000; font-size: var(--content-size)">New rolling stock as to be certificated by EPSF</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">The operator exploits trains build by Rolling stock manufacturers with opposed financial objectives</td>
+<td style="background: #BFBFBF; color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Manufacturer's solutions are linked to the industry technological development</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Industry actors</td>
+<td style="color: #C00000; font-size: var(--content-size)">Their financial objectives can be opposed.</td>
+<td style="color: #C00000; font-size: var(--content-size)">Evolution strategic plans &amp; norms influence these industries</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">SNCF Réseau works with these industrials</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Rolling stock manufacturers works with industry actors with opposed strategic development plans</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #FFC000; font-size: var(--content-size)">provider</td>
+<td style="color: #FFC000; font-size: var(--content-size)">provider</td>
+<td style="color: #FFC000; font-size: var(--content-size)">provider</td>
+<td style="color: #FFC000; font-size: var(--content-size)">provider</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Infrastructures constructors</td>
+<td style="color: #C00000; font-size: var(--content-size)">Their financial objectives can be opposed.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Electricity industrials need infrastructures</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Cet industriel peut-être intéressé par l'impact environnemental des technologies de trains à énergie embarquée donc par l'outil d'AD<br>
+Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Electricity producers and distributors</td>
+<td style="color: #C00000; font-size: var(--content-size)">The region finances Electrical infrastructure construction . Their financial objectives can be opposed.</td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">Electrical infrastructures construction are financed by local authorities</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td style="color: #FFC000; font-size: var(--content-size)">The operator works with these industrials</td>
+<td style="color: #C00000; font-size: var(--content-size)">Trains powered directly or indirectly by electricity democratization depends on the establishment of suitable production infrastructure</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Hydrogen production and environmental impact depend on electricity cost and availability</td>
+<td style="color: #4472C4; font-size: var(--content-size)">EDF est interessé par l'impact environnemental des technologies favorisant l'électricité pour connaître l'évolution de leurs infrastructure &amp; énergie demandée<br>
+Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Diesel producers</td>
+<td style="color: #C00000; font-size: var(--content-size)">Their financial objectives can be opposed.</td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">These industries development can be influenced by local authorities according to their objectives which can be opposed to industrials objectives</td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">Diesel cost and environmental impact influence other technologies deployment</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Cet industriel est intéressé par l'impact environnemental des technologies de trains à énergie embarquée &amp; les infrastructures associées<br>
+Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Hydrogen producers</td>
+<td style="color: #C00000; font-size: var(--content-size)">Their financial objectives can be opposed.</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td></td>
+<td style="color: #C00000; font-size: var(--content-size)">Hydrogen trains success depends on hydrogen production cost, environmental impact and availability</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td></td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Engineering consultancy</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Regions refers to Engineering firms for advices on train decarbonation and associated infrastructures</td>
+<td style="color: #4472C4; font-size: var(--content-size)">The ministry refers to Engineering firms for advices on train decarbonation and associated infrastructures</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Provide analysis data for technologies comparison</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Régions de France</td>
+<td style="color: #4472C4; font-size: var(--content-size)">Regions refers to Régions de France for advices on train decarbonation and associated infrastructures</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #4472C4; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+<tr class="odd">
+<td style="background: #D9D9D9; color: #000000; font-size: var(--content-size)">Other territory stakeholders<br>
+Associations (users, environnemental…)</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Un accident dû à un manquement de l'EPSF se répercutera sur les usager</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">L'exploitant gère la relation avec les passagers, paiement des tickets et information sur les retards</td>
+<td style="color: #C00000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #C00000; font-size: var(--content-size)">Electricity needs for territory stakeholders must be fulfilled</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="color: #000000; font-size: var(--content-size)">&nbsp;</td>
+<td style="background: #BFBFBF; color: #000000; font-size: var(--content-size)">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="ppt-table-wrap" style="left:12%;top:77%;width:74%;height:15%;">
+
+<table class="ppt-table caption-top">
+<tbody>
+<tr class="odd">
+<td style="font-size: var(--content-size); font-weight: 700">Relation interdépendante</td>
+<td style="color: #FFC000; font-size: var(--content-size); font-weight: 700">commune</td>
+<td style="color: #4472C4; font-size: var(--content-size); font-weight: 700">séquentielle</td>
+<td style="color: #70AD47; font-size: var(--content-size); font-weight: 700">compatible-réciproque</td>
+<td style="color: #C00000; font-size: var(--content-size); font-weight: 700">contentieux-réciproque</td>
+</tr>
+<tr class="even">
+<td style="font-size: var(--content-size); font-weight: 700">Poids</td>
+<td style="font-size: var(--content-size); font-weight: 700">1</td>
+<td style="font-size: var(--content-size); font-weight: 700">2</td>
+<td style="font-size: var(--content-size); font-weight: 700">-1</td>
+<td style="font-size: var(--content-size); font-weight: 700">3</td>
+</tr>
+</tbody>
+</table>
+
+</div></div>
+<div class="slide-references" role="note" aria-label="Références de la diapositive"><a href="#/references-part-2-1">[1] Tsvetkova &amp; Ouarda (2019)</a></div>
+</section>
+<section id="dsm-du-poids-des-relations-entre-acteurs" class="slide level2 editorial" data-part="2" data-subpart="1">
+<h2>DSM du poids des relations entre acteurs</h2>
+<div class="slide-title">
+DSM du poids des relations entre acteurs
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:25%;top:13%;width:51%;height:71%;" src="assets/vector/s13_Image_1.svg" alt="Image 1">
+</div>
+</section>
+<section id="indicateurs-de-réseau-choisis" class="slide level2 editorial has-slide-references" data-part="2" data-subpart="1" data-refs="bloch-2023">
+<h2>Indicateurs de réseau choisis</h2>
+<div class="slide-title">
+Indicateurs de réseau choisis
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:0%;top:0%;width:100%;height:6%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-title-size)">Indicateurs</span><span style=""> choisis</span>
+</div>
+</div>
+<img class="ppt-image" style="left:81%;top:-8%;width:13%;height:18%;" src="assets/vector/s14_Image_1.svg" alt="Image 1">
+</div>
+<div class="slide-references" role="note" aria-label="Références de la diapositive"><a href="#/references-part-2-1">[2] Bloch et al.&nbsp;(2023)</a></div>
+</section>
+<section id="indicateurs-de-réseau-détail" class="slide level2 editorial has-slide-references" data-part="2" data-subpart="1" data-refs="bloch-2023">
+<h2>Indicateurs de réseau : détail</h2>
+<div class="slide-title">
+Indicateurs de réseau : détail
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:81%;top:-10%;width:13%;height:18%;" src="assets/vector/s15_Image_1.svg" alt="Image 1">
+</div>
+<div class="slide-references" role="note" aria-label="Références de la diapositive"><a href="#/references-part-2-1">[2] Bloch et al.&nbsp;(2023)</a></div>
+</section>
+<section id="clustering-des-acteurs" class="slide level2 editorial has-slide-references" data-part="2" data-subpart="1" data-refs="bolla-2011,li-2023">
+<h2>Clustering des acteurs</h2>
+<div class="slide-title">
+Clustering des acteurs
+</div>
+<div class="ppt-canvas">
+<p><img class="ppt-image" style="left:1%;top:10%;width:48%;height:68%;" src="assets/vector/s18_Espace_r_serv_du_contenu_7.svg" alt="Espace réservé du contenu 7"> <img class="ppt-image" style="left:50%;top:31%;width:45%;height:58%;" src="assets/media/image42.png" alt="Image 5"> <img class="ppt-image" style="left:51%;top:10%;width:49%;height:25%;" src="assets/vector/s18_Groupe_14.svg" alt="Groupe 14"></p>
+<img class="ppt-image" style="left:3%;top:89%;width:2%;height:5%;" src="assets/vector/s18_Rectangle_coins_arrondis_18.svg" alt="Rectangle&nbsp;: coins arrondis 18"> <img class="ppt-image" style="left:3%;top:95%;width:2%;height:5%;" src="assets/vector/s18_Rectangle_coins_arrondis_19.svg" alt="Rectangle&nbsp;: coins arrondis 19">
+</div>
+<div class="slide-references" role="note" aria-label="Références de la diapositive"><a href="#/references-part-2-1">[3] Bolla (2011)</a><span class="reference-separator"> · </span><a href="#/references-part-2-1">[4] Li et al.&nbsp;(2023)</a></div>
+</section>
+<section id="analyse-de-limpact-des-acteurs-sur-la-décision" class="slide level2 editorial" data-part="2" data-subpart="2">
+<h2>Analyse de l’impact des acteurs sur la décision</h2>
+<div class="slide-title">
+Analyse de l’impact des acteurs sur la décision
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:0%;top:0%;width:100%;height:6%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-title-size)">Analyse de l’impact des acteurs sur la décision</span>
+</div>
+</div>
+<div class="ppt-table-wrap" style="left:2%;top:7%;width:94%;height:87%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Acteur ID
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Nom de l’acteur
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Nombre d’entrées Ω+
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Nombre de sorties Ω-
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Sorties pondérées φ+
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Entrée pondérée φ-
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Poids normalize Φ
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Centralité normalisée Ω
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Centralité d'intermédiarité Cbet
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Centralité de proximité normalisée Cc
+</td>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+Centralité harmonique <br>Ch
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A1
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+Region
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+16
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+17
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+45
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+56
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size);font-weight:700">
+0,100
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+1,94
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+0,101
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+0,944
+</td>
+<td style="background:#F8696B;color:#000000;font-size:var(--content-size)">
+16,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A2
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+Ministry in charge of transportation
+</td>
+<td style="background:#FCAA78;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#FDB87B;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#FDBD7C;color:#000000;font-size:var(--content-size)">
+36
+</td>
+<td style="background:#FCB27A;color:#000000;font-size:var(--content-size)">
+40
+</td>
+<td style="background:#FDB47A;color:#000000;font-size:var(--content-size);font-weight:700">
+0,075
+</td>
+<td style="background:#FCAE79;color:#000000;font-size:var(--content-size)">
+1,65
+</td>
+<td style="background:#FED881;color:#000000;font-size:var(--content-size)">
+0,028
+</td>
+<td style="background:#FCB179;color:#000000;font-size:var(--content-size)">
+0,850
+</td>
+<td style="background:#FCAA78;color:#000000;font-size:var(--content-size)">
+15,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A5
+</td>
+<td style="color:#B71111;font-size:var(--content-size);font-weight:700">
+Rolling stock manufacturer
+</td>
+<td style="background:#FECB7E;color:#000000;font-size:var(--content-size)">
+13
+</td>
+<td style="background:#FA8370;color:#000000;font-size:var(--content-size)">
+16
+</td>
+<td style="background:#FFD981;color:#000000;font-size:var(--content-size)">
+33
+</td>
+<td style="background:#FCA978;color:#000000;font-size:var(--content-size)">
+42
+</td>
+<td style="background:#FDB77A;color:#000000;font-size:var(--content-size);font-weight:700">
+0,074
+</td>
+<td style="background:#FBA076;color:#000000;font-size:var(--content-size)">
+1,71
+</td>
+<td style="background:#FFDF82;color:#000000;font-size:var(--content-size)">
+0,023
+</td>
+<td style="background:#FED07F;color:#000000;font-size:var(--content-size)">
+0,810
+</td>
+<td style="background:#FECB7E;color:#000000;font-size:var(--content-size)">
+15
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A11
+</td>
+<td style="color:#B71111;font-size:var(--content-size);font-weight:700">
+SNCF Réseau
+</td>
+<td style="background:#FCAA78;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#FDB87B;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#F2E783;color:#000000;font-size:var(--content-size)">
+29
+</td>
+<td style="background:#FDBC7B;color:#000000;font-size:var(--content-size)">
+38
+</td>
+<td style="background:#FECF7F;color:#000000;font-size:var(--content-size);font-weight:700">
+0,066
+</td>
+<td style="background:#FCAE79;color:#000000;font-size:var(--content-size)">
+1,65
+</td>
+<td style="background:#FFE784;color:#000000;font-size:var(--content-size)">
+0,018
+</td>
+<td style="background:#FCB179;color:#000000;font-size:var(--content-size)">
+0,850
+</td>
+<td style="background:#FCAA78;color:#000000;font-size:var(--content-size)">
+15,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A3
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+French government
+</td>
+<td style="background:#FECB7E;color:#000000;font-size:var(--content-size)">
+13
+</td>
+<td style="background:#FDB87B;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#FDBD7C;color:#000000;font-size:var(--content-size)">
+36
+</td>
+<td style="background:#FFDC81;color:#000000;font-size:var(--content-size)">
+31
+</td>
+<td style="background:#FECF7F;color:#000000;font-size:var(--content-size);font-weight:700">
+0,066
+</td>
+<td style="background:#FDBC7B;color:#000000;font-size:var(--content-size)">
+1,59
+</td>
+<td style="background:#FFDF82;color:#000000;font-size:var(--content-size)">
+0,023
+</td>
+<td style="background:#FED07F;color:#000000;font-size:var(--content-size)">
+0,810
+</td>
+<td style="background:#FECB7E;color:#000000;font-size:var(--content-size)">
+15
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A6
+</td>
+<td style="color:#DE6614;font-size:var(--content-size);font-weight:700">
+Electricity producers and distributors
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#FED07F;color:#000000;font-size:var(--content-size)">
+34
+</td>
+<td style="background:#FFDC81;color:#000000;font-size:var(--content-size)">
+31
+</td>
+<td style="background:#FED580;color:#000000;font-size:var(--content-size);font-weight:700">
+0,064
+</td>
+<td style="background:#FFE583;color:#000000;font-size:var(--content-size)">
+1,41
+</td>
+<td style="background:#FED380;color:#000000;font-size:var(--content-size)">
+0,031
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+0,773
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+14,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A4
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+European union
+</td>
+<td style="background:#FECB7E;color:#000000;font-size:var(--content-size)">
+13
+</td>
+<td style="background:#FDB87B;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#FEC67D;color:#000000;font-size:var(--content-size)">
+35
+</td>
+<td style="background:#FFE583;color:#000000;font-size:var(--content-size)">
+29
+</td>
+<td style="background:#FED881;color:#000000;font-size:var(--content-size);font-weight:700">
+0,063
+</td>
+<td style="background:#FDBC7B;color:#000000;font-size:var(--content-size)">
+1,59
+</td>
+<td style="background:#FFDF82;color:#000000;font-size:var(--content-size)">
+0,023
+</td>
+<td style="background:#FED07F;color:#000000;font-size:var(--content-size)">
+0,810
+</td>
+<td style="background:#FECB7E;color:#000000;font-size:var(--content-size)">
+15
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A12
+</td>
+<td style="color:#B71111;font-size:var(--content-size);font-weight:700">
+railway network operator
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#ECE582;color:#000000;font-size:var(--content-size)">
+28
+</td>
+<td style="background:#FECE7F;color:#000000;font-size:var(--content-size)">
+34
+</td>
+<td style="background:#FFDE82;color:#000000;font-size:var(--content-size);font-weight:700">
+0,061
+</td>
+<td style="background:#FFE583;color:#000000;font-size:var(--content-size)">
+1,41
+</td>
+<td style="background:#FED17F;color:#000000;font-size:var(--content-size)">
+0,032
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+0,773
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+14,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A9
+</td>
+<td style="color:#DE6614;font-size:var(--content-size);font-weight:700">
+Industry actors
+</td>
+<td style="background:#E8E482;color:#000000;font-size:var(--content-size)">
+11
+</td>
+<td style="background:#FDB87B;color:#000000;font-size:var(--content-size)">
+14
+</td>
+<td style="background:#FFE283;color:#000000;font-size:var(--content-size)">
+32
+</td>
+<td style="background:#F5E883;color:#000000;font-size:var(--content-size)">
+26
+</td>
+<td style="background:#FFEA84;color:#000000;font-size:var(--content-size);font-weight:700">
+0,057
+</td>
+<td style="background:#FED781;color:#000000;font-size:var(--content-size)">
+1,47
+</td>
+<td style="background:#FFEA84;color:#000000;font-size:var(--content-size)">
+0,016
+</td>
+<td style="background:#E2E282;color:#000000;font-size:var(--content-size)">
+0,739
+</td>
+<td style="background:#E8E482;color:#000000;font-size:var(--content-size)">
+14
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A7
+</td>
+<td style="color:#DE6614;font-size:var(--content-size);font-weight:700">
+Hydrogen producers
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#F0E683;color:#000000;font-size:var(--content-size)">
+11
+</td>
+<td style="background:#FFD981;color:#000000;font-size:var(--content-size)">
+33
+</td>
+<td style="background:#E9E482;color:#000000;font-size:var(--content-size)">
+24
+</td>
+<td style="background:#FCEA83;color:#000000;font-size:var(--content-size);font-weight:700">
+0,056
+</td>
+<td style="background:#F9E983;color:#000000;font-size:var(--content-size)">
+1,35
+</td>
+<td style="background:#DBE081;color:#000000;font-size:var(--content-size)">
+0,011
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+0,773
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+14,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A8
+</td>
+<td style="color:#DE6614;font-size:var(--content-size);font-weight:700">
+Infrastructures constructors
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#E2E282;color:#000000;font-size:var(--content-size)">
+10
+</td>
+<td style="background:#FFD981;color:#000000;font-size:var(--content-size)">
+33
+</td>
+<td style="background:#E3E382;color:#000000;font-size:var(--content-size)">
+23
+</td>
+<td style="background:#F8E983;color:#000000;font-size:var(--content-size);font-weight:700">
+0,055
+</td>
+<td style="background:#EFE683;color:#000000;font-size:var(--content-size)">
+1,29
+</td>
+<td style="background:#F7E883;color:#000000;font-size:var(--content-size)">
+0,014
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+0,773
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+14,5
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A10
+</td>
+<td style="color:#DE6614;font-size:var(--content-size);font-weight:700">
+Diesel producers
+</td>
+<td style="background:#E8E482;color:#000000;font-size:var(--content-size)">
+11
+</td>
+<td style="background:#F0E683;color:#000000;font-size:var(--content-size)">
+11
+</td>
+<td style="background:#F8E983;color:#000000;font-size:var(--content-size)">
+30
+</td>
+<td style="background:#E9E482;color:#000000;font-size:var(--content-size)">
+24
+</td>
+<td style="background:#EFE683;color:#000000;font-size:var(--content-size);font-weight:700">
+0,053
+</td>
+<td style="background:#EFE683;color:#000000;font-size:var(--content-size)">
+1,29
+</td>
+<td style="background:#DBE081;color:#000000;font-size:var(--content-size)">
+0,011
+</td>
+<td style="background:#E2E282;color:#000000;font-size:var(--content-size)">
+0,739
+</td>
+<td style="background:#E8E482;color:#000000;font-size:var(--content-size)">
+14
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A13
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+DGITM
+</td>
+<td style="background:#BCD780;color:#000000;font-size:var(--content-size)">
+9
+</td>
+<td style="background:#FFEB84;color:#000000;font-size:var(--content-size)">
+12
+</td>
+<td style="background:#D9E081;color:#000000;font-size:var(--content-size)">
+25
+</td>
+<td style="background:#F5E883;color:#000000;font-size:var(--content-size)">
+26
+</td>
+<td style="background:#E2E282;color:#000000;font-size:var(--content-size);font-weight:700">
+0,050
+</td>
+<td style="background:#E5E382;color:#000000;font-size:var(--content-size)">
+1,24
+</td>
+<td style="background:#C1D980;color:#000000;font-size:var(--content-size)">
+0,009
+</td>
+<td style="background:#B1D47F;color:#000000;font-size:var(--content-size)">
+0,680
+</td>
+<td style="background:#BCD780;color:#000000;font-size:var(--content-size)">
+13
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A14
+</td>
+<td style="color:#4D7731;font-size:var(--content-size);font-weight:700">
+Engineering consultancy
+</td>
+<td style="background:#BCD780;color:#000000;font-size:var(--content-size)">
+9
+</td>
+<td style="background:#E2E282;color:#000000;font-size:var(--content-size)">
+10
+</td>
+<td style="background:#C6DA80;color:#000000;font-size:var(--content-size)">
+22
+</td>
+<td style="background:#D1DD81;color:#000000;font-size:var(--content-size)">
+20
+</td>
+<td style="background:#BAD780;color:#000000;font-size:var(--content-size);font-weight:700">
+0,041
+</td>
+<td style="background:#D1DD81;color:#000000;font-size:var(--content-size)">
+1,12
+</td>
+<td style="background:#A4D07E;color:#000000;font-size:var(--content-size)">
+0,006
+</td>
+<td style="background:#B1D47F;color:#000000;font-size:var(--content-size)">
+0,680
+</td>
+<td style="background:#BCD780;color:#000000;font-size:var(--content-size)">
+13
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A16
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+EPSF
+</td>
+<td style="background:#8FCA7D;color:#000000;font-size:var(--content-size)">
+7
+</td>
+<td style="background:#C6DA80;color:#000000;font-size:var(--content-size)">
+8
+</td>
+<td style="background:#9BCE7E;color:#000000;font-size:var(--content-size)">
+15
+</td>
+<td style="background:#E3E382;color:#000000;font-size:var(--content-size)">
+23
+</td>
+<td style="background:#A9D27F;color:#000000;font-size:var(--content-size);font-weight:700">
+0,037
+</td>
+<td style="background:#A9D27F;color:#000000;font-size:var(--content-size)">
+0,88
+</td>
+<td style="background:#F5E883;color:#000000;font-size:var(--content-size)">
+0,014
+</td>
+<td style="background:#87C87D;color:#000000;font-size:var(--content-size)">
+0,630
+</td>
+<td style="background:#8FCA7D;color:#000000;font-size:var(--content-size)">
+12
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A18
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+Local authorities under regions (departments, EPCI, cities…)
+</td>
+<td style="background:#E8E482;color:#000000;font-size:var(--content-size)">
+11
+</td>
+<td style="background:#F0E683;color:#000000;font-size:var(--content-size)">
+11
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+6
+</td>
+<td style="background:#FFE583;color:#000000;font-size:var(--content-size)">
+29
+</td>
+<td style="background:#9CCE7E;color:#000000;font-size:var(--content-size);font-weight:700">
+0,035
+</td>
+<td style="background:#EFE683;color:#000000;font-size:var(--content-size)">
+1,29
+</td>
+<td style="background:#E3E382;color:#000000;font-size:var(--content-size)">
+0,012
+</td>
+<td style="background:#E2E282;color:#000000;font-size:var(--content-size)">
+0,739
+</td>
+<td style="background:#E8E482;color:#000000;font-size:var(--content-size)">
+14
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A17
+</td>
+<td style="color:#1D4971;font-size:var(--content-size);font-weight:700">
+Other territory stakeholdersAssociations (users, environmental…)
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+5
+</td>
+<td style="background:#7FC67C;color:#000000;font-size:var(--content-size)">
+3
+</td>
+<td style="background:#9BCE7E;color:#000000;font-size:var(--content-size)">
+15
+</td>
+<td style="background:#8DCA7D;color:#000000;font-size:var(--content-size)">
+9
+</td>
+<td style="background:#6BC07B;color:#000000;font-size:var(--content-size);font-weight:700">
+0,024
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+0,47
+</td>
+<td style="background:#6FC17B;color:#000000;font-size:var(--content-size)">
+0,001
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+0,586
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+11
+</td>
+</tr>
+<tr>
+<td style="color:#000000;font-size:var(--content-size);font-weight:700">
+A15
+</td>
+<td style="color:#4D7731;font-size:var(--content-size);font-weight:700">
+Régions de France
+</td>
+<td style="background:#D2DE81;color:#000000;font-size:var(--content-size)">
+10
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+1
+</td>
+<td style="background:#BAD780;color:#000000;font-size:var(--content-size)">
+20
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+2
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size);font-weight:700">
+0,022
+</td>
+<td style="background:#81C67C;color:#000000;font-size:var(--content-size)">
+0,65
+</td>
+<td style="background:#63BE7B;color:#000000;font-size:var(--content-size)">
+0,000
+</td>
+<td style="background:#C9DB80;color:#000000;font-size:var(--content-size)">
+0,708
+</td>
+<td style="background:#D2DE81;color:#000000;font-size:var(--content-size)">
+13,5
+</td>
+</tr>
+</tbody></table>
+</div>
+<img class="ppt-image" style="left:2%;top:18%;width:94%;height:76%;" src="assets/vector/s16_Rectangle_6.svg" alt="Rectangle 6"> <img class="ppt-image" style="left:2%;top:49%;width:94%;height:45%;" src="assets/vector/s16_Rectangle_8.svg" alt="Rectangle 8"> <img class="ppt-image" style="left:2%;top:15%;width:94%;height:45%;" src="assets/vector/s16_Rectangle_9.svg" alt="Rectangle 9"> <img class="ppt-image" style="left:2%;top:62%;width:94%;height:32%;" src="assets/vector/s16_Rectangle_10.svg" alt="Rectangle 10">
+</div>
+</section>
+<section id="poids-et-connexion-des-acteurs" class="slide level2 editorial" data-part="2" data-subpart="2">
+<h2>Poids et connexion des acteurs</h2>
+<div class="slide-title">
+Poids et connexion des acteurs
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:0%;top:0%;width:100%;height:6%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-title-size);font-weight:700">Poids</span><span style="font-size:var(--content-title-size)"> et </span><span style="font-size:var(--content-title-size);font-weight:700">connexion</span><span style="font-size:var(--content-title-size)"> des </span><span style="font-size:var(--content-title-size)">acteurs</span>
+</div>
+</div>
+<img class="ppt-image" style="left:39%;top:14%;width:69%;height:75%;" src="assets/vector/s17_Graphique_1.svg" alt="Graphique 1"> <img class="ppt-image" style="left:-10%;top:14%;width:68%;height:75%;" src="assets/vector/s17_Graphique_1.svg" alt="Graphique 1">
+</div>
+</section>
+<section id="réorganisation-du-processus-de-décision" class="slide level2 editorial" data-part="2" data-subpart="3">
+<h2>Réorganisation du processus de décision</h2>
+<div class="slide-title">
+Réorganisation du processus de décision
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:30%;top:1%;width:66%;height:92%;" src="assets/media/image33.png" alt="Image 1"> <img class="ppt-image" style="left:1%;top:4%;width:35%;height:87%;" src="assets/vector/s19_Diagramme_8.svg" alt="Diagramme 8">
+</div>
+</section>
+<section id="apports-de-la-méthode-et-perspectives" class="slide level2 editorial" data-part="2" data-subpart="3">
+<h2>Apports de la méthode et perspectives</h2>
+<div class="slide-title">
+Apports de la méthode et perspectives
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:5%;top:15%;width:90%;height:73%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="">Modélisation des réseaux de décision public-privé pour réduire les risques associés à leurs interactions </span>
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="">Analyse par étape de décision pour une modélisation plus précise de la temporalité de la décision</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="">Agent Base Modeling pour un modélisation plus précise des acteurs</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="">Sensibilité à la pondération</span>
+</div>
+</div>
+</div>
+</section>
+<section id="references-part-2-1" class="slide level2 editorial references-slide" data-subpart="3" data-part="2">
+<h2>Références · Partie 02</h2>
+<div class="slide-title">Références · Partie 02</div><ol class="part-reference-list" start="1"><li id="reference-2-1">Tsvetkova, O., &amp; Ouarda, T. B. M. J. (2019). Quasi-Monte Carlo technique in global sensitivity analysis of wind resource assessment with a study on UAE. Journal of Renewable and Sustainable Energy, 11(5).</li><li id="reference-2-2">Bloch, F., Jackson, M. O., &amp; Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453.</li><li id="reference-2-3">Bolla, M. (2011). Penalized versions of the Newman-Girvan modularity and their relation to normalized cuts and k-means clustering. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 84(1)</li><li id="reference-2-4">Li, Y., Nguyen, J., Anastasiu, D. C., &amp; Arriaga, E. A. (2023). CosTaL: an accurate and scalable graph-based clustering algorithm for high-dimensional single-cell data analysis. Briefings in Bioinformatics, 24(3)</li></ol>
+</section>
+<section id="section-3" class="slide level2 editorial part-divider" data-part="3" data-subpart="1">
+<h2></h2>
+<div class="divider-number">
+PARTIE 03
+</div>
+<div class="divider-title">
+ACV + MCDM
+</div>
+<div class="divider-subtitle">
+Construire une comparaison environnementale prospective, paramétrique et multicritère des technologies de décarbonation.
+</div>
+</section>
+<section id="besoin-dune-comparaison-environnementale-multicritère" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Besoin d’une comparaison environnementale multicritère</h2>
+<div class="slide-title">
+Besoin d’une comparaison environnementale multicritère
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:5%;top:15%;width:34%;height:73%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="">Complexe prospectif</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="">Transparent, </span><span style="">interpétable</span>
+</div>
+</div>
+<img class="ppt-image" style="left:34%;top:19%;width:66%;height:57%;" src="assets/vector/s21_Groupe_6.svg" alt="Groupe 6">
+</div>
+</section>
+<section id="tableau-des-scénarios-de-décarbonation" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Tableau des scénarios de décarbonation</h2>
+<div class="slide-title">
+Tableau des scénarios de décarbonation
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:5%;top:15%;width:90%;height:73%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="">Modules partagés entre différents scenarios</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="">Analyse bibliographique et interview d’experts</span>
+</div>
+</div>
+<div class="ppt-table-wrap" style="left:12%;top:50%;width:76%;height:36%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size)">
+Scenario
+</td>
+<td style="font-size:var(--content-size)">
+Système de conversion énergétique embarqué
+</td>
+<td style="font-size:var(--content-size)">
+Production d’énergie
+</td>
+<td style="font-size:var(--content-size)">
+Infrastructure d’alimentation
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Electrification direct
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Batteries
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="collecte-de-données-et-qualité-des-données" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Collecte de données et qualité des données</h2>
+<div class="slide-title">
+Collecte de données et qualité des données
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:1%;top:94%;width:91%;height:6%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="">[11] </span><span style="">Carlesso</span><span style="">, A., </span><span style="">Pizzol</span><span style="">, L., </span><span style="">Marcomini</span><span style="">, A., &amp; </span><span style="">Semenzin</span><span style="">, E. (2024). </span><span style="font-style:italic">Data quality assessment of aggregated LCI datasets: A case study on fossil-based and bio-based plastic food packaging</span><span style="">. Journal of Industrial Ecology</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="">[12</span><span style="">] Sobol, I. M. </span><span style="">(2001). </span><span style="">Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates</span>
+</div>
+</div>
+<img class="ppt-image" style="left:55%;top:31%;width:42%;height:33%;" src="assets/vector/s23_Diagramme_21.svg" alt="Diagramme 21"> <img class="ppt-image" style="left:8%;top:6%;width:42%;height:82%;" src="assets/vector/s23_Objet_31.svg" alt="Objet 31">
+</div>
+</section>
+<section id="méthodes-dévaluation-environnementale" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Méthodes d’évaluation environnementale</h2>
+<div class="slide-title">
+Méthodes d’évaluation environnementale
+</div>
+<div class="ppt-canvas">
+<div class="ppt-table-wrap" style="left:23%;top:17%;width:54%;height:60%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Method
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Scope
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Type
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+LCA
+</td>
+<td style="font-size:var(--content-size)">
+Product / service
+</td>
+<td style="font-size:var(--content-size)">
+Quantitative, multi-criteria
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+ERA
+</td>
+<td style="font-size:var(--content-size)">
+Substance / local environment
+</td>
+<td style="font-size:var(--content-size)">
+Risk-based
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+EIA
+</td>
+<td style="font-size:var(--content-size)">
+Project
+</td>
+<td style="font-size:var(--content-size)">
+Procedural
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+SEA
+</td>
+<td style="font-size:var(--content-size)">
+Plans / programs
+</td>
+<td style="font-size:var(--content-size)">
+Strategic
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+MFA
+</td>
+<td style="font-size:var(--content-size)">
+Product / territory / service
+</td>
+<td style="font-size:var(--content-size)">
+Flow-based assessment
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+EEIO Analysis
+</td>
+<td style="font-size:var(--content-size)">
+Sector / economy
+</td>
+<td style="font-size:var(--content-size)">
+Input-output environmental assessment
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Ecological Footprint
+</td>
+<td style="font-size:var(--content-size)">
+Territory / population / activity
+</td>
+<td style="font-size:var(--content-size)">
+Aggregated environmental assessment
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="types-de-modèles-acv" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Types de modèles ACV</h2>
+<div class="slide-title">
+Types de modèles ACV
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:-6%;top:-10%;width:106%;height:11%;" src="assets/vector/s25_Parall_logramme_14.svg" alt="Parallélogramme 14"> <img class="ppt-image" style="left:53%;top:1%;width:47%;height:95%;" src="assets/media/image44.png" alt="Image 6"> <img class="ppt-image" style="left:15%;top:49%;width:40%;height:43%;" src="assets/vector/s25_Graphique_1.svg" alt="Graphique 1"> <img class="ppt-image" style="left:19%;top:7%;width:11%;height:31%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image45.svg" alt="Graphique 1"> <img class="ppt-image" style="left:31%;top:14%;width:18%;height:25%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s25_Graphique_1.svg" alt="Graphique 1">
+<div class="ppt-text" style="left:16%;top:0%;width:34%;height:6%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Retrospective</span><span style="font-size:var(--content-size)">: données historiques</span>
+</div>
+</div>
+<div class="ppt-text" style="left:16%;top:44%;width:34%;height:6%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span>
+</div>
+</div>
+<div class="ppt-text" style="left:48%;top:19%;width:34%;height:6%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Bibliographique</span>
+</div>
+</div>
+<div class="ppt-table-wrap" style="left:2%;top:22%;width:12%;height:45%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+LCA type
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Attributional
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Prospective
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Parametric
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Retrospective
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Regionalized
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Bibliographic
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="rétrospectif-caténaires" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Rétrospectif : caténaires</h2>
+<div class="slide-title">
+Rétrospectif : caténaires
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:25%;top:0%;width:50%;height:89%;" src="assets/media/image47.svg" alt="Graphique 10"> <img class="ppt-image" style="left:78%;top:11%;width:18%;height:49%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image48.svg" alt="Graphique 1"> <img class="ppt-image" style="left:-4%;top:19%;width:27%;height:37%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s26_Graphique_1.svg" alt="Graphique 1">
+</div>
+</section>
+<section id="prospectif-mix-électrique" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Prospectif : mix électrique</h2>
+<div class="slide-title">
+Prospectif : mix électrique
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:4%;top:26%;width:34%;height:43%;" src="assets/vector/s27_Graphique_1.svg" alt="Graphique 1">
+<div class="ppt-text" style="left:4%;top:20%;width:34%;height:6%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span>
+</div>
+</div>
+<img class="ppt-image" style="left:45%;top:1%;width:50%;height:94%;" src="assets/media/image50.svg" alt="Graphique 16">
+</div>
+</section>
+<section id="batteries-revue-bibliographique" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Batteries : revue bibliographique</h2>
+<div class="slide-title">
+Batteries : revue bibliographique
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:1%;top:1%;width:44%;height:89%;" src="assets/media/image44.png" alt="Image 15"> <img class="ppt-image" style="left:55%;top:7%;width:36%;height:45%;" src="assets/vector/s28_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6"> <img class="ppt-image" style="left:66%;top:17%;width:0%;height:25%;" src="assets/vector/s28_Connecteur_droit_9.svg" alt="Connecteur droit 9">
+<div class="ppt-table-wrap" style="left:52%;top:62%;width:37%;height:24%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="">
+</td>
+<td style="color:#440F76;font-size:var(--content-size)">
+LTO
+</td>
+<td style="color:#B73779;font-size:var(--content-size)">
+NMC
+</td>
+<td style="color:#FD9668;font-size:var(--content-size)">
+LFP
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Masse
+</td>
+<td style="font-size:var(--content-size)">
+1400 kg
+</td>
+<td style="font-size:var(--content-size)">
+-
+</td>
+<td style="font-size:var(--content-size)">
+-
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Energie kWh
+</td>
+<td style="font-size:var(--content-size)">
+75
+</td>
+<td style="font-size:var(--content-size)">
+220
+</td>
+<td style="font-size:var(--content-size)">
+191
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Puissance kW
+</td>
+<td style="font-size:var(--content-size)">
+300 à 600
+</td>
+<td style="font-size:var(--content-size)">
+220 à 440
+</td>
+<td style="font-size:var(--content-size)">
+191 à 383
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="batteries-dimensionnement-à-masse-constante" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Batteries : dimensionnement à masse constante</h2>
+<div class="slide-title">
+Batteries : dimensionnement à masse constante
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:2%;top:2%;width:50%;height:89%;" src="assets/media/image51.svg" alt="Graphique 17">
+<div class="ppt-table-wrap" style="left:56%;top:17%;width:37%;height:24%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="">
+</td>
+<td style="color:#440F76;font-size:var(--content-size)">
+LTO
+</td>
+<td style="color:#B73779;font-size:var(--content-size)">
+NMC
+</td>
+<td style="color:#FD9668;font-size:var(--content-size)">
+LFP
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Masse
+</td>
+<td style="font-size:var(--content-size)">
+1400 kg
+</td>
+<td style="font-size:var(--content-size)">
+1400 kg
+</td>
+<td style="font-size:var(--content-size)">
+1400 kg
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Energie kWh
+</td>
+<td style="font-size:var(--content-size)">
+75
+</td>
+<td style="font-size:var(--content-size)">
+220
+</td>
+<td style="font-size:var(--content-size)">
+191
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Puissance kW
+</td>
+<td style="font-size:var(--content-size)">
+300 à 600
+</td>
+<td style="font-size:var(--content-size)">
+220 à 440
+</td>
+<td style="font-size:var(--content-size)">
+191 à 383
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="ppt-text" style="left:61%;top:51%;width:28%;height:18%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-title-size);font-weight:700">Comparaison brute des technologies, à ce stade pas de prise en compte:</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-title-size)">Infrastructures ferroviaires </span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-title-size)">Exploitation des trains</span>
+</div>
+</div>
+</div>
+</section>
+<section id="propagation-des-incertitudes" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Propagation des incertitudes</h2>
+<div class="slide-title">
+Propagation des incertitudes
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:3%;top:16%;width:94%;height:53%;" src="assets/vector/s30_Graphique_1.svg" alt="Graphique 1">
+</div>
+</section>
+<section id="incertitudes-dapproximation-des-modèles" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Incertitudes d’approximation des modèles</h2>
+<div class="slide-title">
+Incertitudes d’approximation des modèles
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:18%;top:10%;width:65%;height:72%;" src="assets/vector/s31_Objet_6.svg" alt="Objet 6">
+</div>
+</section>
+<section id="incertitude-des-paramètres" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Incertitude des paramètres</h2>
+<div class="slide-title">
+Incertitude des paramètres
+</div>
+<div class="ppt-canvas">
+
+</div>
+</section>
+<section id="outil-paramétrique" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Outil paramétrique</h2>
+<div class="slide-title">
+Outil paramétrique
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:31%;top:18%;width:39%;height:24%;" src="assets/vector/s33_Groupe_4.svg" alt="Groupe 4">
+</div>
+</section>
+<section id="architecture-modulaire-des-modèles" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Architecture modulaire des modèles</h2>
+<div class="slide-title">
+Architecture modulaire des modèles
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:6%;top:15%;width:41%;height:60%;" src="assets/vector/s34_Groupe_1.svg" alt="Groupe 1"> <img class="ppt-image" style="left:56%;top:17%;width:39%;height:56%;" src="assets/vector/s34_Groupe_33.svg" alt="Groupe 33">
+</div>
+</section>
+<section id="orient-modélisation-des-vitesses" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>ORIEnT : modélisation des vitesses</h2>
+<div class="slide-title">
+ORIEnT : modélisation des vitesses
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:24%;top:15%;width:51%;height:62%;" src="assets/vector/s35_Groupe_13.svg" alt="Groupe 13">
+</div>
+</section>
+<section id="orient-modélisation-du-roulement" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>ORIEnT : modélisation du roulement</h2>
+<div class="slide-title">
+ORIEnT : modélisation du roulement
+</div>
+<div class="ppt-canvas">
+<div class="ppt-table-wrap" style="left:30%;top:27%;width:40%;height:63%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Phase
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Variable limitante
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Contrainte
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Accélération
+</td>
+<td style="font-size:var(--content-size)">
+Distance entre arrêts
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="font-size:var(--content-size)">
+a max
+</td>
+<td style="font-size:var(--content-size)">
+a &lt; 0,3 m/s²
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="font-size:var(--content-size)">
+P max
+</td>
+<td style="font-size:var(--content-size)">
+Pmax (1,6 MW pour le Régiolis)
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Croisière
+</td>
+<td style="font-size:var(--content-size)">
+P max, i
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="font-size:var(--content-size)">
+Distance entre arrêts
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Décélération
+</td>
+<td style="font-size:var(--content-size)">
+V max
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="font-size:var(--content-size)">
+a min
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="font-size:var(--content-size)">
+P min (optionnel)
+</td>
+<td style="">
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="orient-paramètres-technologiques-et-ligne" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>ORIEnT : paramètres technologiques et ligne</h2>
+<div class="slide-title">
+ORIEnT : paramètres technologiques et ligne
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:1%;top:26%;width:91%;height:62%;" src="assets/vector/s37_Graphique_1.svg" alt="Graphique 1"> <img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="assets/vector/s37_Groupe_7.svg" alt="Groupe 7">
+</div>
+</section>
+<section id="illustration-dun-classement-multicritère" class="slide level2 editorial" data-part="3" data-subpart="1">
+<h2>Illustration d’un classement multicritère</h2>
+<div class="slide-title">
+Illustration d’un classement multicritère
+</div>
+<div class="ppt-canvas">
+<div class="ppt-table-wrap" style="left:27%;top:5%;width:50%;height:31%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="">
+</td>
+<td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">
+Weight
+</td>
+<td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">
+0,24
+</td>
+<td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">
+0,27
+</td>
+<td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">
+0,18
+</td>
+<td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">
+0,09
+</td>
+<td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">
+0,21
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">
+Criteria
+</td>
+<td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">
+Cost
+</td>
+<td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">
+Ecosystem diversity
+</td>
+<td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">
+Resource scarcity
+</td>
+<td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">
+Human health
+</td>
+<td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">
+Social impact
+</td>
+</tr>
+<tr>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Alternatives
+</td>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Diesel
+</td>
+<td style="font-size:var(--content-size)">
+6
+</td>
+<td style="font-size:var(--content-size)">
+10
+</td>
+<td style="font-size:var(--content-size)">
+4
+</td>
+<td style="font-size:var(--content-size)">
+7
+</td>
+<td style="font-size:var(--content-size)">
+4
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Biofuel
+</td>
+<td style="font-size:var(--content-size)">
+10
+</td>
+<td style="font-size:var(--content-size)">
+9
+</td>
+<td style="font-size:var(--content-size)">
+5
+</td>
+<td style="font-size:var(--content-size)">
+1
+</td>
+<td style="font-size:var(--content-size)">
+9
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Hybrid
+</td>
+<td style="font-size:var(--content-size)">
+6
+</td>
+<td style="font-size:var(--content-size)">
+7
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+5
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Batteries
+</td>
+<td style="font-size:var(--content-size)">
+6
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+<td style="font-size:var(--content-size)">
+5
+</td>
+<td style="font-size:var(--content-size)">
+4
+</td>
+<td style="font-size:var(--content-size)">
+9
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Hydrogen
+</td>
+<td style="font-size:var(--content-size)">
+10
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+8
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+</tr>
+<tr>
+<td style="">
+</td>
+<td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">
+Electrification
+</td>
+<td style="font-size:var(--content-size)">
+5
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+<td style="font-size:var(--content-size)">
+10
+</td>
+<td style="font-size:var(--content-size)">
+6
+</td>
+<td style="font-size:var(--content-size)">
+7
+</td>
+</tr>
+</tbody></table>
+</div>
+<img class="ppt-image" style="left:13%;top:56%;width:50%;height:16%;" src="assets/vector/s38_Groupe_8.svg" alt="Groupe 8">
+<div class="ppt-table-wrap" style="left:76%;top:49%;width:15%;height:24%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Scenario
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Rank
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Diesel
+</td>
+<td style="font-size:var(--content-size)">
+5
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Biofuel
+</td>
+<td style="font-size:var(--content-size)">
+4
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Hybrid
+</td>
+<td style="font-size:var(--content-size)">
+1
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Batteries
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Hydrogen
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Electrification
+</td>
+<td style="font-size:var(--content-size)">
+6
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="promethee-fonctions-de-préférence" class="slide level2 editorial has-slide-references" data-part="3" data-subpart="1" data-refs="taherdoost-2023,wulf-2021">
+<h2>PROMETHEE : fonctions de préférence</h2>
+<div class="slide-title">
+PROMETHEE : fonctions de préférence
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:31%;top:58%;width:8%;height:13%;" src="assets/vector/s39_Image_1.svg" alt="Image 1">
+<div class="ppt-table-wrap" style="left:67%;top:9%;width:31%;height:82%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Impact Category
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Uncertainty Class
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Weak Preference Zone (q–p)
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Climate change
+</td>
+<td style="font-size:var(--content-size)">
+1
+</td>
+<td style="font-size:var(--content-size)">
+10–20%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Ozone depletion
+</td>
+<td style="font-size:var(--content-size)">
+1
+</td>
+<td style="font-size:var(--content-size)">
+10–20%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Cumulated energy demand
+</td>
+<td style="font-size:var(--content-size)">
+1
+</td>
+<td style="font-size:var(--content-size)">
+10–20%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Resource depletion, water
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Resource depletion, mineral
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Particulate matter/respiratory inorganics
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Ionizing radiation, human health
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Photochemical ozone formation
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Acidification
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Terrestrial eutrophication
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Aquatic eutrophication
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Marine eutrophication
+</td>
+<td style="font-size:var(--content-size)">
+2
+</td>
+<td style="font-size:var(--content-size)">
+30–40%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Ecotoxicity, freshwater
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+<td style="font-size:var(--content-size)">
+70–80%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Human toxicity, cancer
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+<td style="font-size:var(--content-size)">
+70–80%
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Human toxicity, non-cancer
+</td>
+<td style="font-size:var(--content-size)">
+3
+</td>
+<td style="font-size:var(--content-size)">
+70–80%
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="ppt-table-wrap" style="left:21%;top:13%;width:29%;height:24%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size)">
+&nbsp;
+</td>
+<td style="color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+&nbsp;
+</td>
+<td style="background:#538135;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+Vitesse maximal km/h
+</td>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="background:#203B57;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+Alternatives
+</td>
+<td style="">
+</td>
+<td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+54-
+</td>
+<td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+72-94
+</td>
+<td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+-130
+</td>
+</tr>
+<tr>
+<td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+Electrification
+</td>
+<td style="">
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+1
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+Incertitude
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+2
+</td>
+</tr>
+<tr>
+<td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+Batteries
+</td>
+<td style="">
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+2
+</td>
+<td style="">
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+1
+</td>
+</tr>
+<tr>
+<td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">
+Diesel
+</td>
+<td style="">
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+3
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+3
+</td>
+<td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">
+3
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="slide-references" role="note" aria-label="Références de la diapositive"><a href="#/references-part-3-1">[1] Taherdoost &amp; Madanchian (2023)</a><span class="reference-separator"> · </span><a href="#/references-part-3-1">[2] Wulf et al.&nbsp;(2021)</a></div>
+</section>
+<section id="cas-détude-corse" class="slide level2 editorial" data-part="3" data-subpart="2">
+<h2>Cas d’étude : Corse</h2>
+<div class="slide-title">
+Cas d’étude : Corse
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:3%;top:1%;width:32%;height:82%;" src="assets/vector/s44_Image_1.svg" alt="Image 1"> <img class="ppt-image" style="left:37%;top:20%;width:62%;height:49%;" src="assets/media/image72.svg" alt="Graphique 1"> <img class="ppt-image" style="left:0%;top:-9%;width:36%;height:11%;" src="assets/media/image73.svg" alt="Graphique 1">
+<div class="ppt-text" style="left:22%;top:83%;width:7%;height:6%;font-size:var(--content-title-size);transform:rotate(23.23deg);transform-origin:center;">
+<div class="ppt-p" style="text-align:left">
+<span style="">SACOI3</span>
+</div>
+</div>
+<img class="ppt-image" style="left:20%;top:83%;width:12%;height:7%;" src="assets/vector/s44_Fl_che_double_fl_che_horizontale_16.svg" alt="Flèche&nbsp;: double flèche horizontale 16">
+</div>
+</section>
+<section id="mix-énergétique-corse" class="slide level2 editorial" data-part="3" data-subpart="2">
+<h2>Mix énergétique corse</h2>
+<div class="slide-title">
+Mix énergétique corse
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:2%;top:7%;width:46%;height:87%;" src="assets/vector/s45_Graphique_1.svg" alt="Graphique 1">
+<div class="ppt-table-wrap" style="left:56%;top:13%;width:33%;height:24%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size)">
+04/06/26
+</td>
+<td style="font-size:var(--content-size)">
+gCO₂eq/kWh
+</td>
+<td style="font-size:var(--content-size)">
+Production impactante
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Corse
+</td>
+<td style="font-size:var(--content-size)">
+452
+</td>
+<td style="font-size:var(--content-size)">
+40% fioul
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Italie
+</td>
+<td style="font-size:var(--content-size)">
+147
+</td>
+<td style="font-size:var(--content-size)">
+4% gaz
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+France
+</td>
+<td style="font-size:var(--content-size)">
+16
+</td>
+<td style="font-size:var(--content-size)">
+60% nucléaire
+</td>
+</tr>
+</tbody></table>
+</div>
+<img class="ppt-image" style="left:54%;top:46%;width:36%;height:41%;" src="assets/media/image75.svg" alt="Graphique 1">
+</div>
+</section>
+<section id="modélisation-des-amg800" class="slide level2 editorial" data-part="3" data-subpart="2">
+<h2>Modélisation des AMG800</h2>
+<div class="slide-title">
+Modélisation des AMG800
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:-2%;top:14%;width:55%;height:64%;" src="assets/media/image76.svg" alt="Graphique 1">
+<div class="ppt-table-wrap" style="left:58%;top:21%;width:35%;height:19%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Ligne
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Energie sans regeneration (kWh)
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Energie avec regeneration (kWh)
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Balagne
+</td>
+<td style="font-size:var(--content-size)">
+1,159
+</td>
+<td style="font-size:var(--content-size)">
+787
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Centrale
+</td>
+<td style="font-size:var(--content-size)">
+2,029
+</td>
+<td style="font-size:var(--content-size)">
+1,268
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</section>
+<section id="réduction-de-limpact-du-mix-électrique-corse" class="slide level2 editorial" data-part="3" data-subpart="3">
+<h2>Réduction de l’impact du mix électrique corse</h2>
+<div class="slide-title">
+Réduction de l’impact du mix électrique corse
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:21%;top:83%;width:59%;height:7%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-title-size);font-weight:700">Perspectives</span><span style="font-size:var(--content-title-size)"> : Stratégies de décarbonation du mix électrique Corse</span>
+</div>
+</div>
+<img class="ppt-image" style="left:8%;top:4%;width:84%;height:73%;" src="assets/vector/s47_Groupe_22.svg" alt="Groupe 22">
+<div class="ppt-text" style="left:70%;top:66%;width:6%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">-10%</span>
+</div>
+</div>
+<div class="ppt-text" style="left:51%;top:66%;width:6%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">-50%</span>
+</div>
+</div>
+<div class="ppt-text" style="left:31%;top:66%;width:6%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">-90%</span>
+</div>
+</div>
+</div>
+</section>
+<section id="stratégies-de-décarbonation-du-mix-électrique-corse" class="slide level2 editorial" data-part="3" data-subpart="3">
+<h2>Stratégies de décarbonation du mix électrique corse</h2>
+<div class="slide-title">
+Stratégies de décarbonation du mix électrique corse
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:7%;top:96%;width:85%;height:4%;font-size:var(--content-title-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="">EDF 2024</span>
+</div>
+</div>
+<img class="ppt-image" style="left:3%;top:15%;width:45%;height:73%;" src="assets/vector/s48_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
+<div class="ppt-text" style="left:12%;top:7%;width:28%;height:8%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size)">Evolution de l’impact CO2 de la production d’électricité en Corse</span>
+</div>
+</div>
+<img class="ppt-image" style="left:50%;top:21%;width:46%;height:53%;" src="assets/vector/s48_Graphique_8.svg" alt="Graphique 8">
+<div class="ppt-text" style="left:57%;top:9%;width:32%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size)">Modes de production d’électricité en Corse</span>
+</div>
+</div>
+</div>
+</section>
+<section id="validation-comparaison-avec-lademe" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Validation : comparaison avec l’ADEME</h2>
+<div class="slide-title">
+Validation : comparaison avec l’ADEME
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:17%;top:26%;width:67%;height:24%;" src="assets/vector/s40_Groupe_7.svg" alt="Groupe 7">
+<div class="ppt-text" style="left:5%;top:11%;width:90%;height:8%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size)">ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène.2025. </span>
+</div>
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée, ACV comparative d'un trajet en train régional et d’un trajet en train de fret</span>
+</div>
+</div>
+<img class="ppt-image" style="left:39%;top:52%;width:22%;height:44%;" src="assets/media/image64.png" alt="Picture 2">
+</div>
+</section>
+<section id="validation-ademe-changement-climatique" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Validation ADEME : changement climatique</h2>
+<div class="slide-title">
+Validation ADEME : changement climatique
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:50%;top:12%;width:49%;height:58%;" src="assets/vector/s41_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6"> <img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
+<div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Comparaison des scénarios – changement climatique (gCO2eq pour 1 p.km)</span>
+</div>
+</div>
+<img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="assets/vector/s41_Groupe_8.svg" alt="Groupe 8">
+</div>
+</section>
+<section id="analyse-des-résultats-impacts-normalisés" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Analyse des résultats : impacts normalisés</h2>
+<div class="slide-title">
+Analyse des résultats : impacts normalisés
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span>
+</div>
+<div class="ppt-p" style="text-align:center">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span>
+</div>
+</div>
+<img class="ppt-image" style="left:45%;top:8%;width:60%;height:91%;" src="assets/media/image67.svg" alt="Graphique 4">
+<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">Comparaison des résultats d’impact normalisés en points (pt)</span>
+</div>
+</div>
+<div class="ppt-table-wrap" style="left:2%;top:19%;width:45%;height:31%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="font-size:var(--content-size);font-weight:700">
+Catégorie d’impact
+</td>
+<td style="font-size:var(--content-size);font-weight:700">
+Scénario le plus impactant
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Changement climatique
+</td>
+<td style="font-size:var(--content-size)">
+Diesel
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Utilisation des ressources fossiles
+</td>
+<td style="font-size:var(--content-size)">
+Hydrogène produit par électrolyse avec le mix électrique français
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Micro-particules
+</td>
+<td style="font-size:var(--content-size)">
+Biocarburant B100
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Utilisation des ressources minérales et métalliques
+</td>
+<td style="font-size:var(--content-size)">
+Hydrogène, batteries et caténaires
+</td>
+</tr>
+</tbody></table>
+</div>
+<img class="ppt-image" style="left:20%;top:-3%;width:10%;height:20%;" src="assets/media/image64.png" alt="Picture 2">
+</div>
+</section>
+<section id="analyse-des-résultats-effet-de-la-vitesse-maximale" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Analyse des résultats : effet de la vitesse maximale</h2>
+<div class="slide-title">
+Analyse des résultats : effet de la vitesse maximale
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:48%;top:37%;width:27%;height:39%;" src="assets/vector/s43_Picture_4.svg" alt="Picture 4">
+<div class="ppt-table-wrap" style="left:50%;top:37%;width:48%;height:52%;">
+<table class="ppt-table">
+<tbody><tr>
+<td style="">
+</td>
+<td style="">
+</td>
+</tr>
+<tr>
+<td style="font-size:var(--content-size)">
+Vmax = 54 m/s
+</td>
+<td style="font-size:var(--content-size)">
+Vmax = 130 m/s
+</td>
+</tr>
+</tbody></table>
+</div>
+<img class="ppt-image" style="left:73%;top:38%;width:27%;height:38%;" src="assets/vector/s43_Image_1.svg" alt="Image 1">
+</div>
+</section>
+<section id="analyse-de-sensibilité-globale" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Analyse de sensibilité globale</h2>
+<div class="slide-title">
+Analyse de sensibilité globale
+</div>
+<div class="ppt-canvas">
+<div class="ppt-text" style="left:53%;top:12%;width:45%;height:73%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Variabilité:</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Tirages </span><span style="font-size:var(--content-size)">sobol</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+&nbsp;
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Incertitude:</span>
+</div>
+<div class="ppt-p" style="text-align:left">
+<span style="font-size:var(--content-size)">Tirages Monte-Carlo</span>
+</div>
+</div>
+<img class="ppt-image" style="left:66%;top:54%;width:27%;height:37%;" src="assets/media/image79.png" alt="Picture 6"> <img class="ppt-image" style="left:65%;top:10%;width:27%;height:37%;" src="assets/media/image80.png" alt="Picture 8">
+</div>
+</section>
+<section id="sobol-total-ensemble-des-paramètres" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Sobol total : ensemble des paramètres</h2>
+<div class="slide-title">
+Sobol total : ensemble des paramètres
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:52%;top:1%;width:44%;height:51%;" src="assets/media/image81.svg" alt="Graphique 4"> <img class="ppt-image" style="left:1%;top:1%;width:44%;height:48%;" src="assets/media/image82.svg" alt="Graphique 2"> <img class="ppt-image" style="left:2%;top:46%;width:44%;height:54%;" src="assets/media/image83.svg" alt="Graphique 1"> <img class="ppt-image" style="left:52%;top:49%;width:44%;height:48%;" src="assets/media/image84.svg" alt="Graphique 3">
+</div>
+</section>
+<section id="sobol-total-paramètres-technologiques" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Sobol total : paramètres technologiques</h2>
+<div class="slide-title">
+Sobol total : paramètres technologiques
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:52%;top:7%;width:44%;height:41%;" src="assets/media/image85.svg" alt="Graphique 1"> <img class="ppt-image" style="left:3%;top:7%;width:44%;height:43%;" src="assets/media/image86.svg" alt="Graphique 1"> <img class="ppt-image" style="left:3%;top:50%;width:44%;height:42%;" src="assets/media/image87.svg" alt="Graphique 1"> <img class="ppt-image" style="left:51%;top:49%;width:44%;height:43%;" src="assets/media/image88.svg" alt="Graphique 1">
+</div>
+</section>
+<section id="anova" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>ANOVA</h2>
+<div class="slide-title">
+ANOVA
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:1%;top:26%;width:44%;height:42%;" src="assets/media/image89.svg" alt="Graphique 2"> <img class="ppt-image" style="left:47%;top:49%;width:44%;height:42%;" src="assets/media/image90.svg" alt="Graphique 3"> <img class="ppt-image" style="left:48%;top:5%;width:44%;height:42%;" src="assets/media/image91.svg" alt="Graphique 1">
+</div>
+</section>
+<section id="évolution-des-classements" class="slide level2 editorial" data-part="3" data-subpart="4">
+<h2>Évolution des classements</h2>
+<div class="slide-title">
+Évolution des classements
+</div>
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:7%;top:18%;width:39%;height:52%;" src="assets/media/image92.svg" alt="Graphique 4"> <img class="ppt-image" style="left:56%;top:18%;width:40%;height:52%;" src="assets/media/image93.svg" alt="Graphique 3">
+</div>
+</section>
+<section id="references-part-3-1" class="slide level2 editorial references-slide" data-subpart="4" data-part="3">
+<h2>Références · Partie 03</h2>
+<div class="slide-title">Références · Partie 03</div><ol class="part-reference-list" start="1"><li id="reference-3-1">Taherdoost, H., &amp; Madanchian, M. (2023). Using PROMETHEE Method for Multi-Criteria Decision Making: Applications and Procedures. https://papers.ssrn.com/abstract=4464669</li><li id="reference-3-2">Wulf, C., Zapp, P., Schreiber, A., &amp; Kuckshinrichs, W. (2021). Setting thresholds to define indifferences and preferences in promethee for life cycle sustainability assessment of european hydrogen production. Sustainability (Switzerland), 13(13). https://doi.org/10.3390/SU13137009/S1</li></ol>
+</section>
+<section id="section-4" class="slide level2 editorial part-divider" data-part="4" data-subpart="1">
+<h2></h2>
+<div class="divider-number">
+PARTIE 04
+</div>
+<div class="divider-title">
+Perspectives
+</div>
+<div class="divider-subtitle">
+Synthèse des contributions et prolongements scientifiques et opérationnels.
+</div>
+</section>
+<section id="conclusion" class="slide level2 editorial" data-part="4" data-subpart="1">
+<h2>Conclusion</h2>
+<div class="slide-title">
+Conclusion
+</div>
+<div class="perspective-grid">
+<div class="perspective-column">
+<div class="perspective-kicker">
+ORGANISATION DE LA DÉCISION
+</div>
+<div class="perspective-title">
+Réorganisation des décisions publiques avec interactions publiques–privées
+</div>
+<div class="perspective-list">
+Réduction des risques<br>Meilleure prise en compte de la temporalité<br>Organisation plus explicite des interventions
+</div>
+</div>
+<div class="perspective-column">
+<div class="perspective-kicker">
+RECOMMANDATION TECHNOLOGIQUE
+</div>
+<div class="perspective-title">
+Méthodologie de réduction d’impact environnemental des trains
+</div>
+<div class="perspective-list">
+Adaptable à différents roulements, matériels roulants et technologies<br>Multicritère<br>Facile à interpréter pour des non-experts<br>Transparente grâce à des données publiques<br>Extensible à d’autres domaines de mobilité
+</div>
+</div>
+</div>
+</section>
+<section id="perspectives" class="slide level2 editorial" data-part="4" data-subpart="1">
+<h2>Perspectives</h2>
+<div class="slide-title">
+Perspectives scientifiques et opérationnelles
+</div>
+<div class="perspective-grid">
+<div class="perspective-column">
+<div class="perspective-kicker">
+MÉTHODE
+</div>
+<div class="perspective-list">
+Economic indicators<br>MCDM — approfondissement méthodologique<br>Computational optimization<br>Uncertainty precision<br>Criteria development and weighting
+</div>
+</div>
+<div class="perspective-column">
+<div class="perspective-kicker">
+APPLICATIONS
+</div>
+<div class="perspective-list">
+Extension aux lignes non électrifiées<br>Extension à d’autres systèmes de mobilité<br>Outil opérationnel d’aide à la décision régionale
+</div>
+</div>
+</div>
+</section>
+<section id="section-5" class="slide level2 end-slide" data-part="4" data-subpart="1">
+<h2></h2>
+<div class="end-title">
+Merci.
+</div>
+<div class="end-subtitle">
+Questions &amp; discussion
+</div>
+<div class="end-footer">
+<span>Benoît Volant · CentraleSupélec · LGI · IKOS</span><span>bvolant@ikosconsulting.com</span>
+</div>
+</section>
+<section id="limites-planétaires" class="slide level2 appendix-slide">
+<h2>Limites planétaires</h2>
+<div class="appendix-label">
+ANNEXE A1
+</div>
+<div class="appendix-title">
+Limites planétaires
+</div>
+<div class="appendix-body">
+<div class="ppt-canvas" style="top:0;left:0;right:0;bottom:0;">
+<img class="ppt-image" style="left:31%;top:11%;width:38%;height:19%;" src="assets/vector/s57_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6"> <img class="ppt-image" style="left:16%;top:41%;width:68%;height:44%;" src="assets/media/image99.png" alt="Picture 2">
+</div>
+</div>
+</section>
+<section id="critères-dimpact-environnementaux" class="slide level2 appendix-slide">
+<h2>Critères d’impact environnementaux</h2>
+<div class="appendix-label">
+ANNEXE A2
+</div>
+<div class="appendix-title">
+Critères d’impact environnementaux
+</div>
+<div class="appendix-body">
+<div class="ppt-canvas" style="top:0;left:0;right:0;bottom:0;">
+<img class="ppt-image" style="left:38%;top:48%;width:33%;height:39%;" src="assets/media/image100.svg" alt="Graphique 1"> <img class="ppt-image" style="left:82%;top:46%;width:10%;height:41%;" src="assets/media/image101.svg" alt="Graphique 1"> <img class="ppt-image" style="left:48%;top:8%;width:44%;height:40%;" src="assets/vector/s58_Graphique_1.svg" alt="Graphique 1">
+<div class="ppt-text" style="left:58%;top:2%;width:25%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">Impacts intermédiaires</span>
+</div>
+</div>
+<div class="ppt-text" style="left:76%;top:86%;width:22%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">Score</span>
+</div>
+</div>
+<div class="ppt-text" style="left:47%;top:88%;width:16%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center">
+<span style="font-size:var(--content-size);font-weight:700">Dégâts </span>
+</div>
+</div>
+<img class="ppt-image" style="left:3%;top:7%;width:36%;height:71%;" src="assets/media/image103.svg" alt="Graphique 11">
+</div>
+</div>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="presentation_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="presentation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="presentation_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="presentation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 0.3,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: false,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'fast',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1600,
+
+        height: 900,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script>
+
+    (function(){
+
+     const S=[
+
+      {id:1,code:"01",title:"Introduction",color:"#440F76",subparts:["Introduction"]},
+
+      {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Méthode","Application","Résultats"]},
+
+      {id:3,code:"03",title:"ACV + MCDM",color:"#E44F64",subparts:["Méthode","Application","Résultats","Validation"]},
+
+      {id:4,code:"04",title:"Perspectives",color:"#FEA973",subparts:["Perspectives"]}
+
+     ];
+
+     const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
+
+    
+
+     function initializeNavigation() {
+
+      const deck = window.Reveal;
+
+      const slides = deck.getSlides();
+
+      const mainSlides = slides.filter(slide => !slide.matches('.appendix-slide'));
+
+      const printMode = new URLSearchParams(location.search).has('print-pdf');
+
+      const visibleOn = slide => slide && slide.dataset.part &&
+       !slide.matches('.cover, .end-slide, .appendix-slide');
+
+      // Ajuster la grande matrice aux deux dimensions sans couper les cellules.
+      function fitActorTables() {
+       slides.forEach(slide => slide.querySelectorAll('.actor-matrix-small').forEach(box => {
+        const width = box.clientWidth, height = box.clientHeight;
+        if (!width || !height) return;
+        const table = box.querySelector('table');
+        table.style.transform = 'none';
+        const measure = value => {
+         table.style.width = `${value}px`;
+         return table.offsetWidth / table.offsetHeight;
+        };
+        // Les colonnes restent automatiques ; chercher un rapport largeur/hauteur
+        // proche de celui du cadre pour utiliser au mieux la place disponible.
+        const ratio = width / height;
+        let low = width, high = width;
+        while (measure(high) < ratio && high < width * 16) high *= 2;
+        for (let i = 0; i < 12; i++) {
+         const mid = (low + high) / 2;
+         if (measure(mid) < ratio) low = mid;
+         else high = mid;
+        }
+        measure(high);
+        const scale = Math.min(1, width / table.offsetWidth, height / table.offsetHeight);
+        table.style.transform = `scale(${scale})`;
+       }));
+      }
+    
+
+      // Les contenus des slides conservent Auto-Animate ; le template est independant.
+
+      slides.forEach(slide => {
+
+       if (!printMode) slide.setAttribute('data-auto-animate', 'true');
+
+       const part = S.find(part => part.id === Number(slide.dataset.part));
+
+       if (part) slide.style.setProperty('--accent', part.color);
+
+      });
+
+    
+
+      function createTemplate() {
+
+       const template = document.createElement('div');
+
+       template.className = 'phd-template';
+
+       template.innerHTML = `
+
+        <div class="phd-location">
+
+         <span class="phd-location-code"></span><span class="phd-location-part"></span>
+
+         <span class="phd-location-sep">/</span><span class="phd-location-sub"></span>
+
+        </div>
+
+        <div class="phd-map">${S.map(part => `
+
+         <div class="part-unit" data-part-id="${part.id}" style="--part-color:${part.color}">
+
+          <div class="part-index">${part.code}</div>
+
+          <div class="part-disc">${part.subparts.map((_, index) => `
+
+           <span class="sub-node" style="left:${POS[part.subparts.length][index][0]}%;top:${POS[part.subparts.length][index][1]}%"></span>
+
+          `).join('')}</div>
+
+         </div>`).join('')}
+
+        </div>
+
+        <div class="phd-rail">
+
+         <div class="rail-heading"><div class="rail-part"></div><div class="rail-subpart"></div></div>
+
+         <div class="rail-track"><div class="rail-fill"></div><span class="rail-start"></span>
+
+          <span class="rail-end"></span><span class="rail-cursor"></span></div>
+
+         <div class="rail-caption">progression de la partie</div>
+
+        </div>
+
+        <div class="rail-count"><span class="rail-count-current"></span><span class="rail-count-total"></span></div>`;
+
+       return template;
+
+      }
+
+    
+
+      // Mise a jour des valeurs uniquement : les noeuds fixes ne sont jamais recrees.
+
+      function updateTemplate(template, slide) {
+
+       template.hidden = !visibleOn(slide);
+
+       if (template.hidden) return;
+
+       const part = S.find(part => part.id === Number(slide.dataset.part));
+
+       const sub = Math.max(1, Math.min(Number(slide.dataset.subpart || 1), part.subparts.length));
+       const subTitle = slide.classList.contains('references-slide') ? 'Références' : part.subparts[sub - 1];
+       const partSlides = mainSlides.filter(item => item.dataset.part === slide.dataset.part);
+
+       const progress = partSlides.length <= 1 ? 100 : partSlides.indexOf(slide) / (partSlides.length - 1) * 100;
+
+       template.style.setProperty('--accent', part.color);
+
+       template.style.setProperty('--part-progress', `${progress}%`);
+
+       const setText = (selector, value) => {
+
+        const node = template.querySelector(selector);
+
+        if (node.textContent !== value) node.textContent = value;
+
+       };
+
+       setText('.phd-location-code', `${part.code}.${String(sub).padStart(2, '0')}`);
+
+       setText('.phd-location-part', part.title);
+
+       setText('.phd-location-sub', subTitle);
+       setText('.rail-part', `Part ${part.code}`);
+
+       setText('.rail-subpart', subTitle);
+       setText('.rail-count-current', String(mainSlides.indexOf(slide) + 1).padStart(2, '0'));
+
+       setText('.rail-count-total', ` / ${String(mainSlides.length).padStart(2, '0')}`);
+
+       template.querySelectorAll('.part-unit').forEach(unit => {
+
+        const id = Number(unit.dataset.partId);
+
+        unit.classList.toggle('past', id < part.id);
+
+        unit.classList.toggle('active', id === part.id);
+
+        unit.querySelectorAll('.sub-node').forEach((node, index) => {
+
+         node.classList.toggle('done', id < part.id || (id === part.id && index + 1 < sub));
+
+         node.classList.toggle('current', id === part.id && index + 1 === sub);
+
+         node.classList.toggle('future', id > part.id || (id === part.id && index + 1 > sub));
+
+        });
+
+       });
+
+      }
+
+    
+
+      const overlay = createTemplate();
+
+      overlay.classList.add('phd-template-live');
+
+      deck.getRevealElement().appendChild(overlay);
+
+    
+
+      // Meme repere et meme echelle que les slides, sans participer a leurs transitions.
+
+      function alignTemplate() {
+
+       if (printMode || deck.isOverview()) return;
+
+       const canvas = deck.getSlidesElement();
+
+       const bounds = canvas.getBoundingClientRect();
+
+       const rootBounds = deck.getRevealElement().getBoundingClientRect();
+
+       Object.assign(overlay.style, {
+
+        width: `${canvas.offsetWidth}px`, height: `${canvas.offsetHeight}px`,
+
+        left: `${bounds.left - rootBounds.left}px`, top: `${bounds.top - rootBounds.top}px`,
+
+        transform: `scale(${deck.getScale()})`
+
+       });
+
+      }
+
+    
+
+      function refresh() {
+       fitActorTables();
+       const wasHidden = overlay.hidden;
+
+       overlay.classList.toggle('no-motion', wasHidden);
+
+       updateTemplate(overlay, deck.getCurrentSlide());
+
+       if (printMode || deck.isOverview()) overlay.hidden = true;
+
+       alignTemplate();
+
+       // Evite un trajet du curseur depuis la derniere slide visible apres une annexe.
+
+       if (wasHidden) {
+
+        void overlay.offsetHeight;
+
+        overlay.classList.remove('no-motion');
+
+       }
+
+      }
+
+    
+
+      // L'export PDF dispose d'une copie statique propre a chaque page.
+
+      function preparePrint() {
+       fitActorTables();
+       slides.filter(visibleOn).forEach(slide => {
+
+        if (slide.querySelector('.phd-template-print')) return;
+
+        const template = createTemplate();
+
+        template.classList.add('phd-template-print');
+
+        updateTemplate(template, slide);
+
+        slide.appendChild(template);
+
+       });
+
+      }
+
+      if (printMode) preparePrint();
+
+      window.addEventListener('beforeprint', preparePrint);
+
+      window.addEventListener('afterprint', () => {
+
+       if (!printMode) document.querySelectorAll('.phd-template-print').forEach(node => node.remove());
+
+      });
+
+      deck.on('slidechanged', refresh);
+
+      deck.on('resize', alignTemplate);
+      deck.on('resize', fitActorTables);
+      deck.on('pdf-ready', fitActorTables);
+      deck.on('overviewshown', () => { overlay.hidden = true; });
+
+      deck.on('overviewhidden', refresh);
+
+      overlay.hidden = true;
+
+      refresh();
+
+     }
+
+     window.addEventListener('load', () => {
+
+      if (Reveal.isReady()) initializeNavigation();
+
+      else Reveal.on('ready', initializeNavigation);
+
+     }, {once: true});
+
+    })();
+
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

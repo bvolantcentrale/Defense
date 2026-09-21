@@ -1,0 +1,39 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const chapterCount = 4;
+
+  function addRail(slide) {
+    if (slide.querySelector(".phd-rail")) return;
+    if (slide.classList.contains("cover")) return;
+
+    const chapter = parseInt(slide.dataset.step || "1", 10);
+    const number = slide.dataset.chapter || String(chapter).padStart(2, "0");
+    const title = slide.dataset.chapterTitle || "";
+
+    const rail = document.createElement("div");
+    rail.className = "phd-rail";
+
+    let nodes = "";
+    for (let i = 1; i <= chapterCount; i++) {
+      let state = "";
+      if (i < chapter) state = " done";
+      if (i === chapter) state = " active";
+      nodes += `<span class="rail-node${state}"></span>`;
+    }
+
+    rail.innerHTML = `
+      <div class="rail-current">
+        <div class="rail-number">${number}</div>
+        <div class="rail-title">${title}</div>
+      </div>
+      <div class="rail-line"></div>
+      ${nodes}
+      <div class="rail-footer">PhD · 2026</div>
+    `;
+
+    slide.appendChild(rail);
+  }
+
+  document.querySelectorAll(".reveal .slides section").forEach(addRail);
+});
+</script>

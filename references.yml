@@ -1,0 +1,38 @@
+# Sources reprises du document existant. Completer les notices si necessaire.
+part-references:
+  tsvetkova-ouarda-2019:
+    short: "Tsvetkova & Ouarda (2019)"
+    full: "Tsvetkova, O., & Ouarda, T. B. M. J. (2019). Quasi-Monte Carlo technique in global sensitivity analysis of wind resource assessment with a study on UAE. Journal of Renewable and Sustainable Energy, 11(5)."
+  bloch-2023:
+    short: "Bloch et al. (2023)"
+    full: "Bloch, F., Jackson, M. O., & Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453."
+  bolla-2011:
+    short: "Bolla (2011)"
+    full: "Bolla, M. (2011). Penalized versions of the Newman-Girvan modularity and their relation to normalized cuts and k-means clustering. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 84(1)"
+  li-2023:
+    short: "Li et al. (2023)"
+    full: "Li, Y., Nguyen, J., Anastasiu, D. C., & Arriaga, E. A. (2023). CosTaL: an accurate and scalable graph-based clustering algorithm for high-dimensional single-cell data analysis. Briefings in Bioinformatics, 24(3)"
+  taherdoost-2023:
+    short: "Taherdoost & Madanchian (2023)"
+    full: "Taherdoost, H., & Madanchian, M. (2023). Using PROMETHEE Method for Multi-Criteria Decision Making: Applications and Procedures. https://papers.ssrn.com/abstract=4464669"
+  wulf-2021:
+    short: "Wulf et al. (2021)"
+    full: "Wulf, C., Zapp, P., Schreiber, A., & Kuckshinrichs, W. (2021). Setting thresholds to define indifferences and preferences in promethee for life cycle sustainability assessment of european hydrogen production. Sustainability (Switzerland), 13(13). https://doi.org/10.3390/SU13137009/S1"
+  literature-1:
+    short: "Guillemot, 2012"
+    full: "Guillemot, 2012. Approche : Participatory approach and local governance."
+  literature-2:
+    short: "Bonin et al., 2001"
+    full: "Bonin et al., 2001. Approche : Graphical modeling and stakeholder zoning."
+  literature-3:
+    short: "Cameron et al., 2011"
+    full: "Cameron et al., 2011. Approche : Organizational impact assessment for change."
+  literature-4:
+    short: "Savage et al., 1991"
+    full: "Savage et al., 1991. Approche : Strategies for assessing And managing Organizational Stakeholders."
+  literature-5:
+    short: "Potters & van Winden, 1992b"
+    full: "Potters & van Winden, 1992b. Approche : Lobbying and asymmetric information."
+  literature-6:
+    short: "A. Tsvetkova et al., 2019"
+    full: "A. Tsvetkova et al., 2019. Approche : Business stakeholders modeling."

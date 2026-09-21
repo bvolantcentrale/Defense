@@ -1,0 +1,174 @@
+<script>
+(function(){
+ const S=[
+  {id:1,code:"01",title:"Introduction",color:"#440F76",subparts:["Introduction"]},
+  {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Méthode","Application","Résultats"]},
+  {id:3,code:"03",title:"ACV + MCDM",color:"#E44F64",subparts:["Méthode","Application","Résultats","Validation"]},
+  {id:4,code:"04",title:"Perspectives",color:"#FEA973",subparts:["Perspectives"]}
+ ];
+ const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
+
+ function initializeNavigation() {
+  const deck = window.Reveal;
+  const slides = deck.getSlides();
+  const mainSlides = slides.filter(slide => !slide.matches('.appendix-slide'));
+  const printMode = new URLSearchParams(location.search).has('print-pdf');
+  const visibleOn = slide => slide && slide.dataset.part &&
+   !slide.matches('.cover, .end-slide, .appendix-slide');
+
+  // Ajuster la grande matrice aux deux dimensions sans couper les cellules.
+  function fitActorTables() {
+   slides.forEach(slide => slide.querySelectorAll('.actor-matrix-small').forEach(box => {
+    const width = box.clientWidth, height = box.clientHeight;
+    if (!width || !height) return;
+    const table = box.querySelector('table');
+    table.style.transform = 'none';
+    const measure = value => {
+     table.style.width = `${value}px`;
+     return table.offsetWidth / table.offsetHeight;
+    };
+    // Les colonnes restent automatiques ; chercher un rapport largeur/hauteur
+    // proche de celui du cadre pour utiliser au mieux la place disponible.
+    const ratio = width / height;
+    let low = width, high = width;
+    while (measure(high) < ratio && high < width * 16) high *= 2;
+    for (let i = 0; i < 12; i++) {
+     const mid = (low + high) / 2;
+     if (measure(mid) < ratio) low = mid;
+     else high = mid;
+    }
+    measure(high);
+    const scale = Math.min(1, width / table.offsetWidth, height / table.offsetHeight);
+    table.style.transform = `scale(${scale})`;
+   }));
+  }
+
+  // Les contenus des slides conservent Auto-Animate ; le template est independant.
+  slides.forEach(slide => {
+   if (!printMode) slide.setAttribute('data-auto-animate', 'true');
+   const part = S.find(part => part.id === Number(slide.dataset.part));
+   if (part) slide.style.setProperty('--accent', part.color);
+  });
+
+  function createTemplate() {
+   const template = document.createElement('div');
+   template.className = 'phd-template';
+   template.innerHTML = `
+    <div class="phd-location">
+     <span class="phd-location-code"></span><span class="phd-location-part"></span>
+     <span class="phd-location-sep">/</span><span class="phd-location-sub"></span>
+    </div>
+    <div class="phd-map">${S.map(part => `
+     <div class="part-unit" data-part-id="${part.id}" style="--part-color:${part.color}">
+      <div class="part-index">${part.code}</div>
+      <div class="part-disc">${part.subparts.map((_, index) => `
+       <span class="sub-node" style="left:${POS[part.subparts.length][index][0]}%;top:${POS[part.subparts.length][index][1]}%"></span>
+      `).join('')}</div>
+     </div>`).join('')}
+    </div>
+    <div class="phd-rail">
+     <div class="rail-heading"><div class="rail-part"></div><div class="rail-subpart"></div></div>
+     <div class="rail-track"><div class="rail-fill"></div><span class="rail-start"></span>
+      <span class="rail-end"></span><span class="rail-cursor"></span></div>
+     <div class="rail-caption">progression de la partie</div>
+    </div>
+    <div class="rail-count"><span class="rail-count-current"></span><span class="rail-count-total"></span></div>`;
+   return template;
+  }
+
+  // Mise a jour des valeurs uniquement : les noeuds fixes ne sont jamais recrees.
+  function updateTemplate(template, slide) {
+   template.hidden = !visibleOn(slide);
+   if (template.hidden) return;
+   const part = S.find(part => part.id === Number(slide.dataset.part));
+   const sub = Math.max(1, Math.min(Number(slide.dataset.subpart || 1), part.subparts.length));
+   const subTitle = slide.classList.contains('references-slide') ? 'Références' : part.subparts[sub - 1];
+   const partSlides = mainSlides.filter(item => item.dataset.part === slide.dataset.part);
+   const progress = partSlides.length <= 1 ? 100 : partSlides.indexOf(slide) / (partSlides.length - 1) * 100;
+   template.style.setProperty('--accent', part.color);
+   template.style.setProperty('--part-progress', `${progress}%`);
+   const setText = (selector, value) => {
+    const node = template.querySelector(selector);
+    if (node.textContent !== value) node.textContent = value;
+   };
+   setText('.phd-location-code', `${part.code}.${String(sub).padStart(2, '0')}`);
+   setText('.phd-location-part', part.title);
+   setText('.phd-location-sub', subTitle);
+   setText('.rail-part', `Part ${part.code}`);
+   setText('.rail-subpart', subTitle);
+   setText('.rail-count-current', String(mainSlides.indexOf(slide) + 1).padStart(2, '0'));
+   setText('.rail-count-total', ` / ${String(mainSlides.length).padStart(2, '0')}`);
+   template.querySelectorAll('.part-unit').forEach(unit => {
+    const id = Number(unit.dataset.partId);
+    unit.classList.toggle('past', id < part.id);
+    unit.classList.toggle('active', id === part.id);
+    unit.querySelectorAll('.sub-node').forEach((node, index) => {
+     node.classList.toggle('done', id < part.id || (id === part.id && index + 1 < sub));
+     node.classList.toggle('current', id === part.id && index + 1 === sub);
+     node.classList.toggle('future', id > part.id || (id === part.id && index + 1 > sub));
+    });
+   });
+  }
+
+  const overlay = createTemplate();
+  overlay.classList.add('phd-template-live');
+  deck.getRevealElement().appendChild(overlay);
+
+  // Meme repere et meme echelle que les slides, sans participer a leurs transitions.
+  function alignTemplate() {
+   if (printMode || deck.isOverview()) return;
+   const canvas = deck.getSlidesElement();
+   const bounds = canvas.getBoundingClientRect();
+   const rootBounds = deck.getRevealElement().getBoundingClientRect();
+   Object.assign(overlay.style, {
+    width: `${canvas.offsetWidth}px`, height: `${canvas.offsetHeight}px`,
+    left: `${bounds.left - rootBounds.left}px`, top: `${bounds.top - rootBounds.top}px`,
+    transform: `scale(${deck.getScale()})`
+   });
+  }
+
+  function refresh() {
+   fitActorTables();
+   const wasHidden = overlay.hidden;
+   overlay.classList.toggle('no-motion', wasHidden);
+   updateTemplate(overlay, deck.getCurrentSlide());
+   if (printMode || deck.isOverview()) overlay.hidden = true;
+   alignTemplate();
+   // Evite un trajet du curseur depuis la derniere slide visible apres une annexe.
+   if (wasHidden) {
+    void overlay.offsetHeight;
+    overlay.classList.remove('no-motion');
+   }
+  }
+
+  // L'export PDF dispose d'une copie statique propre a chaque page.
+  function preparePrint() {
+   fitActorTables();
+   slides.filter(visibleOn).forEach(slide => {
+    if (slide.querySelector('.phd-template-print')) return;
+    const template = createTemplate();
+    template.classList.add('phd-template-print');
+    updateTemplate(template, slide);
+    slide.appendChild(template);
+   });
+  }
+  if (printMode) preparePrint();
+  window.addEventListener('beforeprint', preparePrint);
+  window.addEventListener('afterprint', () => {
+   if (!printMode) document.querySelectorAll('.phd-template-print').forEach(node => node.remove());
+  });
+  deck.on('slidechanged', refresh);
+  deck.on('resize', alignTemplate);
+  deck.on('resize', fitActorTables);
+  deck.on('pdf-ready', fitActorTables);
+  deck.on('overviewshown', () => { overlay.hidden = true; });
+  deck.on('overviewhidden', refresh);
+  overlay.hidden = true;
+  refresh();
+ }
+ window.addEventListener('load', () => {
+  if (Reveal.isReady()) initializeNavigation();
+  else Reveal.on('ready', initializeNavigation);
+ }, {once: true});
+})();
+</script>
