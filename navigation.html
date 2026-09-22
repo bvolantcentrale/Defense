@@ -3,7 +3,7 @@
  const S=[
   {id:1,code:"01",title:"Introduction",color:"#440F76",subparts:["Introduction"]},
   {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Méthode","Application","Résultats"]},
-  {id:3,code:"03",title:"ACV + MCDM",color:"#E44F64",subparts:["Méthode","Application","Résultats","Validation"]},
+  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Méthode","Application","Résultats","Validation"]},
   {id:4,code:"04",title:"Perspectives",color:"#FEA973",subparts:["Perspectives"]}
  ];
  const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
@@ -56,11 +56,9 @@
    template.innerHTML = `
     <div class="phd-location">
      <span class="phd-location-code"></span><span class="phd-location-part"></span>
-     <span class="phd-location-sep">/</span><span class="phd-location-sub"></span>
     </div>
     <div class="phd-map">${S.map(part => `
      <div class="part-unit" data-part-id="${part.id}" style="--part-color:${part.color}">
-      <div class="part-index">${part.code}</div>
       <div class="part-disc">${part.subparts.map((_, index) => `
        <span class="sub-node" style="left:${POS[part.subparts.length][index][0]}%;top:${POS[part.subparts.length][index][1]}%"></span>
       `).join('')}</div>
@@ -70,7 +68,6 @@
      <div class="rail-heading"><div class="rail-part"></div><div class="rail-subpart"></div></div>
      <div class="rail-track"><div class="rail-fill"></div><span class="rail-start"></span>
       <span class="rail-end"></span><span class="rail-cursor"></span></div>
-     <div class="rail-caption">progression de la partie</div>
     </div>
     <div class="rail-count"><span class="rail-count-current"></span><span class="rail-count-total"></span></div>`;
    return template;
@@ -91,11 +88,10 @@
     const node = template.querySelector(selector);
     if (node.textContent !== value) node.textContent = value;
    };
-   setText('.phd-location-code', `${part.code}.${String(sub).padStart(2, '0')}`);
-   setText('.phd-location-part', part.title);
-   setText('.phd-location-sub', subTitle);
-   setText('.rail-part', `Part ${part.code}`);
-   setText('.rail-subpart', subTitle);
+   setText('.phd-location-code', `${part.id}.${sub}`);
+   setText('.phd-location-part', subTitle);
+   setText('.rail-part', `Part ${part.id}`);
+   setText('.rail-subpart', part.title);
    setText('.rail-count-current', String(mainSlides.indexOf(slide) + 1).padStart(2, '0'));
    setText('.rail-count-total', ` / ${String(mainSlides.length).padStart(2, '0')}`);
    template.querySelectorAll('.part-unit').forEach(unit => {
@@ -109,6 +105,42 @@
     });
    });
   }
+
+  // Les fragments pilotent le focus sans modifier la geometrie ni les couleurs.
+  const resultsTable = document.querySelector('.indicator-results-table');
+  const resultsSlide = resultsTable && resultsTable.closest('section');
+  if (resultsTable) {
+   let actor = '';
+   resultsTable.querySelectorAll('tbody tr').forEach(row => {
+    const id = row.querySelector('[data-cell^="A"]');
+    if (id) actor = id.textContent.trim();
+    row.dataset.actor = actor;
+   });
+  }
+  function refreshActorFocus() {
+   if (!resultsSlide) return;
+   const steps = [...resultsSlide.querySelectorAll('.indicator-focus-step.visible')];
+   const focus = printMode || !steps.length ? 'all' : steps[steps.length - 1].dataset.actorFocus;
+   const groups = {
+    region: ['A1'],
+    top: ['A1', 'A2', 'A5', 'A11', 'A3', 'A6', 'A4', 'A12', 'A9'],
+    dgitm: ['A13']
+   };
+   const labels = {
+    all: 'Tous les acteurs',
+    region: 'Focus : Région',
+    top: 'Focus : Acteurs majeurs',
+    dgitm: 'Focus : DGITM'
+   };
+   resultsTable.querySelectorAll('tbody tr').forEach(row => {
+    row.classList.toggle('actor-muted', focus !== 'all' && !groups[focus].includes(row.dataset.actor));
+   });
+   resultsSlide.querySelector('.indicator-focus-label').textContent = labels[focus];
+  }
+  deck.on('fragmentshown', refreshActorFocus);
+  deck.on('fragmenthidden', refreshActorFocus);
+  deck.on('slidechanged', refreshActorFocus);
+  refreshActorFocus();
 
   const overlay = createTemplate();
   overlay.classList.add('phd-template-live');
@@ -127,7 +159,18 @@
    });
   }
 
+  // Réserver la hauteur réelle des notices complètes, y compris pour l'impression.
+  function fitReferences() {
+   slides.forEach(slide => {
+    const footer = slide.querySelector('.slide-references');
+    if (footer && footer.offsetHeight) {
+     slide.style.setProperty('--references-space', `${Math.max(110, footer.offsetHeight + 32)}px`);
+    }
+   });
+  }
+
   function refresh() {
+   fitReferences();
    fitActorTables();
    const wasHidden = overlay.hidden;
    overlay.classList.toggle('no-motion', wasHidden);
@@ -143,6 +186,7 @@
 
   // L'export PDF dispose d'une copie statique propre a chaque page.
   function preparePrint() {
+   fitReferences();
    fitActorTables();
    slides.filter(visibleOn).forEach(slide => {
     if (slide.querySelector('.phd-template-print')) return;
@@ -159,8 +203,10 @@
   });
   deck.on('slidechanged', refresh);
   deck.on('resize', alignTemplate);
+  deck.on('resize', fitReferences);
   deck.on('resize', fitActorTables);
   deck.on('pdf-ready', fitActorTables);
+  deck.on('pdf-ready', fitReferences);
   deck.on('overviewshown', () => { overlay.hidden = true; });
   deck.on('overviewhidden', refresh);
   overlay.hidden = true;

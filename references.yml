@@ -1,5 +1,11 @@
 # Sources reprises du document existant. Completer les notices si necessaire.
 part-references:
+  iso-14040:
+    short: "ISO 14040 (2006)"
+    full: "ISO (2006). ISO 14040 - Management environnemental - Analyse du cycle de vie - Principes et cadre."
+  iso-14044:
+    short: "ISO 14044 (2006)"
+    full: "ISO (2006). ISO 14044 - Management environnemental - Analyse du cycle de vie - Exigences et lignes directrices."
   tsvetkova-ouarda-2019:
     short: "Tsvetkova & Ouarda (2019)"
     full: "Tsvetkova, O., & Ouarda, T. B. M. J. (2019). Quasi-Monte Carlo technique in global sensitivity analysis of wind resource assessment with a study on UAE. Journal of Renewable and Sustainable Energy, 11(5)."
@@ -9,6 +15,14 @@ part-references:
   bolla-2011:
     short: "Bolla (2011)"
     full: "Bolla, M. (2011). Penalized versions of the Newman-Girvan modularity and their relation to normalized cuts and k-means clustering. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 84(1)"
+  # Le paragraphe fourni ne contient que les auteurs et l’année pour ces deux sources.
+  # Compléter leurs notices avec la bibliographie d’origine ; ne pas déduire de titre.
+  giannikas-2022:
+    short: "Giannikas et al. (2022)"
+    full: "Giannikas et al. (2022)."
+  riva-2023:
+    short: "Riva et al. (2023)"
+    full: "Riva et al. (2023)."
   li-2023:
     short: "Li et al. (2023)"
     full: "Li, Y., Nguyen, J., Anastasiu, D. C., & Arriaga, E. A. (2023). CosTaL: an accurate and scalable graph-based clustering algorithm for high-dimensional single-cell data analysis. Briefings in Bioinformatics, 24(3)"

@@ -1,5 +1,7 @@
 -- Références locales à chaque grande partie, produites au rendu (HTML et PDF).
 local REFERENCES_PER_PAGE = 10
+-- Introduction : notices en pied de page uniquement, sans récapitulatif final.
+local FOOTER_ONLY_PARTS = { ['1'] = true }
 
 local function has_class(el, name)
   return el.classes:includes(name)
@@ -23,6 +25,7 @@ function Pandoc(doc)
   end
 
   local function recap()
+    if FOOTER_ONLY_PARTS[part] then return end
     -- Dix entrées par page pour conserver une taille de lecture confortable.
     local pages = math.ceil(#used / REFERENCES_PER_PAGE)
     for page = 1, pages do
@@ -52,13 +55,18 @@ function Pandoc(doc)
       if not seen[key] then
         local n = numbers[key]
         local page = math.ceil(n/REFERENCES_PER_PAGE)
-        refs[#refs+1] = '<a href="#/references-part-' .. part .. '-' .. page .. '">[' .. n .. '] ' .. escape(pandoc.utils.stringify(ref.short)) .. '</a>'
+        local text = '[' .. n .. '] ' .. escape(pandoc.utils.stringify(ref.full))
+        if FOOTER_ONLY_PARTS[part] then
+          refs[#refs+1] = '<span class="slide-reference-entry">' .. text .. '</span>'
+        else
+          refs[#refs+1] = '<a class="slide-reference-entry" href="#/references-part-' .. part .. '-' .. page .. '">' .. text .. '</a>'
+        end
         seen[key] = true
       end
     end
     if #refs > 0 then
       slide.classes:insert('has-slide-references')
-      output:insert(pandoc.RawBlock('html', '<div class="slide-references" role="note" aria-label="Références de la diapositive">' .. table.concat(refs, '<span class="reference-separator"> · </span>') .. '</div>'))
+      output:insert(pandoc.RawBlock('html', '<div class="slide-references" role="note" aria-label="Références de la diapositive">' .. table.concat(refs, '\n') .. '</div>'))
     end
   end
 
