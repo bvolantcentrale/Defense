@@ -31,9 +31,15 @@ function Pandoc(doc)
     for page = 1, pages do
       local title = 'Références · Partie ' .. string.format('%02d', tonumber(part))
       if pages > 1 then title = title .. ' · ' .. page .. '/' .. pages end
+      local classes = {'editorial', 'references-slide'}
+      local attributes = {['data-part']=part, ['data-subpart']=subpart}
+      if part == '2' or part == '3' then
+        classes[#classes+1] = 'unnumbered-subpart'
+        attributes['data-subpart'] = nil
+      end
       output:insert(pandoc.Header(2, title, pandoc.Attr(
         'references-part-' .. part .. '-' .. page,
-        {'editorial', 'references-slide'}, {['data-part']=part, ['data-subpart']=subpart})))
+        classes, attributes)))
       local html = '<div class="slide-title">' .. escape(title) .. '</div><ol class="part-reference-list" start="' .. ((page-1)*REFERENCES_PER_PAGE+1) .. '">'
       for i = (page-1)*REFERENCES_PER_PAGE+1, math.min(page*REFERENCES_PER_PAGE, #used) do
         html = html .. '<li id="reference-' .. part .. '-' .. i .. '">' .. escape(pandoc.utils.stringify(entry(used[i]).full)) .. '</li>'

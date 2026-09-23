@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1020" height="1030" viewBox="0 0 1020 1030">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+</marker>
+</defs>
+<g><path d="M 30 12 h 300 l 20 20 -20 20 h -300 z" fill="#333333" /><text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff"><tspan x="180" y="41">Catégories d’impact</tspan></text></g>
+<g><path d="M 430 12 h 220 l 20 20 -20 20 h -220 z" fill="#333333" /><text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#ffffff"><tspan x="540" y="38">Mécanismes de dommage</tspan></text></g>
+<g><path d="M 780 12 h 220 l 20 24 -20 24 h -220 z" fill="#333333" /><text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff"><tspan x="890" y="31">Domaines</tspan><tspan x="890" y="57">de protection</tspan></text></g>
+<path d="M 330 91 C 380 91, 380 117, 430 117" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 143 C 380 143, 380 117, 430 117" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 195 C 380 195, 380 213, 430 213" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 195 C 380 195, 380 309, 430 309" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 247 C 380 247, 380 213, 430 213" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 247 C 380 247, 380 309, 430 309" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 299 C 380 299, 380 213, 430 213" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 351 C 380 351, 380 309, 430 309" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 403 C 380 403, 380 309, 430 309" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 403 C 380 403, 380 405, 430 405" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 403 C 380 403, 380 501, 430 501" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 403 C 380 403, 380 597, 430 597" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 455 C 380 455, 380 405, 430 405" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 455 C 380 455, 380 501, 430 501" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 455 C 380 455, 380 597, 430 597" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 507 C 380 507, 380 501, 430 501" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 559 C 380 559, 380 501, 430 501" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 611 C 380 611, 380 597, 430 597" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 663 C 380 663, 380 597, 430 597" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 715 C 380 715, 380 597, 430 597" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 767 C 380 767, 380 597, 430 597" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 819 C 380 819, 380 693, 430 693" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 871 C 380 871, 380 693, 430 693" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 923 C 380 923, 380 789, 430 789" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 330 975 C 380 975, 380 885, 430 885" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowhead)" />
+<path d="M 650 117 C 725 117, 725 152, 800 152" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 213 C 725 213, 725 152, 800 152" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 309 C 725 309, 725 152, 800 152" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 405 C 725 405, 725 152, 800 152" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 501 C 725 501, 725 316, 800 316" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 597 C 725 597, 725 316, 800 316" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 693 C 725 693, 725 316, 800 316" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 789 C 725 789, 725 480, 800 480" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" />
+<path d="M 650 885 C 725 885, 725 480, 800 480" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowhead)" />
+<rect x="30" y="70" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="97">Particules fines</tspan></text>
+<rect x="30" y="122" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="140">Formation d’ozone</tspan><tspan x="180" y="159">(santé humaine)</tspan></text>
+<rect x="30" y="174" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="201">Rayonnements ionisants</tspan></text>
+<rect x="30" y="226" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="244">Appauvrissement de l’ozone</tspan><tspan x="180" y="263">stratosphérique</tspan></text>
+<rect x="30" y="278" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="305">Toxicité humaine (cancer)</tspan></text>
+<rect x="30" y="330" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="357">Toxicité humaine (hors cancer)</tspan></text>
+<rect x="30" y="382" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="409">Changement climatique</tspan></text>
+<rect x="30" y="434" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="461">Utilisation de l’eau</tspan></text>
+<rect x="30" y="486" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="513">Écotoxicité en eau douce</tspan></text>
+<rect x="30" y="538" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="565">Eutrophisation des eaux douces</tspan></text>
+<rect x="30" y="590" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="608">Formation d’ozone</tspan><tspan x="180" y="627">(écosystèmes)</tspan></text>
+<rect x="30" y="642" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="669">Écotoxicité terrestre</tspan></text>
+<rect x="30" y="694" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="721">Acidification terrestre</tspan></text>
+<rect x="30" y="746" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="773">Utilisation / transformation des sols</tspan></text>
+<rect x="30" y="798" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="825">Écotoxicité marine</tspan></text>
+<rect x="30" y="850" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="877">Eutrophisation marine</tspan></text>
+<rect x="30" y="902" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="929">Ressources minérales</tspan></text>
+<rect x="30" y="954" rx="4" ry="4" width="300" height="42" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="180" y="981">Ressources fossiles</tspan></text>
+<rect x="430" y="78" rx="4" ry="4" width="220" height="78" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="114">Augmentation des</tspan><tspan x="540" y="133">maladies respiratoires</tspan></text>
+<rect x="430" y="174" rx="4" ry="4" width="220" height="78" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="210">Augmentation des</tspan><tspan x="540" y="229">différents cancers</tspan></text>
+<rect x="430" y="270" rx="4" ry="4" width="220" height="78" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="306">Augmentation des autres</tspan><tspan x="540" y="325">maladies / causes</tspan></text>
+<rect x="430" y="366" rx="4" ry="4" width="220" height="78" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="402">Augmentation de</tspan><tspan x="540" y="421">la malnutrition</tspan></text>
+<rect x="430" y="462" rx="4" ry="4" width="220" height="78" fill="#dddddd" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="498">Dommages aux espèces</tspan><tspan x="540" y="517">d’eau douce</tspan></text>
+<rect x="430" y="558" rx="4" ry="4" width="220" height="78" fill="#dddddd" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="594">Dommages aux</tspan><tspan x="540" y="613">espèces terrestres</tspan></text>
+<rect x="430" y="654" rx="4" ry="4" width="220" height="78" fill="#dddddd" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="690">Dommages aux</tspan><tspan x="540" y="709">espèces marines</tspan></text>
+<rect x="430" y="750" rx="4" ry="4" width="220" height="78" fill="#cccccc" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="786">Hausse des coûts</tspan><tspan x="540" y="805">d’extraction</tspan></text>
+<rect x="430" y="846" rx="4" ry="4" width="220" height="78" fill="#cccccc" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="540" y="882">Coût énergétique</tspan><tspan x="540" y="901">pétrole / gaz / charbon</tspan></text>
+<rect x="800" y="110" rx="4" ry="4" width="180" height="84" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="890" y="149">Dommages à la</tspan><tspan x="890" y="168">santé humaine</tspan></text>
+<rect x="800" y="274" rx="4" ry="4" width="180" height="84" fill="#dddddd" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="890" y="313">Dommages aux</tspan><tspan x="890" y="332">écosystèmes</tspan></text>
+<rect x="800" y="438" rx="4" ry="4" width="180" height="84" fill="#cccccc" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#111111"><tspan x="890" y="467">Dommages à la</tspan><tspan x="890" y="486">disponibilité</tspan><tspan x="890" y="505">des ressources</tspan></text>
+</svg>

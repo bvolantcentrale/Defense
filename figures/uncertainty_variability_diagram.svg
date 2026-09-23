@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1420" height="410" viewBox="0 0 1420 410">
+<defs>
+<marker id="arrowhead" markerWidth="10" markerHeight="7" refX="8" refY="3.5" orient="auto">
+<polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+</marker>
+</defs>
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#333333"><tspan x="700" y="34"></tspan></text>
+<g opacity="1"><path d="M 290 106 C 315 106, 315 81, 340 81" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 290 106 C 315 106, 315 171, 340 171" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 290 316 C 315 316, 315 291, 340 291" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 640 81 C 675 81, 675 173, 710 173" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 640 171 C 675 171, 675 189, 710 189" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 640 291 C 675 291, 675 219, 710 219" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 970 198 C 995 198, 995 198, 1020 198" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g opacity="1"><path d="M 1140 198 C 1165 198, 1165 198, 1190 198" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrowhead)" /></g>
+<g id="uncertainty" opacity="1"><rect x="40" y="75" rx="6" ry="6" width="250" height="62" fill="#333333" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff"><tspan x="165" y="115">Incertitude</tspan></text></g>
+<g id="contextual_1" opacity="1"><rect x="340" y="45" rx="6" ry="6" width="300" height="72" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#111111"><tspan x="490" y="90">Construction du modèle</tspan></text></g>
+<g id="contextual_2" opacity="1"><rect x="340" y="135" rx="6" ry="6" width="300" height="72" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#111111"><tspan x="490" y="167">Incertitude des</tspan><tspan x="490" y="193">paramètres</tspan></text></g>
+<g id="variability" opacity="1"><rect x="40" y="285" rx="6" ry="6" width="250" height="62" fill="#333333" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff"><tspan x="165" y="325">Variabilité</tspan></text></g>
+<g id="decision" opacity="1"><rect x="340" y="255" rx="6" ry="6" width="300" height="72" fill="#eeeeee" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#111111"><tspan x="490" y="287">Variabilité des</tspan><tspan x="490" y="313">paramètres</tspan></text></g>
+<g id="production" opacity="1"><rect x="710" y="155" rx="6" ry="6" width="260" height="86" fill="#dddddd" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#111111"><tspan x="840" y="194">Modélisation du</tspan><tspan x="840" y="220">système</tspan></text></g>
+<g id="lca" opacity="1"><rect x="1020" y="170" rx="6" ry="6" width="120" height="56" fill="#333333" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff"><tspan x="1080" y="207">ACV</tspan></text></g>
+<g id="impact" opacity="1"><rect x="1190" y="155" rx="6" ry="6" width="190" height="86" fill="#555555" stroke="#333333" stroke-width="1.5" />
+<text text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#ffffff"><tspan x="1285" y="194">Résultats d’impact</tspan><tspan x="1285" y="220">ou classement</tspan></text></g>
+</svg>

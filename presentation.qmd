@@ -25,7 +25,7 @@ format:
 
 <div class="cover-kicker">SOUTENANCE DE THÈSE · 2026</div>
 <div class="cover-title">Organisation des Parties Prenantes et Recommandation De Substitution Technologique Respectueuse de l’Environnement : Application à la Décarbonation Ferroviaire Régionale</div>
-<div class="cover-subtitle">Méthodologie de réduction des risques des interactions publiques–privées<br>Méthodologie de recommandation de technologie de décarbonation</div>
+<div class="cover-subtitle"><br>Méthodologie de diagnostic, modélisation et réorganisation des contributions des parties prenantes au sein des processus décisionnels complexes<br><br>Méthodologie pour l’évaluation environnementale paramétrique et prospective pour la comparaison de scénarios de réduction d’impact par l’analyse du cycle de vie (ACV) et l’aide à la décision multicritère (ADMC)</div>
 <div class="cover-footer"><div><strong>Benoît Volant</strong><br>CentraleSupélec · LGI · IKOS</div><div>Franck Marle · Yann Leroy · Jeanne-Marie Dalbavie</div></div>
 
 ## {.editorial .part-divider data-part="1" data-subpart="1"}
@@ -142,7 +142,7 @@ format:
 
 ## Formalisation de la méthodologie d’organisation de la décision {.editorial data-part="2" data-subpart="1"}
 
-<div class="slide-title">Formalisation de la méthodologie d’organisation de la décision</div>
+<div class="slide-title">Méthodologie d’organisation de la décision</div>
 
 :::: {.ppt-canvas .methodology-content}
 
@@ -151,13 +151,14 @@ Textes : modifier le contenu entre les balises span.
 Images : modifier src pour remplacer le fichier.
 Position : left = distance depuis la gauche ; top = distance depuis le haut.
 Dimensions : width = largeur ; height = hauteur, en % du canevas.
+-->
 
 <!-- Bandeau : les quatre étapes de la méthodologie -->
 <div class="methodology-steps" role="img" aria-label="Data collection, Modélisation, Analyse, Réorganisation : progression de gauche à droite.">
 <div class="methodology-step"><span>Collecte de données</span></div>
-<div class="methodology-step"><span>Modélisation</span></div>
-<div class="methodology-step"><span>Analyse</span></div>
-<div class="methodology-step"><span>Réorganisation</span></div>
+<div class="methodology-step"><span>Modélisation du réseau</span></div>
+<div class="methodology-step"><span>Analyse des acteurs</span></div>
+<div class="methodology-step"><span>Clustering et<br>réorganisation</span></div>
 </div>
 
 <!-- Tableau de pondération : libellés, couleurs et poids -->
@@ -176,41 +177,41 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <img class="ppt-image" style="left:33%;top:41%;width:21%;height:30%;" src="assets/vector/s09_Image_1.svg" alt="Image 1">
 
 <!-- Schéma des indicateurs -->
-<img class="ppt-image" style="left:43%;top:25%;width:40%;height:40%;" src="figures/poids.svg" alt="Groupe 38">
+<img class="ppt-image" style="left:49%;top:38%;width:27%;height:43%;" src="figures/poids.svg" alt="Indicateurs du poids des acteurs">
 
 <!-- Schéma des clusters -->
-<img class="ppt-image" style="left:50%;top:65%;width:35%;height:35%;" src="figures/clusters.svg" >
+<img class="ppt-image" style="left:75%;top:29%;width:24%;height:25%;" src="figures/clusters.svg" alt="Regroupement des acteurs">
 
 <!-- Matrice de relation : image à gauche -->
 <img class="ppt-image" style="left:1%;top:43%;width:19%;height:23%;" src="assets/vector/s09_Groupe_38.svg" alt="Groupe 38">
 
 <!-- Illustration de la réorganisation : image à droite -->
-<div class="ppt-text" style="left:70%;top:35%;width:25%;height:5%;font-size:var(--content-size);">
+<div class="ppt-text" style="left:75%;top:59%;width:24%;height:5%;font-size:var(--content-size);">
 <div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Allocation temporelle</span></div>
 </div>
-<img class="ppt-image" style="left:70%;top:40%;width:25%;height:45%;" src="figures/decision_steps_org.svg" alt="Image 55">
+<img class="ppt-image" style="left:75%;top:65%;width:24%;height:31%;" src="figures/decision_steps_org.svg" alt="Allocation temporelle des interventions">
 
 <!-- Temporalité de la décision : schéma et libellé -->
-<img class="ppt-image" style="left:4%;top:70%;width:30%;height:32%;" src="figures/decision_steps.svg" alt="Diagramme 57">
-<div class="ppt-text" style="left:11%;top:72%;width:16%;height:8%;font-size:var(--content-size);">
+<img class="ppt-image" style="left:3%;top:75%;width:30%;height:23%;" src="figures/decision_steps.svg" alt="Temporalité de la décision">
+<div class="ppt-text" style="left:3%;top:69%;width:30%;height:5%;font-size:var(--content-size);">
 
 <!-- Libellés : matrice, pondération, DSM, regroupement et indicateurs -->
-<div class="ppt-p" style="text-align:right"><span style="font-size:var(--content-size)">Temporalité de la décision</span></div>
+<div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Temporalité de la décision</span></div>
 </div>
-<div class="ppt-text" style="left:0%;top:38%;width:16%;height:5%;font-size:var(--content-size);">
-<div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Matrice de relation</span></div>
+<div class="ppt-text" style="left:1%;top:37%;width:19%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Matrice de relation</span></div>
 </div>
 <div class="ppt-text" style="left:19%;top:34%;width:14%;height:5%;font-size:var(--content-size);">
-<div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">pondération</span></div>
+<div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Pondération</span></div>
 </div>
-<div class="ppt-text" style="left:35%;top:36%;width:14%;height:5%;font-size:var(--content-size);">
+<div class="ppt-text" style="left:33%;top:36%;width:21%;height:5%;font-size:var(--content-size);">
 <div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Design Structure Matrix (DSM)</span></div>
 </div>
-<div class="ppt-text" style="left:60%;top:59%;width:14%;height:5%;font-size:var(--content-size);">
-<div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Regroupement</span></div>
+<div class="ppt-text" style="left:75%;top:23%;width:24%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Regroupement</span></div>
 </div>
-<div class="ppt-text" style="left:59%;top:29%;width:14%;height:5%;font-size:var(--content-size);">
-<div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Indicateurs</span></div>
+<div class="ppt-text" style="left:49%;top:36%;width:27%;height:5%;font-size:var(--content-size);">
+<div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Indicateurs</span></div>
 </div>
 
 
@@ -732,7 +733,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </tbody></table></div></div>
 ```
 
-## Indicateurs de réseau choisis {.editorial data-part="2" data-subpart="1" refs="bloch-2023"}
+## Indicateurs de réseau choisis {.editorial data-part="2" data-subpart="2" refs="bloch-2023"}
 
 <div class="slide-title">Indicateurs de réseau choisis</div>
 
@@ -755,7 +756,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 :::
 ::::
 
-## Indicateurs de réseau : résultats {.editorial data-part="2" data-subpart="1" refs="bloch-2023"}
+## Indicateurs de réseau : résultats {.editorial data-part="2" data-subpart="2" refs="bloch-2023"}
 
 <div class="slide-title">Indicateurs de réseau : résultats</div>
 
@@ -795,7 +796,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </div>
 ```
 
-## Poids et centralité d’intermédiarité des acteurs {.editorial data-part="2" data-subpart="1"}
+## Poids et centralité d’intermédiarité des acteurs {.editorial data-part="2" data-subpart="2"}
 
 <div class="slide-title">Poids et centralité d’intermédiarité des acteurs</div>
 
@@ -806,7 +807,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <div class="pie-caption" style="left:51%;">Centralité d’intermédiarité</div>
 </div>
 
-## Choix de la méthode de clustering {.editorial data-part="2" data-subpart="1" refs="giannikas-2022,riva-2023,li-2023"}
+## Choix de la méthode de clustering {.editorial data-part="2" data-subpart="3" refs="giannikas-2022,riva-2023,li-2023"}
 
 <div class="slide-title">Choix de la méthode de clustering</div>
 
@@ -830,7 +831,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 
 
-## Clustering des acteurs {.editorial data-part="2" data-subpart="1"}
+## Clustering des acteurs {.editorial data-part="2" data-subpart="3"}
 
 <div class="slide-title">Clustering des acteurs</div>
 
@@ -867,7 +868,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <img class="ppt-image" style="left:10%;top:4%;width:80%;height:87%;" src="figures/decision_steps_org_comp.svg" alt="Comparaison de l’organisation du processus de décision">
 </div>
 
-## Apports de la méthode et perspectives {.editorial data-part="2" data-subpart="3"}
+## Apports de la méthode et perspectives {.editorial .perspectives-slide .unnumbered-subpart data-part="2"}
 
 <div class="slide-title">Apports de la méthode et perspectives</div>
 
@@ -904,47 +905,96 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <div class="divider-title">ACV &amp; ADMC</div>
 <div class="divider-subtitle">Méthodologie pour l’évaluation environnementale paramétrique et prospective pour la comparaison de scénarios de réduction d’impact par l’analyse du cycle de vie (ACV) et l’aide à la décision multicritère (ADMC)</div>
 
-## Besoin d’une comparaison environnementale multicritère {.editorial data-part="3" data-subpart="1"}
+## Choix de l’ACV : méthodes d’évaluation environnementale {.editorial data-part="3" data-subpart="1"}
 
-<div class="slide-title">Besoin d’une comparaison environnementale multicritère</div>
+<div class="slide-title">Choix de l’ACV : méthodes d’évaluation environnementale</div>
 
 ```{=html}
-<div class="ppt-canvas">
-  <div class="environmental-comparison-needs">
-    <div class="comparison-need">
-      <div class="comparison-need-label">Contexte</div>
-      <h3>Complexe et prospectif</h3>
-    </div>
-    <div class="comparison-need">
-      <div class="comparison-need-label">Exigences</div>
-      <h3>Transparence et interprétabilité</h3>
-    </div>
-  </div>
-  <img class="ppt-image" style="left:34%;top:19%;width:66%;height:57%;" src="figures/intro_scope.svg" alt="Technologies de décarbonation ferroviaire et infrastructures d’alimentation">
+<div class="ppt-canvas acv-choice">
+<div class="ppt-table-wrap acv-methods-table"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Méthode</td><td style="font-size:var(--content-size);font-weight:700">Périmètre</td><td style="font-size:var(--content-size);font-weight:700">Approche / multicritère</td></tr><tr class="acv-selected-row"><td style="font-size:var(--content-size)">ACV</td><td style="font-size:var(--content-size)">Produit / service</td><td style="font-size:var(--content-size)">Quantitative, multicritère</td></tr><tr><td style="font-size:var(--content-size)">Évaluation des risques environnementaux</td><td style="font-size:var(--content-size)">Substance / environnement local</td><td style="font-size:var(--content-size)">Fondée sur les risques</td></tr><tr><td style="font-size:var(--content-size)">Évaluation des impacts environnementaux</td><td style="font-size:var(--content-size)">Projet</td><td style="font-size:var(--content-size)">Procédurale</td></tr><tr><td style="font-size:var(--content-size)">Évaluation environnementale stratégique</td><td style="font-size:var(--content-size)">Plans / programmes</td><td style="font-size:var(--content-size)">Stratégique</td></tr><tr><td style="font-size:var(--content-size)">Analyse des flux de matières</td><td style="font-size:var(--content-size)">Produit / territoire / service</td><td style="font-size:var(--content-size)">Évaluation fondée sur les flux</td></tr><tr><td style="font-size:var(--content-size)">Analyse entrées-sorties environnementale</td><td style="font-size:var(--content-size)">Secteur / économie</td><td style="font-size:var(--content-size)">Évaluation environnementale entrées-sorties</td></tr><tr><td style="font-size:var(--content-size)">Empreinte écologique</td><td style="font-size:var(--content-size)">Territoire / population / activité</td><td style="font-size:var(--content-size)">Évaluation environnementale agrégée</td></tr></table></div>
+<div class="ppt-table-wrap acv-types-table fragment fade-in" data-fragment-index="0"><table class="ppt-table"><tr><th>LCA type</th></tr><tr class="acv-retained-type"><td>Attributionnelle</td></tr><tr><td>Conséquentielle</td></tr><tr class="acv-retained-type"><td>Prospective</td></tr><tr class="acv-retained-type"><td>Paramétrique</td></tr><tr class="acv-retained-type"><td>Rétrospective</td></tr><tr><td>Dynamique</td></tr><tr><td>Statique</td></tr><tr class="acv-retained-type"><td>Régionalisée</td></tr><tr><td>Non régionalisée</td></tr><tr><td>Spatialement explicite</td></tr><tr><td>Territoriale</td></tr><tr class="acv-retained-type"><td>Bibliographique</td></tr><tr><td>Méta-ACV</td></tr><tr><td>Transitionnelle</td></tr></table></div>
+<span class="fragment acv-types-selection" data-fragment-index="1" aria-hidden="true"></span>
 </div>
 ```
 
-## Formalisation de la méthodologie d’ACV {.editorial data-part="3" data-subpart="1" refs="iso-14040,iso-14044"}
+## Évaluation des impacts du cycle de vie (LCIA) {.editorial data-part="3" data-subpart="1"}
 
-<div class="slide-title">Formalisation de la méthodologie d’ACV <span class="slide-subtitle">ISO 14040 · ISO 14044</span></div>
+<div class="slide-title">Évaluation des impacts du cycle de vie (LCIA)</div>
 
-<div class="ppt-canvas acv-methodology">
-<div class="methodology-steps" role="img" aria-label="Quatre phases de l’ACV : objectifs et champ de l’étude, inventaire, évaluation des impacts, interprétation. Des itérations relient les phases.">
-<div class="methodology-step"><span>Objectifs et champ<br>de l’étude</span></div>
-<div class="methodology-step"><span>Inventaire du<br>cycle de vie</span></div>
-<div class="methodology-step"><span>Évaluation des impacts<br>du cycle de vie</span></div>
-<div class="methodology-step"><span>Interprétation</span></div>
+```{=html}
+<div class="ppt-canvas lcia-choice">
+<div class="ppt-table-wrap lcia-methods-table">
+<table class="ppt-table">
+<thead><tr><th>Méthode</th><th>Indicateurs</th><th>Interprétation</th></tr></thead>
+<tbody>
+<tr><td>ReCiPe 2016</td><td>18 catégories</td><td>3 indicateurs de dommages</td></tr>
+<tr class="lcia-selected-method"><td>EF 3.0</td><td>28 sous-catégories</td><td>Score unique</td></tr>
+<tr><td>IMPACT World+</td><td>18 catégories</td><td></td></tr>
+</tbody>
+</table>
 </div>
-<div class="acv-phase-details">
-<div><h3>Cadrer la comparaison</h3><p>Objectif, unité fonctionnelle<br>et frontières du système</p><p>Scénarios technologiques<br>et hypothèses communes</p><div class="acv-deliverable">Périmètre de l’étude</div></div>
-<div><h3>Quantifier les flux</h3><p>Collecte des données :<br>matières, énergie, émissions</p><p>Fabrication, exploitation,<br>maintenance et fin de vie</p><div class="acv-deliverable">Inventaire des flux</div></div>
-<div><h3>Caractériser les impacts</h3><p>Choix des catégories<br>et indicateurs d’impact</p><p>Classification des flux<br>et caractérisation</p><div class="acv-deliverable">Profil environnemental</div></div>
-<div><h3>Éclairer la décision</h3><p>Contributions majeures,<br>sensibilité et cohérence</p><p>Limites, conclusions<br>et recommandations</p><div class="acv-deliverable">Résultats interprétés</div></div>
+<span class="fragment lcia-selection" data-fragment-index="0" aria-hidden="true"></span>
+<div class="lcia-mcdm fragment fade-in" data-fragment-index="0">Normalisation et pondération pour l’aide à la décision multicritère (MCDM)</div>
+<div class="lcia-illustration fragment fade-in" data-fragment-index="1">
+<div class="lcia-illustration-title">ReCiPe : catégories d’impact → mécanismes de dommage → domaines de protection</div>
+<img src="figures/LCIA_diagram.svg" alt="Schéma ReCiPe en trois volets : 18 catégories d’impact reliées aux mécanismes de dommage, puis à la santé humaine, aux écosystèmes et à la disponibilité des ressources">
 </div>
-<div class="acv-iteration">↔ Démarche itérative : l’interprétation accompagne chaque phase et peut conduire à réviser les hypothèses, les données ou les modèles.</div>
 </div>
+```
 
-## Division en modules des scénarios {.editorial data-part="3" data-subpart="1"}
+## Propagation des incertitudes {.editorial .uncertainty-slide data-part="3" data-subpart="1" refs="ciroth-2016,muller-2015"}
+
+<div class="slide-title">Propagation des incertitudes</div>
+
+```{=html}
+<div class="ppt-canvas uncertainty-canvas">
+<div class="uncertainty-figure">
+<img class="uncertainty-overview" src="figures/uncertainty_variability_diagram.svg" alt="Propagation de l’incertitude et de la variabilité vers la modélisation du système, l’ACV et les résultats d’impact ou le classement">
+<img class="uncertainty-focus" src="figures/uncertainty_variability_focus.svg" alt="Focus sur la construction du modèle">
+</div>
+<div class="ppt-table-wrap pedigree-table fragment fade-in" data-fragment-index="0">
+<table class="ppt-table"><caption>Matrice de pedigree <span class="pedigree-citations"><a href="#/references-part-3-1">[1,2]</a></span></caption><thead><tr><th scope="col">Score de l’indicateur</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5 (par défaut)</th></tr></thead><tbody><tr><th scope="row">Fiabilité</th><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr><tr><th scope="row">Complétude</th><td>1,54</td><td>1,03</td><td>1,03</td><td>1,04</td><td>1,18</td></tr><tr><th scope="row">Corrélation temporelle</th><td>1,61</td><td>1,04</td><td>1,10</td><td>1,08</td><td>1,65</td></tr><tr><th scope="row">Corrélation géographique</th><td>1,69</td><td>1,08</td><td>1,19</td><td>1,11</td><td>2,08</td></tr><tr><th scope="row">Corrélation technologique supplémentaire</th><td>4,52<sup>a</sup></td><td>3,09<sup>a</sup></td><td>1,29</td><td>9,49<sup>a</sup></td><td>2,80</td></tr></tbody></table>
+</div>
+</div>
+```
+
+## Méthode d’incertitude : pedigree {.editorial data-part="3" data-subpart="1"}
+
+<div class="slide-title">Méthode d’incertitude : pedigree</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:55%;top:31%;width:42%;height:33%;" src="assets/vector/s23_Diagramme_21.svg" alt="Diagramme 21"></div>
+
+## Modélisation des roulements : équations {.editorial data-part="3" data-subpart="1"}
+
+<div class="slide-title">Modélisation des roulements : équations</div>
+
+<!-- Ressource spécifique non disponible : contenu laissé vide. -->
+<div class="ppt-canvas"></div>
+
+## MCDM : choix de PROMETHEE {.editorial data-part="3" data-subpart="1"}
+
+<div class="slide-title">MCDM : choix de PROMETHEE</div>
+
+<!-- Ressource spécifique non disponible : contenu laissé vide. -->
+<div class="ppt-canvas"></div>
+
+## PROMETHEE : fonctions de préférence {.editorial data-part="3" data-subpart="1" refs="taherdoost-2023,wulf-2021"}
+
+<div class="slide-title">PROMETHEE : fonctions de préférence</div>
+
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:31%;top:58%;width:8%;height:13%;" src="assets/vector/s39_Image_1.svg" alt="Image 1">
+<div class="ppt-table-wrap" style="left:67%;top:9%;width:31%;height:82%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Impact Category</td><td style="font-size:var(--content-size);font-weight:700">Uncertainty Class</td><td style="font-size:var(--content-size);font-weight:700">Weak Preference Zone (q–p)</td></tr><tr><td style="font-size:var(--content-size)">Climate change</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Ozone depletion</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Cumulated energy demand</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Resource depletion, water</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Resource depletion, mineral</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Particulate matter/respiratory inorganics</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Ionizing radiation, human health</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Photochemical ozone formation</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Acidification</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Terrestrial eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Aquatic eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Marine eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Ecotoxicity, freshwater</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr><tr><td style="font-size:var(--content-size)">Human toxicity, cancer</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr><tr><td style="font-size:var(--content-size)">Human toxicity, non-cancer</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr></table></div>
+<div class="ppt-table-wrap" style="left:21%;top:13%;width:29%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size)"> </td><td style="color:#FFFFFF;font-size:var(--content-size);font-weight:700"> </td><td style="background:#538135;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Vitesse maximal km/h</td><td style=""></td><td style=""></td></tr><tr><td style="background:#203B57;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Alternatives</td><td style=""></td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">54-</td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">72-94</td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">-130</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Electrification  </td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">1</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">Incertitude</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">2</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Batteries</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">2</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">1</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Diesel</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td></tr></table></div></div>
+
+## Objectif et champ de l’étude — unité fonctionnelle {.editorial data-part="3" data-subpart="2"}
+
+<div class="slide-title">Objectif et champ de l’étude — unité fonctionnelle</div>
+
+<!-- Ressource spécifique non disponible : contenu laissé vide. -->
+<div class="ppt-canvas"></div>
+
+## Division en modules des scénarios {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">
 Division en modules des scénarios de décarbonation
@@ -955,11 +1005,11 @@ Division en modules des scénarios de décarbonation
 
 <div class="matrix-head" style="grid-column:1; grid-row:1;">Scénarios</div>
 
-<div class="matrix-head" style="grid-column:2 / span 5; grid-row:1;">Système énergétique embarqué</div>
+<div class="matrix-head matrix-family-alim" style="grid-column:2 / span 5; grid-row:1;">Système énergétique embarqué</div>
 
-<div class="matrix-head" style="grid-column:7 / span 3; grid-row:1;">Production d’énergie</div>
+<div class="matrix-head matrix-family-energie" style="grid-column:7 / span 3; grid-row:1;">Production d’énergie</div>
 
-<div class="matrix-head" style="grid-column:10 / span 2; grid-row:1;">Infrastructure d’alimentation</div>
+<div class="matrix-head matrix-family-infra" style="grid-column:10 / span 2; grid-row:1;">Infrastructure d’alimentation</div>
 
 <div class="matrix-label" style="grid-column:1; grid-row:2;">Électrification</div>
 
@@ -972,68 +1022,69 @@ Division en modules des scénarios de décarbonation
 <div class="matrix-label" style="grid-column:1; grid-row:6;">Biocarburant/diesel</div>
 
 <!-- MODULES : grille fixe, sans placement JavaScript.
-     Tous les modules ont la meme largeur et le meme style.
+     Meme forme pour tous ; couleur par famille (alim, energie, infra).
      --track = piste horizontale :
        2 a 6 : systeme embarque (5 emplacements cote a cote) ;
-       7 a 9 : production (3 emplacements) ; 10 : infrastructure.
+       7 a 9 : production (3 emplacements) ; 10 et 11 : infrastructure.
      --row = premiere ligne ; --end = ligne APRES la derniere couverte.
        2 Electrification, 3 Batteries, 4 Hydrogene, 5 Hybride,
        6 Biocarburant/diesel ; 7 est la limite inferieure du tableau.
      Exemple : --row:3; --end:6 couvre Batteries, Hydrogene et Hybride.
      Pour ajouter un module, dupliquer un bloc et choisir une piste libre
      sur les lignes souhaitees. Ne pas repeter une propriete dans style.
-     Couleur, police et arrondi communs : .matrix-module dans custom.css.
+     Couleurs : classes matrix-family-alim, matrix-family-energie, matrix-family-infra.
+     Palettes dans custom.css ; police et arrondi communs via .matrix-module.
 -->
 
-<div class="matrix-module" style="--track:7; --row:2; --end:6;">
+<div class="matrix-module matrix-family-energie" style="--track:7; --row:2; --end:6;">
     Production d'électricité
   </div>
 
-<div class="matrix-module" style="--track:11; --row:2; --end:7;">
+<div class="matrix-module matrix-family-infra" style="--track:11; --row:2; --end:7;">
     Caténaires
   </div>
 
-<div class="matrix-module" style="--track:2; --row:3; --end:6;">
+<div class="matrix-module matrix-family-alim" style="--track:2; --row:3; --end:6;">
     Batterie NMC
   </div>
 
-<div class="matrix-module" style="--track:3; --row:3; --end:6;">
+<div class="matrix-module matrix-family-alim" style="--track:3; --row:3; --end:6;">
     Batterie LFP
   </div>
 
-<div class="matrix-module" style="--track:4; --row:3; --end:6;">
+<div class="matrix-module matrix-family-alim" style="--track:4; --row:3; --end:6;">
     Batterie LTO
   </div>
 
-<div class="matrix-module" style="--track:5; --row:4; --end:5;">
+<div class="matrix-module matrix-family-alim" style="--track:5; --row:4; --end:5;">
     Pile à combustible
   </div>
 
-<div class="matrix-module" style="--track:6; --row:4; --end:5;">
+<div class="matrix-module matrix-family-alim" style="--track:6; --row:4; --end:5;">
     Réservoirs d'hydrogène
   </div>
 
-<div class="matrix-module" style="--track:8; --row:4; --end:5;">
+<div class="matrix-module matrix-family-energie" style="--track:8; --row:4; --end:5;">
     Hydrogène électrolytique
   </div>
 
-<div class="matrix-module" style="--track:9; --row:4; --end:5;">
+<div class="matrix-module matrix-family-energie" style="--track:9; --row:4; --end:5;">
     Hydrogène fossile
   </div>
 
-<div class="matrix-module" style="--track:10; --row:4; --end:5;">
+<div class="matrix-module matrix-family-infra" style="--track:10; --row:4; --end:5;">
     Station d’hydrogène
   </div>
 
-<div class="matrix-module" style="--track:8; --row:5; --end:7;">
+<div class="matrix-module matrix-family-energie" style="--track:8; --row:5; --end:7;">
     Diesel
   </div>
 
-<div class="matrix-module" style="--track:9; --row:5; --end:7;">
+<div class="matrix-module matrix-family-energie" style="--track:9; --row:5; --end:7;">
     B100/HVO
   </div>
 
-<div class="matrix-module" style="--track:5; --row:5; --end:7;">
+<div class="matrix-module matrix-family-alim" style="--track:5; --row:5; --end:7;">
     Générateur thermique
   </div>
 
@@ -1041,23 +1092,30 @@ Division en modules des scénarios de décarbonation
 
 ```
 
-## Collecte de données et qualité des données {.editorial data-part="3" data-subpart="1"}
+## Division en modules : modèle de calcul {.editorial data-part="3" data-subpart="2"}
 
-<div class="slide-title">Collecte de données et qualité des données</div>
+<div class="slide-title">Division en modules : modèle de calcul</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:3%;width:94%;height:90%;" src="figures/comput_simpl.svg" alt="Division en modules : modèle de calcul"></div>
+
+## Division en modules : schéma des scénarios {.editorial data-part="3" data-subpart="2"}
+
+<div class="slide-title">Division en modules : schéma des scénarios</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:3%;width:94%;height:90%;" src="figures/schema_sc.svg" alt="Division en modules : schéma des scénarios"></div>
+
+## Collecte des données : littérature et experts {.editorial data-part="3" data-subpart="2"}
+
+<div class="slide-title">Collecte des données : littérature et experts</div>
 
 <div class="ppt-canvas"><div class="ppt-text" style="left:1%;top:94%;width:91%;height:6%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="">[11] </span><span style="">Carlesso</span><span style="">, A., </span><span style="">Pizzol</span><span style="">, L., </span><span style="">Marcomini</span><span style="">, A., &amp; </span><span style="">Semenzin</span><span style="">, E. (2024). </span><span style="font-style:italic">Data quality assessment of aggregated LCI datasets: A case study on fossil-based and bio-based plastic food packaging</span><span style="">. Journal of Industrial Ecology</span></div><div class="ppt-p" style="text-align:left"><span style="">[12</span><span style="">] Sobol, I. M. </span><span style="">(2001). </span><span style="">Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates</span></div></div>
-<img class="ppt-image" style="left:55%;top:31%;width:42%;height:33%;" src="assets/vector/s23_Diagramme_21.svg" alt="Diagramme 21">
+
 <img class="ppt-image" style="left:8%;top:6%;width:42%;height:82%;" src="assets/vector/s23_Objet_31.svg" alt="Objet 31"></div>
 
-## Méthodes d’évaluation environnementale {.editorial data-part="3" data-subpart="1"}
 
-<div class="slide-title">Méthodes d’évaluation environnementale</div>
+## Inventaire lié aux types d’ACV {.editorial data-part="3" data-subpart="2"}
 
-<div class="ppt-canvas"><div class="ppt-table-wrap" style="left:23%;top:17%;width:54%;height:60%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Method</td><td style="font-size:var(--content-size);font-weight:700">Scope</td><td style="font-size:var(--content-size);font-weight:700">Type</td></tr><tr><td style="font-size:var(--content-size)">LCA</td><td style="font-size:var(--content-size)">Product / service</td><td style="font-size:var(--content-size)">Quantitative, multi-criteria</td></tr><tr><td style="font-size:var(--content-size)">ERA</td><td style="font-size:var(--content-size)">Substance / local environment</td><td style="font-size:var(--content-size)">Risk-based</td></tr><tr><td style="font-size:var(--content-size)">EIA</td><td style="font-size:var(--content-size)">Project</td><td style="font-size:var(--content-size)">Procedural</td></tr><tr><td style="font-size:var(--content-size)">SEA</td><td style="font-size:var(--content-size)">Plans / programs</td><td style="font-size:var(--content-size)">Strategic</td></tr><tr><td style="font-size:var(--content-size)">MFA </td><td style="font-size:var(--content-size)">Product / territory / service</td><td style="font-size:var(--content-size)">Flow-based assessment</td></tr><tr><td style="font-size:var(--content-size)">EEIO Analysis</td><td style="font-size:var(--content-size)">Sector / economy</td><td style="font-size:var(--content-size)">Input-output environmental assessment</td></tr><tr><td style="font-size:var(--content-size)">Ecological Footprint</td><td style="font-size:var(--content-size)">Territory / population / activity</td><td style="font-size:var(--content-size)">Aggregated environmental assessment</td></tr></table></div></div>
-
-## Types de modèles ACV {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Types de modèles ACV</div>
+<div class="slide-title">Inventaire lié aux types d’ACV</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:-6%;top:-10%;width:106%;height:11%;" src="assets/vector/s25_Parall_logramme_14.svg" alt="Parallélogramme 14">
 <img class="ppt-image" style="left:53%;top:1%;width:47%;height:95%;" src="assets/media/image44.png" alt="Image 6">
@@ -1069,7 +1127,14 @@ Division en modules des scénarios de décarbonation
 <div class="ppt-text" style="left:48%;top:19%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Bibliographique</span></div></div>
 <div class="ppt-table-wrap" style="left:2%;top:22%;width:12%;height:45%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">LCA type</td></tr><tr><td style="font-size:var(--content-size)">Attributional</td></tr><tr><td style="font-size:var(--content-size)">Prospective</td></tr><tr><td style="font-size:var(--content-size)">Parametric</td></tr><tr><td style="font-size:var(--content-size)">Retrospective</td></tr><tr><td style="font-size:var(--content-size)">Regionalized</td></tr><tr><td style="font-size:var(--content-size)">Bibliographic</td></tr></table></div></div>
 
-## Rétrospectif : caténaires {.editorial data-part="3" data-subpart="1"}
+## Application du pedigree aux données {.editorial data-part="3" data-subpart="2"}
+
+<div class="slide-title">Application du pedigree aux données</div>
+
+<!-- Ressource spécifique non disponible : contenu laissé vide. -->
+<div class="ppt-canvas"></div>
+
+## Rétrospectif : caténaires {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Rétrospectif : caténaires</div>
 
@@ -1077,7 +1142,7 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:78%;top:11%;width:18%;height:49%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image48.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:-4%;top:19%;width:27%;height:37%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s26_Graphique_1.svg" alt="Graphique 1"></div>
 
-## Prospectif : mix électrique {.editorial data-part="3" data-subpart="1"}
+## Prospectif : mix électrique {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Prospectif : mix électrique</div>
 
@@ -1085,7 +1150,7 @@ Division en modules des scénarios de décarbonation
 <div class="ppt-text" style="left:4%;top:20%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span></div></div>
 <img class="ppt-image" style="left:45%;top:1%;width:50%;height:94%;" src="assets/media/image50.svg" alt="Graphique 16"></div>
 
-## Batteries : revue bibliographique {.editorial data-part="3" data-subpart="1"}
+## Batteries : revue bibliographique {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Batteries : revue bibliographique</div>
 
@@ -1094,7 +1159,7 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:66%;top:17%;width:0%;height:25%;" src="assets/vector/s28_Connecteur_droit_9.svg" alt="Connecteur droit 9">
 <div class="ppt-table-wrap" style="left:52%;top:62%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">-</td><td style="font-size:var(--content-size)">-</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div></div>
 
-## Batteries : dimensionnement à masse constante {.editorial data-part="3" data-subpart="1"}
+## Batteries : dimensionnement à masse constante {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Batteries : dimensionnement à masse constante</div>
 
@@ -1102,57 +1167,39 @@ Division en modules des scénarios de décarbonation
 <div class="ppt-table-wrap" style="left:56%;top:17%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div>
 <div class="ppt-text" style="left:61%;top:51%;width:28%;height:18%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size);font-weight:700">Comparaison brute des technologies, à ce stade pas de prise en compte:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Infrastructures ferroviaires </span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Exploitation des trains</span></div></div></div>
 
-## Propagation des incertitudes {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Propagation des incertitudes</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:16%;width:94%;height:53%;" src="assets/vector/s30_Graphique_1.svg" alt="Graphique 1"></div>
-
-## Incertitudes d’approximation des modèles {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Incertitudes d’approximation des modèles</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:18%;top:10%;width:65%;height:72%;" src="assets/vector/s31_Objet_6.svg" alt="Objet 6"></div>
-
-## Incertitude des paramètres {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Incertitude des paramètres</div>
-
-<div class="ppt-canvas"></div>
-
-## Outil paramétrique {.editorial data-part="3" data-subpart="1"}
+## Outil paramétrique {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Outil paramétrique</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:31%;top:18%;width:39%;height:24%;" src="assets/vector/s33_Groupe_4.svg" alt="Groupe 4"></div>
 
-## Architecture modulaire des modèles {.editorial data-part="3" data-subpart="1"}
+## Architecture modulaire des modèles {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Architecture modulaire des modèles</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:6%;top:15%;width:41%;height:60%;" src="assets/vector/s34_Groupe_1.svg" alt="Groupe 1">
 <img class="ppt-image" style="left:56%;top:17%;width:39%;height:56%;" src="assets/vector/s34_Groupe_33.svg" alt="Groupe 33"></div>
 
-## ORIEnT : modélisation des vitesses {.editorial data-part="3" data-subpart="1"}
+## ORIEnT : modélisation des vitesses {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">ORIEnT : modélisation des vitesses</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:24%;top:15%;width:51%;height:62%;" src="assets/vector/s35_Groupe_13.svg" alt="Groupe 13"></div>
 
-## ORIEnT : modélisation du roulement {.editorial data-part="3" data-subpart="1"}
+## ORIEnT : modélisation du roulement {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">ORIEnT : modélisation du roulement</div>
 
 <div class="ppt-canvas"><div class="ppt-table-wrap" style="left:30%;top:27%;width:40%;height:63%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Phase</td><td style="font-size:var(--content-size);font-weight:700">Variable limitante</td><td style="font-size:var(--content-size);font-weight:700">Contrainte</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Accélération</td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a max</td><td style="font-size:var(--content-size)">a &lt; 0,3 m/s²</td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P max</td><td style="font-size:var(--content-size)">Pmax (1,6 MW pour le Régiolis)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Croisière</td><td style="font-size:var(--content-size)">P max, i</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Décélération</td><td style="font-size:var(--content-size)">V max</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a min</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P min (optionnel)</td><td style=""></td></tr></table></div></div>
 
-## ORIEnT : paramètres technologiques et ligne {.editorial data-part="3" data-subpart="1"}
+## ORIEnT : paramètres technologiques et ligne {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">ORIEnT : paramètres technologiques et ligne</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:26%;width:91%;height:62%;" src="assets/vector/s37_Graphique_1.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="assets/vector/s37_Groupe_7.svg" alt="Groupe 7"></div>
 
-## Illustration d’un classement multicritère {.editorial data-part="3" data-subpart="1"}
+## Illustration d’un classement multicritère {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Illustration d’un classement multicritère</div>
 
@@ -1160,16 +1207,34 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:13%;top:56%;width:50%;height:16%;" src="assets/vector/s38_Groupe_8.svg" alt="Groupe 8">
 <div class="ppt-table-wrap" style="left:76%;top:49%;width:15%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Scenario</td><td style="font-size:var(--content-size);font-weight:700">Rank</td></tr><tr><td style="font-size:var(--content-size)">Diesel</td><td style="font-size:var(--content-size)">5</td></tr><tr><td style="font-size:var(--content-size)">Biofuel</td><td style="font-size:var(--content-size)">4</td></tr><tr><td style="font-size:var(--content-size)">Hybrid</td><td style="font-size:var(--content-size)">1</td></tr><tr><td style="font-size:var(--content-size)">Batteries</td><td style="font-size:var(--content-size)">3</td></tr><tr><td style="font-size:var(--content-size)">Hydrogen</td><td style="font-size:var(--content-size)">2</td></tr><tr><td style="font-size:var(--content-size)">Electrification</td><td style="font-size:var(--content-size)">6</td></tr></table></div></div>
 
-## PROMETHEE : fonctions de préférence {.editorial data-part="3" data-subpart="1" refs="taherdoost-2023,wulf-2021"}
+## Validation : comparaison avec l’ADEME {.editorial data-part="3" data-subpart="3"}
 
-<div class="slide-title">PROMETHEE : fonctions de préférence</div>
+<div class="slide-title">Validation : comparaison avec l’ADEME</div>
 
-<div class="ppt-canvas">
-<img class="ppt-image" style="left:31%;top:58%;width:8%;height:13%;" src="assets/vector/s39_Image_1.svg" alt="Image 1">
-<div class="ppt-table-wrap" style="left:67%;top:9%;width:31%;height:82%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Impact Category</td><td style="font-size:var(--content-size);font-weight:700">Uncertainty Class</td><td style="font-size:var(--content-size);font-weight:700">Weak Preference Zone (q–p)</td></tr><tr><td style="font-size:var(--content-size)">Climate change</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Ozone depletion</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Cumulated energy demand</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Resource depletion, water</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Resource depletion, mineral</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Particulate matter/respiratory inorganics</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Ionizing radiation, human health</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Photochemical ozone formation</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Acidification</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Terrestrial eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Aquatic eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Marine eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Ecotoxicity, freshwater</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr><tr><td style="font-size:var(--content-size)">Human toxicity, cancer</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr><tr><td style="font-size:var(--content-size)">Human toxicity, non-cancer</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr></table></div>
-<div class="ppt-table-wrap" style="left:21%;top:13%;width:29%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size)"> </td><td style="color:#FFFFFF;font-size:var(--content-size);font-weight:700"> </td><td style="background:#538135;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Vitesse maximal km/h</td><td style=""></td><td style=""></td></tr><tr><td style="background:#203B57;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Alternatives</td><td style=""></td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">54-</td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">72-94</td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">-130</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Electrification  </td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">1</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">Incertitude</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">2</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Batteries</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">2</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">1</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Diesel</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td></tr></table></div></div>
+<div class="ppt-canvas"><img class="ppt-image" style="left:17%;top:26%;width:67%;height:24%;" src="assets/vector/s40_Groupe_7.svg" alt="Groupe 7">
+<div class="ppt-text" style="left:5%;top:11%;width:90%;height:8%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène.2025. </span></div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée, ACV comparative d&#x27;un trajet en train régional et d’un trajet en train de fret</span></div></div>
+<img class="ppt-image" style="left:39%;top:52%;width:22%;height:44%;" src="assets/media/image64.png" alt="Picture 2"></div>
 
-## Cas d’étude : Corse {.editorial data-part="3" data-subpart="2"}
+## Validation ADEME : changement climatique {.editorial data-part="3" data-subpart="3"}
+
+<div class="slide-title">Validation ADEME : changement climatique</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:50%;top:12%;width:49%;height:58%;" src="assets/vector/s41_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
+<img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
+<div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Comparaison des scénarios – changement climatique (gCO2eq pour 1 p.km)</span></div></div>
+<img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="assets/vector/s41_Groupe_8.svg" alt="Groupe 8"></div>
+
+## Analyse des résultats : impacts normalisés {.editorial data-part="3" data-subpart="3"}
+
+<div class="slide-title">Analyse des résultats : impacts normalisés</div>
+
+<div class="ppt-canvas"><div class="ppt-text" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span></div><div class="ppt-p" style="text-align:center">&nbsp;</div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span></div></div>
+<img class="ppt-image" style="left:45%;top:8%;width:60%;height:91%;" src="assets/media/image67.svg" alt="Graphique 4">
+<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Comparaison des résultats d’impact normalisés en points (pt)</span></div></div>
+<div class="ppt-table-wrap" style="left:2%;top:19%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
+<img class="ppt-image" style="left:20%;top:-3%;width:10%;height:20%;" src="assets/media/image64.png" alt="Picture 2"></div>
+
+## Cas d’étude : Corse {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Cas d’étude : Corse</div>
 
@@ -1179,7 +1244,7 @@ Division en modules des scénarios de décarbonation
 <div class="ppt-text" style="left:22%;top:83%;width:7%;height:6%;font-size:var(--content-title-size);transform:rotate(23.23deg);transform-origin:center;"><div class="ppt-p" style="text-align:left"><span style="">SACOI3</span></div></div>
 <img class="ppt-image" style="left:20%;top:83%;width:12%;height:7%;" src="assets/vector/s44_Fl_che_double_fl_che_horizontale_16.svg" alt="Flèche : double flèche horizontale 16"></div>
 
-## Mix énergétique corse {.editorial data-part="3" data-subpart="2"}
+## Mix énergétique corse {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Mix énergétique corse</div>
 
@@ -1187,7 +1252,7 @@ Division en modules des scénarios de décarbonation
 <div class="ppt-table-wrap" style="left:56%;top:13%;width:33%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size)">04/06/26</td><td style="font-size:var(--content-size)">gCO₂eq/kWh</td><td style="font-size:var(--content-size)">Production impactante</td></tr><tr><td style="font-size:var(--content-size)">Corse</td><td style="font-size:var(--content-size)">452</td><td style="font-size:var(--content-size)">40% fioul</td></tr><tr><td style="font-size:var(--content-size)">Italie</td><td style="font-size:var(--content-size)">147</td><td style="font-size:var(--content-size)">4% gaz</td></tr><tr><td style="font-size:var(--content-size)">France</td><td style="font-size:var(--content-size)">16</td><td style="font-size:var(--content-size)">60% nucléaire</td></tr></table></div>
 <img class="ppt-image" style="left:54%;top:46%;width:36%;height:41%;" src="assets/media/image75.svg" alt="Graphique 1"></div>
 
-## Modélisation des AMG800 {.editorial data-part="3" data-subpart="2"}
+## Modélisation des AMG800 {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Modélisation des AMG800</div>
 
@@ -1214,42 +1279,7 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:50%;top:21%;width:46%;height:53%;" src="assets/vector/s48_Graphique_8.svg" alt="Graphique 8">
 <div class="ppt-text" style="left:57%;top:9%;width:32%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Modes de production d’électricité en Corse</span></div></div></div>
 
-## Validation : comparaison avec l’ADEME {.editorial data-part="3" data-subpart="4"}
-
-<div class="slide-title">Validation : comparaison avec l’ADEME</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:17%;top:26%;width:67%;height:24%;" src="assets/vector/s40_Groupe_7.svg" alt="Groupe 7">
-<div class="ppt-text" style="left:5%;top:11%;width:90%;height:8%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène.2025. </span></div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée, ACV comparative d&#x27;un trajet en train régional et d’un trajet en train de fret</span></div></div>
-<img class="ppt-image" style="left:39%;top:52%;width:22%;height:44%;" src="assets/media/image64.png" alt="Picture 2"></div>
-
-## Validation ADEME : changement climatique {.editorial data-part="3" data-subpart="4"}
-
-<div class="slide-title">Validation ADEME : changement climatique</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:50%;top:12%;width:49%;height:58%;" src="assets/vector/s41_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
-<img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
-<div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Comparaison des scénarios – changement climatique (gCO2eq pour 1 p.km)</span></div></div>
-<img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="assets/vector/s41_Groupe_8.svg" alt="Groupe 8"></div>
-
-## Analyse des résultats : impacts normalisés {.editorial data-part="3" data-subpart="4"}
-
-<div class="slide-title">Analyse des résultats : impacts normalisés</div>
-
-<div class="ppt-canvas"><div class="ppt-text" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span></div><div class="ppt-p" style="text-align:center">&nbsp;</div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span></div></div>
-<img class="ppt-image" style="left:45%;top:8%;width:60%;height:91%;" src="assets/media/image67.svg" alt="Graphique 4">
-<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Comparaison des résultats d’impact normalisés en points (pt)</span></div></div>
-<div class="ppt-table-wrap" style="left:2%;top:19%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
-<img class="ppt-image" style="left:20%;top:-3%;width:10%;height:20%;" src="assets/media/image64.png" alt="Picture 2"></div>
-
-## Analyse des résultats : effet de la vitesse maximale {.editorial data-part="3" data-subpart="4"}
-
-<div class="slide-title">Analyse des résultats : effet de la vitesse maximale</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:48%;top:37%;width:27%;height:39%;" src="assets/vector/s43_Picture_4.svg" alt="Picture 4">
-<div class="ppt-table-wrap" style="left:50%;top:37%;width:48%;height:52%;"><table class="ppt-table"><tr><td style=""></td><td style=""></td></tr><tr><td style="font-size:var(--content-size)">Vmax = 54 m/s</td><td style="font-size:var(--content-size)">Vmax = 130 m/s</td></tr></table></div>
-<img class="ppt-image" style="left:73%;top:38%;width:27%;height:38%;" src="assets/vector/s43_Image_1.svg" alt="Image 1"></div>
-
-## Analyse de sensibilité globale {.editorial data-part="3" data-subpart="4"}
+## Analyse de sensibilité globale {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Analyse de sensibilité globale</div>
 
@@ -1257,7 +1287,15 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:66%;top:54%;width:27%;height:37%;" src="assets/media/image79.png" alt="Picture 6">
 <img class="ppt-image" style="left:65%;top:10%;width:27%;height:37%;" src="assets/media/image80.png" alt="Picture 8"></div>
 
-## Sobol total : ensemble des paramètres {.editorial data-part="3" data-subpart="4"}
+## Analyse des résultats : effet de la vitesse maximale {.editorial data-part="3" data-subpart="3"}
+
+<div class="slide-title">Analyse des résultats : effet de la vitesse maximale</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:48%;top:37%;width:27%;height:39%;" src="assets/vector/s43_Picture_4.svg" alt="Picture 4">
+<div class="ppt-table-wrap" style="left:50%;top:37%;width:48%;height:52%;"><table class="ppt-table"><tr><td style=""></td><td style=""></td></tr><tr><td style="font-size:var(--content-size)">Vmax = 54 m/s</td><td style="font-size:var(--content-size)">Vmax = 130 m/s</td></tr></table></div>
+<img class="ppt-image" style="left:73%;top:38%;width:27%;height:38%;" src="assets/vector/s43_Image_1.svg" alt="Image 1"></div>
+
+## Sobol total : ensemble des paramètres {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Sobol total : ensemble des paramètres</div>
 
@@ -1266,7 +1304,7 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:2%;top:46%;width:44%;height:54%;" src="assets/media/image83.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:52%;top:49%;width:44%;height:48%;" src="assets/media/image84.svg" alt="Graphique 3"></div>
 
-## Sobol total : paramètres technologiques {.editorial data-part="3" data-subpart="4"}
+## Sobol total : paramètres technologiques {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Sobol total : paramètres technologiques</div>
 
@@ -1275,7 +1313,7 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:3%;top:50%;width:44%;height:42%;" src="assets/media/image87.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:51%;top:49%;width:44%;height:43%;" src="assets/media/image88.svg" alt="Graphique 1"></div>
 
-## ANOVA {.editorial data-part="3" data-subpart="4"}
+## ANOVA {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">ANOVA</div>
 
@@ -1283,7 +1321,7 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:47%;top:49%;width:44%;height:42%;" src="assets/media/image90.svg" alt="Graphique 3">
 <img class="ppt-image" style="left:48%;top:5%;width:44%;height:42%;" src="assets/media/image91.svg" alt="Graphique 1"></div>
 
-## Évolution des classements {.editorial data-part="3" data-subpart="4"}
+## Évolution des classements {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Évolution des classements</div>
 
@@ -1336,3 +1374,58 @@ Division en modules des scénarios de décarbonation
 <div class="ppt-text" style="left:76%;top:86%;width:22%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Score</span></div></div>
 <div class="ppt-text" style="left:47%;top:88%;width:16%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Dégâts </span></div></div>
 <img class="ppt-image" style="left:3%;top:7%;width:36%;height:71%;" src="assets/media/image103.svg" alt="Graphique 11"></div></div>
+
+<!-- Diapositives conservées du chapitre 3, hors du déroulé principal. -->
+
+## Besoin d’une comparaison environnementale multicritère {.editorial .appendix-slide}
+
+<div class="slide-title">Besoin d'une comparaison environnementale multicritère</div>
+
+```{=html}
+<div class="ppt-canvas">
+  <div class="environmental-comparison-needs">
+    <div class="comparison-need">
+      <div class="comparison-need-label">Contexte</div>
+      <h3>Complexe et prospectif</h3>
+    </div>
+    <div class="comparison-need">
+      <div class="comparison-need-label">Exigences</div>
+      <h3>Transparence et interprétabilité</h3>
+    </div>
+  </div>
+  <img class="ppt-image" style="left:34%;top:19%;width:66%;height:57%;" src="figures/intro_scope.svg" alt="Technologies de décarbonation ferroviaire et infrastructures d’alimentation">
+</div>
+```
+## Formalisation de la méthodologie d’ACV {.editorial .appendix-slide .has-slide-references}
+
+<div class="slide-title">Formalisation de la méthodologie d’ACV <span class="slide-subtitle">ISO 14040 · ISO 14044</span></div>
+
+<div class="ppt-canvas acv-methodology">
+<div class="methodology-steps" role="img" aria-label="Quatre phases de l’ACV : objectifs et champ de l’étude, inventaire, évaluation des impacts, interprétation. Des itérations relient les phases.">
+<div class="methodology-step"><span>Objectifs et champ<br>de l’étude</span></div>
+<div class="methodology-step"><span>Inventaire du<br>cycle de vie</span></div>
+<div class="methodology-step"><span>Évaluation des impacts<br>du cycle de vie</span></div>
+<div class="methodology-step"><span>Interprétation</span></div>
+</div>
+<div class="acv-phase-details">
+<div><h3>Cadrer la comparaison</h3><p>Objectif, unité fonctionnelle<br>et frontières du système</p><p>Scénarios technologiques<br>et hypothèses communes</p><div class="acv-deliverable">Périmètre de l’étude</div></div>
+<div><h3>Quantifier les flux</h3><p>Collecte des données :<br>matières, énergie, émissions</p><p>Fabrication, exploitation,<br>maintenance et fin de vie</p><div class="acv-deliverable">Inventaire des flux</div></div>
+<div><h3>Caractériser les impacts</h3><p>Choix des catégories<br>et indicateurs d’impact</p><p>Classification des flux<br>et caractérisation</p><div class="acv-deliverable">Profil environnemental</div></div>
+<div><h3>Éclairer la décision</h3><p>Contributions majeures,<br>sensibilité et cohérence</p><p>Limites, conclusions<br>et recommandations</p><div class="acv-deliverable">Résultats interprétés</div></div>
+</div>
+<div class="acv-iteration">↔ Démarche itérative : l’interprétation accompagne chaque phase et peut conduire à réviser les hypothèses, les données ou les modèles.</div>
+</div>
+<div class="slide-references" role="note"><span class="slide-reference-entry">ISO (2006). ISO 14040 - Management environnemental - Analyse du cycle de vie - Principes et cadre.</span><span class="slide-reference-entry">ISO (2006). ISO 14044 - Management environnemental - Analyse du cycle de vie - Exigences et lignes directrices.</span></div>
+
+## Incertitudes d’approximation des modèles {.editorial .appendix-slide}
+
+<div class="slide-title">Incertitudes d’approximation des modèles</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:18%;top:10%;width:65%;height:72%;" src="assets/vector/s31_Objet_6.svg" alt="Objet 6"></div>
+
+## Incertitude des paramètres {.editorial .appendix-slide}
+
+<div class="slide-title">Incertitude des paramètres</div>
+
+<div class="ppt-canvas"></div>
+

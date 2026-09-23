@@ -8,6 +8,10 @@
   --muted: #77736c;
   --hairline: #c9c5bd;
   --accent: #440F76;
+  --part-1: #440F76;
+  --part-2: #942C80;
+  --part-3: #E44F64;
+  --part-4: #FEA973;
   --rail: 112px;
   --left: 92px;
 }
@@ -605,9 +609,9 @@ body {
 }
 
 .matrix-head {
-  color: var(--accent);
+  color: #000;
   font-weight: 700;
-  border-bottom: 2px solid var(--accent);
+  border-bottom: 2px solid #000;
 }
 
 .matrix-label { font-weight: 700; }
@@ -635,6 +639,24 @@ body {
 }
 .module-matrix > .matrix-head { padding: 8px 4px; }
 .module-matrix > .matrix-label { padding: 8px 4px; }
+/* Familles du tableau : texte et contour foncés, fond clair assorti.
+   La même classe est appliquée au titre de colonne et à ses modules. */
+.matrix-family-alim {
+  --module-color: var(--part-1);
+  --module-fill: rgba(68, 15, 118, .08);
+}
+.matrix-family-energie {
+  --module-color: var(--part-2);
+  --module-fill: rgba(148, 44, 128, .08);
+}
+.matrix-family-infra {
+  --module-color: var(--part-3);
+  --module-fill: rgba(228, 79, 100, .08);
+}
+.matrix-head[class*="matrix-family-"] {
+  color: var(--module-color);
+  border-bottom-color: var(--module-color);
+}
 .matrix-note {
   position: absolute;
   left: var(--left);
@@ -823,6 +845,8 @@ body {
   max-width: 820px;
   pointer-events: none;
 }
+
+.phd-location[hidden] { display: none; }
 
 .phd-location-code {
   font-size: 17px;
@@ -1234,4 +1258,104 @@ body {
   .phd-template-live * {
     transition: none !important;
   }
+}
+
+/* Choix ACV : révéler les types, puis mettre en évidence les types retenus. */
+.acv-choice .acv-methods-table {
+  left: 18%; top: 12%; width: 64%; height: 72%;
+  transition: left 0.4s ease;
+}
+.acv-choice .acv-types-table {
+  left: 72%; top: 4%; width: 26%;
+}
+.reveal .acv-choice .acv-types-table table :is(td, th) {
+  padding: 6px; font-size: var(--content-size); line-height: 1.2;
+}
+.acv-choice .acv-types-selection {
+  position: absolute; width: 0; height: 0; pointer-events: none;
+}
+.acv-choice td {
+  transition: background-color 0.4s ease, color 0.4s ease, opacity 0.4s ease;
+}
+.acv-choice:has(.acv-types-table.visible) .acv-methods-table { left: 0; }
+.acv-choice:has(.acv-types-table.visible) .acv-selected-row td,
+.acv-choice:has(.acv-types-selection.visible) .acv-retained-type td {
+  background: #dedede; color: #000; font-weight: 700;
+}
+.acv-choice:has(.acv-types-table.visible) .acv-methods-table tr:not(:first-child):not(.acv-selected-row) td,
+.acv-choice:has(.acv-types-selection.visible) .acv-types-table tr:not(.acv-retained-type) td {
+  opacity: 0.4;
+}
+@media print {
+  .acv-choice .acv-methods-table { left: 0; }
+  .acv-choice .acv-types-table { opacity: 1 !important; visibility: visible !important; }
+  .acv-choice .acv-selected-row td,
+  .acv-choice .acv-retained-type td { background: #dedede; color: #000; font-weight: 700; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .acv-choice .acv-methods-table, .acv-choice td { transition: none; }
+}
+
+/* Incertitude : focus sur la construction du modèle et tableau pedigree. */
+.uncertainty-figure {
+  position: absolute; left: 3%; top: 16%; width: 94%; height: 53%;
+  transition: top 0.4s ease, height 0.4s ease;
+}
+.uncertainty-figure img {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain;
+  transition: opacity 0.4s ease;
+}
+.uncertainty-focus { opacity: 0; }
+.uncertainty-canvas .pedigree-table { left: 5%; top: 49%; width: 90%; }
+.reveal .pedigree-table table :is(td, th) { padding: 9px 10px; text-align: center; }
+.reveal .pedigree-table table th:first-child { width: 43%; text-align: left; }
+.reveal .pedigree-table table tbody th { font-weight: 400; }
+.uncertainty-canvas:has(.pedigree-table.visible) .uncertainty-figure { top: 0; height: 44%; }
+.uncertainty-canvas:has(.pedigree-table.visible) .uncertainty-overview { opacity: 0; }
+.uncertainty-canvas:has(.pedigree-table.visible) .uncertainty-focus { opacity: 1; }
+.uncertainty-slide:not(:has(.pedigree-table.visible)) .slide-references { visibility: hidden; }
+@media print {
+  .uncertainty-canvas .uncertainty-figure { top: 0; height: 44%; }
+  .uncertainty-canvas .uncertainty-overview { opacity: 0; }
+  .uncertainty-canvas .uncertainty-focus { opacity: 1; }
+  .uncertainty-canvas .pedigree-table { opacity: 1 !important; visibility: visible !important; }
+  .uncertainty-slide .slide-references { visibility: visible !important; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .uncertainty-figure, .uncertainty-figure img { transition: none; }
+}
+
+.reveal .pedigree-table caption {
+  caption-side: top; text-align: left; padding: 0 0 12px;
+  color: #111; font-size: var(--content-title-size); font-weight: 700;
+}
+.reveal .pedigree-citations {
+  margin-left: 16px; font-size: var(--content-size); font-weight: 400;
+}
+.reveal .pedigree-citations a { color: #555; text-decoration: underline; }
+
+/* LCIA : sélection de la méthode EF 3.0. */
+.lcia-choice .lcia-methods-table { left: 8%; top: 5%; width: 84%; }
+.reveal .lcia-methods-table table :is(td, th) { padding: 12px; }
+.lcia-selection { position: absolute; width: 0; height: 0; pointer-events: none; }
+.lcia-methods-table td { transition: background-color 0.4s ease, opacity 0.4s ease; }
+.lcia-choice:has(.lcia-selection.visible) .lcia-selected-method td {
+  background: #dedede; color: #000; font-weight: 700;
+}
+.lcia-choice:has(.lcia-selection.visible) tbody tr:not(.lcia-selected-method) td { opacity: 0.4; }
+.lcia-mcdm { position: absolute; left: 8%; top: 36%; width: 84%; font-size: var(--content-size); }
+@media print {
+  .lcia-choice .lcia-selected-method td { background: #dedede; color: #000; font-weight: 700; }
+}
+@media (prefers-reduced-motion: reduce) { .lcia-methods-table td { transition: none; } }
+
+.lcia-illustration { position: absolute; inset: 0 0 9%; }
+.lcia-illustration-title { text-align: center; font-size: var(--content-size); }
+.lcia-illustration img { position: absolute; top: 6%; left: 0; width: 100%; height: 94%; object-fit: contain; }
+.lcia-choice:has(.lcia-illustration.visible) .lcia-methods-table { visibility: hidden; }
+.lcia-choice:has(.lcia-illustration.visible) .lcia-mcdm { top: auto; bottom: 0; text-align: center; }
+@media print {
+  .lcia-choice .lcia-methods-table { visibility: visible !important; top: 0; }
+  .lcia-choice .lcia-illustration { top: 31%; bottom: 7%; }
+  .lcia-choice .lcia-mcdm { top: auto; bottom: 0; text-align: center; }
 }

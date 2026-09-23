@@ -2,8 +2,8 @@
 (function(){
  const S=[
   {id:1,code:"01",title:"Introduction",color:"#440F76",subparts:["Introduction"]},
-  {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Méthode","Application","Résultats"]},
-  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Méthode","Application","Résultats","Validation"]},
+  {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Modélisation du réseau","Analyse des acteurs","Clustering et réorganisation"]},
+  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Méthode","Application","Validation"]},
   {id:4,code:"04",title:"Perspectives",color:"#FEA973",subparts:["Perspectives"]}
  ];
  const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
@@ -78,8 +78,12 @@
    template.hidden = !visibleOn(slide);
    if (template.hidden) return;
    const part = S.find(part => part.id === Number(slide.dataset.part));
-   const sub = Math.max(1, Math.min(Number(slide.dataset.subpart || 1), part.subparts.length));
-   const subTitle = slide.classList.contains('references-slide') ? 'Références' : part.subparts[sub - 1];
+   const unnumbered = slide.classList.contains('unnumbered-subpart') ||
+    ([2, 3].includes(part.id) && slide.matches('.references-slide, .perspectives-slide'));
+   const sub = unnumbered ? part.subparts.length + 1 :
+    Math.max(1, Math.min(Number(slide.dataset.subpart || 1), part.subparts.length));
+   const subTitle = unnumbered ? '' : (slide.classList.contains('references-slide') ? 'Références' : part.subparts[sub - 1]);
+   template.querySelector('.phd-location').hidden = unnumbered;
    const partSlides = mainSlides.filter(item => item.dataset.part === slide.dataset.part);
    const progress = partSlides.length <= 1 ? 100 : partSlides.indexOf(slide) / (partSlides.length - 1) * 100;
    template.style.setProperty('--accent', part.color);
@@ -88,7 +92,7 @@
     const node = template.querySelector(selector);
     if (node.textContent !== value) node.textContent = value;
    };
-   setText('.phd-location-code', `${part.id}.${sub}`);
+   setText('.phd-location-code', unnumbered ? '' : `${part.id}.${sub}`);
    setText('.phd-location-part', subTitle);
    setText('.rail-part', `Part ${part.id}`);
    setText('.rail-subpart', part.title);

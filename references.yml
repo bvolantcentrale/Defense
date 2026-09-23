@@ -50,3 +50,9 @@ part-references:
   literature-6:
     short: "A. Tsvetkova et al., 2019"
     full: "A. Tsvetkova et al., 2019. Approche : Business stakeholders modeling."
+  ciroth-2016:
+    short: "Ciroth et al. (2016)"
+    full: "Ciroth et al. (2016)."
+  muller-2015:
+    short: "Muller (2015)"
+    full: "(a) Muller (2015)."
