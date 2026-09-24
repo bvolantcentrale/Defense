@@ -56,3 +56,13 @@ part-references:
   muller-2015:
     short: "Muller (2015)"
     full: "(a) Muller (2015)."
+  greco-2016:
+    short: "Greco et al. (2016)"
+    full: "Greco, S., Ehrgott, M., & Figueira, J. R. (dir.). (2016). Multiple Criteria Decision Analysis. Springer, International Series in Operations Research & Management Science, 233. https://doi.org/10.1007/978-1-4939-3094-4"
+
+  lavisse-2024:
+    short: "Lavisse (2024)"
+    full: "Lavisse (2024)."
+  sune-2025:
+    short: "Sune et al. (2025)"
+    full: "ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène (2025). Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée. ACV comparative d’un trajet en train régional et d’un trajet en train de fret. Rapport final, juin 2025."

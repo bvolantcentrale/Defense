@@ -69,4 +69,12 @@ Traduire systématiquement en français les nouveaux textes, tableaux et figures
 
 La figure d’incertitude est adaptée de `../LCA/examples/schema_bloc/incertitude_variabilite_fig.py`. Régénérer ses deux états avec `python figures/incertitude_variabilite_fig.py`, puis rendre la présentation avec Quarto.
 
-Le schéma LCIA ReCiPe est traduit depuis `../LCA/examples/schema_bloc/recipe_impact_fig.py`. Régénérer la version locale avec `python figures/recipe_impact_fig.py`.
+Les trois histogrammes LCIA sont traduits depuis `../LCA/examples/chapter_lca`. Leurs scripts de génération sont conservés dans `figures/lcia/` ; les valeurs des données sources sont inchangées.
+
+## Appels de références dans le contenu
+
+Dans les textes et tableaux, utiliser un appel numéroté plutôt que le nom des auteurs. Écrire `<span data-cite="giannikas-2022"></span>` ou `<span data-cite="ciroth-2016,muller-2015"></span>`, et déclarer les mêmes clés dans `refs` de la diapo. Le filtre génère les numéros correspondant aux références du pied de page, y compris après réorganisation des diapos. Ne pas saisir les numéros à la main.
+
+Les courbes de préférence sont générées par `python figures/preference_functions.py`, à partir des tracés TikZ de `../article LCA MCDM/tables/pref functions`. La gaussienne suit le tracé `1 − exp(−d²/(2s²))`. La fonction en V simple correspond à `q = 0` ; l’état détaillé explicite sa variante avec seuil d’indifférence `q`.
+
+Le tableau des fonctions de préférence reprend `../article LCA MCDM/tables/pref_functions.tex`, en français. La fonction en V du tableau et de son détail utilise les deux seuils `p, q`. Deux incohérences du fichier source sont corrigées dans la présentation : la gaussienne vaut `1 − exp(−d²/(2s²))` pour `d > 0` (conformément à `Gaussian.tex`), et la branche nulle du V couvre `d ≤ q`. Le fichier source de l’article n’est pas modifié.

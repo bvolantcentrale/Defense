@@ -113,12 +113,12 @@ format:
 
 | **N°** | **Approche** | **Référence** |
 | :--- | :--- | :--- |
-| **1** | Approche participative et gouvernance locale | (Guillemot, 2012) |
-| **2** | Modélisation graphique et cartographie des parties prenantes | (Bonin et al., 2001) |
-| **3** | Évaluation des impacts organisationnels du changement | (Cameron et al., 2011) |
-| **4** | Stratégies d’évaluation et de gestion des parties prenantes de l’organisation | (Savage et al., 1991) |
-| **5** | Influence des groupes d’intérêt et asymétrie d’information | (Potters & van Winden, 1992b) |
-| **6** | Modélisation des parties prenantes de l’entreprise | (A. Tsvetkova et al., 2019) |
+| **1** | Approche participative et gouvernance locale | <span data-cite="literature-1"></span> |
+| **2** | Modélisation graphique et cartographie des parties prenantes | <span data-cite="literature-2"></span> |
+| **3** | Évaluation des impacts organisationnels du changement | <span data-cite="literature-3"></span> |
+| **4** | Stratégies d’évaluation et de gestion des parties prenantes de l’organisation | <span data-cite="literature-4"></span> |
+| **5** | Influence des groupes d’intérêt et asymétrie d’information | <span data-cite="literature-5"></span> |
+| **6** | Modélisation des parties prenantes de l’entreprise | <span data-cite="literature-6"></span> |
 
 :::
 
@@ -139,6 +139,7 @@ format:
 <div class="divider-number">PARTIE 02</div>
 <div class="divider-title">Organisation & parties prenantes</div>
 <div class="divider-subtitle">Méthodologie de diagnostic, modélisation et réorganisation des contributions des parties prenantes au sein des processus décisionnels complexes</div>
+
 
 ## Formalisation de la méthodologie d’organisation de la décision {.editorial data-part="2" data-subpart="1"}
 
@@ -814,17 +815,16 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 ```{=html}
 <div class="ppt-canvas">
 <div class="clustering-methods">
-<p class="clustering-objective"><strong>Objectif :</strong> regrouper les éléments similaires ou étroitement liés pour simplifier l’analyse et la compréhension du réseau et repérer des points stratégiques d’intervention.</p>
-<p>Newman–Girvan et Leiden permettent d’identifier les structures communautaires des réseaux et des graphes <span class="clustering-citation">(Giannikas et al., 2022)</span>.</p>
+<p class="clustering-objective"><strong>Objectif :</strong> regrouper les acteurs liés pour analsyer le réseau et repérer conserver les interactions lors de la réorganisation.</p>
+<p>Newman–Girvan et Leiden permettent d’identifier les structures communautaires autours d'un noeud commun <span class="clustering-citation"><span data-cite="giannikas-2022"></span></span>.</p>
 <table class="clustering-comparison" aria-label="Algorithmes de clustering et références associées">
-<colgroup><col style="width:17%"><col style="width:40%"><col style="width:26%"><col style="width:17%"></colgroup>
-<thead><tr><th>Algorithme</th><th>Principe</th><th>Approche</th><th>Référence associée</th></tr></thead>
+<colgroup><col style="width:22%"><col style="width:61%"><col style="width:17%"></colgroup>
+<thead><tr><th>Algorithme</th><th>Principe</th><th>Référence associée</th></tr></thead>
 <tbody>
-<tr><td><strong>Newman–Girvan</strong></td><td>Supprime itérativement les arêtes de plus forte centralité d’intermédiarité pour séparer les communautés du réseau.</td><td>Classification hiérarchique visant à maximiser la modularité.</td><td class="clustering-citation">Riva et al. (2023)</td></tr>
-<tr><td><strong>Leiden</strong></td><td>Déplace les nœuds entre les communautés pour optimiser la modularité.</td><td>Détection de communautés efficace et adaptée au passage à l’échelle.</td><td class="clustering-citation">Li et al. (2023)</td></tr>
+<tr><td><strong>Newman–Girvan</strong></td><td>Supprime itérativement les arêtes de plus forte centralité d’intermédiarité pour séparer les communautés du réseau.</td><td class="clustering-citation"><span data-cite="riva-2023"></span></td></tr>
+<tr><td><strong>Leiden</strong></td><td>Déplace les nœuds entre les communautés pour optimiser la modularité.</td><td class="clustering-citation"><span data-cite="li-2023"></span></td></tr>
 </tbody>
 </table>
-<p class="clustering-takeaway"><strong>Intérêt pour la décision :</strong> regrouper les parties prenantes impliquées dans de nombreuses décisions collaboratives peut favoriser des choix coordonnés et potentiellement plus collectifs.</p>
 </div>
 </div>
 ```
@@ -877,22 +877,22 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <div class="method-outlook">
   <div class="method-contribution">
     <div class="method-outlook-label">Apport de la méthode</div>
-    <h3>Modéliser les réseaux de décision public–privé</h3>
-    <p>Pour réduire les risques associés aux interactions entre acteurs.</p>
+    <h3></h3>
+    <p>Modéliser les réseaux de décision public–privé pour analyser la place des parties prenantes et réorganiser leur intervention.</p>
   </div>
   <div class="method-perspectives">
     <div class="method-outlook-label">Perspectives</div>
     <div class="method-perspective-item">
       <span class="method-perspective-number">01</span>
-      <div><h3>Temporalité de la décision</h3><p>Analyser chaque étape de décision pour en modéliser plus précisément la temporalité.</p></div>
+      <div><h3>Temporalité de la décision</h3><p>Modéliser chaque étape de décision pour une temporalité plus précise.</p></div>
     </div>
     <div class="method-perspective-item">
       <span class="method-perspective-number">02</span>
-      <div><h3>Modélisation à base d’agents</h3><p>Modéliser plus précisément les acteurs.</p></div>
+      <div><h3>Modélisation à base d’agents</h3><p>Modéliser plus précisément les acteurs, leurs intérêts et leurs ressources.</p></div>
     </div>
     <div class="method-perspective-item">
       <span class="method-perspective-number">03</span>
-      <div><h3>Sensibilité à la pondération</h3></div>
+      <div><h3>Sensibilité à la pondération</h3><p>Faire varier les poids attribués aux classes d'interactions.<br>Proposer d'autres modèles de classification des interactions.</p></div>
     </div>
   </div>
 </div>
@@ -907,19 +907,20 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 ## Choix de l’ACV : méthodes d’évaluation environnementale {.editorial data-part="3" data-subpart="1"}
 
-<div class="slide-title">Choix de l’ACV : méthodes d’évaluation environnementale</div>
+<div class="slide-title">Choix de l'ACV : méthodes d’évaluation environnementale</div>
 
 ```{=html}
 <div class="ppt-canvas acv-choice">
 <div class="ppt-table-wrap acv-methods-table"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Méthode</td><td style="font-size:var(--content-size);font-weight:700">Périmètre</td><td style="font-size:var(--content-size);font-weight:700">Approche / multicritère</td></tr><tr class="acv-selected-row"><td style="font-size:var(--content-size)">ACV</td><td style="font-size:var(--content-size)">Produit / service</td><td style="font-size:var(--content-size)">Quantitative, multicritère</td></tr><tr><td style="font-size:var(--content-size)">Évaluation des risques environnementaux</td><td style="font-size:var(--content-size)">Substance / environnement local</td><td style="font-size:var(--content-size)">Fondée sur les risques</td></tr><tr><td style="font-size:var(--content-size)">Évaluation des impacts environnementaux</td><td style="font-size:var(--content-size)">Projet</td><td style="font-size:var(--content-size)">Procédurale</td></tr><tr><td style="font-size:var(--content-size)">Évaluation environnementale stratégique</td><td style="font-size:var(--content-size)">Plans / programmes</td><td style="font-size:var(--content-size)">Stratégique</td></tr><tr><td style="font-size:var(--content-size)">Analyse des flux de matières</td><td style="font-size:var(--content-size)">Produit / territoire / service</td><td style="font-size:var(--content-size)">Évaluation fondée sur les flux</td></tr><tr><td style="font-size:var(--content-size)">Analyse entrées-sorties environnementale</td><td style="font-size:var(--content-size)">Secteur / économie</td><td style="font-size:var(--content-size)">Évaluation environnementale entrées-sorties</td></tr><tr><td style="font-size:var(--content-size)">Empreinte écologique</td><td style="font-size:var(--content-size)">Territoire / population / activité</td><td style="font-size:var(--content-size)">Évaluation environnementale agrégée</td></tr></table></div>
+
 <div class="ppt-table-wrap acv-types-table fragment fade-in" data-fragment-index="0"><table class="ppt-table"><tr><th>LCA type</th></tr><tr class="acv-retained-type"><td>Attributionnelle</td></tr><tr><td>Conséquentielle</td></tr><tr class="acv-retained-type"><td>Prospective</td></tr><tr class="acv-retained-type"><td>Paramétrique</td></tr><tr class="acv-retained-type"><td>Rétrospective</td></tr><tr><td>Dynamique</td></tr><tr><td>Statique</td></tr><tr class="acv-retained-type"><td>Régionalisée</td></tr><tr><td>Non régionalisée</td></tr><tr><td>Spatialement explicite</td></tr><tr><td>Territoriale</td></tr><tr class="acv-retained-type"><td>Bibliographique</td></tr><tr><td>Méta-ACV</td></tr><tr><td>Transitionnelle</td></tr></table></div>
 <span class="fragment acv-types-selection" data-fragment-index="1" aria-hidden="true"></span>
 </div>
 ```
 
-## Évaluation des impacts du cycle de vie (LCIA) {.editorial data-part="3" data-subpart="1"}
+## méthodes de calcul d'impact {.editorial data-part="3" data-subpart="1"}
 
-<div class="slide-title">Évaluation des impacts du cycle de vie (LCIA)</div>
+<div class="slide-title">Méthodes de calcul d'impact d'ACV</div>
 
 ```{=html}
 <div class="ppt-canvas lcia-choice">
@@ -934,11 +935,13 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </table>
 </div>
 <span class="fragment lcia-selection" data-fragment-index="0" aria-hidden="true"></span>
-<div class="lcia-mcdm fragment fade-in" data-fragment-index="0">Normalisation et pondération pour l’aide à la décision multicritère (MCDM)</div>
-<div class="lcia-illustration fragment fade-in" data-fragment-index="1">
-<div class="lcia-illustration-title">ReCiPe : catégories d’impact → mécanismes de dommage → domaines de protection</div>
-<img src="figures/LCIA_diagram.svg" alt="Schéma ReCiPe en trois volets : 18 catégories d’impact reliées aux mécanismes de dommage, puis à la santé humaine, aux écosystèmes et à la disponibilité des ressources">
+<div class="lcia-mcdm">Normalisation et pondération pour l’ADMC</div>
+<div class="lcia-illustrations">
+<figure><figcaption>Indicateurs intermédiaires ReCiPe</figcaption><img src="figures/lcia/midpoints_ReCiPe_histogram.svg" alt="18 catégories d’impact ReCiPe : comparaison normalisée des batteries LFP, LTO et NMC"></figure>
+<figure><figcaption>Indicateurs de dommages</figcaption><img src="figures/lcia/endpoints_histogram.svg" alt="Impacts sur les écosystèmes, la santé humaine et les ressources"></figure>
+<figure><figcaption>Score unique</figcaption><img src="figures/lcia/single_score_histogram.svg" alt="Comparaison des scores uniques des batteries LFP, LTO et NMC"></figure>
 </div>
+
 </div>
 ```
 
@@ -953,52 +956,67 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <img class="uncertainty-focus" src="figures/uncertainty_variability_focus.svg" alt="Focus sur la construction du modèle">
 </div>
 <div class="ppt-table-wrap pedigree-table fragment fade-in" data-fragment-index="0">
-<table class="ppt-table"><caption>Matrice de pedigree <span class="pedigree-citations"><a href="#/references-part-3-1">[1,2]</a></span></caption><thead><tr><th scope="col">Score de l’indicateur</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5 (par défaut)</th></tr></thead><tbody><tr><th scope="row">Fiabilité</th><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr><tr><th scope="row">Complétude</th><td>1,54</td><td>1,03</td><td>1,03</td><td>1,04</td><td>1,18</td></tr><tr><th scope="row">Corrélation temporelle</th><td>1,61</td><td>1,04</td><td>1,10</td><td>1,08</td><td>1,65</td></tr><tr><th scope="row">Corrélation géographique</th><td>1,69</td><td>1,08</td><td>1,19</td><td>1,11</td><td>2,08</td></tr><tr><th scope="row">Corrélation technologique supplémentaire</th><td>4,52<sup>a</sup></td><td>3,09<sup>a</sup></td><td>1,29</td><td>9,49<sup>a</sup></td><td>2,80</td></tr></tbody></table>
+<table class="ppt-table"><caption>Matrice de pedigree <span class="pedigree-citations"><span data-cite="ciroth-2016,muller-2015"></span></span></caption><thead><tr><th scope="col">Score de l’indicateur</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5 (par défaut)</th></tr></thead><tbody><tr><th scope="row">Fiabilité</th><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr><tr><th scope="row">Complétude</th><td>1,54</td><td>1,03</td><td>1,03</td><td>1,04</td><td>1,18</td></tr><tr><th scope="row">Corrélation temporelle</th><td>1,61</td><td>1,04</td><td>1,10</td><td>1,08</td><td>1,65</td></tr><tr><th scope="row">Corrélation géographique</th><td>1,69</td><td>1,08</td><td>1,19</td><td>1,11</td><td>2,08</td></tr><tr><th scope="row">Corrélation technologique supplémentaire</th><td>4,52<sup>a</sup></td><td>3,09<sup>a</sup></td><td>1,29</td><td>9,49<sup>a</sup></td><td>2,80</td></tr></tbody></table>
 </div>
 </div>
 ```
-
-## Méthode d’incertitude : pedigree {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Méthode d’incertitude : pedigree</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:55%;top:31%;width:42%;height:33%;" src="assets/vector/s23_Diagramme_21.svg" alt="Diagramme 21"></div>
 
 ## Modélisation des roulements : équations {.editorial data-part="3" data-subpart="1"}
 
 <div class="slide-title">Modélisation des roulements : équations</div>
 
-<!-- Ressource spécifique non disponible : contenu laissé vide. -->
-<div class="ppt-canvas"></div>
+:::: {.ppt-canvas .rolling-equations}
 
-## MCDM : choix de PROMETHEE {.editorial data-part="3" data-subpart="1"}
+<img class="ppt-image rolling-parameters" style="left:15%;top:0%;width:70%;height:50%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
 
-<div class="slide-title">MCDM : choix de PROMETHEE</div>
+::: {.rolling-equations-table}
 
-<!-- Ressource spécifique non disponible : contenu laissé vide. -->
-<div class="ppt-canvas"></div>
+| Modèle / phase | Paramètres et contraintes | Équation |
+|:--|:--|:--|
+| **Résistance Davis** | Coefficients $A$; $B$; $C$ propres au train; $v$ la vitesse | $R=A+Bv+Cv^2$ |
+| **seconde loi newton** |  $a=\mathrm{d}v/\mathrm{d}t$; $F$ effort aux roues; $m$ masse; <br>$i$ pente; $P$ Puissance du train | $P=\bigl(ma+R+mgi\bigr)v$ |
+| **Accélération** | $v_{\max}$ fonction de la distance entre arrêts ; $a<0{,}3\ \mathrm{m/s^2}$; $P<P_{\max}$ |  |
+| **Croisière** | $a=0$; distance avant freinage |
+| **Décélération** |  $-0{,}3\mathrm{m/s^2}<a\ $ ; $P>P_{\min}$ (si régénération au freinage) |  |
 
-## PROMETHEE : fonctions de préférence {.editorial data-part="3" data-subpart="1" refs="taherdoost-2023,wulf-2021"}
+:::
+::::
 
-<div class="slide-title">PROMETHEE : fonctions de préférence</div>
+## ADMC : PROMETHEE {.editorial data-part="3" data-subpart="1" refs="greco-2016,taherdoost-2023,wulf-2021"}
 
-<div class="ppt-canvas">
-<img class="ppt-image" style="left:31%;top:58%;width:8%;height:13%;" src="assets/vector/s39_Image_1.svg" alt="Image 1">
-<div class="ppt-table-wrap" style="left:67%;top:9%;width:31%;height:82%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Impact Category</td><td style="font-size:var(--content-size);font-weight:700">Uncertainty Class</td><td style="font-size:var(--content-size);font-weight:700">Weak Preference Zone (q–p)</td></tr><tr><td style="font-size:var(--content-size)">Climate change</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Ozone depletion</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Cumulated energy demand</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">10–20%</td></tr><tr><td style="font-size:var(--content-size)">Resource depletion, water</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Resource depletion, mineral</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Particulate matter/respiratory inorganics</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Ionizing radiation, human health</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Photochemical ozone formation</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Acidification</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Terrestrial eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Aquatic eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Marine eutrophication</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">30–40%</td></tr><tr><td style="font-size:var(--content-size)">Ecotoxicity, freshwater</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr><tr><td style="font-size:var(--content-size)">Human toxicity, cancer</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr><tr><td style="font-size:var(--content-size)">Human toxicity, non-cancer</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">70–80%</td></tr></table></div>
-<div class="ppt-table-wrap" style="left:21%;top:13%;width:29%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size)"> </td><td style="color:#FFFFFF;font-size:var(--content-size);font-weight:700"> </td><td style="background:#538135;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Vitesse maximal km/h</td><td style=""></td><td style=""></td></tr><tr><td style="background:#203B57;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Alternatives</td><td style=""></td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">54-</td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">72-94</td><td style="background:#70AD47;color:#FFFFFF;font-size:var(--content-size);font-weight:700">-130</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Electrification  </td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">1</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">Incertitude</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">2</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Batteries</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">2</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">1</td></tr><tr><td style="background:#44546A;color:#FFFFFF;font-size:var(--content-size);font-weight:700">Diesel</td><td style=""></td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td><td style="background:#E7E8EA;color:#000000;font-size:var(--content-size);font-weight:700">3</td></tr></table></div></div>
+<div class="slide-title">ADMC : PROMETHEE <span data-cite="taherdoost-2023"></span></div>
 
-## Objectif et champ de l’étude — unité fonctionnelle {.editorial data-part="3" data-subpart="2"}
+```{=html}
+<div class="ppt-canvas preference-choice">
+<div class="ppt-table-wrap preference-functions"><table class="ppt-table"><caption>Fonctions de préférence <span data-cite="greco-2016"></span></caption><thead><tr><th>Fonction</th><th>Représentation</th><th>Définition de P(d)</th><th>Paramètres</th></tr></thead><tbody><tr><td>Usuelle</td><td><img src="figures/preferences/Usual.svg" alt="Fonction usuelle"></td><td>0 si d ≤ 0 ; 1 si d &gt; 0</td><td>-</td></tr><tr><td>En U</td><td><img src="figures/preferences/Ushape.svg" alt="Fonction en u"></td><td>0 si d ≤ q ; 1 si d &gt; q</td><td>q</td></tr><tr><td>À niveaux</td><td><img src="figures/preferences/Level.svg" alt="Fonction à niveaux"></td><td>0 si d ≤ q ; ½ si q &lt; d ≤ p ;<br>1 si d &gt; p</td><td>p, q</td></tr><tr><td>Gaussienne</td><td><img src="figures/preferences/Gaussian.svg" alt="Fonction gaussienne"></td><td>0 si d ≤ 0 ;<br>1 − exp(−d² / (2s²)) si d &gt; 0</td><td>s</td></tr><tr class="preference-vshape"><td>En V</td><td><img src="figures/preferences/Vshape_indifference.svg" alt="Fonction en V avec seuils q et p"></td><td>0 si d ≤ q ;<br>(d − q) / (p − q) si q &lt; d ≤ p ;<br>1 si d &gt; p</td><td>p, q</td></tr></tbody></table></div>
+<span class="fragment preference-selection" data-fragment-index="0" aria-hidden="true"></span>
+<div class="preference-weak-stage">
+<div class="preference-v-detail">
+</div>
 
-<div class="slide-title">Objectif et champ de l’étude — unité fonctionnelle</div>
+<div class="ppt-table-wrap weak-preference-table"><table class="ppt-table"><caption>Zones de préférence faible <span data-cite="wulf-2021"></span></caption><tr><td>Catégorie d’impact</td><td>Classe d’incertitude</td><td>Zone de préférence faible (q–p)</td></tr><tr><td>Changement climatique</td><td>1</td><td>10–20%</td></tr><tr><td>Appauvrissement de l’ozone</td><td>1</td><td>10–20%</td></tr><tr><td>Demande cumulée d’énergie</td><td>1</td><td>10–20%</td></tr><tr><td>Épuisement des ressources en eau</td><td>2</td><td>30–40%</td></tr><tr><td>Épuisement des ressources minérales</td><td>2</td><td>30–40%</td></tr><tr><td>Particules / effets respiratoires inorganiques</td><td>2</td><td>30–40%</td></tr><tr><td>Rayonnements ionisants - santé humaine</td><td>2</td><td>30–40%</td></tr><tr><td>Formation photochimique d’ozone</td><td>2</td><td>30–40%</td></tr><tr><td>Acidification</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation terrestre</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation aquatique</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation marine</td><td>2</td><td>30–40%</td></tr><tr><td>Écotoxicité en eau douce</td><td>3</td><td>70–80%</td></tr><tr><td>Toxicité humaine cancérogène</td><td>3</td><td>70–80%</td></tr><tr><td>Toxicité humaine non cancérogène</td><td>3</td><td>70–80%</td></tr></table></div>
+</div>
+</div>
+```
 
-<!-- Ressource spécifique non disponible : contenu laissé vide. -->
-<div class="ppt-canvas"></div>
+## Objectif et champ de l’étude — unité fonctionnelle {.editorial .functional-unit-slide data-part="3" data-subpart="2"}
+
+<div class="slide-title">Objectif et unité fonctionnelle</div>
+<img class="ppt-image rolling-parameters" style="left:10%;top:40%;width:48%;height:50%;" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
+```{=html}
+<div class="ppt-canvas functional-unit-canvas">
+  <div class="fu-definition">
+    <div class="fu-label">UNITÉ FONCTIONNELLE</div>
+    <div class="fu-statement">Fournir l’énergie nécessaire à l’exploitation d’un train régional<br>sur sa durée de vie restante.</div>
+    <div class="fu-lifetime"><strong>16 à 24 ans</strong><span>Horizon fixé par les décideurs</span></div>
+  </div>
+
+```
 
 ## Division en modules des scénarios {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">
-Division en modules des scénarios de décarbonation
-</div>
+Champ de l’étude: Division en modules des scénarios </div>
 
 ```{=html}
 <div class="module-matrix" lang="fr">
@@ -1092,147 +1110,117 @@ Division en modules des scénarios de décarbonation
 
 ```
 
-## Division en modules : modèle de calcul {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Division en modules : modèle de calcul</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:3%;width:94%;height:90%;" src="figures/comput_simpl.svg" alt="Division en modules : modèle de calcul"></div>
-
-## Division en modules : schéma des scénarios {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Division en modules : schéma des scénarios</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:3%;width:94%;height:90%;" src="figures/schema_sc.svg" alt="Division en modules : schéma des scénarios"></div>
-
-## Collecte des données : littérature et experts {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Collecte des données : littérature et experts</div>
-
-<div class="ppt-canvas"><div class="ppt-text" style="left:1%;top:94%;width:91%;height:6%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="">[11] </span><span style="">Carlesso</span><span style="">, A., </span><span style="">Pizzol</span><span style="">, L., </span><span style="">Marcomini</span><span style="">, A., &amp; </span><span style="">Semenzin</span><span style="">, E. (2024). </span><span style="font-style:italic">Data quality assessment of aggregated LCI datasets: A case study on fossil-based and bio-based plastic food packaging</span><span style="">. Journal of Industrial Ecology</span></div><div class="ppt-p" style="text-align:left"><span style="">[12</span><span style="">] Sobol, I. M. </span><span style="">(2001). </span><span style="">Global sensitivity indices for nonlinear mathematical models and their Monte Carlo estimates</span></div></div>
-
-<img class="ppt-image" style="left:8%;top:6%;width:42%;height:82%;" src="assets/vector/s23_Objet_31.svg" alt="Objet 31"></div>
-
 
 ## Inventaire lié aux types d’ACV {.editorial data-part="3" data-subpart="2"}
 
-<div class="slide-title">Inventaire lié aux types d’ACV</div>
+<div class="slide-title">Types d’ACV par module</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:-6%;top:-10%;width:106%;height:11%;" src="assets/vector/s25_Parall_logramme_14.svg" alt="Parallélogramme 14">
-<img class="ppt-image" style="left:53%;top:1%;width:47%;height:95%;" src="assets/media/image44.png" alt="Image 6">
-<img class="ppt-image" style="left:15%;top:49%;width:40%;height:43%;" src="assets/vector/s25_Graphique_1.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:19%;top:7%;width:11%;height:31%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image45.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:31%;top:14%;width:18%;height:25%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s25_Graphique_1.svg" alt="Graphique 1">
-<div class="ppt-text" style="left:16%;top:0%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Retrospective</span><span style="font-size:var(--content-size)">: données historiques</span></div></div>
-<div class="ppt-text" style="left:16%;top:44%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span></div></div>
-<div class="ppt-text" style="left:48%;top:19%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Bibliographique</span></div></div>
-<div class="ppt-table-wrap" style="left:2%;top:22%;width:12%;height:45%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">LCA type</td></tr><tr><td style="font-size:var(--content-size)">Attributional</td></tr><tr><td style="font-size:var(--content-size)">Prospective</td></tr><tr><td style="font-size:var(--content-size)">Parametric</td></tr><tr><td style="font-size:var(--content-size)">Retrospective</td></tr><tr><td style="font-size:var(--content-size)">Regionalized</td></tr><tr><td style="font-size:var(--content-size)">Bibliographic</td></tr></table></div></div>
+```{=html}
+<div class="ppt-canvas inventory-types">
+<span class="fragment inventory-step-rte" data-fragment-index="0" aria-hidden="true"></span>
+<span class="fragment inventory-step-batteries" data-fragment-index="1" aria-hidden="true"></span>
+<span class="fragment inventory-step-catenaries" data-fragment-index="2" aria-hidden="true"></span>
+<div class="ppt-table-wrap inventory-types-table">
+<table class="ppt-table" aria-label="Types d’ACV retenus pour l’étude">
+<thead><tr><th scope="col">LCA type</th></tr></thead>
+<tbody>
+<tr class="inventory-common"><td>Attributionnelle</td></tr>
+<tr class="inventory-prospective"><td>Prospective</td></tr>
+<tr class="inventory-common"><td>Paramétrique</td></tr>
+<tr class="inventory-retrospective"><td>Rétrospective</td></tr>
+<tr class="inventory-common"><td>Régionalisée</td></tr>
+<tr class="inventory-bibliographic"><td>Bibliographique</td></tr>
+</tbody>
+</table>
+</div>
+<figure class="inventory-panel inventory-rte">
+<figcaption>Mix électrique — scénarios prospectifs RTE</figcaption>
+<img src="figures/RTE.svg" alt="Capacités de production électrique en GW des scénarios RTE M0, M1, M23, N1, N2 et N03, avec légende des filières">
+<p class="inventory-caption">Capacités de production par filière (GW) · Source : RTE</p>
+</figure>
+<figure class="inventory-panel inventory-batteries">
+<figcaption>Batteries — revue bibliographique</figcaption>
+<img src="figures/bibli_batteries.svg" alt="Résultats de la revue bibliographique sur les batteries">
+</figure>
+<div class="inventory-panel inventory-catenaries">
+<h3>Caténaires — données rétrospectives</h3>
+<div class="inventory-catenary-pair">
+<figure><figcaption>1 500 V — courant continu</figcaption><img src="figures/1500V.svg" alt="Données de la caténaire 1 500 V en courant continu"></figure>
+<figure><figcaption>25 kV — courant alternatif</figcaption><img src="figures/25kV.svg" alt="Données de la caténaire 25 kV en courant alternatif"></figure>
+</div>
+</div>
+</div>
+```
 
 ## Application du pedigree aux données {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Application du pedigree aux données</div>
 
-<!-- Ressource spécifique non disponible : contenu laissé vide. -->
-<div class="ppt-canvas"></div>
-
-## Rétrospectif : caténaires {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Rétrospectif : caténaires</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:25%;top:0%;width:50%;height:89%;" src="assets/media/image47.svg" alt="Graphique 10">
-<img class="ppt-image" style="left:78%;top:11%;width:18%;height:49%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image48.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:-4%;top:19%;width:27%;height:37%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s26_Graphique_1.svg" alt="Graphique 1"></div>
-
-## Prospectif : mix électrique {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Prospectif : mix électrique</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:4%;top:26%;width:34%;height:43%;" src="assets/vector/s27_Graphique_1.svg" alt="Graphique 1">
-<div class="ppt-text" style="left:4%;top:20%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span></div></div>
-<img class="ppt-image" style="left:45%;top:1%;width:50%;height:94%;" src="assets/media/image50.svg" alt="Graphique 16"></div>
-
-## Batteries : revue bibliographique {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Batteries : revue bibliographique</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:1%;width:44%;height:89%;" src="assets/media/image44.png" alt="Image 15">
-<img class="ppt-image" style="left:55%;top:7%;width:36%;height:45%;" src="assets/vector/s28_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
-<img class="ppt-image" style="left:66%;top:17%;width:0%;height:25%;" src="assets/vector/s28_Connecteur_droit_9.svg" alt="Connecteur droit 9">
-<div class="ppt-table-wrap" style="left:52%;top:62%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">-</td><td style="font-size:var(--content-size)">-</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div></div>
-
-## Batteries : dimensionnement à masse constante {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Batteries : dimensionnement à masse constante</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:2%;top:2%;width:50%;height:89%;" src="assets/media/image51.svg" alt="Graphique 17">
-<div class="ppt-table-wrap" style="left:56%;top:17%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div>
-<div class="ppt-text" style="left:61%;top:51%;width:28%;height:18%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size);font-weight:700">Comparaison brute des technologies, à ce stade pas de prise en compte:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Infrastructures ferroviaires </span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Exploitation des trains</span></div></div></div>
-
-## Outil paramétrique {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Outil paramétrique</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:31%;top:18%;width:39%;height:24%;" src="assets/vector/s33_Groupe_4.svg" alt="Groupe 4"></div>
+```{=html}
+<div class="ppt-canvas pedigree-application">
+<div class="ppt-table-wrap pedigree-application-wrap">
+<table class="ppt-table pedigree-application-table" aria-label="Scores de pedigree et écarts-types, style du classeur Excel"><thead><tr><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #ffffff0000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Famille</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Technologie</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:0;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Système</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Fiabilité</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Complétude</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Corrélation temporelle</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Corrélation géographique</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Corrélation technologique supplémentaire</th><th style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Écart-type résultant</th></tr></thead><tbody>
+<tr style="height:46.8px"><th data-cell="A2" rowspan="5" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:0">Système embarqué</th><th data-cell="B2" rowspan="2" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:0">Hydrogène</th><th data-cell="C2" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">Pile à combustible PEM</th><td data-cell="D2" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="E2" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="F2" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="G2" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H2" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="S2" title="1,251586639655866" style="background-color:#F9888A;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,252</td></tr>
+<tr style="height:46.8px"><th data-cell="C3" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Réservoirs H₂</th><td data-cell="D3" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="E3" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="F3" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="G3" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H3" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="S3" title="1,2707932541368572" style="background-color:#F97F80;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,271</td></tr>
+<tr style="height:27.900000000000002px"><th data-cell="B4" rowspan="3" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:0">Batteries</th><th data-cell="C4" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">LTO</th><td data-cell="D4" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="E4" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="F4" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="G4" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H4" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="S4" title="1,0392304845413265" style="background-color:#FEF3F3;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,039</td></tr>
+<tr style="height:27.900000000000002px"><th data-cell="C5" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">LFP</th><td data-cell="D5" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="E5" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="F5" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="G5" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H5" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="S5" title="1,2647255890435916" style="background-color:#F98283;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,265</td></tr>
+<tr style="height:27.900000000000002px"><th data-cell="C6" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">NMC</th><td data-cell="D6" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #000000">2</td><td data-cell="E6" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #000000">1</td><td data-cell="F6" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #000000">2</td><td data-cell="G6" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #ffffff00;border-bottom:2px solid #000000">2</td><td data-cell="H6" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #000000">2</td><td data-cell="S6" title="1,2617627052273268" style="background-color:#F98385;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #000000">1,262</td></tr>
+<tr style="height:22.5px"><th data-cell="A7" rowspan="5" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #000000;border-bottom:2px solid #000000">Production</th><th data-cell="B7" rowspan="5" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:2px solid #000000;border-bottom:2px solid #000000"></th><th data-cell="C7" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #ffffff00">H₂ gris</th><td data-cell="D7" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="E7" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="F7" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="G7" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="H7" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="S7" title="1,014889156509222" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,015</td></tr>
+<tr style="height:22.5px"><th data-cell="C8" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">H₂ vert</th><td data-cell="D8" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="E8" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="F8" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="G8" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H8" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="S8" title="1,2904723900497306" style="background-color:#F97577;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,290</td></tr>
+<tr style="height:22.5px"><th data-cell="C9" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Électricité</th><td data-cell="D9" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="E9" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="F9" title="5" style="background-color:#F8696B;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">5</td><td data-cell="G9" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="H9" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="S9" title="1,1357816691600546" style="background-color:#FCC2C3;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,136</td></tr>
+<tr style="height:22.5px"><th data-cell="C10" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Biocarburant</th><td data-cell="D10" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="E10" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="F10" title="5" style="background-color:#F8696B;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">5</td><td data-cell="G10" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H10" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="S10" title="1,3140941497537875" style="background-color:#F8696B;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,314</td></tr>
+<tr style="height:22.5px"><th data-cell="C11" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #000000">Diesel</th><td data-cell="D11" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #000000">1</td><td data-cell="E11" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #000000">1</td><td data-cell="F11" title="5" style="background-color:#F8696B;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #000000">5</td><td data-cell="G11" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #000000">1</td><td data-cell="H11" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #000000">1</td><td data-cell="S11" title="1,1357816691600546" style="background-color:#FCC2C3;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #000000">1,136</td></tr>
+<tr style="height:49.5px"><th data-cell="A12" rowspan="2" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:0">Distribution</th><th data-cell="B12" rowspan="2" scope="rowgroup" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Raleway&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:0"></th><th data-cell="C12" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">Caténaires</th><td data-cell="D12" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="E12" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="F12" title="5" style="background-color:#F8696B;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">5</td><td data-cell="G12" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="H12" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="S12" title="1,1367530916142823" style="background-color:#FCC2C3;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,137</td></tr>
+<tr style="height:49.5px"><th data-cell="C13" scope="row" style="background-color:#ffffff00;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:700;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:2px solid #ffffff00;border-bottom:2px solid #ffffff00">Station H₂</th><td data-cell="D13" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="E13" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="F13" title="1" style="background-color:#FCFCFF;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1</td><td data-cell="G13" title="3" style="background-color:#FAB2B5;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">3</td><td data-cell="H13" title="2" style="background-color:#FBD7DA;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #ffffff00;border-right:2px solid #000000;border-top:0;border-bottom:2px solid #ffffff00">2</td><td data-cell="S13" title="1,2647255890435916" style="background-color:#F98283;color:#000000;font-family:&#x27;Avenir Next LT Pro&#x27;,Arial,sans-serif;font-weight:400;border-left:2px solid #000000;border-right:2px solid #ffffff00;border-top:0;border-bottom:2px solid #ffffff00">1,265</td></tr>
+</tbody></table>
+</div>
+</div>
+```
 
 ## Architecture modulaire des modèles {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Architecture modulaire des modèles</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:6%;top:15%;width:41%;height:60%;" src="assets/vector/s34_Groupe_1.svg" alt="Groupe 1">
-<img class="ppt-image" style="left:56%;top:17%;width:39%;height:56%;" src="assets/vector/s34_Groupe_33.svg" alt="Groupe 33"></div>
+<div class="ppt-canvas"><img class="ppt-image" style="left:6%;top:15%;width:41%;height:60%;" src="figures/schema_sc.svg" alt="Groupe 1">
+<img class="ppt-image" style="left:56%;top:17%;width:39%;height:56%;" src="figures/comput_simpl.svg" alt="Groupe 33"></div>
 
-## ORIEnT : modélisation des vitesses {.editorial data-part="3" data-subpart="2"}
+## Validation : comparaison avec l’ADEME {.editorial data-part="3" data-subpart="3" refs="sune-2025"}
 
-<div class="slide-title">ORIEnT : modélisation des vitesses</div>
+<div class="slide-title">Validation : comparaison avec l’ADEME <span data-cite="sune-2025"></span></div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:24%;top:15%;width:51%;height:62%;" src="assets/vector/s35_Groupe_13.svg" alt="Groupe 13"></div>
+```{=html}
+<div class="ppt-canvas ademe-validation">
+<figure class="ademe-report"><img src="figures/ademe.png" alt="Couverture du rapport final ADEME de juin 2025 : ACV attributionnelle d’un trajet en train sur 100 km de ligne non électrifiée"><figcaption>Rapport ADEME · Juin 2025</figcaption></figure>
+<div class="ademe-validation-content">
+<div class="ademe-validation-intro"><div class="ademe-validation-label">ÉTUDE DE RÉFÉRENCE</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p><p class="ademe-report-scope">Train régional et train de fret</p></div>
+<figure class="ademe-parameters"><figcaption>Paramètres de la ligne pour la comparaison</figcaption><img src="figures/param_ademe.svg" alt="Schéma de ligne : pente de 0 %, longueur de 50 km et distance entre arrêts de 5 km ; vitesse maximale à préciser"></figure>
+</div>
+</div>
+```
 
-## ORIEnT : modélisation du roulement {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">ORIEnT : modélisation du roulement</div>
-
-<div class="ppt-canvas"><div class="ppt-table-wrap" style="left:30%;top:27%;width:40%;height:63%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Phase</td><td style="font-size:var(--content-size);font-weight:700">Variable limitante</td><td style="font-size:var(--content-size);font-weight:700">Contrainte</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Accélération</td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a max</td><td style="font-size:var(--content-size)">a &lt; 0,3 m/s²</td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P max</td><td style="font-size:var(--content-size)">Pmax (1,6 MW pour le Régiolis)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Croisière</td><td style="font-size:var(--content-size)">P max, i</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Décélération</td><td style="font-size:var(--content-size)">V max</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a min</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P min (optionnel)</td><td style=""></td></tr></table></div></div>
-
-## ORIEnT : paramètres technologiques et ligne {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">ORIEnT : paramètres technologiques et ligne</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:26%;width:91%;height:62%;" src="assets/vector/s37_Graphique_1.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="assets/vector/s37_Groupe_7.svg" alt="Groupe 7"></div>
-
-## Illustration d’un classement multicritère {.editorial data-part="3" data-subpart="2"}
-
-<div class="slide-title">Illustration d’un classement multicritère</div>
-
-<div class="ppt-canvas"><div class="ppt-table-wrap" style="left:27%;top:5%;width:50%;height:31%;"><table class="ppt-table"><tr><td style=""></td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">Weight</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,24</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,27</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,18</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,09</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,21</td></tr><tr><td style=""></td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Criteria</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Cost</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Ecosystem diversity</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Resource scarcity</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Human health</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Social impact</td></tr><tr><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Alternatives</td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Diesel</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">4</td><td style="font-size:var(--content-size)">7</td><td style="font-size:var(--content-size)">4</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Biofuel</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">9</td><td style="font-size:var(--content-size)">5</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">9</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Hybrid</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">7</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">5</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Batteries</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">5</td><td style="font-size:var(--content-size)">4</td><td style="font-size:var(--content-size)">9</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Hydrogen</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">8</td><td style="font-size:var(--content-size)">3</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Electrification</td><td style="font-size:var(--content-size)">5</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">7</td></tr></table></div>
-<img class="ppt-image" style="left:13%;top:56%;width:50%;height:16%;" src="assets/vector/s38_Groupe_8.svg" alt="Groupe 8">
-<div class="ppt-table-wrap" style="left:76%;top:49%;width:15%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Scenario</td><td style="font-size:var(--content-size);font-weight:700">Rank</td></tr><tr><td style="font-size:var(--content-size)">Diesel</td><td style="font-size:var(--content-size)">5</td></tr><tr><td style="font-size:var(--content-size)">Biofuel</td><td style="font-size:var(--content-size)">4</td></tr><tr><td style="font-size:var(--content-size)">Hybrid</td><td style="font-size:var(--content-size)">1</td></tr><tr><td style="font-size:var(--content-size)">Batteries</td><td style="font-size:var(--content-size)">3</td></tr><tr><td style="font-size:var(--content-size)">Hydrogen</td><td style="font-size:var(--content-size)">2</td></tr><tr><td style="font-size:var(--content-size)">Electrification</td><td style="font-size:var(--content-size)">6</td></tr></table></div></div>
-
-## Validation : comparaison avec l’ADEME {.editorial data-part="3" data-subpart="3"}
-
-<div class="slide-title">Validation : comparaison avec l’ADEME</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:17%;top:26%;width:67%;height:24%;" src="assets/vector/s40_Groupe_7.svg" alt="Groupe 7">
-<div class="ppt-text" style="left:5%;top:11%;width:90%;height:8%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène.2025. </span></div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée, ACV comparative d&#x27;un trajet en train régional et d’un trajet en train de fret</span></div></div>
-<img class="ppt-image" style="left:39%;top:52%;width:22%;height:44%;" src="assets/media/image64.png" alt="Picture 2"></div>
-
-## Validation ADEME : changement climatique {.editorial data-part="3" data-subpart="3"}
-
-<div class="slide-title">Validation ADEME : changement climatique</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:50%;top:12%;width:49%;height:58%;" src="assets/vector/s41_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
-<img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
-<div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Comparaison des scénarios – changement climatique (gCO2eq pour 1 p.km)</span></div></div>
-<img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="assets/vector/s41_Groupe_8.svg" alt="Groupe 8"></div>
 
 ## Analyse des résultats : impacts normalisés {.editorial data-part="3" data-subpart="3"}
 
-<div class="slide-title">Analyse des résultats : impacts normalisés</div>
+<div class="slide-title">Comparaison du choix de scenario de décarbonation</div>
 
 <div class="ppt-canvas"><div class="ppt-text" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span></div><div class="ppt-p" style="text-align:center">&nbsp;</div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span></div></div>
-<img class="ppt-image" style="left:45%;top:8%;width:60%;height:91%;" src="assets/media/image67.svg" alt="Graphique 4">
-<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Comparaison des résultats d’impact normalisés en points (pt)</span></div></div>
-<div class="ppt-table-wrap" style="left:2%;top:19%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
-<img class="ppt-image" style="left:20%;top:-3%;width:10%;height:20%;" src="assets/media/image64.png" alt="Picture 2"></div>
+<div class="ppt-table-wrap speed-ranking-table">
+<table class="ppt-table" aria-label="Classement des scénarios selon la vitesse maximale">
+<thead>
+<tr><th rowspan="2" scope="col">Scénarios</th><th colspan="3" scope="colgroup">Vitesse maximale (km/h)</th></tr>
+<tr><th scope="col">54 - 72</th><th scope="col">72 - 94</th><th scope="col">94 - 130</th></tr>
+</thead>
+<tbody>
+<tr><th scope="row">Électrification</th><td>1</td><td rowspan="2" class="speed-ranking-uncertainty">Incertitude</td><td>2</td></tr>
+<tr><th scope="row">Batteries</th><td>2</td><td>1</td></tr>
+<tr><th scope="row">Diesel</th><td>3</td><td>3</td><td>3</td></tr>
+</tbody>
+</table>
+</div>
+<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Classement PROMETHEE selon la vitesse maximale</span></div></div>
+
+<div class="ppt-table-wrap" style="left:2%;top:23%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
+<img class="ppt-image" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Picture 2"></div>
 
 ## Cas d’étude : Corse {.editorial data-part="3" data-subpart="3"}
 
@@ -1264,7 +1252,7 @@ Division en modules des scénarios de décarbonation
 <div class="slide-title">Réduction de l’impact du mix électrique corse</div>
 
 <div class="ppt-canvas"><div class="ppt-text" style="left:21%;top:83%;width:59%;height:7%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-title-size);font-weight:700">Perspectives</span><span style="font-size:var(--content-title-size)"> : Stratégies de décarbonation du mix électrique Corse</span></div></div>
-<img class="ppt-image" style="left:8%;top:4%;width:84%;height:73%;" src="assets/vector/s47_Groupe_22.svg" alt="Groupe 22">
+<img class="ppt-image" style="left:8%;top:4%;width:84%;height:73%;" src="figures/corse_result.svg" alt="Groupe 22">
 <div class="ppt-text" style="left:70%;top:66%;width:6%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">-10%</span></div></div>
 <div class="ppt-text" style="left:51%;top:66%;width:6%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">-50%</span></div></div>
 <div class="ppt-text" style="left:31%;top:66%;width:6%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">-90%</span></div></div></div>
@@ -1287,13 +1275,6 @@ Division en modules des scénarios de décarbonation
 <img class="ppt-image" style="left:66%;top:54%;width:27%;height:37%;" src="assets/media/image79.png" alt="Picture 6">
 <img class="ppt-image" style="left:65%;top:10%;width:27%;height:37%;" src="assets/media/image80.png" alt="Picture 8"></div>
 
-## Analyse des résultats : effet de la vitesse maximale {.editorial data-part="3" data-subpart="3"}
-
-<div class="slide-title">Analyse des résultats : effet de la vitesse maximale</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:48%;top:37%;width:27%;height:39%;" src="assets/vector/s43_Picture_4.svg" alt="Picture 4">
-<div class="ppt-table-wrap" style="left:50%;top:37%;width:48%;height:52%;"><table class="ppt-table"><tr><td style=""></td><td style=""></td></tr><tr><td style="font-size:var(--content-size)">Vmax = 54 m/s</td><td style="font-size:var(--content-size)">Vmax = 130 m/s</td></tr></table></div>
-<img class="ppt-image" style="left:73%;top:38%;width:27%;height:38%;" src="assets/vector/s43_Image_1.svg" alt="Image 1"></div>
 
 ## Sobol total : ensemble des paramètres {.editorial data-part="3" data-subpart="3"}
 
@@ -1327,6 +1308,16 @@ Division en modules des scénarios de décarbonation
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:7%;top:18%;width:39%;height:52%;" src="assets/media/image92.svg" alt="Graphique 4">
 <img class="ppt-image" style="left:56%;top:18%;width:40%;height:52%;" src="assets/media/image93.svg" alt="Graphique 3"></div>
+
+## Zones d’incomparabilité {.editorial data-part="3" data-subpart="3"}
+
+<div class="slide-title">Zones d’incomparabilité</div>
+
+<div class="ppt-canvas">
+<img class="ppt-image" style="left:0%;top:10%;width:49%;height:80%;" src="figures/incomparability_heatmap_Plongueur_km__d_stop.svg" alt="Zones d’incomparabilité selon la longueur de ligne et la distance entre arrêts">
+<img class="ppt-image" style="left:51%;top:10%;width:49%;height:80%;" src="figures/incomparability_heatmap_v_max_ms__Pfrequentation_par_jour.svg" alt="Zones d’incomparabilité selon la vitesse maximale et la fréquentation par jour">
+</div>
+
 
 ## {.editorial .part-divider data-part="4" data-subpart="1"}
 
@@ -1429,3 +1420,71 @@ Division en modules des scénarios de décarbonation
 
 <div class="ppt-canvas"></div>
 
+## Rétrospectif : caténaires {.editorial .appendix-slide}
+
+<div class="slide-title">Rétrospectif : caténaires</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:25%;top:0%;width:50%;height:89%;" src="assets/media/image47.svg" alt="Graphique 10">
+<img class="ppt-image" style="left:78%;top:11%;width:18%;height:49%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image48.svg" alt="Graphique 1">
+<img class="ppt-image" style="left:-4%;top:19%;width:27%;height:37%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s26_Graphique_1.svg" alt="Graphique 1"></div>
+
+## Prospectif : mix électrique {.editorial .appendix-slide}
+
+<div class="slide-title">Prospectif : mix électrique</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:4%;top:26%;width:34%;height:43%;" src="assets/vector/s27_Graphique_1.svg" alt="Graphique 1">
+<div class="ppt-text" style="left:4%;top:20%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span></div></div>
+<img class="ppt-image" style="left:45%;top:1%;width:50%;height:94%;" src="assets/media/image50.svg" alt="Graphique 16"></div>
+
+## Batteries : revue bibliographique {.editorial .appendix-slide}
+
+<div class="slide-title">Batteries : revue bibliographique</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:1%;width:44%;height:89%;" src="assets/media/image44.png" alt="Image 15">
+<img class="ppt-image" style="left:55%;top:7%;width:36%;height:45%;" src="assets/vector/s28_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
+<img class="ppt-image" style="left:66%;top:17%;width:0%;height:25%;" src="assets/vector/s28_Connecteur_droit_9.svg" alt="Connecteur droit 9">
+<div class="ppt-table-wrap" style="left:52%;top:62%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">-</td><td style="font-size:var(--content-size)">-</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div></div>
+
+## Batteries : dimensionnement à masse constante {.editorial .appendix-slide}
+
+<div class="slide-title">Batteries : dimensionnement à masse constante</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:2%;top:2%;width:50%;height:89%;" src="assets/media/image51.svg" alt="Graphique 17">
+<div class="ppt-table-wrap" style="left:56%;top:17%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div>
+<div class="ppt-text" style="left:61%;top:51%;width:28%;height:18%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size);font-weight:700">Comparaison brute des technologies, à ce stade pas de prise en compte:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Infrastructures ferroviaires </span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Exploitation des trains</span></div></div></div>
+
+## ORIEnT : modélisation des vitesses {.editorial .appendix-slide}
+
+<div class="slide-title">ORIEnT : modélisation des vitesses</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:24%;top:15%;width:51%;height:62%;" src="assets/vector/s35_Groupe_13.svg" alt="Groupe 13"></div>
+
+## ORIEnT : modélisation du roulement {.editorial .appendix-slide}
+
+<div class="slide-title">ORIEnT : modélisation du roulement</div>
+
+<div class="ppt-canvas"><div class="ppt-table-wrap" style="left:30%;top:27%;width:40%;height:63%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Phase</td><td style="font-size:var(--content-size);font-weight:700">Variable limitante</td><td style="font-size:var(--content-size);font-weight:700">Contrainte</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Accélération</td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a max</td><td style="font-size:var(--content-size)">a &lt; 0,3 m/s²</td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P max</td><td style="font-size:var(--content-size)">Pmax (1,6 MW pour le Régiolis)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Croisière</td><td style="font-size:var(--content-size)">P max, i</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Décélération</td><td style="font-size:var(--content-size)">V max</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a min</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P min (optionnel)</td><td style=""></td></tr></table></div></div>
+
+## ORIEnT : paramètres technologiques et ligne {.editorial .appendix-slide}
+
+<div class="slide-title">ORIEnT : paramètres technologiques et ligne</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:26%;width:91%;height:62%;" src="assets/vector/s37_Graphique_1.svg" alt="Graphique 1">
+<img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="assets/vector/s37_Groupe_7.svg" alt="Groupe 7"></div>
+
+## Illustration d’un classement multicritère {.editorial .appendix-slide}
+
+<div class="slide-title">Illustration d’un classement multicritère</div>
+
+<div class="ppt-canvas"><div class="ppt-table-wrap" style="left:27%;top:5%;width:50%;height:31%;"><table class="ppt-table"><tr><td style=""></td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">Weight</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,24</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,27</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,18</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,09</td><td style="background:#FFF2CC;color:#000000;font-size:var(--content-size)">0,21</td></tr><tr><td style=""></td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Criteria</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Cost</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Ecosystem diversity</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Resource scarcity</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Human health</td><td style="background:#DDEBF7;color:#000000;font-size:var(--content-size)">Social impact</td></tr><tr><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Alternatives</td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Diesel</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">4</td><td style="font-size:var(--content-size)">7</td><td style="font-size:var(--content-size)">4</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Biofuel</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">9</td><td style="font-size:var(--content-size)">5</td><td style="font-size:var(--content-size)">1</td><td style="font-size:var(--content-size)">9</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Hybrid</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">7</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">5</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Batteries</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">5</td><td style="font-size:var(--content-size)">4</td><td style="font-size:var(--content-size)">9</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Hydrogen</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">2</td><td style="font-size:var(--content-size)">8</td><td style="font-size:var(--content-size)">3</td></tr><tr><td style=""></td><td style="background:#FCE4D6;color:#000000;font-size:var(--content-size)">Electrification</td><td style="font-size:var(--content-size)">5</td><td style="font-size:var(--content-size)">3</td><td style="font-size:var(--content-size)">10</td><td style="font-size:var(--content-size)">6</td><td style="font-size:var(--content-size)">7</td></tr></table></div>
+<img class="ppt-image" style="left:13%;top:56%;width:50%;height:16%;" src="assets/vector/s38_Groupe_8.svg" alt="Groupe 8">
+<div class="ppt-table-wrap" style="left:76%;top:49%;width:15%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Scenario</td><td style="font-size:var(--content-size);font-weight:700">Rank</td></tr><tr><td style="font-size:var(--content-size)">Diesel</td><td style="font-size:var(--content-size)">5</td></tr><tr><td style="font-size:var(--content-size)">Biofuel</td><td style="font-size:var(--content-size)">4</td></tr><tr><td style="font-size:var(--content-size)">Hybrid</td><td style="font-size:var(--content-size)">1</td></tr><tr><td style="font-size:var(--content-size)">Batteries</td><td style="font-size:var(--content-size)">3</td></tr><tr><td style="font-size:var(--content-size)">Hydrogen</td><td style="font-size:var(--content-size)">2</td></tr><tr><td style="font-size:var(--content-size)">Electrification</td><td style="font-size:var(--content-size)">6</td></tr></table></div></div>
+
+## Validation ADEME : changement climatique {.editorial .appendix-slide}
+
+<div class="slide-title">Validation ADEME : changement climatique</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:50%;top:12%;width:49%;height:58%;" src="assets/vector/s41_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
+<img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
+<div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Comparaison des scénarios – changement climatique (gCO2eq pour 1 p.km)</span></div></div>
+<img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="figures/param_ademe.svg" alt="Paramètres de la ligne pour la comparaison ADEME"></div>

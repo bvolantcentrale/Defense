@@ -24,6 +24,39 @@ function Pandoc(doc)
     return ref
   end
 
+  local function register(key)
+    entry(key)
+    if not numbers[key] then
+      used[#used+1] = key
+      numbers[key] = #used
+    end
+    return numbers[key]
+  end
+
+  local function citation(keys)
+    local labels, first = {}, nil
+    for key in keys:gmatch('[^,%s]+') do
+      if not slide or not slide.attributes.refs or
+          not (',' .. slide.attributes.refs .. ','):find(',' .. key .. ',', 1, true) then
+        error('Appel de référence absent du champ refs de la diapo : ' .. key)
+      end
+      local n = register(key)
+      first = first or n
+      labels[#labels+1] = tostring(n)
+    end
+    local label = '[' .. table.concat(labels, ',') .. ']'
+    if FOOTER_ONLY_PARTS[part] then return '<span class="citation-call">' .. label .. '</span>' end
+    return '<a class="citation-call" href="#/references-part-' .. part .. '-' ..
+      math.ceil(first/REFERENCES_PER_PAGE) .. '">' .. label .. '</a>'
+  end
+
+  local function inline_citations(raw)
+    if raw.format == 'html' then
+      raw.text = raw.text:gsub('<span data%-cite="([^"]+)"></span>', citation)
+      return raw
+    end
+  end
+
   local function recap()
     if FOOTER_ONLY_PARTS[part] then return end
     -- Dix entrées par page pour conserver une taille de lecture confortable.
@@ -86,7 +119,19 @@ function Pandoc(doc)
       end
       subpart = block.attributes['data-subpart'] or '1'
       slide = block
+      if slide.attributes.refs then
+        for key in slide.attributes.refs:gmatch('[^,%s]+') do register(key) end
+      end
     end
+    block = block:walk({
+      RawBlock=inline_citations,
+      RawInline=inline_citations,
+      Span=function(span)
+        local keys = span.attributes['data-cite']
+        if keys then return pandoc.RawInline('html', citation(keys)) end
+      end
+    })
+    if block.t == 'Header' and block.level == 2 then slide = block end
     output:insert(block)
   end
   footer()

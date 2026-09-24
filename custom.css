@@ -1349,13 +1349,140 @@ body {
 }
 @media (prefers-reduced-motion: reduce) { .lcia-methods-table td { transition: none; } }
 
-.lcia-illustration { position: absolute; inset: 0 0 9%; }
-.lcia-illustration-title { text-align: center; font-size: var(--content-size); }
-.lcia-illustration img { position: absolute; top: 6%; left: 0; width: 100%; height: 94%; object-fit: contain; }
-.lcia-choice:has(.lcia-illustration.visible) .lcia-methods-table { visibility: hidden; }
-.lcia-choice:has(.lcia-illustration.visible) .lcia-mcdm { top: auto; bottom: 0; text-align: center; }
-@media print {
-  .lcia-choice .lcia-methods-table { visibility: visible !important; top: 0; }
-  .lcia-choice .lcia-illustration { top: 31%; bottom: 7%; }
-  .lcia-choice .lcia-mcdm { top: auto; bottom: 0; text-align: center; }
+
+.lcia-illustrations {
+  position: absolute; left: 1%; right: 1%; top: 43%; bottom: 1%;
+  display: grid; grid-template-columns: 1.75fr 1.1fr 0.65fr; gap: 20px;
 }
+.lcia-illustrations figure {
+  margin: 0; min-width: 0; min-height: 0;
+  display: grid; grid-template-rows: auto minmax(0, 1fr); gap: 10px;
+}
+.reveal .slides .lcia-illustrations figcaption { text-align: center; font-size: var(--content-size); font-weight: 400; }
+.lcia-illustrations img { width: 100%; height: 100%; object-fit: contain; margin: 0 !important; }
+.lcia-choice .lcia-mcdm { text-align: center; }
+
+.reveal .citation-call { color: inherit; font-size: 0.85em; white-space: nowrap; }
+.preference-choice .preference-functions { left: 0; top: 0; width: 49%; }
+.reveal .preference-functions table :is(th, td) { padding: 4px 6px; font-size: 16px; line-height: 1.15; }
+.reveal .preference-choice caption { padding-bottom: 8px; text-align: left; color: #111; font-size: 22px; }
+.preference-functions img { display: block; width: 138px; height: 62px; margin: 0 auto !important; }
+.preference-functions td { transition: opacity 0.4s ease, background-color 0.4s ease; }
+.preference-selection { position: absolute; width: 0; height: 0; pointer-events: none; }
+.preference-choice:has(.preference-selection.visible) .preference-vshape td { background: #dedede; font-weight: 700; }
+.preference-choice:has(.preference-selection.visible) .preference-functions tbody tr:not(.preference-vshape) td { opacity: 0.3; }
+.preference-weak-stage { position: absolute; inset: 0; pointer-events: none; }
+.preference-weak-stage a { pointer-events: auto; }
+.preference-v-detail { position: absolute; left: 0; top: 76%; width: 49%; font-size: 16px; display: grid; grid-template-columns: 32% 1fr; gap: 4px 12px; align-items: center; }
+.reveal .preference-v-detail h3 { grid-column: 1 / -1; margin: 0; font-size: 20px; color: #111; }
+.reveal .preference-v-detail p { margin: 0; line-height: 1.35; }
+.preference-v-detail img { width: 100%; margin: 0 !important; }
+.preference-choice .weak-preference-table { left: 51%; top: 0; width: 49%; }
+.reveal .weak-preference-table table :is(td, th) { padding: 5px 6px; font-size: 16px; line-height: 1.15; }
+.reveal .weak-preference-table table td:first-child { width: 55%; }
+.reveal .weak-preference-table table td:not(:first-child) { text-align: center; }
+.reveal .weak-preference-table table tr:first-of-type { font-weight: 700; }
+@media print { .preference-choice .preference-vshape td { background: #dedede; font-weight: 700; } }
+@media (prefers-reduced-motion: reduce) { .preference-functions td { transition: none; } }
+
+/* Application du pedigree : couleurs conditionnelles et bordures du classeur. */
+.pedigree-application .pedigree-application-wrap { left: 0; top: 5%; width: 100%; }
+.reveal .pedigree-application .pedigree-application-table { table-layout: fixed; background: transparent; border: none; }
+.reveal .pedigree-application-table :is(td, th) {
+  padding: 7px 6px; font-size: 18px; line-height: 1.15; text-align: center; vertical-align: middle;
+}
+.reveal .pedigree-application-table thead th { padding: 12px 6px; overflow-wrap: normal; }
+.reveal .pedigree-application-table thead th:nth-child(1) { width: 10%; }
+.reveal .pedigree-application-table thead th:nth-child(2) { width: 9%; }
+.reveal .pedigree-application-table thead th:nth-child(3) { width: 16%; }
+.reveal .pedigree-application-table thead th:nth-child(8) { width: 14%; }
+.reveal .pedigree-application-table thead th:nth-child(9) { width: 10%; }
+
+/* Schéma des paramètres et équations du roulement. */
+.rolling-equations .rolling-parameters { left: 3%; top: 0; width: 94%; height: 34%; }
+.rolling-equations-table { position: absolute; left: 1%; top: 38%; width: 98%; }
+.reveal .rolling-equations-table table { width: 100%; margin: 0; table-layout: fixed; font-size: var(--content-size); }
+.reveal .rolling-equations-table :is(th, td) { padding: 12px 10px; vertical-align: middle; line-height: 1.3; }
+.reveal .rolling-equations-table th { color: var(--accent); border-bottom: 2px solid var(--accent); }
+.reveal .rolling-equations-table th:nth-child(1) { width: 19%; }
+.reveal .rolling-equations-table th:nth-child(2) { width: 36%; }
+.reveal .rolling-equations-table th:nth-child(3) { width: 45%; }
+.reveal .rolling-equations-table tbody tr:nth-child(even) { background: rgba(228, 79, 100, .045); }
+.reveal .rolling-equations-table td:nth-child(3) { text-align: center; }
+.reveal .rolling-equations-table .MathJax { font-size: 100% !important; }
+.rolling-equations-key { margin-top: 14px; font-size: 16px; line-height: 1.5; color: #555; }
+
+/* Unité fonctionnelle : horizon de vie, invariants et alternatives. */
+.functional-unit-canvas { display: flex; flex-direction: column; gap: 30px; padding: 8px 12px 0; }
+.fu-definition { position: relative; padding: 24px 290px 26px 28px; border-left: 5px solid var(--accent); background: rgba(228, 79, 100, .07); }
+.fu-label { color: var(--accent); font-size: 16px; font-weight: 700; letter-spacing: .09em; }
+.fu-statement { margin-top: 12px; font-size: 25px; font-weight: 600; line-height: 1.4; }
+.fu-lifetime { position: absolute; right: 28px; top: 32px; display: flex; flex-direction: column; gap: 10px; text-align: center; }
+.fu-lifetime strong { font-size: 40px; color: var(--accent); }
+.fu-lifetime span { font-size: 16px; color: #555; }
+.fu-comparison { display: grid; grid-template-columns: 1.15fr 70px 1fr; align-items: center; flex: 1; min-height: 280px; }
+.reveal .fu-comparison h3 { margin: 0; font-size: 24px; line-height: 1.35; }
+.fu-fixed { text-align: center; }
+.fu-train { width: 340px; margin: 16px auto 8px; }
+.fu-train svg { display: block; width: 100%; }
+.fu-invariants { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.fu-invariants span { font-size: 17px; line-height: 1.4; }
+.fu-invariants strong { display: block; font-size: 19px; margin-bottom: 5px; }
+.fu-link { color: var(--accent); font-size: 44px; text-align: center; }
+.fu-variable { padding: 22px 24px; border: 2px solid var(--accent); border-radius: 12px; text-align: center; }
+.reveal .fu-variable h3 { margin-top: 10px; }
+.fu-alternatives { display: flex; justify-content: center; gap: 12px; margin: 20px 0 16px; }
+.fu-alternatives span { border-radius: 5px; padding: 9px 16px; background: rgba(228, 79, 100, .09); font-size: 18px; font-weight: 600; }
+.reveal .fu-variable p { margin: 0; font-size: 18px; line-height: 1.4; }
+.fu-scope { display: flex; align-items: center; gap: 30px; border-top: 1px solid #bbb; padding: 18px 0 6px; }
+.fu-scope strong { color: var(--accent); font-size: 22px; flex: 0 0 36%; }
+.fu-scope span { font-size: 18px; line-height: 1.5; }
+
+/* Types retenus : tableau, RTE, batteries, puis caténaires. */
+.inventory-types > .fragment { position: absolute; width: 1px; height: 1px; pointer-events: none; }
+.inventory-types .inventory-types-table { left: 34%; top: 16%; width: 32%; transition: left .35s ease, width .35s ease; }
+.reveal .inventory-types-table table :is(th, td) { padding: 18px 22px; font-size: 24px; }
+.inventory-types-table td { transition: color .25s ease, background-color .25s ease, opacity .25s ease; }
+.inventory-types:has(.inventory-step-rte.visible) .inventory-types-table { left: 0; width: 27%; }
+.inventory-types:has(.inventory-step-rte.visible) :is(.inventory-common, .inventory-prospective, .inventory-bibliographic) td,
+.inventory-types:has(.inventory-step-catenaries.visible) .inventory-retrospective td { background: rgba(228, 79, 100, .13); color: var(--accent); font-weight: 700; }
+.inventory-types:has(.inventory-step-rte.visible) .inventory-retrospective td { opacity: .3; }
+.inventory-types:has(.inventory-step-catenaries.visible) .inventory-retrospective td { opacity: 1; }
+.inventory-types:has(.inventory-step-catenaries.visible) :is(.inventory-prospective, .inventory-bibliographic) td { background: transparent; color: inherit; font-weight: 400; opacity: .3; }
+.inventory-types .inventory-panel { position: absolute; left: 31%; top: 0; width: 69%; height: 100%; margin: 0; display: none; }
+.inventory-types:has(.inventory-step-rte.visible):not(:has(.inventory-step-batteries.visible)) .inventory-rte,
+.inventory-types:has(.inventory-step-batteries.visible):not(:has(.inventory-step-catenaries.visible)) .inventory-batteries { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.inventory-types:has(.inventory-step-catenaries.visible) .inventory-catenaries { display: flex; flex-direction: column; gap: 18px; }
+.reveal .inventory-panel > figcaption, .reveal .inventory-panel > h3 { margin: 0; font-size: 24px; font-weight: 700; text-align: center; line-height: 1.3; }
+.inventory-panel > img { display: block; width: 100%; min-height: 0; flex: 1; object-fit: contain; margin: 0; }
+.reveal .inventory-caption { margin: 0; font-size: 18px; color: #555; text-align: center; }
+.inventory-catenary-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; min-height: 0; flex: 1; }
+.inventory-catenary-pair figure { display: flex; flex-direction: column; align-items: center; min-height: 0; margin: 0; gap: 12px; }
+.inventory-catenary-pair figcaption { font-size: 20px; color: var(--accent); font-weight: 600; }
+.inventory-catenary-pair img { width: 100%; min-height: 0; flex: 1; object-fit: contain; margin: 0; }
+@media (prefers-reduced-motion: reduce) { .inventory-types .inventory-types-table, .inventory-types-table td { transition: none; } }
+
+/* Validation ADEME : rapport, périmètre et paramètres de comparaison. */
+.ademe-validation { display: grid; grid-template-columns: 29% 1fr; gap: 48px; padding: 12px 10px 8px; }
+.ademe-validation figure { margin: 0; }
+.ademe-report { display: flex; flex-direction: column; align-items: center; min-height: 0; gap: 14px; }
+.ademe-report img { display: block; width: 100%; flex: 1; min-height: 0; object-fit: contain; margin: 0; }
+.ademe-report figcaption { font-size: 18px; color: #555; }
+.ademe-validation-content { display: flex; flex-direction: column; justify-content: center; gap: 48px; min-width: 0; }
+.ademe-validation-intro { border-left: 4px solid var(--accent); padding: 10px 0 12px 24px; }
+.ademe-validation-label { color: var(--accent); font-size: 16px; font-weight: 700; letter-spacing: .08em; }
+.reveal .ademe-validation-intro h3 { font-size: 28px; margin: 16px 0; line-height: 1.3; }
+.reveal .ademe-validation-intro p { font-size: 24px; margin: 8px 0; }
+.ademe-validation-intro strong { color: var(--accent); font-size: 36px; }
+.reveal .ademe-validation-intro .ademe-report-scope { font-size: 20px; color: #555; }
+.ademe-parameters figcaption { font-size: 22px; font-weight: 600; margin-bottom: 24px; }
+.ademe-parameters img { display: block; width: 100%; height: auto; margin: 0; }
+
+/* Classement des alternatives selon la vitesse maximale. */
+.speed-ranking-table { left: 51%; top: 23%; width: 47%; }
+.reveal .speed-ranking-table table { width: 100%; table-layout: fixed; background: transparent; }
+.reveal .speed-ranking-table :is(th, td) { padding: 18px 12px; font-size: 22px; text-align: center; vertical-align: middle; }
+.reveal .speed-ranking-table thead th { color: var(--accent); font-weight: 700; }
+.reveal .speed-ranking-table th:first-child[rowspan] { width: 32%; }
+.reveal .speed-ranking-table tbody th { text-align: left; font-weight: 600; }
+.reveal .speed-ranking-table .speed-ranking-uncertainty { background: rgba(228, 79, 100, .09); font-size: 20px; }
