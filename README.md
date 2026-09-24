@@ -55,11 +55,9 @@ Ajouter ensuite `refs="bloch-2023"` dans les accolades du titre de la diapo :
 
 Pour plusieurs sources : `refs="bolla-2011,li-2023"`. Réutiliser le même identifiant conserve le même numéro dans la partie. L'ordre de première citation définit les numéros, qui recommencent à 1 pour chaque `data-part`.
 
-Le filtre `part-references.lua` affiche le champ `full` de chaque référence en bas de la diapo (16 px, gris, une notice par bloc), puis les notices complètes en fin de partie (26 px, dix références par page). `navigation.html` ajuste l’espace réservé en bas du canevas à la hauteur réelle des notices pour éviter les chevauchements. Les citations sont cliquables vers leur récapitulatif. Les récapitulatifs apparaissent avant la partie suivante, ou avant « Merci » pour la dernière partie ; une partie sans citation ne reçoit pas de page vide. Ils font partie du compteur et de la progression, et sont présents dans l'export PDF.
+Le filtre `part-references.lua` affiche le champ `full` de chaque référence en bas de la diapo (16 px, gris, une notice par bloc). `navigation.html` ajuste l’espace réservé en bas du canevas à la hauteur réelle des notices pour éviter les chevauchements. Les appels numérotés et les notices restent sur les diapositives, sans lien vers un récapitulatif ni page de références séparée, y compris dans l’export PDF.
 
-Exception pour l’introduction (`data-part="1"`) : les notices restent en pied de page, sans lien ni diapositive récapitulative en fin de partie. Cette exception est définie dans `FOOTER_ONLY_PARTS` du filtre Lua.
-
-Ne pas écrire les diapositives de références à la main. Lancer `quarto render presentation.qmd` après modification. Un identifiant inconnu ou une notice sans `short` / `full` provoque une erreur explicite au rendu.
+Lancer `quarto render presentation.qmd` après modification. Un identifiant inconnu ou une notice sans `short` / `full` provoque une erreur explicite au rendu.
 
 Les références initiales sont reprises du document existant sans validation bibliographique. Les six entrées `literature-*` n'ont que les auteurs, l'année et l'approche citée : compléter `full` avec les notices bibliographiques exactes.
 

@@ -66,3 +66,21 @@ part-references:
   sune-2025:
     short: "Sune et al. (2025)"
     full: "ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène (2025). Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée. ACV comparative d’un trajet en train régional et d’un trajet en train de fret. Rapport final, juin 2025."
+  riondet-2023:
+    short: "Riondet et al. (2023)"
+    full: "Riondet, L., Rio, M., Perrot-Bernardet, V., & Zwolinski, P. (2023). Assessing energy technologies sustainability: upscaling photovoltaics using absolute LCA. Procedia CIRP, 116, 714–719. https://doi.org/10.1016/j.procir.2023.02.120"
+  shi-2024:
+    short: "Shi & Yan (2024)"
+    full: "Shi, S., & Yan, X. (2024). A critical review on spatially explicit life cycle assessment methodologies and applications. Sustainable Production and Consumption, 52, 566–579. https://doi.org/10.1016/j.spc.2024.11.015"
+  loiseau-2018:
+    short: "Loiseau et al. (2018)"
+    full: "Loiseau, E., Aissani, L., Le Féon, S., Laurent, F., Cerceau, J., Sala, S., & Roux, P. (2018). Territorial Life Cycle Assessment (LCA): What exactly is it about? A proposal towards using a common terminology and a research agenda. Journal of Cleaner Production, 176, 474–485. https://doi.org/10.1016/j.jclepro.2017.12.169"
+  spreafico-2021:
+    short: "Spreafico (2021)"
+    full: "Spreafico, C. (2021). Can modified components make cars greener? A life cycle assessment. Journal of Cleaner Production, 307, 127190. https://doi.org/10.1016/j.jclepro.2021.127190"
+  padey-2013:
+    short: "Padey (2013)"
+    full: "Padey, P. (2013). Modèles simplifiés d’Analyse de Cycle de Vie : cadre méthodologique et applications aux filières de conversion d’énergie. Thèse de doctorat, École nationale supérieure des mines de Paris. https://theses.fr/2013ENMP0083"
+  ventura-2022:
+    short: "Ventura (2022)"
+    full: "Ventura, A. (2022). Transition life cycle assessment: A new method to face ecological transition. Frontiers in Sustainability, 3, 801668. https://doi.org/10.3389/frsus.2022.801668"

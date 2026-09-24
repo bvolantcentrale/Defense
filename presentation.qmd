@@ -178,7 +178,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <img class="ppt-image" style="left:33%;top:41%;width:21%;height:30%;" src="assets/vector/s09_Image_1.svg" alt="Image 1">
 
 <!-- Schéma des indicateurs -->
-<img class="ppt-image" style="left:49%;top:38%;width:27%;height:43%;" src="figures/poids.svg" alt="Indicateurs du poids des acteurs">
+<img class="ppt-image" style="left:49%;top:33%;width:27%;height:43%;" src="figures/poids.svg" alt="Indicateurs du poids des acteurs">
 
 <!-- Schéma des clusters -->
 <img class="ppt-image" style="left:75%;top:29%;width:24%;height:25%;" src="figures/clusters.svg" alt="Regroupement des acteurs">
@@ -734,7 +734,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </tbody></table></div></div>
 ```
 
-## Indicateurs de réseau choisis {.editorial data-part="2" data-subpart="2" refs="bloch-2023"}
+## Indicateurs de réseau choisis {.editorial .network-indicators-selected data-part="2" data-subpart="2" refs="bloch-2023"}
 
 <div class="slide-title">Indicateurs de réseau choisis</div>
 
@@ -744,20 +744,16 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 | Indicateur | Interprétation | Formule |
 |:--|:--|:--|
-| **Nombre d’entrées et de sorties** | Nombre de liens entrants et sortants du nœud | $\Omega_i^{-}\;;\quad\Omega_i^{+}$ |
 | **Nombre d’entrées et de sorties pondérées** | Somme des poids des liens entrants et sortants | $\displaystyle\varphi_i^{-}=\sum\nolimits_{j=1}^{n}g_{ji}\;;\quad\varphi_i^{+}=\sum\nolimits_{j=1}^{n}g_{ij}$ |
-| **Centralité normalisée** | Nombre de connexions du nœud, rapporté aux maxima du réseau | $\displaystyle\Omega_i=\frac{\Omega_i^{+}}{\max_k\Omega_k^{+}}+\frac{\Omega_i^{-}}{\max_k\Omega_k^{-}}$ |
 | **Poids total du nœud normalisé** | Part du nœud dans la somme des poids entrants et sortants | $\displaystyle\varphi_i=\frac{\varphi_i^{+}+\varphi_i^{-}}{\sum_{k=1}^{n}\varphi_k^{+}+\sum_{k=1}^{n}\varphi_k^{-}}$ |
 | **Centralité d’intermédiarité** | Importance du nœud dans les plus courts chemins reliant les autres nœuds | $\displaystyle c_i^{\mathrm{bet}}=\frac{2}{(n-1)(n-2)}\sum_{\substack{(j,k)\,:\,j\ne i,\,k\ne i}}\frac{\nu_g(i:j,k)}{\nu_g(j,k)}$ |
-| **Centralité de proximité normalisée** | Inverse de la distance moyenne du nœud aux autres nœuds | $\displaystyle C_c(i)=\frac{n-1}{\sum\nolimits_{j\ne i}^{n}\rho(i,j)}$ |
-| **Centralité harmonique** | Moyenne des inverses des distances aux autres nœuds | $\displaystyle C_h(i)=\frac{1}{n-1}\sum\nolimits_{j\ne i}^{n}\frac{1}{\rho(i,j)}$ |
 
-<div class="network-indicators-key">$n$ : nombre de nœuds · $g_{ij}$ : poids du lien de $i$ vers $j$ · $\rho(i,j)$ : distance géodésique.<br>$\nu_g(i:j,k)/\nu_g(j,k)$ : fraction des plus courts chemins entre $j$ et $k$ passant par $i$.</div>
+<div class="network-indicators-key">$n$ : nombre de nœuds · $g_{ij}$ : poids du lien de $i$ vers $j$.<br>$\nu_g(i:j,k)/\nu_g(j,k)$ : fraction des plus courts chemins entre $j$ et $k$ passant par $i$.</div>
 
 :::
 ::::
 
-## Indicateurs de réseau : résultats {.editorial data-part="2" data-subpart="2" refs="bloch-2023"}
+## Indicateurs de réseau : résultats {.editorial .indicator-results-selected data-part="2" data-subpart="2" refs="bloch-2023"}
 
 <div class="slide-title">Indicateurs de réseau : résultats</div>
 
@@ -769,30 +765,30 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <span class="fragment indicator-focus-step" data-fragment-index="2" data-actor-focus="dgitm" aria-hidden="true"></span>
 <span class="fragment indicator-focus-step" data-fragment-index="3" data-actor-focus="all" aria-hidden="true"></span>
 <div class="indicator-results-frame"><table class="indicator-results-table" aria-label="Indicateurs par acteur">
-<colgroup><col style="width:5%"><col style="width:25%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"></colgroup><thead>
-<tr><th data-cell="A1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">ID acteur</th><th data-cell="B1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Nom de l’acteur</th><th data-cell="C1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Nombre d’entrées Ω+</th><th data-cell="D1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Nombre de sorties Ω-</th><th data-cell="E1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Sorties pondérées φ+</th><th data-cell="F1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Entrées pondérées φ-</th><th data-cell="G1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Poids normalisé Φ</th><th data-cell="H1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Centralité normalisée Ω</th><th data-cell="I1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Centralité d&#x27;intermédiarité Cbet </th><th data-cell="J1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Centralité de proximité normalisée Cc</th><th data-cell="K1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000" scope="col">Centralité harmonique </th></tr>
-<tr><th data-cell="K2" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-bottom:2px solid #000000" scope="col">Ch</th></tr>
+<colgroup><col style="width:6%"><col style="width:32%"><col style="width:15%"><col style="width:15%"><col style="width:16%"><col style="width:16%"></colgroup><thead>
+<tr><th data-cell="A1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" colspan="1" scope="col">ID acteur</th><th data-cell="B1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" colspan="1" scope="col">Nom de l’acteur</th><th data-cell="E1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" colspan="1" scope="col">Sorties pondérées φ+</th><th data-cell="F1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" colspan="1" scope="col">Entrées pondérées φ-</th><th data-cell="G1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" colspan="1" scope="col">Poids normalisé Φ</th><th data-cell="I1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" colspan="1" scope="col">Centralité d&#x27;intermédiarité Cbet </th></tr>
+
 </thead><tbody>
-<tr><td data-cell="A3" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A1</td><td data-cell="B3" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Région</td><td data-cell="C3" style="background-color:#F8696B;color:#000000;font-weight:400;border-left:2px solid #000000;border-top:2px solid #000000">16</td><td data-cell="D3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">17</td><td data-cell="E3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">45</td><td data-cell="F3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">56</td><td data-cell="G3" style="background-color:#F8696B;color:#000000;font-weight:700;border-top:2px solid #000000">0,1</td><td data-cell="H3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">1,94</td><td data-cell="I3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">0,101</td><td data-cell="J3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">0,944</td><td data-cell="K3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">16,5</td></tr>
-<tr><td data-cell="A4" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A2</td><td data-cell="B4" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Ministère chargé des transports</td><td data-cell="C4" style="background-color:#FCAA78;color:#000000;font-weight:400;border-left:2px solid #000000">14</td><td data-cell="D4" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E4" style="background-color:#FDBD7C;color:#000000;font-weight:400">36</td><td data-cell="F4" style="background-color:#FCB27A;color:#000000;font-weight:400">40</td><td data-cell="G4" style="background-color:#FDB47A;color:#000000;font-weight:700">0,075</td><td data-cell="H4" style="background-color:#FCAE79;color:#000000;font-weight:400">1,65</td><td data-cell="I4" style="background-color:#FED881;color:#000000;font-weight:400">0,028</td><td data-cell="J4" style="background-color:#FCB179;color:#000000;font-weight:400">0,85</td><td data-cell="K4" style="background-color:#FCAA78;color:#000000;font-weight:400">15,5</td></tr>
-<tr><td data-cell="A5" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A5</td><td data-cell="B5" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Constructeur de matériel roulant</td><td data-cell="C5" style="background-color:#FECB7E;color:#000000;font-weight:400;border-left:2px solid #000000">13</td><td data-cell="D5" style="background-color:#FA8370;color:#000000;font-weight:400">16</td><td data-cell="E5" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F5" style="background-color:#FCA978;color:#000000;font-weight:400">42</td><td data-cell="G5" style="background-color:#FDB77A;color:#000000;font-weight:700">0,074</td><td data-cell="H5" style="background-color:#FBA076;color:#000000;font-weight:400">1,71</td><td data-cell="I5" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td><td data-cell="J5" style="background-color:#FED07F;color:#000000;font-weight:400">0,81</td><td data-cell="K5" style="background-color:#FECB7E;color:#000000;font-weight:400">15</td></tr>
-<tr><td data-cell="A6" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A11</td><td data-cell="B6" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">SNCF Réseau</td><td data-cell="C6" style="background-color:#FCAA78;color:#000000;font-weight:400;border-left:2px solid #000000">14</td><td data-cell="D6" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E6" style="background-color:#F2E783;color:#000000;font-weight:400">29</td><td data-cell="F6" style="background-color:#FDBC7B;color:#000000;font-weight:400">38</td><td data-cell="G6" style="background-color:#FECF7F;color:#000000;font-weight:700">0,066</td><td data-cell="H6" style="background-color:#FCAE79;color:#000000;font-weight:400">1,65</td><td data-cell="I6" style="background-color:#FFE784;color:#000000;font-weight:400">0,018</td><td data-cell="J6" style="background-color:#FCB179;color:#000000;font-weight:400">0,85</td><td data-cell="K6" style="background-color:#FCAA78;color:#000000;font-weight:400">15,5</td></tr>
-<tr><td data-cell="A7" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A3</td><td data-cell="B7" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Gouvernement français</td><td data-cell="C7" style="background-color:#FECB7E;color:#000000;font-weight:400;border-left:2px solid #000000">13</td><td data-cell="D7" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E7" style="background-color:#FDBD7C;color:#000000;font-weight:400">36</td><td data-cell="F7" style="background-color:#FFDC81;color:#000000;font-weight:400">31</td><td data-cell="G7" style="background-color:#FECF7F;color:#000000;font-weight:700">0,066</td><td data-cell="H7" style="background-color:#FDBC7B;color:#000000;font-weight:400">1,59</td><td data-cell="I7" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td><td data-cell="J7" style="background-color:#FED07F;color:#000000;font-weight:400">0,81</td><td data-cell="K7" style="background-color:#FECB7E;color:#000000;font-weight:400">15</td></tr>
-<tr><td data-cell="A8" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A6</td><td data-cell="B8" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs et distributeurs d’électricité</td><td data-cell="C8" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D8" style="background-color:#FFEB84;color:#000000;font-weight:400">12</td><td data-cell="E8" style="background-color:#FED07F;color:#000000;font-weight:400">34</td><td data-cell="F8" style="background-color:#FFDC81;color:#000000;font-weight:400">31</td><td data-cell="G8" style="background-color:#FED580;color:#000000;font-weight:700">0,064</td><td data-cell="H8" style="background-color:#FFE583;color:#000000;font-weight:400">1,41</td><td data-cell="I8" style="background-color:#FED380;color:#000000;font-weight:400">0,031</td><td data-cell="J8" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K8" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
-<tr><td data-cell="A9" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A4</td><td data-cell="B9" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Union européenne</td><td data-cell="C9" style="background-color:#FECB7E;color:#000000;font-weight:400;border-left:2px solid #000000">13</td><td data-cell="D9" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E9" style="background-color:#FEC67D;color:#000000;font-weight:400">35</td><td data-cell="F9" style="background-color:#FFE583;color:#000000;font-weight:400">29</td><td data-cell="G9" style="background-color:#FED881;color:#000000;font-weight:700">0,063</td><td data-cell="H9" style="background-color:#FDBC7B;color:#000000;font-weight:400">1,59</td><td data-cell="I9" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td><td data-cell="J9" style="background-color:#FED07F;color:#000000;font-weight:400">0,81</td><td data-cell="K9" style="background-color:#FECB7E;color:#000000;font-weight:400">15</td></tr>
-<tr><td data-cell="A10" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A12</td><td data-cell="B10" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Exploitant du réseau ferroviaire</td><td data-cell="C10" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D10" style="background-color:#FFEB84;color:#000000;font-weight:400">12</td><td data-cell="E10" style="background-color:#ECE582;color:#000000;font-weight:400">28</td><td data-cell="F10" style="background-color:#FECE7F;color:#000000;font-weight:400">34</td><td data-cell="G10" style="background-color:#FFDE82;color:#000000;font-weight:700">0,061</td><td data-cell="H10" style="background-color:#FFE583;color:#000000;font-weight:400">1,41</td><td data-cell="I10" style="background-color:#FED17F;color:#000000;font-weight:400">0,032</td><td data-cell="J10" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K10" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
-<tr><td data-cell="A11" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A9</td><td data-cell="B11" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Acteurs industriels</td><td data-cell="C11" style="background-color:#E8E482;color:#000000;font-weight:400;border-left:2px solid #000000">11</td><td data-cell="D11" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E11" style="background-color:#FFE283;color:#000000;font-weight:400">32</td><td data-cell="F11" style="background-color:#F5E883;color:#000000;font-weight:400">26</td><td data-cell="G11" style="background-color:#FFEA84;color:#000000;font-weight:700">0,057</td><td data-cell="H11" style="background-color:#FED781;color:#000000;font-weight:400">1,47</td><td data-cell="I11" style="background-color:#FFEA84;color:#000000;font-weight:400">0,016</td><td data-cell="J11" style="background-color:#E2E282;color:#000000;font-weight:400">0,739</td><td data-cell="K11" style="background-color:#E8E482;color:#000000;font-weight:400">14</td></tr>
-<tr><td data-cell="A12" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A7</td><td data-cell="B12" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs d’hydrogène</td><td data-cell="C12" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D12" style="background-color:#F0E683;color:#000000;font-weight:400">11</td><td data-cell="E12" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F12" style="background-color:#E9E482;color:#000000;font-weight:400">24</td><td data-cell="G12" style="background-color:#FCEA83;color:#000000;font-weight:700">0,056</td><td data-cell="H12" style="background-color:#F9E983;color:#000000;font-weight:400">1,35</td><td data-cell="I12" style="background-color:#DBE081;color:#000000;font-weight:400">0,011</td><td data-cell="J12" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K12" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
-<tr><td data-cell="A13" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A8</td><td data-cell="B13" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Constructeurs d’infrastructures</td><td data-cell="C13" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D13" style="background-color:#E2E282;color:#000000;font-weight:400">10</td><td data-cell="E13" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F13" style="background-color:#E3E382;color:#000000;font-weight:400">23</td><td data-cell="G13" style="background-color:#F8E983;color:#000000;font-weight:700">0,055</td><td data-cell="H13" style="background-color:#EFE683;color:#000000;font-weight:400">1,29</td><td data-cell="I13" style="background-color:#F7E883;color:#000000;font-weight:400">0,014</td><td data-cell="J13" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K13" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
-<tr><td data-cell="A14" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A10</td><td data-cell="B14" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs de diesel</td><td data-cell="C14" style="background-color:#E8E482;color:#000000;font-weight:400;border-left:2px solid #000000">11</td><td data-cell="D14" style="background-color:#F0E683;color:#000000;font-weight:400">11</td><td data-cell="E14" style="background-color:#F8E983;color:#000000;font-weight:400">30</td><td data-cell="F14" style="background-color:#E9E482;color:#000000;font-weight:400">24</td><td data-cell="G14" style="background-color:#EFE683;color:#000000;font-weight:700">0,053</td><td data-cell="H14" style="background-color:#EFE683;color:#000000;font-weight:400">1,29</td><td data-cell="I14" style="background-color:#DBE081;color:#000000;font-weight:400">0,011</td><td data-cell="J14" style="background-color:#E2E282;color:#000000;font-weight:400">0,739</td><td data-cell="K14" style="background-color:#E8E482;color:#000000;font-weight:400">14</td></tr>
-<tr><td data-cell="A15" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A13</td><td data-cell="B15" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">DGITM</td><td data-cell="C15" style="background-color:#BCD780;color:#000000;font-weight:400;border-left:2px solid #000000">9</td><td data-cell="D15" style="background-color:#FFEB84;color:#000000;font-weight:400">12</td><td data-cell="E15" style="background-color:#D9E081;color:#000000;font-weight:400">25</td><td data-cell="F15" style="background-color:#F5E883;color:#000000;font-weight:400">26</td><td data-cell="G15" style="background-color:#E2E282;color:#000000;font-weight:700">0,05</td><td data-cell="H15" style="background-color:#E5E382;color:#000000;font-weight:400">1,24</td><td data-cell="I15" style="background-color:#C1D980;color:#000000;font-weight:400">0,009</td><td data-cell="J15" style="background-color:#B1D47F;color:#000000;font-weight:400">0,68</td><td data-cell="K15" style="background-color:#BCD780;color:#000000;font-weight:400">13</td></tr>
-<tr><td data-cell="A16" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A14</td><td data-cell="B16" style="background-color:transparent;color:#4D7731;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Bureau d’études en ingénierie</td><td data-cell="C16" style="background-color:#BCD780;color:#000000;font-weight:400;border-left:2px solid #000000">9</td><td data-cell="D16" style="background-color:#E2E282;color:#000000;font-weight:400">10</td><td data-cell="E16" style="background-color:#C6DA80;color:#000000;font-weight:400">22</td><td data-cell="F16" style="background-color:#D1DD81;color:#000000;font-weight:400">20</td><td data-cell="G16" style="background-color:#BAD780;color:#000000;font-weight:700">0,041</td><td data-cell="H16" style="background-color:#D1DD81;color:#000000;font-weight:400">1,12</td><td data-cell="I16" style="background-color:#A4D07E;color:#000000;font-weight:400">0,006</td><td data-cell="J16" style="background-color:#B1D47F;color:#000000;font-weight:400">0,68</td><td data-cell="K16" style="background-color:#BCD780;color:#000000;font-weight:400">13</td></tr>
-<tr><td data-cell="A17" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A16</td><td data-cell="B17" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">EPSF</td><td data-cell="C17" style="background-color:#8FCA7D;color:#000000;font-weight:400;border-left:2px solid #000000">7</td><td data-cell="D17" style="background-color:#C6DA80;color:#000000;font-weight:400">8</td><td data-cell="E17" style="background-color:#9BCE7E;color:#000000;font-weight:400">15</td><td data-cell="F17" style="background-color:#E3E382;color:#000000;font-weight:400">23</td><td data-cell="G17" style="background-color:#A9D27F;color:#000000;font-weight:700">0,037</td><td data-cell="H17" style="background-color:#A9D27F;color:#000000;font-weight:400">0,88</td><td data-cell="I17" style="background-color:#F5E883;color:#000000;font-weight:400">0,014</td><td data-cell="J17" style="background-color:#87C87D;color:#000000;font-weight:400">0,63</td><td data-cell="K17" style="background-color:#8FCA7D;color:#000000;font-weight:400">12</td></tr>
-<tr><td data-cell="A18" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1">A18</td><td data-cell="B18" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000">Collectivités territoriales infrarégionales</td><td data-cell="C18" style="background-color:#E8E482;color:#000000;font-weight:400;border-left:2px solid #000000" rowspan="2" colspan="1">11</td><td data-cell="D18" style="background-color:#F0E683;color:#000000;font-weight:400" rowspan="2" colspan="1">11</td><td data-cell="E18" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">6</td><td data-cell="F18" style="background-color:#FFE583;color:#000000;font-weight:400" rowspan="2" colspan="1">29</td><td data-cell="G18" style="background-color:#9CCE7E;color:#000000;font-weight:700" rowspan="2" colspan="1">0,035</td><td data-cell="H18" style="background-color:#EFE683;color:#000000;font-weight:400" rowspan="2" colspan="1">1,29</td><td data-cell="I18" style="background-color:#E3E382;color:#000000;font-weight:400" rowspan="2" colspan="1">0,012</td><td data-cell="J18" style="background-color:#E2E282;color:#000000;font-weight:400" rowspan="2" colspan="1">0,739</td><td data-cell="K18" style="background-color:#E8E482;color:#000000;font-weight:400" rowspan="2" colspan="1">14</td></tr>
+<tr><td data-cell="A3" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A1</td><td data-cell="B3" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Région</td><td data-cell="E3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">45</td><td data-cell="F3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">56</td><td data-cell="G3" style="background-color:#F8696B;color:#000000;font-weight:700;border-top:2px solid #000000">0,1</td><td data-cell="I3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">0,101</td></tr>
+<tr><td data-cell="A4" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A2</td><td data-cell="B4" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Ministère chargé des transports</td><td data-cell="E4" style="background-color:#FDBD7C;color:#000000;font-weight:400">36</td><td data-cell="F4" style="background-color:#FCB27A;color:#000000;font-weight:400">40</td><td data-cell="G4" style="background-color:#FDB47A;color:#000000;font-weight:700">0,075</td><td data-cell="I4" style="background-color:#FED881;color:#000000;font-weight:400">0,028</td></tr>
+<tr><td data-cell="A5" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A5</td><td data-cell="B5" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Constructeur de matériel roulant</td><td data-cell="E5" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F5" style="background-color:#FCA978;color:#000000;font-weight:400">42</td><td data-cell="G5" style="background-color:#FDB77A;color:#000000;font-weight:700">0,074</td><td data-cell="I5" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td></tr>
+<tr><td data-cell="A6" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A11</td><td data-cell="B6" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">SNCF Réseau</td><td data-cell="E6" style="background-color:#F2E783;color:#000000;font-weight:400">29</td><td data-cell="F6" style="background-color:#FDBC7B;color:#000000;font-weight:400">38</td><td data-cell="G6" style="background-color:#FECF7F;color:#000000;font-weight:700">0,066</td><td data-cell="I6" style="background-color:#FFE784;color:#000000;font-weight:400">0,018</td></tr>
+<tr><td data-cell="A7" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A3</td><td data-cell="B7" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Gouvernement français</td><td data-cell="E7" style="background-color:#FDBD7C;color:#000000;font-weight:400">36</td><td data-cell="F7" style="background-color:#FFDC81;color:#000000;font-weight:400">31</td><td data-cell="G7" style="background-color:#FECF7F;color:#000000;font-weight:700">0,066</td><td data-cell="I7" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td></tr>
+<tr><td data-cell="A8" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A6</td><td data-cell="B8" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs et distributeurs d’électricité</td><td data-cell="E8" style="background-color:#FED07F;color:#000000;font-weight:400">34</td><td data-cell="F8" style="background-color:#FFDC81;color:#000000;font-weight:400">31</td><td data-cell="G8" style="background-color:#FED580;color:#000000;font-weight:700">0,064</td><td data-cell="I8" style="background-color:#FED380;color:#000000;font-weight:400">0,031</td></tr>
+<tr><td data-cell="A9" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A4</td><td data-cell="B9" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Union européenne</td><td data-cell="E9" style="background-color:#FEC67D;color:#000000;font-weight:400">35</td><td data-cell="F9" style="background-color:#FFE583;color:#000000;font-weight:400">29</td><td data-cell="G9" style="background-color:#FED881;color:#000000;font-weight:700">0,063</td><td data-cell="I9" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td></tr>
+<tr><td data-cell="A10" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A12</td><td data-cell="B10" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Exploitant du réseau ferroviaire</td><td data-cell="E10" style="background-color:#ECE582;color:#000000;font-weight:400">28</td><td data-cell="F10" style="background-color:#FECE7F;color:#000000;font-weight:400">34</td><td data-cell="G10" style="background-color:#FFDE82;color:#000000;font-weight:700">0,061</td><td data-cell="I10" style="background-color:#FED17F;color:#000000;font-weight:400">0,032</td></tr>
+<tr><td data-cell="A11" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A9</td><td data-cell="B11" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Acteurs industriels</td><td data-cell="E11" style="background-color:#FFE283;color:#000000;font-weight:400">32</td><td data-cell="F11" style="background-color:#F5E883;color:#000000;font-weight:400">26</td><td data-cell="G11" style="background-color:#FFEA84;color:#000000;font-weight:700">0,057</td><td data-cell="I11" style="background-color:#FFEA84;color:#000000;font-weight:400">0,016</td></tr>
+<tr><td data-cell="A12" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A7</td><td data-cell="B12" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs d’hydrogène</td><td data-cell="E12" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F12" style="background-color:#E9E482;color:#000000;font-weight:400">24</td><td data-cell="G12" style="background-color:#FCEA83;color:#000000;font-weight:700">0,056</td><td data-cell="I12" style="background-color:#DBE081;color:#000000;font-weight:400">0,011</td></tr>
+<tr><td data-cell="A13" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A8</td><td data-cell="B13" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Constructeurs d’infrastructures</td><td data-cell="E13" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F13" style="background-color:#E3E382;color:#000000;font-weight:400">23</td><td data-cell="G13" style="background-color:#F8E983;color:#000000;font-weight:700">0,055</td><td data-cell="I13" style="background-color:#F7E883;color:#000000;font-weight:400">0,014</td></tr>
+<tr><td data-cell="A14" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A10</td><td data-cell="B14" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs de diesel</td><td data-cell="E14" style="background-color:#F8E983;color:#000000;font-weight:400">30</td><td data-cell="F14" style="background-color:#E9E482;color:#000000;font-weight:400">24</td><td data-cell="G14" style="background-color:#EFE683;color:#000000;font-weight:700">0,053</td><td data-cell="I14" style="background-color:#DBE081;color:#000000;font-weight:400">0,011</td></tr>
+<tr><td data-cell="A15" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A13</td><td data-cell="B15" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">DGITM</td><td data-cell="E15" style="background-color:#D9E081;color:#000000;font-weight:400">25</td><td data-cell="F15" style="background-color:#F5E883;color:#000000;font-weight:400">26</td><td data-cell="G15" style="background-color:#E2E282;color:#000000;font-weight:700">0,05</td><td data-cell="I15" style="background-color:#C1D980;color:#000000;font-weight:400">0,009</td></tr>
+<tr><td data-cell="A16" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A14</td><td data-cell="B16" style="background-color:transparent;color:#4D7731;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Bureau d’études en ingénierie</td><td data-cell="E16" style="background-color:#C6DA80;color:#000000;font-weight:400">22</td><td data-cell="F16" style="background-color:#D1DD81;color:#000000;font-weight:400">20</td><td data-cell="G16" style="background-color:#BAD780;color:#000000;font-weight:700">0,041</td><td data-cell="I16" style="background-color:#A4D07E;color:#000000;font-weight:400">0,006</td></tr>
+<tr><td data-cell="A17" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A16</td><td data-cell="B17" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">EPSF</td><td data-cell="E17" style="background-color:#9BCE7E;color:#000000;font-weight:400">15</td><td data-cell="F17" style="background-color:#E3E382;color:#000000;font-weight:400">23</td><td data-cell="G17" style="background-color:#A9D27F;color:#000000;font-weight:700">0,037</td><td data-cell="I17" style="background-color:#F5E883;color:#000000;font-weight:400">0,014</td></tr>
+<tr><td data-cell="A18" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1">A18</td><td data-cell="B18" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000">Collectivités territoriales infrarégionales</td><td data-cell="E18" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">6</td><td data-cell="F18" style="background-color:#FFE583;color:#000000;font-weight:400" rowspan="2" colspan="1">29</td><td data-cell="G18" style="background-color:#9CCE7E;color:#000000;font-weight:700" rowspan="2" colspan="1">0,035</td><td data-cell="I18" style="background-color:#E3E382;color:#000000;font-weight:400" rowspan="2" colspan="1">0,012</td></tr>
 <tr><td data-cell="B19" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-bottom:2px solid #000000">(départements, EPCI, communes…)</td></tr>
-<tr><td data-cell="A20" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1">A17</td><td data-cell="B20" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000">Autres parties prenantes du territoire</td><td data-cell="C20" style="background-color:#63BE7B;color:#000000;font-weight:400;border-left:2px solid #000000" rowspan="2" colspan="1">5</td><td data-cell="D20" style="background-color:#7FC67C;color:#000000;font-weight:400" rowspan="2" colspan="1">3</td><td data-cell="E20" style="background-color:#9BCE7E;color:#000000;font-weight:400" rowspan="2" colspan="1">15</td><td data-cell="F20" style="background-color:#8DCA7D;color:#000000;font-weight:400" rowspan="2" colspan="1">9</td><td data-cell="G20" style="background-color:#6BC07B;color:#000000;font-weight:700" rowspan="2" colspan="1">0,024</td><td data-cell="H20" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,47</td><td data-cell="I20" style="background-color:#6FC17B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,001</td><td data-cell="J20" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,586</td><td data-cell="K20" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">11</td></tr>
+<tr><td data-cell="A20" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1">A17</td><td data-cell="B20" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000">Autres parties prenantes du territoire</td><td data-cell="E20" style="background-color:#9BCE7E;color:#000000;font-weight:400" rowspan="2" colspan="1">15</td><td data-cell="F20" style="background-color:#8DCA7D;color:#000000;font-weight:400" rowspan="2" colspan="1">9</td><td data-cell="G20" style="background-color:#6BC07B;color:#000000;font-weight:700" rowspan="2" colspan="1">0,024</td><td data-cell="I20" style="background-color:#6FC17B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,001</td></tr>
 <tr><td data-cell="B21" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-bottom:2px solid #000000">Associations (usagers, environnement…)</td></tr>
-<tr><td data-cell="A22" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A15</td><td data-cell="B22" style="background-color:transparent;color:#4D7731;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Régions de France</td><td data-cell="C22" style="background-color:#D2DE81;color:#000000;font-weight:400;border-left:2px solid #000000">10</td><td data-cell="D22" style="background-color:#63BE7B;color:#000000;font-weight:400">1</td><td data-cell="E22" style="background-color:#BAD780;color:#000000;font-weight:400">20</td><td data-cell="F22" style="background-color:#63BE7B;color:#000000;font-weight:400">2</td><td data-cell="G22" style="background-color:#63BE7B;color:#000000;font-weight:700">0,022</td><td data-cell="H22" style="background-color:#81C67C;color:#000000;font-weight:400">0,65</td><td data-cell="I22" style="background-color:#63BE7B;color:#000000;font-weight:400">0</td><td data-cell="J22" style="background-color:#C9DB80;color:#000000;font-weight:400">0,708</td><td data-cell="K22" style="background-color:#D2DE81;color:#000000;font-weight:400">13,5</td></tr>
+<tr><td data-cell="A22" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A15</td><td data-cell="B22" style="background-color:transparent;color:#4D7731;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Régions de France</td><td data-cell="E22" style="background-color:#BAD780;color:#000000;font-weight:400">20</td><td data-cell="F22" style="background-color:#63BE7B;color:#000000;font-weight:400">2</td><td data-cell="G22" style="background-color:#63BE7B;color:#000000;font-weight:700">0,022</td><td data-cell="I22" style="background-color:#63BE7B;color:#000000;font-weight:400">0</td></tr>
 </tbody></table></div>
 </div>
 ```
@@ -864,8 +860,10 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 <div class="slide-title">Réorganisation du processus de décision</div>
 
-<div class="ppt-canvas">
-<img class="ppt-image" style="left:10%;top:4%;width:80%;height:87%;" src="figures/decision_steps_org_comp.svg" alt="Comparaison de l’organisation du processus de décision">
+<div class="ppt-canvas decision-reorganization">
+
+{{< include figures/decision_progression.qmd >}}
+
 </div>
 
 ## Apports de la méthode et perspectives {.editorial .perspectives-slide .unnumbered-subpart data-part="2"}
@@ -899,107 +897,23 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </div>
 ```
 
-## {.editorial .part-divider data-part="3" data-subpart="1"}
+## {.editorial .part-divider .decision-divider data-part="3" data-subpart="1"}
 
 <div class="divider-number">PARTIE 03</div>
 <div class="divider-title">ACV &amp; ADMC</div>
 <div class="divider-subtitle">Méthodologie pour l’évaluation environnementale paramétrique et prospective pour la comparaison de scénarios de réduction d’impact par l’analyse du cycle de vie (ACV) et l’aide à la décision multicritère (ADMC)</div>
 
-## Choix de l’ACV : méthodes d’évaluation environnementale {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Choix de l'ACV : méthodes d’évaluation environnementale</div>
-
-```{=html}
-<div class="ppt-canvas acv-choice">
-<div class="ppt-table-wrap acv-methods-table"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Méthode</td><td style="font-size:var(--content-size);font-weight:700">Périmètre</td><td style="font-size:var(--content-size);font-weight:700">Approche / multicritère</td></tr><tr class="acv-selected-row"><td style="font-size:var(--content-size)">ACV</td><td style="font-size:var(--content-size)">Produit / service</td><td style="font-size:var(--content-size)">Quantitative, multicritère</td></tr><tr><td style="font-size:var(--content-size)">Évaluation des risques environnementaux</td><td style="font-size:var(--content-size)">Substance / environnement local</td><td style="font-size:var(--content-size)">Fondée sur les risques</td></tr><tr><td style="font-size:var(--content-size)">Évaluation des impacts environnementaux</td><td style="font-size:var(--content-size)">Projet</td><td style="font-size:var(--content-size)">Procédurale</td></tr><tr><td style="font-size:var(--content-size)">Évaluation environnementale stratégique</td><td style="font-size:var(--content-size)">Plans / programmes</td><td style="font-size:var(--content-size)">Stratégique</td></tr><tr><td style="font-size:var(--content-size)">Analyse des flux de matières</td><td style="font-size:var(--content-size)">Produit / territoire / service</td><td style="font-size:var(--content-size)">Évaluation fondée sur les flux</td></tr><tr><td style="font-size:var(--content-size)">Analyse entrées-sorties environnementale</td><td style="font-size:var(--content-size)">Secteur / économie</td><td style="font-size:var(--content-size)">Évaluation environnementale entrées-sorties</td></tr><tr><td style="font-size:var(--content-size)">Empreinte écologique</td><td style="font-size:var(--content-size)">Territoire / population / activité</td><td style="font-size:var(--content-size)">Évaluation environnementale agrégée</td></tr></table></div>
-
-<div class="ppt-table-wrap acv-types-table fragment fade-in" data-fragment-index="0"><table class="ppt-table"><tr><th>LCA type</th></tr><tr class="acv-retained-type"><td>Attributionnelle</td></tr><tr><td>Conséquentielle</td></tr><tr class="acv-retained-type"><td>Prospective</td></tr><tr class="acv-retained-type"><td>Paramétrique</td></tr><tr class="acv-retained-type"><td>Rétrospective</td></tr><tr><td>Dynamique</td></tr><tr><td>Statique</td></tr><tr class="acv-retained-type"><td>Régionalisée</td></tr><tr><td>Non régionalisée</td></tr><tr><td>Spatialement explicite</td></tr><tr><td>Territoriale</td></tr><tr class="acv-retained-type"><td>Bibliographique</td></tr><tr><td>Méta-ACV</td></tr><tr><td>Transitionnelle</td></tr></table></div>
-<span class="fragment acv-types-selection" data-fragment-index="1" aria-hidden="true"></span>
-</div>
-```
-
-## méthodes de calcul d'impact {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Méthodes de calcul d'impact d'ACV</div>
-
-```{=html}
-<div class="ppt-canvas lcia-choice">
-<div class="ppt-table-wrap lcia-methods-table">
-<table class="ppt-table">
-<thead><tr><th>Méthode</th><th>Indicateurs</th><th>Interprétation</th></tr></thead>
-<tbody>
-<tr><td>ReCiPe 2016</td><td>18 catégories</td><td>3 indicateurs de dommages</td></tr>
-<tr class="lcia-selected-method"><td>EF 3.0</td><td>28 sous-catégories</td><td>Score unique</td></tr>
-<tr><td>IMPACT World+</td><td>18 catégories</td><td></td></tr>
-</tbody>
-</table>
-</div>
-<span class="fragment lcia-selection" data-fragment-index="0" aria-hidden="true"></span>
-<div class="lcia-mcdm">Normalisation et pondération pour l’ADMC</div>
-<div class="lcia-illustrations">
-<figure><figcaption>Indicateurs intermédiaires ReCiPe</figcaption><img src="figures/lcia/midpoints_ReCiPe_histogram.svg" alt="18 catégories d’impact ReCiPe : comparaison normalisée des batteries LFP, LTO et NMC"></figure>
-<figure><figcaption>Indicateurs de dommages</figcaption><img src="figures/lcia/endpoints_histogram.svg" alt="Impacts sur les écosystèmes, la santé humaine et les ressources"></figure>
-<figure><figcaption>Score unique</figcaption><img src="figures/lcia/single_score_histogram.svg" alt="Comparaison des scores uniques des batteries LFP, LTO et NMC"></figure>
+<div class="divider-decision-needs">
+<p>Le <strong>manque de ressources</strong> a été identifié comme leur principale contrainte.</p>
+<p>Besoin de <strong>transparence</strong> et de <strong>facilité d’interprétation.</strong></p>
 </div>
 
-</div>
-```
+<figure class="divider-decision-steps">
+<img src="figures/decision_steps.svg" alt="Étapes du processus de décision : évaluation des données, élaboration des critères, simulation des performances et comparaison technologique, puis évaluation environnementale et analyse multicritère.">
+</figure>
 
-## Propagation des incertitudes {.editorial .uncertainty-slide data-part="3" data-subpart="1" refs="ciroth-2016,muller-2015"}
 
-<div class="slide-title">Propagation des incertitudes</div>
-
-```{=html}
-<div class="ppt-canvas uncertainty-canvas">
-<div class="uncertainty-figure">
-<img class="uncertainty-overview" src="figures/uncertainty_variability_diagram.svg" alt="Propagation de l’incertitude et de la variabilité vers la modélisation du système, l’ACV et les résultats d’impact ou le classement">
-<img class="uncertainty-focus" src="figures/uncertainty_variability_focus.svg" alt="Focus sur la construction du modèle">
-</div>
-<div class="ppt-table-wrap pedigree-table fragment fade-in" data-fragment-index="0">
-<table class="ppt-table"><caption>Matrice de pedigree <span class="pedigree-citations"><span data-cite="ciroth-2016,muller-2015"></span></span></caption><thead><tr><th scope="col">Score de l’indicateur</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5 (par défaut)</th></tr></thead><tbody><tr><th scope="row">Fiabilité</th><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr><tr><th scope="row">Complétude</th><td>1,54</td><td>1,03</td><td>1,03</td><td>1,04</td><td>1,18</td></tr><tr><th scope="row">Corrélation temporelle</th><td>1,61</td><td>1,04</td><td>1,10</td><td>1,08</td><td>1,65</td></tr><tr><th scope="row">Corrélation géographique</th><td>1,69</td><td>1,08</td><td>1,19</td><td>1,11</td><td>2,08</td></tr><tr><th scope="row">Corrélation technologique supplémentaire</th><td>4,52<sup>a</sup></td><td>3,09<sup>a</sup></td><td>1,29</td><td>9,49<sup>a</sup></td><td>2,80</td></tr></tbody></table>
-</div>
-</div>
-```
-
-## Modélisation des roulements : équations {.editorial data-part="3" data-subpart="1"}
-
-<div class="slide-title">Modélisation des roulements : équations</div>
-
-:::: {.ppt-canvas .rolling-equations}
-
-<img class="ppt-image rolling-parameters" style="left:15%;top:0%;width:70%;height:50%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
-
-::: {.rolling-equations-table}
-
-| Modèle / phase | Paramètres et contraintes | Équation |
-|:--|:--|:--|
-| **Résistance Davis** | Coefficients $A$; $B$; $C$ propres au train; $v$ la vitesse | $R=A+Bv+Cv^2$ |
-| **seconde loi newton** |  $a=\mathrm{d}v/\mathrm{d}t$; $F$ effort aux roues; $m$ masse; <br>$i$ pente; $P$ Puissance du train | $P=\bigl(ma+R+mgi\bigr)v$ |
-| **Accélération** | $v_{\max}$ fonction de la distance entre arrêts ; $a<0{,}3\ \mathrm{m/s^2}$; $P<P_{\max}$ |  |
-| **Croisière** | $a=0$; distance avant freinage |
-| **Décélération** |  $-0{,}3\mathrm{m/s^2}<a\ $ ; $P>P_{\min}$ (si régénération au freinage) |  |
-
-:::
-::::
-
-## ADMC : PROMETHEE {.editorial data-part="3" data-subpart="1" refs="greco-2016,taherdoost-2023,wulf-2021"}
-
-<div class="slide-title">ADMC : PROMETHEE <span data-cite="taherdoost-2023"></span></div>
-
-```{=html}
-<div class="ppt-canvas preference-choice">
-<div class="ppt-table-wrap preference-functions"><table class="ppt-table"><caption>Fonctions de préférence <span data-cite="greco-2016"></span></caption><thead><tr><th>Fonction</th><th>Représentation</th><th>Définition de P(d)</th><th>Paramètres</th></tr></thead><tbody><tr><td>Usuelle</td><td><img src="figures/preferences/Usual.svg" alt="Fonction usuelle"></td><td>0 si d ≤ 0 ; 1 si d &gt; 0</td><td>-</td></tr><tr><td>En U</td><td><img src="figures/preferences/Ushape.svg" alt="Fonction en u"></td><td>0 si d ≤ q ; 1 si d &gt; q</td><td>q</td></tr><tr><td>À niveaux</td><td><img src="figures/preferences/Level.svg" alt="Fonction à niveaux"></td><td>0 si d ≤ q ; ½ si q &lt; d ≤ p ;<br>1 si d &gt; p</td><td>p, q</td></tr><tr><td>Gaussienne</td><td><img src="figures/preferences/Gaussian.svg" alt="Fonction gaussienne"></td><td>0 si d ≤ 0 ;<br>1 − exp(−d² / (2s²)) si d &gt; 0</td><td>s</td></tr><tr class="preference-vshape"><td>En V</td><td><img src="figures/preferences/Vshape_indifference.svg" alt="Fonction en V avec seuils q et p"></td><td>0 si d ≤ q ;<br>(d − q) / (p − q) si q &lt; d ≤ p ;<br>1 si d &gt; p</td><td>p, q</td></tr></tbody></table></div>
-<span class="fragment preference-selection" data-fragment-index="0" aria-hidden="true"></span>
-<div class="preference-weak-stage">
-<div class="preference-v-detail">
-</div>
-
-<div class="ppt-table-wrap weak-preference-table"><table class="ppt-table"><caption>Zones de préférence faible <span data-cite="wulf-2021"></span></caption><tr><td>Catégorie d’impact</td><td>Classe d’incertitude</td><td>Zone de préférence faible (q–p)</td></tr><tr><td>Changement climatique</td><td>1</td><td>10–20%</td></tr><tr><td>Appauvrissement de l’ozone</td><td>1</td><td>10–20%</td></tr><tr><td>Demande cumulée d’énergie</td><td>1</td><td>10–20%</td></tr><tr><td>Épuisement des ressources en eau</td><td>2</td><td>30–40%</td></tr><tr><td>Épuisement des ressources minérales</td><td>2</td><td>30–40%</td></tr><tr><td>Particules / effets respiratoires inorganiques</td><td>2</td><td>30–40%</td></tr><tr><td>Rayonnements ionisants - santé humaine</td><td>2</td><td>30–40%</td></tr><tr><td>Formation photochimique d’ozone</td><td>2</td><td>30–40%</td></tr><tr><td>Acidification</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation terrestre</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation aquatique</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation marine</td><td>2</td><td>30–40%</td></tr><tr><td>Écotoxicité en eau douce</td><td>3</td><td>70–80%</td></tr><tr><td>Toxicité humaine cancérogène</td><td>3</td><td>70–80%</td></tr><tr><td>Toxicité humaine non cancérogène</td><td>3</td><td>70–80%</td></tr></table></div>
-</div>
-</div>
-```
-
-## Objectif et champ de l’étude — unité fonctionnelle {.editorial .functional-unit-slide data-part="3" data-subpart="2"}
+## Objectif et champ de l’étude — unité fonctionnelle {.editorial .functional-unit-slide data-part="3" data-subpart="1"}
 
 <div class="slide-title">Objectif et unité fonctionnelle</div>
 <img class="ppt-image rolling-parameters" style="left:10%;top:40%;width:48%;height:50%;" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
@@ -1013,12 +927,13 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 ```
 
-## Division en modules des scénarios {.editorial data-part="3" data-subpart="2"}
+## Division en modules des scénarios {.editorial .module-focus-slide data-part="3" data-subpart="1"}
 
 <div class="slide-title">
 Champ de l’étude: Division en modules des scénarios </div>
 
 ```{=html}
+<span class="fragment module-focus-step" data-fragment-index="0" aria-hidden="true"></span>
 <div class="module-matrix" lang="fr">
 
 <div class="matrix-head" style="grid-column:1; grid-row:1;">Scénarios</div>
@@ -1054,23 +969,23 @@ Champ de l’étude: Division en modules des scénarios </div>
      Palettes dans custom.css ; police et arrondi communs via .matrix-module.
 -->
 
-<div class="matrix-module matrix-family-energie" style="--track:7; --row:2; --end:6;">
+<div class="matrix-module matrix-focus-target matrix-family-energie" style="--track:7; --row:2; --end:6;">
     Production d'électricité
   </div>
 
-<div class="matrix-module matrix-family-infra" style="--track:11; --row:2; --end:7;">
+<div class="matrix-module matrix-focus-target matrix-family-infra" style="--track:11; --row:2; --end:7;">
     Caténaires
   </div>
 
-<div class="matrix-module matrix-family-alim" style="--track:2; --row:3; --end:6;">
+<div class="matrix-module matrix-focus-target matrix-family-alim" style="--track:2; --row:3; --end:6;">
     Batterie NMC
   </div>
 
-<div class="matrix-module matrix-family-alim" style="--track:3; --row:3; --end:6;">
+<div class="matrix-module matrix-focus-target matrix-family-alim" style="--track:3; --row:3; --end:6;">
     Batterie LFP
   </div>
 
-<div class="matrix-module matrix-family-alim" style="--track:4; --row:3; --end:6;">
+<div class="matrix-module matrix-focus-target matrix-family-alim" style="--track:4; --row:3; --end:6;">
     Batterie LTO
   </div>
 
@@ -1111,7 +1026,37 @@ Champ de l’étude: Division en modules des scénarios </div>
 ```
 
 
-## Inventaire lié aux types d’ACV {.editorial data-part="3" data-subpart="2"}
+## Choix de l’ACV : types et définitions {.editorial .acv-definitions-slide data-part="3" data-subpart="1"}
+
+<div class="slide-title">Choix de l’ACV : types et définitions</div>
+
+```{=html}
+<div class="ppt-canvas acv-choice">
+<div class="ppt-table-wrap acv-types-table">
+<table class="ppt-table" aria-label="Types d’ACV, définitions et références complètes">
+<thead><tr><th scope="col">type d'ACV</th><th scope="col">Définition</th><th scope="col">Référence complète</th></tr></thead>
+<tbody>
+<tr class="acv-retained-type"><td>Attributionnelle</td><td>Impacts d’un système donné, sans effets de marché.</td><td class="acv-type-reference" rowspan="9">Riondet, L., Rio, M., Perrot-Bernardet, V., &amp; Zwolinski, P. (2023). Assessing energy technologies sustainability: upscaling photovoltaics using absolute LCA. Procedia CIRP, 116, 714–719. https://doi.org/10.1016/j.procir.2023.02.120</td></tr>
+<tr><td>Conséquentielle</td><td>Conséquences d’un changement de demande, avec les réponses du marché.</td></tr>
+<tr class="acv-retained-type"><td>Prospective</td><td>Systèmes futurs intégrant les progrès technologiques et le passage à l’échelle industrielle.</td></tr>
+<tr class="acv-retained-type"><td>Paramétrique</td><td>Paramètres variables pour explorer les configurations, scénarios et sensibilités.</td></tr>
+<tr class="acv-retained-type"><td>Rétrospective</td><td>Systèmes existants représentés par des données historiques ou actuelles.</td></tr>
+<tr><td>Dynamique</td><td>Variations des émissions et des impacts dans le temps.</td></tr>
+<tr><td>Statique</td><td>Émissions et paramètres constants sur la période étudiée.</td></tr>
+<tr class="acv-retained-type"><td>Régionalisée</td><td>Données géographiques spécifiques aux conditions régionales.</td></tr>
+<tr><td>Non régionalisée</td><td>Données génériques ou mondiales, sans différenciation spatiale.</td></tr>
+<tr><td>Spatialement explicite</td><td>Localisation des flux élémentaires de l’inventaire pour affiner l’évaluation des impacts.</td><td class="acv-type-reference">Shi, S., &amp; Yan, X. (2024). A critical review on spatially explicit life cycle assessment methodologies and applications. Sustainable Production and Consumption, 52, 566–579. https://doi.org/10.1016/j.spc.2024.11.015</td></tr>
+<tr><td>Territoriale</td><td>Évaluation d’un système délimité géographiquement ou administrativement.</td><td class="acv-type-reference">Loiseau, E., Aissani, L., Le Féon, S., Laurent, F., Cerceau, J., Sala, S., &amp; Roux, P. (2018). Territorial Life Cycle Assessment (LCA): What exactly is it about? A proposal towards using a common terminology and a research agenda. Journal of Cleaner Production, 176, 474–485. https://doi.org/10.1016/j.jclepro.2017.12.169</td></tr>
+<tr class="acv-retained-type"><td>Bibliographique</td><td>Modèle fondé sur les données de la littérature plutôt que sur des mesures primaires.</td><td class="acv-type-reference">Spreafico, C. (2021). Can modified components make cars greener? A life cycle assessment. Journal of Cleaner Production, 307, 127190. https://doi.org/10.1016/j.jclepro.2021.127190</td></tr>
+<tr><td>Méta-ACV</td><td>Analyse et comparaison d’ACV publiées portant sur le système étudié.</td><td class="acv-type-reference">Padey, P. (2013). Modèles simplifiés d’Analyse de Cycle de Vie : cadre méthodologique et applications aux filières de conversion d’énergie. Thèse de doctorat, École nationale supérieure des mines de Paris. https://theses.fr/2013ENMP0083</td></tr>
+<tr><td>Transitionnelle</td><td>Impacts d’une transition sans suivi temporel complet des émissions.</td><td class="acv-type-reference">Ventura, A. (2022). Transition life cycle assessment: A new method to face ecological transition. Frontiers in Sustainability, 3, 801668. https://doi.org/10.3389/frsus.2022.801668</td></tr>
+</tbody></table>
+</div>
+<span class="fragment acv-types-selection" data-fragment-index="0" aria-hidden="true"></span>
+</div>
+```
+
+## Inventaire lié aux types d’ACV {.editorial data-part="3" data-subpart="1"}
 
 <div class="slide-title">Types d’ACV par module</div>
 
@@ -1120,9 +1065,35 @@ Champ de l’étude: Division en modules des scénarios </div>
 <span class="fragment inventory-step-rte" data-fragment-index="0" aria-hidden="true"></span>
 <span class="fragment inventory-step-batteries" data-fragment-index="1" aria-hidden="true"></span>
 <span class="fragment inventory-step-catenaries" data-fragment-index="2" aria-hidden="true"></span>
+<div class="module-matrix inventory-module-matrix" lang="fr" aria-label="Cinq modules étudiés par scénario">
+<div class="matrix-head" style="grid-column:1; grid-row:1;">Scénarios</div>
+<div class="matrix-head matrix-family-alim" style="grid-column:2 / span 3; grid-row:1;">Système énergétique embarqué</div>
+<div class="matrix-head matrix-family-energie" style="grid-column:5; grid-row:1;">Production d’énergie</div>
+<div class="matrix-head matrix-family-infra" style="grid-column:6; grid-row:1;">Infrastructure d’alimentation</div>
+<div class="matrix-label" style="grid-column:1; grid-row:2;">Électrification</div>
+<div class="matrix-label" style="grid-column:1; grid-row:3;">Batteries</div>
+<div class="matrix-label" style="grid-column:1; grid-row:4;">Hydrogène</div>
+<div class="matrix-label" style="grid-column:1; grid-row:5;">Hybride</div>
+<div class="matrix-label" style="grid-column:1; grid-row:6;">Biocarburant/<br>diesel</div>
+<div class="matrix-module matrix-family-energie" style="--track:5; --row:2; --end:6;">
+    Production d'électricité
+  </div>
+<div class="matrix-module matrix-family-infra" style="--track:6; --row:2; --end:7;">
+    Caténaires
+  </div>
+<div class="matrix-module matrix-family-alim" style="--track:2; --row:3; --end:6;">
+    Batterie NMC
+  </div>
+<div class="matrix-module matrix-family-alim" style="--track:3; --row:3; --end:6;">
+    Batterie LFP
+  </div>
+<div class="matrix-module matrix-family-alim" style="--track:4; --row:3; --end:6;">
+    Batterie LTO
+  </div>
+</div>
 <div class="ppt-table-wrap inventory-types-table">
 <table class="ppt-table" aria-label="Types d’ACV retenus pour l’étude">
-<thead><tr><th scope="col">LCA type</th></tr></thead>
+<thead><tr><th scope="col">type d'ACV</th></tr></thead>
 <tbody>
 <tr class="inventory-common"><td>Attributionnelle</td></tr>
 <tr class="inventory-prospective"><td>Prospective</td></tr>
@@ -1134,25 +1105,62 @@ Champ de l’étude: Division en modules des scénarios </div>
 </table>
 </div>
 <figure class="inventory-panel inventory-rte">
-<figcaption>Mix électrique — scénarios prospectifs RTE</figcaption>
+<figcaption>Mix électrique: scénarios prospectifs RTE</figcaption>
 <img src="figures/RTE.svg" alt="Capacités de production électrique en GW des scénarios RTE M0, M1, M23, N1, N2 et N03, avec légende des filières">
 <p class="inventory-caption">Capacités de production par filière (GW) · Source : RTE</p>
 </figure>
 <figure class="inventory-panel inventory-batteries">
-<figcaption>Batteries — revue bibliographique</figcaption>
+<figcaption>Batteries: revue de littérature</figcaption>
 <img src="figures/bibli_batteries.svg" alt="Résultats de la revue bibliographique sur les batteries">
 </figure>
 <div class="inventory-panel inventory-catenaries">
-<h3>Caténaires — données rétrospectives</h3>
+<h3>Caténaires: interview d'experts</h3>
 <div class="inventory-catenary-pair">
-<figure><figcaption>1 500 V — courant continu</figcaption><img src="figures/1500V.svg" alt="Données de la caténaire 1 500 V en courant continu"></figure>
-<figure><figcaption>25 kV — courant alternatif</figcaption><img src="figures/25kV.svg" alt="Données de la caténaire 25 kV en courant alternatif"></figure>
+<figure><figcaption>1 500 V courant continu</figcaption><img src="figures/1500V.svg" alt="Données de la caténaire 1 500 V en courant continu"></figure>
+<figure><figcaption>25 kV courant alternatif</figcaption><img src="figures/25kV.svg" alt="Données de la caténaire 25 kV en courant alternatif"></figure>
 </div>
 </div>
 </div>
 ```
 
-## Application du pedigree aux données {.editorial data-part="3" data-subpart="2"}
+## Modélisation des roulements : équations {.editorial data-part="3" data-subpart="1"}
+
+<div class="slide-title">Modélisation des roulements : équations</div>
+
+:::: {.ppt-canvas .rolling-equations}
+
+<img class="ppt-image rolling-parameters" style="left:15%;top:0%;width:70%;height:50%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
+
+::: {.rolling-equations-table}
+
+| Modèle / phase | Paramètres et contraintes | Équation |
+|:--|:--|:--|
+| **Résistance Davis** | Coefficients $A$; $B$; $C$ propres au train; $v$ la vitesse | $R=A+Bv+Cv^2$ |
+| **seconde loi newton** |  $a=\mathrm{d}v/\mathrm{d}t$; $F$ effort aux roues; $m$ masse; <br>$i$ pente; $P$ Puissance du train | $P=\bigl(ma+R+mgi\bigr)v$ |
+| **Accélération** | $v_{\max}$ fonction de la distance entre arrêts ; $a<0{,}3\ \mathrm{m/s^2}$; $P<P_{\max}$ |  |
+| **Croisière** | $a=0$; distance avant freinage |
+| **Décélération** |  $-0{,}3\mathrm{m/s^2}<a\ $ ; $P>P_{\min}$ (si régénération au freinage) |  |
+
+:::
+::::
+
+## Propagation des incertitudes {.editorial .uncertainty-slide data-part="3" data-subpart="1" refs="ciroth-2016,muller-2015"}
+
+<div class="slide-title">Propagation des incertitudes</div>
+
+```{=html}
+<div class="ppt-canvas uncertainty-canvas">
+<div class="uncertainty-figure">
+<img class="uncertainty-overview" src="figures/uncertainty_variability_diagram.svg" alt="Propagation de l’incertitude et de la variabilité vers la modélisation du système, l’ACV et les résultats d’impact ou le classement">
+<img class="uncertainty-focus" src="figures/uncertainty_variability_focus.svg" alt="Focus sur la construction du modèle">
+</div>
+<div class="ppt-table-wrap pedigree-table fragment fade-in" data-fragment-index="0">
+<table class="ppt-table"><caption>Matrice de pedigree <span class="pedigree-citations"><span data-cite="ciroth-2016,muller-2015"></span></span></caption><thead><tr><th scope="col">Score de l’indicateur</th><th scope="col">1</th><th scope="col">2</th><th scope="col">3</th><th scope="col">4</th><th scope="col">5 (par défaut)</th></tr></thead><tbody><tr><th scope="row">Fiabilité</th><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td><td>1,00</td></tr><tr><th scope="row">Complétude</th><td>1,54</td><td>1,03</td><td>1,03</td><td>1,04</td><td>1,18</td></tr><tr><th scope="row">Corrélation temporelle</th><td>1,61</td><td>1,04</td><td>1,10</td><td>1,08</td><td>1,65</td></tr><tr><th scope="row">Corrélation géographique</th><td>1,69</td><td>1,08</td><td>1,19</td><td>1,11</td><td>2,08</td></tr><tr><th scope="row">Corrélation technologique supplémentaire</th><td>4,52<sup>a</sup></td><td>3,09<sup>a</sup></td><td>1,29</td><td>9,49<sup>a</sup></td><td>2,80</td></tr></tbody></table>
+</div>
+</div>
+```
+
+## Application du pedigree aux données {.editorial data-part="3" data-subpart="1"}
 
 <div class="slide-title">Application du pedigree aux données</div>
 
@@ -1177,23 +1185,76 @@ Champ de l’étude: Division en modules des scénarios </div>
 </div>
 ```
 
-## Architecture modulaire des modèles {.editorial data-part="3" data-subpart="2"}
+## méthodes de calcul d'impact {.editorial data-part="3" data-subpart="2"}
 
-<div class="slide-title">Architecture modulaire des modèles</div>
+<div class="slide-title">Méthodes de calcul d'impact d'ACV</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:6%;top:15%;width:41%;height:60%;" src="figures/schema_sc.svg" alt="Groupe 1">
-<img class="ppt-image" style="left:56%;top:17%;width:39%;height:56%;" src="figures/comput_simpl.svg" alt="Groupe 33"></div>
+```{=html}
+<div class="ppt-canvas lcia-choice lcia-pathways">
+<div class="ppt-table-wrap lcia-methods-table">
+<table class="ppt-table">
+<thead><tr><th>Méthode</th><th>Indicateurs</th><th>Interprétation</th></tr></thead>
+<tbody>
+<tr><td>ReCiPe 2016</td><td>18 catégories</td><td>3 indicateurs de dommages</td></tr>
+<tr class="lcia-selected-method"><td>EF 3.0</td><td>28 sous-catégories</td><td>Score unique</td></tr>
+<tr><td>IMPACT World+</td><td>18 catégories</td><td></td></tr>
+</tbody>
+</table>
+</div>
+<span class="fragment lcia-selection" data-fragment-index="0" aria-hidden="true"></span>
+<div class="lcia-mcdm">EF 3.0 apporte une méthode de normalisation et pondération valorisable pour l’ADMC</div>
+<figure class="lcia-pathway-figure"><img src="figures/lcia/impact_pathways_fr.svg" alt="Schéma de l’annexe A2 : catégories d’impact intermédiaires, mécanismes de dommages et effets sur la santé humaine, les écosystèmes et les ressources."></figure>
+
+</div>
+```
+
+## Introduction à l’aide à la décision multicritère {.editorial .mcdm-intro-slide data-part="3" data-subpart="2"}
+
+<div class="slide-title">Identification d'un scénario à partir des résultats d’ACV par l'ADMC</div>
+
+```{=html}
+<div class="ppt-canvas mcdm-intro">
+<p class="mcdm-purpose">Choix de PROMETHEE pour ajuster l'incomparabilité.</p>
+<div class="mcdm-flow">
+<div class="mcdm-stage"><span class="mcdm-stage-number">01</span><h3>Résultats d’ACV</h3><p>Impacts environnementaux<br>de chaque scénario</p></div>
+<span class="mcdm-arrow" aria-hidden="true">→</span>
+<div class="mcdm-stage"><span class="mcdm-stage-number">02</span><h3>Normalisation et pondération</h3><p>Poids des critères<br>Seuils de normalisation</p></div>
+<span class="mcdm-arrow" aria-hidden="true">→</span>
+<div class="mcdm-stage"><span class="mcdm-stage-number">03</span><h3>Comparaison</h3><p>Évaluation des scénarios<br>deux à deux avec PROMETHEE</p></div>
+<span class="mcdm-arrow" aria-hidden="true">→</span>
+<div class="mcdm-stage"><span class="mcdm-stage-number">04</span><h3>identification d'un scénario</h3><p>Classement et incomparabilités</p></div>
+</div>
+<div class="mcdm-takeaway"></div>
+</div>
+```
+
+## ADMC : PROMETHEE {.editorial data-part="3" data-subpart="2" refs="greco-2016,taherdoost-2023,wulf-2021"}
+
+<div class="slide-title">ADMC : PROMETHEE <span data-cite="taherdoost-2023"></span></div>
+
+```{=html}
+<div class="ppt-canvas preference-choice">
+<div class="ppt-table-wrap preference-functions"><table class="ppt-table"><caption>Fonctions de préférence <span data-cite="greco-2016"></span></caption><thead><tr><th>Fonction</th><th>Représentation</th><th>Définition de P(d)</th><th>Paramètres</th></tr></thead><tbody><tr><td>Usuelle</td><td><img src="figures/preferences/Usual.svg" alt="Fonction usuelle"></td><td>0 si d ≤ 0 ; 1 si d &gt; 0</td><td>-</td></tr><tr><td>En U</td><td><img src="figures/preferences/Ushape.svg" alt="Fonction en u"></td><td>0 si d ≤ q ; 1 si d &gt; q</td><td>q</td></tr><tr><td>À niveaux</td><td><img src="figures/preferences/Level.svg" alt="Fonction à niveaux"></td><td>0 si d ≤ q ; ½ si q &lt; d ≤ p ;<br>1 si d &gt; p</td><td>p, q</td></tr><tr><td>Gaussienne</td><td><img src="figures/preferences/Gaussian.svg" alt="Fonction gaussienne"></td><td>0 si d ≤ 0 ;<br>1 − exp(−d² / (2s²)) si d &gt; 0</td><td>s</td></tr><tr class="preference-vshape"><td>En V</td><td><img src="figures/preferences/Vshape_indifference.svg" alt="Fonction en V avec seuils q et p"></td><td>0 si d ≤ q ;<br>(d − q) / (p − q) si q &lt; d ≤ p ;<br>1 si d &gt; p</td><td>p, q</td></tr></tbody></table></div>
+<span class="fragment preference-selection" data-fragment-index="0" aria-hidden="true"></span>
+<div class="preference-weak-stage">
+<div class="preference-v-detail">
+</div>
+
+<div class="ppt-table-wrap weak-preference-table"><table class="ppt-table"><caption>Zones de préférence faible <span data-cite="wulf-2021"></span></caption><tr><td>Catégorie d’impact</td><td>Classe d’incertitude</td><td>Zone de préférence faible (q–p)</td></tr><tr><td>Changement climatique</td><td>1</td><td>10–20%</td></tr><tr><td>Appauvrissement de l’ozone</td><td>1</td><td>10–20%</td></tr><tr><td>Demande cumulée d’énergie</td><td>1</td><td>10–20%</td></tr><tr><td>Épuisement des ressources en eau</td><td>2</td><td>30–40%</td></tr><tr><td>Épuisement des ressources minérales</td><td>2</td><td>30–40%</td></tr><tr><td>Particules / effets respiratoires inorganiques</td><td>2</td><td>30–40%</td></tr><tr><td>Rayonnements ionisants - santé humaine</td><td>2</td><td>30–40%</td></tr><tr><td>Formation photochimique d’ozone</td><td>2</td><td>30–40%</td></tr><tr><td>Acidification</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation terrestre</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation aquatique</td><td>2</td><td>30–40%</td></tr><tr><td>Eutrophisation marine</td><td>2</td><td>30–40%</td></tr><tr><td>Écotoxicité en eau douce</td><td>3</td><td>70–80%</td></tr><tr><td>Toxicité humaine cancérogène</td><td>3</td><td>70–80%</td></tr><tr><td>Toxicité humaine non cancérogène</td><td>3</td><td>70–80%</td></tr></table></div>
+</div>
+</div>
+```
 
 ## Validation : comparaison avec l’ADEME {.editorial data-part="3" data-subpart="3" refs="sune-2025"}
 
-<div class="slide-title">Validation : comparaison avec l’ADEME <span data-cite="sune-2025"></span></div>
+<div class="slide-title">Validation : cas d'étude de l’ADEME <span data-cite="sune-2025"></span></div>
 
 ```{=html}
 <div class="ppt-canvas ademe-validation">
-<figure class="ademe-report"><img src="figures/ademe.png" alt="Couverture du rapport final ADEME de juin 2025 : ACV attributionnelle d’un trajet en train sur 100 km de ligne non électrifiée"><figcaption>Rapport ADEME · Juin 2025</figcaption></figure>
+<figure class="ademe-report"><img src="figures/ademe.png" alt="Couverture du rapport final ADEME de juin 2025 : ACV attributionnelle d’un trajet en train sur 100 km de ligne non électrifiée"><figcaption></figcaption></figure>
 <div class="ademe-validation-content">
-<div class="ademe-validation-intro"><div class="ademe-validation-label">ÉTUDE DE RÉFÉRENCE</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p><p class="ademe-report-scope">Train régional et train de fret</p></div>
-<figure class="ademe-parameters"><figcaption>Paramètres de la ligne pour la comparaison</figcaption><img src="figures/param_ademe.svg" alt="Schéma de ligne : pente de 0 %, longueur de 50 km et distance entre arrêts de 5 km ; vitesse maximale à préciser"></figure>
+<div class="ademe-validation-intro"><div class="ademe-validation-label">ADEME</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p><p class="ademe-report-scope"></p></div>
+<figure class="ademe-parameters"><figcaption>Paramètres de la ligne </figcaption><img src="figures/param_ademe.svg" alt="Schéma de ligne : pente de 0 %, longueur de 50 km et distance entre arrêts de 5 km ; vitesse maximale à préciser"></figure>
 </div>
 </div>
 ```
@@ -1229,7 +1290,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:1%;width:32%;height:82%;" src="assets/vector/s44_Image_1.svg" alt="Image 1">
 <img class="ppt-image" style="left:37%;top:20%;width:62%;height:49%;" src="assets/media/image72.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:0%;top:-9%;width:36%;height:11%;" src="assets/media/image73.svg" alt="Graphique 1">
-<div class="ppt-text" style="left:22%;top:83%;width:7%;height:6%;font-size:var(--content-title-size);transform:rotate(23.23deg);transform-origin:center;"><div class="ppt-p" style="text-align:left"><span style="">SACOI3</span></div></div>
+<div class="ppt-text" style="left:22%;top:83%;width:7%;height:6%;font-size:var(--content-title-size);transform:rotate(23.23deg);transform-origin:center;"><div class="ppt-p" style="text-align:left"><span style=""></span></div></div>
 <img class="ppt-image" style="left:20%;top:83%;width:12%;height:7%;" src="assets/vector/s44_Fl_che_double_fl_che_horizontale_16.svg" alt="Flèche : double flèche horizontale 16"></div>
 
 ## Mix énergétique corse {.editorial data-part="3" data-subpart="3"}
@@ -1294,21 +1355,6 @@ Champ de l’étude: Division en modules des scénarios </div>
 <img class="ppt-image" style="left:3%;top:50%;width:44%;height:42%;" src="assets/media/image87.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:51%;top:49%;width:44%;height:43%;" src="assets/media/image88.svg" alt="Graphique 1"></div>
 
-## ANOVA {.editorial data-part="3" data-subpart="3"}
-
-<div class="slide-title">ANOVA</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:26%;width:44%;height:42%;" src="assets/media/image89.svg" alt="Graphique 2">
-<img class="ppt-image" style="left:47%;top:49%;width:44%;height:42%;" src="assets/media/image90.svg" alt="Graphique 3">
-<img class="ppt-image" style="left:48%;top:5%;width:44%;height:42%;" src="assets/media/image91.svg" alt="Graphique 1"></div>
-
-## Évolution des classements {.editorial data-part="3" data-subpart="3"}
-
-<div class="slide-title">Évolution des classements</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:7%;top:18%;width:39%;height:52%;" src="assets/media/image92.svg" alt="Graphique 4">
-<img class="ppt-image" style="left:56%;top:18%;width:40%;height:52%;" src="assets/media/image93.svg" alt="Graphique 3"></div>
-
 ## Zones d’incomparabilité {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Zones d’incomparabilité</div>
@@ -1322,8 +1368,8 @@ Champ de l’étude: Division en modules des scénarios </div>
 ## {.editorial .part-divider data-part="4" data-subpart="1"}
 
 <div class="divider-number">PARTIE 04</div>
-<div class="divider-title">Perspectives</div>
-<div class="divider-subtitle">Synthèse des contributions et prolongements scientifiques et opérationnels.</div>
+<div class="divider-title">Conclusions et Perspectives</div>
+<div class="divider-subtitle">Synthèse des contributions et perspectives scientifiques et opérationnels.</div>
 
 ## Conclusion {.editorial data-part="4" data-subpart="1"}
 
@@ -1337,7 +1383,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 <div class="slide-title">Perspectives scientifiques et opérationnelles</div>
 <div class="perspective-grid">
-<div class="perspective-column"><div class="perspective-kicker">MÉTHODE</div><div class="perspective-list">Economic indicators<br>MCDM — approfondissement méthodologique<br>Computational optimization<br>Uncertainty precision<br>Criteria development and weighting</div></div>
+<div class="perspective-column"><div class="perspective-kicker">MÉTHODE</div><div class="perspective-list">ADMC: Sensibilité au choixde méthode<br>Sensibilité aux poids et à la normalisation<br>Réduction des incertitudes<br>Développement aux critères sociaux et économiques</div></div>
 <div class="perspective-column"><div class="perspective-kicker">APPLICATIONS</div><div class="perspective-list">Extension aux lignes non électrifiées<br>Extension à d’autres systèmes de mobilité<br>Outil opérationnel d’aide à la décision régionale</div></div>
 </div>
 
@@ -1488,3 +1534,76 @@ Champ de l’étude: Division en modules des scénarios </div>
 <img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
 <div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Comparaison des scénarios – changement climatique (gCO2eq pour 1 p.km)</span></div></div>
 <img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="figures/param_ademe.svg" alt="Paramètres de la ligne pour la comparaison ADEME"></div>
+## Architecture modulaire des modèles {.editorial .appendix-slide}
+
+<div class="slide-title">Architecture modulaire des modèles</div>
+
+<div class="ppt-canvas"><img class="ppt-image" style="left:6%;top:15%;width:41%;height:60%;" src="figures/schema_sc.svg" alt="Groupe 1">
+<img class="ppt-image" style="left:56%;top:17%;width:39%;height:56%;" src="figures/comput_simpl.svg" alt="Groupe 33"></div>
+
+## Indicateurs de réseau choisis {.editorial .appendix-slide .has-slide-references #indicateurs-complets-14}
+
+<div class="slide-title">Indicateurs de réseau choisis</div>
+
+:::: {.ppt-canvas}
+
+::: {.network-indicators}
+
+| Indicateur | Interprétation | Formule |
+|:--|:--|:--|
+| **Nombre d’entrées et de sorties** | Nombre de liens entrants et sortants du nœud | $\Omega_i^{-}\;;\quad\Omega_i^{+}$ |
+| **Nombre d’entrées et de sorties pondérées** | Somme des poids des liens entrants et sortants | $\displaystyle\varphi_i^{-}=\sum\nolimits_{j=1}^{n}g_{ji}\;;\quad\varphi_i^{+}=\sum\nolimits_{j=1}^{n}g_{ij}$ |
+| **Centralité normalisée** | Nombre de connexions du nœud, rapporté aux maxima du réseau | $\displaystyle\Omega_i=\frac{\Omega_i^{+}}{\max_k\Omega_k^{+}}+\frac{\Omega_i^{-}}{\max_k\Omega_k^{-}}$ |
+| **Poids total du nœud normalisé** | Part du nœud dans la somme des poids entrants et sortants | $\displaystyle\varphi_i=\frac{\varphi_i^{+}+\varphi_i^{-}}{\sum_{k=1}^{n}\varphi_k^{+}+\sum_{k=1}^{n}\varphi_k^{-}}$ |
+| **Centralité d’intermédiarité** | Importance du nœud dans les plus courts chemins reliant les autres nœuds | $\displaystyle c_i^{\mathrm{bet}}=\frac{2}{(n-1)(n-2)}\sum_{\substack{(j,k)\,:\,j\ne i,\,k\ne i}}\frac{\nu_g(i:j,k)}{\nu_g(j,k)}$ |
+| **Centralité de proximité normalisée** | Inverse de la distance moyenne du nœud aux autres nœuds | $\displaystyle C_c(i)=\frac{n-1}{\sum\nolimits_{j\ne i}^{n}\rho(i,j)}$ |
+| **Centralité harmonique** | Moyenne des inverses des distances aux autres nœuds | $\displaystyle C_h(i)=\frac{1}{n-1}\sum\nolimits_{j\ne i}^{n}\frac{1}{\rho(i,j)}$ |
+
+<div class="network-indicators-key">$n$ : nombre de nœuds · $g_{ij}$ : poids du lien de $i$ vers $j$ · $\rho(i,j)$ : distance géodésique.<br>$\nu_g(i:j,k)/\nu_g(j,k)$ : fraction des plus courts chemins entre $j$ et $k$ passant par $i$.</div>
+
+:::
+::::
+
+<div class="slide-references" role="note" aria-label="Référence">Bloch, F., Jackson, M. O., &amp; Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453.</div>
+
+## Indicateurs de réseau : résultats {.editorial .appendix-slide .has-slide-references #indicateurs-complets-15}
+
+<div class="slide-title">Indicateurs de réseau : résultats</div>
+
+```{=html}
+<div class="ppt-canvas">
+<div class="indicator-focus-label" aria-live="polite">Tous les acteurs</div>
+<span class="fragment indicator-focus-step" data-fragment-index="0" data-actor-focus="region" aria-hidden="true"></span>
+<span class="fragment indicator-focus-step" data-fragment-index="1" data-actor-focus="top" aria-hidden="true"></span>
+<span class="fragment indicator-focus-step" data-fragment-index="2" data-actor-focus="dgitm" aria-hidden="true"></span>
+<span class="fragment indicator-focus-step" data-fragment-index="3" data-actor-focus="all" aria-hidden="true"></span>
+<div class="indicator-results-frame"><table class="indicator-results-table" aria-label="Indicateurs par acteur">
+<colgroup><col style="width:5%"><col style="width:25%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"><col style="width:7.7778%"></colgroup><thead>
+<tr><th data-cell="A1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">ID acteur</th><th data-cell="B1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Nom de l’acteur</th><th data-cell="C1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Nombre d’entrées Ω+</th><th data-cell="D1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Nombre de sorties Ω-</th><th data-cell="E1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Sorties pondérées φ+</th><th data-cell="F1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Entrées pondérées φ-</th><th data-cell="G1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Poids normalisé Φ</th><th data-cell="H1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Centralité normalisée Ω</th><th data-cell="I1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Centralité d&#x27;intermédiarité Cbet </th><th data-cell="J1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1" scope="col">Centralité de proximité normalisée Cc</th><th data-cell="K1" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000" scope="col">Centralité harmonique </th></tr>
+<tr><th data-cell="K2" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-bottom:2px solid #000000" scope="col">Ch</th></tr>
+</thead><tbody>
+<tr><td data-cell="A3" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A1</td><td data-cell="B3" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Région</td><td data-cell="C3" style="background-color:#F8696B;color:#000000;font-weight:400;border-left:2px solid #000000;border-top:2px solid #000000">16</td><td data-cell="D3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">17</td><td data-cell="E3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">45</td><td data-cell="F3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">56</td><td data-cell="G3" style="background-color:#F8696B;color:#000000;font-weight:700;border-top:2px solid #000000">0,1</td><td data-cell="H3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">1,94</td><td data-cell="I3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">0,101</td><td data-cell="J3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">0,944</td><td data-cell="K3" style="background-color:#F8696B;color:#000000;font-weight:400;border-top:2px solid #000000">16,5</td></tr>
+<tr><td data-cell="A4" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A2</td><td data-cell="B4" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Ministère chargé des transports</td><td data-cell="C4" style="background-color:#FCAA78;color:#000000;font-weight:400;border-left:2px solid #000000">14</td><td data-cell="D4" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E4" style="background-color:#FDBD7C;color:#000000;font-weight:400">36</td><td data-cell="F4" style="background-color:#FCB27A;color:#000000;font-weight:400">40</td><td data-cell="G4" style="background-color:#FDB47A;color:#000000;font-weight:700">0,075</td><td data-cell="H4" style="background-color:#FCAE79;color:#000000;font-weight:400">1,65</td><td data-cell="I4" style="background-color:#FED881;color:#000000;font-weight:400">0,028</td><td data-cell="J4" style="background-color:#FCB179;color:#000000;font-weight:400">0,85</td><td data-cell="K4" style="background-color:#FCAA78;color:#000000;font-weight:400">15,5</td></tr>
+<tr><td data-cell="A5" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A5</td><td data-cell="B5" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Constructeur de matériel roulant</td><td data-cell="C5" style="background-color:#FECB7E;color:#000000;font-weight:400;border-left:2px solid #000000">13</td><td data-cell="D5" style="background-color:#FA8370;color:#000000;font-weight:400">16</td><td data-cell="E5" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F5" style="background-color:#FCA978;color:#000000;font-weight:400">42</td><td data-cell="G5" style="background-color:#FDB77A;color:#000000;font-weight:700">0,074</td><td data-cell="H5" style="background-color:#FBA076;color:#000000;font-weight:400">1,71</td><td data-cell="I5" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td><td data-cell="J5" style="background-color:#FED07F;color:#000000;font-weight:400">0,81</td><td data-cell="K5" style="background-color:#FECB7E;color:#000000;font-weight:400">15</td></tr>
+<tr><td data-cell="A6" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A11</td><td data-cell="B6" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">SNCF Réseau</td><td data-cell="C6" style="background-color:#FCAA78;color:#000000;font-weight:400;border-left:2px solid #000000">14</td><td data-cell="D6" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E6" style="background-color:#F2E783;color:#000000;font-weight:400">29</td><td data-cell="F6" style="background-color:#FDBC7B;color:#000000;font-weight:400">38</td><td data-cell="G6" style="background-color:#FECF7F;color:#000000;font-weight:700">0,066</td><td data-cell="H6" style="background-color:#FCAE79;color:#000000;font-weight:400">1,65</td><td data-cell="I6" style="background-color:#FFE784;color:#000000;font-weight:400">0,018</td><td data-cell="J6" style="background-color:#FCB179;color:#000000;font-weight:400">0,85</td><td data-cell="K6" style="background-color:#FCAA78;color:#000000;font-weight:400">15,5</td></tr>
+<tr><td data-cell="A7" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A3</td><td data-cell="B7" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Gouvernement français</td><td data-cell="C7" style="background-color:#FECB7E;color:#000000;font-weight:400;border-left:2px solid #000000">13</td><td data-cell="D7" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E7" style="background-color:#FDBD7C;color:#000000;font-weight:400">36</td><td data-cell="F7" style="background-color:#FFDC81;color:#000000;font-weight:400">31</td><td data-cell="G7" style="background-color:#FECF7F;color:#000000;font-weight:700">0,066</td><td data-cell="H7" style="background-color:#FDBC7B;color:#000000;font-weight:400">1,59</td><td data-cell="I7" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td><td data-cell="J7" style="background-color:#FED07F;color:#000000;font-weight:400">0,81</td><td data-cell="K7" style="background-color:#FECB7E;color:#000000;font-weight:400">15</td></tr>
+<tr><td data-cell="A8" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A6</td><td data-cell="B8" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs et distributeurs d’électricité</td><td data-cell="C8" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D8" style="background-color:#FFEB84;color:#000000;font-weight:400">12</td><td data-cell="E8" style="background-color:#FED07F;color:#000000;font-weight:400">34</td><td data-cell="F8" style="background-color:#FFDC81;color:#000000;font-weight:400">31</td><td data-cell="G8" style="background-color:#FED580;color:#000000;font-weight:700">0,064</td><td data-cell="H8" style="background-color:#FFE583;color:#000000;font-weight:400">1,41</td><td data-cell="I8" style="background-color:#FED380;color:#000000;font-weight:400">0,031</td><td data-cell="J8" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K8" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
+<tr><td data-cell="A9" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A4</td><td data-cell="B9" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Union européenne</td><td data-cell="C9" style="background-color:#FECB7E;color:#000000;font-weight:400;border-left:2px solid #000000">13</td><td data-cell="D9" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E9" style="background-color:#FEC67D;color:#000000;font-weight:400">35</td><td data-cell="F9" style="background-color:#FFE583;color:#000000;font-weight:400">29</td><td data-cell="G9" style="background-color:#FED881;color:#000000;font-weight:700">0,063</td><td data-cell="H9" style="background-color:#FDBC7B;color:#000000;font-weight:400">1,59</td><td data-cell="I9" style="background-color:#FFDF82;color:#000000;font-weight:400">0,023</td><td data-cell="J9" style="background-color:#FED07F;color:#000000;font-weight:400">0,81</td><td data-cell="K9" style="background-color:#FECB7E;color:#000000;font-weight:400">15</td></tr>
+<tr><td data-cell="A10" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A12</td><td data-cell="B10" style="background-color:transparent;color:#B71111;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Exploitant du réseau ferroviaire</td><td data-cell="C10" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D10" style="background-color:#FFEB84;color:#000000;font-weight:400">12</td><td data-cell="E10" style="background-color:#ECE582;color:#000000;font-weight:400">28</td><td data-cell="F10" style="background-color:#FECE7F;color:#000000;font-weight:400">34</td><td data-cell="G10" style="background-color:#FFDE82;color:#000000;font-weight:700">0,061</td><td data-cell="H10" style="background-color:#FFE583;color:#000000;font-weight:400">1,41</td><td data-cell="I10" style="background-color:#FED17F;color:#000000;font-weight:400">0,032</td><td data-cell="J10" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K10" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
+<tr><td data-cell="A11" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A9</td><td data-cell="B11" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Acteurs industriels</td><td data-cell="C11" style="background-color:#E8E482;color:#000000;font-weight:400;border-left:2px solid #000000">11</td><td data-cell="D11" style="background-color:#FDB87B;color:#000000;font-weight:400">14</td><td data-cell="E11" style="background-color:#FFE283;color:#000000;font-weight:400">32</td><td data-cell="F11" style="background-color:#F5E883;color:#000000;font-weight:400">26</td><td data-cell="G11" style="background-color:#FFEA84;color:#000000;font-weight:700">0,057</td><td data-cell="H11" style="background-color:#FED781;color:#000000;font-weight:400">1,47</td><td data-cell="I11" style="background-color:#FFEA84;color:#000000;font-weight:400">0,016</td><td data-cell="J11" style="background-color:#E2E282;color:#000000;font-weight:400">0,739</td><td data-cell="K11" style="background-color:#E8E482;color:#000000;font-weight:400">14</td></tr>
+<tr><td data-cell="A12" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A7</td><td data-cell="B12" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs d’hydrogène</td><td data-cell="C12" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D12" style="background-color:#F0E683;color:#000000;font-weight:400">11</td><td data-cell="E12" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F12" style="background-color:#E9E482;color:#000000;font-weight:400">24</td><td data-cell="G12" style="background-color:#FCEA83;color:#000000;font-weight:700">0,056</td><td data-cell="H12" style="background-color:#F9E983;color:#000000;font-weight:400">1,35</td><td data-cell="I12" style="background-color:#DBE081;color:#000000;font-weight:400">0,011</td><td data-cell="J12" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K12" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
+<tr><td data-cell="A13" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A8</td><td data-cell="B13" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Constructeurs d’infrastructures</td><td data-cell="C13" style="background-color:#FFEB84;color:#000000;font-weight:400;border-left:2px solid #000000">12</td><td data-cell="D13" style="background-color:#E2E282;color:#000000;font-weight:400">10</td><td data-cell="E13" style="background-color:#FFD981;color:#000000;font-weight:400">33</td><td data-cell="F13" style="background-color:#E3E382;color:#000000;font-weight:400">23</td><td data-cell="G13" style="background-color:#F8E983;color:#000000;font-weight:700">0,055</td><td data-cell="H13" style="background-color:#EFE683;color:#000000;font-weight:400">1,29</td><td data-cell="I13" style="background-color:#F7E883;color:#000000;font-weight:400">0,014</td><td data-cell="J13" style="background-color:#FFEB84;color:#000000;font-weight:400">0,773</td><td data-cell="K13" style="background-color:#FFEB84;color:#000000;font-weight:400">14,5</td></tr>
+<tr><td data-cell="A14" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A10</td><td data-cell="B14" style="background-color:transparent;color:#DE6614;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Producteurs de diesel</td><td data-cell="C14" style="background-color:#E8E482;color:#000000;font-weight:400;border-left:2px solid #000000">11</td><td data-cell="D14" style="background-color:#F0E683;color:#000000;font-weight:400">11</td><td data-cell="E14" style="background-color:#F8E983;color:#000000;font-weight:400">30</td><td data-cell="F14" style="background-color:#E9E482;color:#000000;font-weight:400">24</td><td data-cell="G14" style="background-color:#EFE683;color:#000000;font-weight:700">0,053</td><td data-cell="H14" style="background-color:#EFE683;color:#000000;font-weight:400">1,29</td><td data-cell="I14" style="background-color:#DBE081;color:#000000;font-weight:400">0,011</td><td data-cell="J14" style="background-color:#E2E282;color:#000000;font-weight:400">0,739</td><td data-cell="K14" style="background-color:#E8E482;color:#000000;font-weight:400">14</td></tr>
+<tr><td data-cell="A15" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A13</td><td data-cell="B15" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">DGITM</td><td data-cell="C15" style="background-color:#BCD780;color:#000000;font-weight:400;border-left:2px solid #000000">9</td><td data-cell="D15" style="background-color:#FFEB84;color:#000000;font-weight:400">12</td><td data-cell="E15" style="background-color:#D9E081;color:#000000;font-weight:400">25</td><td data-cell="F15" style="background-color:#F5E883;color:#000000;font-weight:400">26</td><td data-cell="G15" style="background-color:#E2E282;color:#000000;font-weight:700">0,05</td><td data-cell="H15" style="background-color:#E5E382;color:#000000;font-weight:400">1,24</td><td data-cell="I15" style="background-color:#C1D980;color:#000000;font-weight:400">0,009</td><td data-cell="J15" style="background-color:#B1D47F;color:#000000;font-weight:400">0,68</td><td data-cell="K15" style="background-color:#BCD780;color:#000000;font-weight:400">13</td></tr>
+<tr><td data-cell="A16" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A14</td><td data-cell="B16" style="background-color:transparent;color:#4D7731;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Bureau d’études en ingénierie</td><td data-cell="C16" style="background-color:#BCD780;color:#000000;font-weight:400;border-left:2px solid #000000">9</td><td data-cell="D16" style="background-color:#E2E282;color:#000000;font-weight:400">10</td><td data-cell="E16" style="background-color:#C6DA80;color:#000000;font-weight:400">22</td><td data-cell="F16" style="background-color:#D1DD81;color:#000000;font-weight:400">20</td><td data-cell="G16" style="background-color:#BAD780;color:#000000;font-weight:700">0,041</td><td data-cell="H16" style="background-color:#D1DD81;color:#000000;font-weight:400">1,12</td><td data-cell="I16" style="background-color:#A4D07E;color:#000000;font-weight:400">0,006</td><td data-cell="J16" style="background-color:#B1D47F;color:#000000;font-weight:400">0,68</td><td data-cell="K16" style="background-color:#BCD780;color:#000000;font-weight:400">13</td></tr>
+<tr><td data-cell="A17" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A16</td><td data-cell="B17" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">EPSF</td><td data-cell="C17" style="background-color:#8FCA7D;color:#000000;font-weight:400;border-left:2px solid #000000">7</td><td data-cell="D17" style="background-color:#C6DA80;color:#000000;font-weight:400">8</td><td data-cell="E17" style="background-color:#9BCE7E;color:#000000;font-weight:400">15</td><td data-cell="F17" style="background-color:#E3E382;color:#000000;font-weight:400">23</td><td data-cell="G17" style="background-color:#A9D27F;color:#000000;font-weight:700">0,037</td><td data-cell="H17" style="background-color:#A9D27F;color:#000000;font-weight:400">0,88</td><td data-cell="I17" style="background-color:#F5E883;color:#000000;font-weight:400">0,014</td><td data-cell="J17" style="background-color:#87C87D;color:#000000;font-weight:400">0,63</td><td data-cell="K17" style="background-color:#8FCA7D;color:#000000;font-weight:400">12</td></tr>
+<tr><td data-cell="A18" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1">A18</td><td data-cell="B18" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000">Collectivités territoriales infrarégionales</td><td data-cell="C18" style="background-color:#E8E482;color:#000000;font-weight:400;border-left:2px solid #000000" rowspan="2" colspan="1">11</td><td data-cell="D18" style="background-color:#F0E683;color:#000000;font-weight:400" rowspan="2" colspan="1">11</td><td data-cell="E18" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">6</td><td data-cell="F18" style="background-color:#FFE583;color:#000000;font-weight:400" rowspan="2" colspan="1">29</td><td data-cell="G18" style="background-color:#9CCE7E;color:#000000;font-weight:700" rowspan="2" colspan="1">0,035</td><td data-cell="H18" style="background-color:#EFE683;color:#000000;font-weight:400" rowspan="2" colspan="1">1,29</td><td data-cell="I18" style="background-color:#E3E382;color:#000000;font-weight:400" rowspan="2" colspan="1">0,012</td><td data-cell="J18" style="background-color:#E2E282;color:#000000;font-weight:400" rowspan="2" colspan="1">0,739</td><td data-cell="K18" style="background-color:#E8E482;color:#000000;font-weight:400" rowspan="2" colspan="1">14</td></tr>
+<tr><td data-cell="B19" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-bottom:2px solid #000000">(départements, EPCI, communes…)</td></tr>
+<tr><td data-cell="A20" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000" rowspan="2" colspan="1">A17</td><td data-cell="B20" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000">Autres parties prenantes du territoire</td><td data-cell="C20" style="background-color:#63BE7B;color:#000000;font-weight:400;border-left:2px solid #000000" rowspan="2" colspan="1">5</td><td data-cell="D20" style="background-color:#7FC67C;color:#000000;font-weight:400" rowspan="2" colspan="1">3</td><td data-cell="E20" style="background-color:#9BCE7E;color:#000000;font-weight:400" rowspan="2" colspan="1">15</td><td data-cell="F20" style="background-color:#8DCA7D;color:#000000;font-weight:400" rowspan="2" colspan="1">9</td><td data-cell="G20" style="background-color:#6BC07B;color:#000000;font-weight:700" rowspan="2" colspan="1">0,024</td><td data-cell="H20" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,47</td><td data-cell="I20" style="background-color:#6FC17B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,001</td><td data-cell="J20" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">0,586</td><td data-cell="K20" style="background-color:#63BE7B;color:#000000;font-weight:400" rowspan="2" colspan="1">11</td></tr>
+<tr><td data-cell="B21" style="background-color:transparent;color:#1D4971;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-bottom:2px solid #000000">Associations (usagers, environnement…)</td></tr>
+<tr><td data-cell="A22" style="background-color:transparent;color:#000000;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">A15</td><td data-cell="B22" style="background-color:transparent;color:#4D7731;font-weight:700;border-left:2px solid #000000;border-right:2px solid #000000;border-top:2px solid #000000;border-bottom:2px solid #000000">Régions de France</td><td data-cell="C22" style="background-color:#D2DE81;color:#000000;font-weight:400;border-left:2px solid #000000">10</td><td data-cell="D22" style="background-color:#63BE7B;color:#000000;font-weight:400">1</td><td data-cell="E22" style="background-color:#BAD780;color:#000000;font-weight:400">20</td><td data-cell="F22" style="background-color:#63BE7B;color:#000000;font-weight:400">2</td><td data-cell="G22" style="background-color:#63BE7B;color:#000000;font-weight:700">0,022</td><td data-cell="H22" style="background-color:#81C67C;color:#000000;font-weight:400">0,65</td><td data-cell="I22" style="background-color:#63BE7B;color:#000000;font-weight:400">0</td><td data-cell="J22" style="background-color:#C9DB80;color:#000000;font-weight:400">0,708</td><td data-cell="K22" style="background-color:#D2DE81;color:#000000;font-weight:400">13,5</td></tr>
+</tbody></table></div>
+</div>
+```
+
+<div class="slide-references" role="note" aria-label="Référence">Bloch, F., Jackson, M. O., &amp; Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453.</div>
