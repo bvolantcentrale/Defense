@@ -32,7 +32,7 @@ format:
 
 <div class="divider-number">PARTIE 01</div>
 <div class="divider-title">Introduction</div>
-<div class="divider-subtitle">Pourquoi la décarbonation ferroviaire régionale appelle un support à la décision transparent et interprétable.</div>
+<div class="divider-subtitle"></div>
 
 ## Décision publique de décarbonation : cadres climatiques {.editorial data-part="1" data-subpart="1"}
 
@@ -68,40 +68,23 @@ format:
 <img class="ppt-image" style="left:14%;top:20%;width:72%;height:42%;" src="figures/process_decision.svg" alt="Graphique 1">
 <div class="ppt-text" style="left:9%;top:9%;width:82%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Les services techniques de décarbonation des trains régionaux ont été interrogés à l&#x27;aide d&#x27;entretiens </span><span style="font-size:var(--content-size);font-weight:700">semi-structurés</span><span style="font-size:var(--content-size)">. </span></div></div></div>
 
-## Risques des interactions publiques–privées {.editorial data-part="1" data-subpart="1"}
+## Risques des interactions publiques–privées {.editorial data-part="1" data-subpart="1" refs="volant-2026"}
 
-<div class="slide-title">Risques des interactions publiques–privées</div>
+<div class="slide-title">Risques des interactions publiques–privées <span data-cite="volant-2026"></span></div>
 
-:::: {.ppt-canvas}
-::: {.ppt-text .risk-list style="left:5%;top:15%;width:90%;height:73%;"}
+<div class="ppt-canvas">
+<div class="ppt-text risk-list" style="left:5%;top:15%;width:90%;height:73%;">
+<ol>
+<li class="fragment fade-in" data-fragment-index="0"><strong>Asymétrie d’information et dépendance technique</strong><br>Dépendance aux données industrielles<br>Biais d’évaluation<br>Alliances imposées</li>
+<li class="fragment fade-in" data-fragment-index="1"><strong>Lobbying et captation des décisions</strong><br>Avantage du premier entrant<br>Négociations opaques<br>Déséquilibre déinfluence</li>
+<li class="fragment fade-in" data-fragment-index="2"><strong>Inadéquation temporelle des interventions</strong><br>Participation trop précoce ou trop tardive<br>Sous-représentation aux moments clés</li>
+<li class="fragment fade-in" data-fragment-index="3"><strong>Paralysie décisionnelle et fatigue participative</strong><br>Surcharge bureaucratique<br>Désengagement des acteurs</li>
+<li class="fragment fade-in" data-fragment-index="4"><strong>Incohérences stratégiques et inefficacité financiére</strong><br>Cloisonnement des connaissances<br>Contradictions internes<br>Gaspillage de ressources publiques</li>
+</ol>
+</div>
+</div>
 
-1. **Asymétrie d’information et dépendance technique**  
-   Dépendance aux données industrielles  
-   Biais d’évaluation  
-   Alliances imposées
-
-2. **Lobbying et captation des décisions**  
-   Avantage du premier entrant  
-   Négociations opaques  
-   Déséquilibre d’influence
-
-3. **Inadéquation temporelle des interventions**  
-   Participation trop précoce ou trop tardive  
-   Sous-représentation aux moments clés
-
-4. **Paralysie décisionnelle et fatigue participative**  
-   Surcharge bureaucratique  
-   Désengagement des acteurs
-
-5. **Incohérences stratégiques et inefficacité financière**  
-   Cloisonnement des connaissances  
-   Contradictions internes  
-   Gaspillage de ressources publiques
-
-:::
-::::
-
-## Lacunes de la littérature sur l’organisation de la décision {.editorial data-part="1" data-subpart="1" refs="literature-1,literature-2,literature-3,literature-4,literature-5,literature-6"}
+## Lacunes de la littérature sur l’organisation de la décision {.editorial data-part="1" data-subpart="1" refs="literature-1,literature-2,literature-3,literature-4,literature-5,tsvetkova-2019"}
 
 <div class="slide-title">Lacunes de la littérature sur l’organisation de la décision</div>
 
@@ -109,27 +92,34 @@ format:
 
 :::: {.ppt-canvas}
 
-::: {.ppt-table-wrap .references-table style="left:3%;top:20%;width:45%;"}
+::: {.ppt-table-wrap .literature-table style="left:3%;top:20%;width:45%;"}
 
-| **N°** | **Approche** | **Référence** |
-| :--- | :--- | :--- |
-| **1** | Approche participative et gouvernance locale | <span data-cite="literature-1"></span> |
-| **2** | Modélisation graphique et cartographie des parties prenantes | <span data-cite="literature-2"></span> |
-| **3** | Évaluation des impacts organisationnels du changement | <span data-cite="literature-3"></span> |
-| **4** | Stratégies d’évaluation et de gestion des parties prenantes de l’organisation | <span data-cite="literature-4"></span> |
-| **5** | Influence des groupes d’intérêt et asymétrie d’information | <span data-cite="literature-5"></span> |
-| **6** | Modélisation des parties prenantes de l’entreprise | <span data-cite="literature-6"></span> |
-
-:::
-
-::: {.ppt-table-wrap .references-table style="left:55%;top:20%;width:45%;"}
-
-|  | **Analyse des parties prenantes** | **Organisation des relations entre parties prenantes** | **Organisation du processus de décision** |
-| :--- | :--- | :--- | :--- |
-| **Acteurs publics** | 2-3-5 | 1-2-4 | 1-2 |
-| **Acteurs industriels** | 3-5-6 | 4 |  |
+| **Approche** | **R&eacute;f&eacute;rence** |
+| :--- | :--- |
+| Approche participative et gouvernance locale | <span data-cite="literature-1"></span> |
+| Modélisation graphique et cartographie des parties prenantes | <span data-cite="literature-2"></span> |
+| Évaluation des impacts organisationnels du changement | <span data-cite="literature-3"></span> |
+| Stratégies d’évaluation et de gestion des parties prenantes de l’organisation | <span data-cite="literature-4"></span> |
+| Influence des groupes d’intérêt et asymétrie d’information | <span data-cite="literature-5"></span> |
+| Modélisation des parties prenantes de l’entreprise | <span data-cite="tsvetkova-2019"></span> |
 
 :::
+
+<div class="module-matrix literature-module-matrix" lang="fr" role="group" aria-label="Répartition des références selon les acteurs et les domaines">
+<div class="matrix-head" style="grid-column:1;grid-row:1;">Acteurs</div>
+<div class="matrix-head" style="grid-column:2 / 5;grid-row:1;">Analyse des parties prenantes</div>
+<div class="matrix-head" style="grid-column:5 / 8;grid-row:1;">Organisation des relations entre parties prenantes</div>
+<div class="matrix-head" style="grid-column:8 / 11;grid-row:1;">Organisation du processus de décision</div>
+<div class="matrix-label" style="grid-column:1;grid-row:2 / 5;">Acteurs publics</div>
+<div class="matrix-label" style="grid-column:1;grid-row:5 / 8;">Acteurs industriels</div>
+<div class="literature-row-band" style="grid-column:2 / 11;grid-row:5 / 8;" aria-hidden="true"></div>
+<div class="matrix-module literature-reference" data-literature="literature-1" style="grid-column:6 / 11;grid-row:3 / 5;" title="Approche participative et gouvernance locale"><span data-cite="literature-1"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-2" style="grid-column:2 / 11;grid-row:2;" title="Modélisation graphique et cartographie des parties prenantes"><span data-cite="literature-2"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-3" style="grid-column:2;grid-row:3 / 8;" title="Évaluation des impacts organisationnels du changement"><span data-cite="literature-3"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-4" style="grid-column:5;grid-row:3 / 8;" title="Stratégies d’évaluation et de gestion des parties prenantes"><span data-cite="literature-4"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-5" style="grid-column:3;grid-row:3 / 8;" title="Influence des groupes d’intérêt et asymétrie d’information"><span data-cite="literature-5"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-6" style="grid-column:4;grid-row:5 / 8;" title="Modélisation des parties prenantes de l’entreprise"><span data-cite="tsvetkova-2019"></span></div>
+</div>
 
 
 ::::
@@ -224,7 +214,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:12%;top:4%;width:80%;height:87%;" src="figures/decision_steps.svg" alt="Diagramme 7"></div>
 
-## Modélisation du réseau d’acteurs {.editorial data-part="2" data-subpart="1" refs="tsvetkova-ouarda-2019"}
+## Modélisation du réseau d’acteurs {.editorial data-part="2" data-subpart="1" refs="tsvetkova-2019"}
 
 <div class="slide-title">Modélisation du réseau d’acteurs</div>
 
@@ -654,7 +644,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </table>
 </div>
 
-<div class="ppt-table-wrap" style="left:12%;top:77%;width:74%;height:15%;">
+<div class="ppt-table-wrap relation-type-legend" style="left:4%;top:72%;width:92%;">
 <table class="ppt-table">
   <tr>
     <td style="font-size:var(--content-size);font-weight:700">Relation interdépendante</td>
@@ -671,6 +661,14 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
     <td style="font-size:var(--content-size);font-weight:700">-1</td>
     <td style="font-size:var(--content-size);font-weight:700">3</td>
 
+  </tr>
+
+  <tr>
+    <td style="font-size:14px;font-weight:700">Définition</td>
+    <td style="font-size:14px;line-height:1.2"><span class="fragment fade-in" data-fragment-index="0">Activités toutes nécessaires au résultat commun, sans dépendance technique ni temporelle.</span></td>
+    <td style="font-size:14px;line-height:1.2"><span class="fragment fade-in" data-fragment-index="1">Une tâche attend l’achèvement partiel ou complet d’une tâche préalable.</span></td>
+    <td style="font-size:14px;line-height:1.2"><span class="fragment fade-in" data-fragment-index="2">Un ajustement mutuel aligne les résultats sans conflit d’objectifs.</span></td>
+    <td style="font-size:14px;line-height:1.2"><span class="fragment fade-in" data-fragment-index="3">Un ajustement mutuel aligne les résultats malgré des objectifs conflictuels.</span></td>
   </tr>
 </table>
 </div></div>
@@ -755,7 +753,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 ## Indicateurs de réseau : résultats {.editorial .indicator-results-selected data-part="2" data-subpart="2" refs="bloch-2023"}
 
-<div class="slide-title">Indicateurs de réseau : résultats</div>
+<div class="slide-title">Indicateurs de réseau : résultats <span data-cite="bloch-2023"></span></div>
 
 ```{=html}
 <div class="ppt-canvas">
@@ -897,7 +895,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </div>
 ```
 
-## {.editorial .part-divider .decision-divider data-part="3" data-subpart="1"}
+## {.editorial .part-divider .decision-divider data-part="3" data-subpart="1" refs="iso-14040"}
 
 <div class="divider-number">PARTIE 03</div>
 <div class="divider-title">ACV &amp; ADMC</div>
@@ -906,6 +904,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <div class="divider-decision-needs">
 <p>Le <strong>manque de ressources</strong> a été identifié comme leur principale contrainte.</p>
 <p>Besoin de <strong>transparence</strong> et de <strong>facilité d’interprétation.</strong></p>
+<p>Besoin d’une <strong>approche multicritère</strong> pour éviter les <strong>transferts d’impacts</strong> <span data-cite="iso-14040"></span>.</p>
 </div>
 
 <figure class="divider-decision-steps">
@@ -922,6 +921,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
   <div class="fu-definition">
     <div class="fu-label">UNITÉ FONCTIONNELLE</div>
     <div class="fu-statement">Fournir l’énergie nécessaire à l’exploitation d’un train régional<br>sur sa durée de vie restante.</div>
+    <div class="fu-database">Base de données utilisée : <strong>ecoinvent 3.9.1</strong>.</div>
     <div class="fu-lifetime"><strong>16 à 24 ans</strong><span>Horizon fixé par les décideurs</span></div>
   </div>
 
@@ -1026,17 +1026,17 @@ Champ de l’étude: Division en modules des scénarios </div>
 ```
 
 
-## Choix de l’ACV : types et définitions {.editorial .acv-definitions-slide data-part="3" data-subpart="1"}
+## Choix de l’ACV : types et définitions {.editorial .acv-definitions-slide data-part="3" data-subpart="1" refs="riondet-2023,shi-2024,loiseau-2018,spreafico-2021,padey-2013,ventura-2022"}
 
 <div class="slide-title">Choix de l’ACV : types et définitions</div>
 
 ```{=html}
 <div class="ppt-canvas acv-choice">
 <div class="ppt-table-wrap acv-types-table">
-<table class="ppt-table" aria-label="Types d’ACV, définitions et références complètes">
-<thead><tr><th scope="col">type d'ACV</th><th scope="col">Définition</th><th scope="col">Référence complète</th></tr></thead>
+<table class="ppt-table" aria-label="Types d’ACV, définitions et références">
+<thead><tr><th scope="col">type d'ACV</th><th scope="col">Définition</th><th scope="col">Référence</th></tr></thead>
 <tbody>
-<tr class="acv-retained-type"><td>Attributionnelle</td><td>Impacts d’un système donné, sans effets de marché.</td><td class="acv-type-reference" rowspan="9">Riondet, L., Rio, M., Perrot-Bernardet, V., &amp; Zwolinski, P. (2023). Assessing energy technologies sustainability: upscaling photovoltaics using absolute LCA. Procedia CIRP, 116, 714–719. https://doi.org/10.1016/j.procir.2023.02.120</td></tr>
+<tr class="acv-retained-type"><td>Attributionnelle</td><td>Impacts d’un système donné, sans effets de marché.</td><td class="acv-type-reference" rowspan="9"><span data-cite="riondet-2023"></span></td></tr>
 <tr><td>Conséquentielle</td><td>Conséquences d’un changement de demande, avec les réponses du marché.</td></tr>
 <tr class="acv-retained-type"><td>Prospective</td><td>Systèmes futurs intégrant les progrès technologiques et le passage à l’échelle industrielle.</td></tr>
 <tr class="acv-retained-type"><td>Paramétrique</td><td>Paramètres variables pour explorer les configurations, scénarios et sensibilités.</td></tr>
@@ -1045,11 +1045,11 @@ Champ de l’étude: Division en modules des scénarios </div>
 <tr><td>Statique</td><td>Émissions et paramètres constants sur la période étudiée.</td></tr>
 <tr class="acv-retained-type"><td>Régionalisée</td><td>Données géographiques spécifiques aux conditions régionales.</td></tr>
 <tr><td>Non régionalisée</td><td>Données génériques ou mondiales, sans différenciation spatiale.</td></tr>
-<tr><td>Spatialement explicite</td><td>Localisation des flux élémentaires de l’inventaire pour affiner l’évaluation des impacts.</td><td class="acv-type-reference">Shi, S., &amp; Yan, X. (2024). A critical review on spatially explicit life cycle assessment methodologies and applications. Sustainable Production and Consumption, 52, 566–579. https://doi.org/10.1016/j.spc.2024.11.015</td></tr>
-<tr><td>Territoriale</td><td>Évaluation d’un système délimité géographiquement ou administrativement.</td><td class="acv-type-reference">Loiseau, E., Aissani, L., Le Féon, S., Laurent, F., Cerceau, J., Sala, S., &amp; Roux, P. (2018). Territorial Life Cycle Assessment (LCA): What exactly is it about? A proposal towards using a common terminology and a research agenda. Journal of Cleaner Production, 176, 474–485. https://doi.org/10.1016/j.jclepro.2017.12.169</td></tr>
-<tr class="acv-retained-type"><td>Bibliographique</td><td>Modèle fondé sur les données de la littérature plutôt que sur des mesures primaires.</td><td class="acv-type-reference">Spreafico, C. (2021). Can modified components make cars greener? A life cycle assessment. Journal of Cleaner Production, 307, 127190. https://doi.org/10.1016/j.jclepro.2021.127190</td></tr>
-<tr><td>Méta-ACV</td><td>Analyse et comparaison d’ACV publiées portant sur le système étudié.</td><td class="acv-type-reference">Padey, P. (2013). Modèles simplifiés d’Analyse de Cycle de Vie : cadre méthodologique et applications aux filières de conversion d’énergie. Thèse de doctorat, École nationale supérieure des mines de Paris. https://theses.fr/2013ENMP0083</td></tr>
-<tr><td>Transitionnelle</td><td>Impacts d’une transition sans suivi temporel complet des émissions.</td><td class="acv-type-reference">Ventura, A. (2022). Transition life cycle assessment: A new method to face ecological transition. Frontiers in Sustainability, 3, 801668. https://doi.org/10.3389/frsus.2022.801668</td></tr>
+<tr><td>Spatialement explicite</td><td>Localisation des flux élémentaires de l’inventaire pour affiner l’évaluation des impacts.</td><td class="acv-type-reference"><span data-cite="shi-2024"></span></td></tr>
+<tr><td>Territoriale</td><td>Évaluation d’un système délimité géographiquement ou administrativement.</td><td class="acv-type-reference"><span data-cite="loiseau-2018"></span></td></tr>
+<tr class="acv-retained-type"><td>Bibliographique</td><td>Modèle fondé sur les données de la littérature plutôt que sur des mesures primaires.</td><td class="acv-type-reference"><span data-cite="spreafico-2021"></span></td></tr>
+<tr><td>Méta-ACV</td><td>Analyse et comparaison d’ACV publiées portant sur le système étudié.</td><td class="acv-type-reference"><span data-cite="padey-2013"></span></td></tr>
+<tr><td>Transitionnelle</td><td>Impacts d’une transition sans suivi temporel complet des émissions.</td><td class="acv-type-reference"><span data-cite="ventura-2022"></span></td></tr>
 </tbody></table>
 </div>
 <span class="fragment acv-types-selection" data-fragment-index="0" aria-hidden="true"></span>
@@ -1129,7 +1129,9 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 :::: {.ppt-canvas .rolling-equations}
 
-<img class="ppt-image rolling-parameters" style="left:15%;top:0%;width:70%;height:50%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
+<img class="ppt-image rolling-parameters" style="left:30%;top:0%;width:60%;height:50%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
+
+<img class="ppt-image rolling-parameters" style="left:-20%;top:0%;width:70%;height:30%;" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
 
 ::: {.rolling-equations-table}
 
@@ -1208,7 +1210,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 </div>
 ```
 
-## Introduction à l’aide à la décision multicritère {.editorial .mcdm-intro-slide data-part="3" data-subpart="2"}
+## Introduction à l’aide à la décision multicritère {.editorial .mcdm-intro-slide data-part="3" data-subpart="2" refs="sala-2017-normalisation,sala-cerutti-2018-weighting"}
 
 <div class="slide-title">Identification d'un scénario à partir des résultats d’ACV par l'ADMC</div>
 
@@ -1218,7 +1220,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="mcdm-flow">
 <div class="mcdm-stage"><span class="mcdm-stage-number">01</span><h3>Résultats d’ACV</h3><p>Impacts environnementaux<br>de chaque scénario</p></div>
 <span class="mcdm-arrow" aria-hidden="true">→</span>
-<div class="mcdm-stage"><span class="mcdm-stage-number">02</span><h3>Normalisation et pondération</h3><p>Poids des critères<br>Seuils de normalisation</p></div>
+<div class="mcdm-stage"><span class="mcdm-stage-number">02</span><h3>Normalisation  et pondération </h3><p>Poids des critères <span data-cite="sala-2017-normalisation"></span><br>Seuils de normalisation <span data-cite="sala-cerutti-2018-weighting"></span></p></div>
 <span class="mcdm-arrow" aria-hidden="true">→</span>
 <div class="mcdm-stage"><span class="mcdm-stage-number">03</span><h3>Comparaison</h3><p>Évaluation des scénarios<br>deux à deux avec PROMETHEE</p></div>
 <span class="mcdm-arrow" aria-hidden="true">→</span>
@@ -1287,36 +1289,36 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 <div class="slide-title">Cas d’étude : Corse</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:1%;width:32%;height:82%;" src="assets/vector/s44_Image_1.svg" alt="Image 1">
-<img class="ppt-image" style="left:37%;top:20%;width:62%;height:49%;" src="assets/media/image72.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:0%;top:-9%;width:36%;height:11%;" src="assets/media/image73.svg" alt="Graphique 1">
-<div class="ppt-text" style="left:22%;top:83%;width:7%;height:6%;font-size:var(--content-title-size);transform:rotate(23.23deg);transform-origin:center;"><div class="ppt-p" style="text-align:left"><span style=""></span></div></div>
-<img class="ppt-image" style="left:20%;top:83%;width:12%;height:7%;" src="assets/vector/s44_Fl_che_double_fl_che_horizontale_16.svg" alt="Flèche : double flèche horizontale 16"></div>
+<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:2%;width:32%;height:82%;" src="figures/corse.svg" alt="Image 1">
+</div>
 
-## Mix énergétique corse {.editorial data-part="3" data-subpart="3"}
+<div class="ppt-table-wrap" style="left:50%;top:14%;width:33%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size)">04/06/26</td><td style="font-size:var(--content-size);font-weight:700">gCO₂eq/kWh</td><td style="font-size:var(--content-size);font-weight:700">Production impactante</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Corse</td><td style="font-size:var(--content-size)">452</td><td style="font-size:var(--content-size)">40% fioul</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Italie</td><td style="font-size:var(--content-size)">147</td><td style="font-size:var(--content-size)">4% gaz</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">France</td><td style="font-size:var(--content-size)">16</td><td style="font-size:var(--content-size)">60% nucléaire</td></tr></table></div>
 
-<div class="slide-title">Mix énergétique corse</div>
+<img class="ppt-image" style="left:48%;top:31%;width:36%;height:41%;" src="assets/media/image75.svg" alt="Graphique 1">
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:2%;top:7%;width:46%;height:87%;" src="assets/vector/s45_Graphique_1.svg" alt="Graphique 1">
-<div class="ppt-table-wrap" style="left:56%;top:13%;width:33%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size)">04/06/26</td><td style="font-size:var(--content-size)">gCO₂eq/kWh</td><td style="font-size:var(--content-size)">Production impactante</td></tr><tr><td style="font-size:var(--content-size)">Corse</td><td style="font-size:var(--content-size)">452</td><td style="font-size:var(--content-size)">40% fioul</td></tr><tr><td style="font-size:var(--content-size)">Italie</td><td style="font-size:var(--content-size)">147</td><td style="font-size:var(--content-size)">4% gaz</td></tr><tr><td style="font-size:var(--content-size)">France</td><td style="font-size:var(--content-size)">16</td><td style="font-size:var(--content-size)">60% nucléaire</td></tr></table></div>
-<img class="ppt-image" style="left:54%;top:46%;width:36%;height:41%;" src="assets/media/image75.svg" alt="Graphique 1"></div>
-
-## Modélisation des AMG800 {.editorial data-part="3" data-subpart="3"}
-
-<div class="slide-title">Modélisation des AMG800</div>
-
-<div class="ppt-canvas"><img class="ppt-image" style="left:-2%;top:14%;width:55%;height:64%;" src="assets/media/image76.svg" alt="Graphique 1">
-<div class="ppt-table-wrap" style="left:58%;top:21%;width:35%;height:19%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Ligne</td><td style="font-size:var(--content-size);font-weight:700">Energie sans regeneration (kWh)</td><td style="font-size:var(--content-size);font-weight:700">Energie avec regeneration (kWh)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Balagne</td><td style="font-size:var(--content-size)">1,159</td><td style="font-size:var(--content-size)">787</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Centrale</td><td style="font-size:var(--content-size)">2,029</td><td style="font-size:var(--content-size)">1,268</td></tr></table></div></div>
+<div class="ppt-table-wrap" style="left:50%;top:71%;width:35%;height:19%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Ligne</td><td style="font-size:var(--content-size);font-weight:700">Energie sans regeneration (kWh)</td><td style="font-size:var(--content-size);font-weight:700">Energie avec regeneration (kWh)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Balagne</td><td style="font-size:var(--content-size)">1,159</td><td style="font-size:var(--content-size)">787</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Centrale</td><td style="font-size:var(--content-size)">2,029</td><td style="font-size:var(--content-size)">1,268</td></tr></table></div>
 
 ## Réduction de l’impact du mix électrique corse {.editorial data-part="3" data-subpart="3"}
 
 <div class="slide-title">Réduction de l’impact du mix électrique corse</div>
 
-<div class="ppt-canvas"><div class="ppt-text" style="left:21%;top:83%;width:59%;height:7%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-title-size);font-weight:700">Perspectives</span><span style="font-size:var(--content-title-size)"> : Stratégies de décarbonation du mix électrique Corse</span></div></div>
-<img class="ppt-image" style="left:8%;top:4%;width:84%;height:73%;" src="figures/corse_result.svg" alt="Groupe 22">
-<div class="ppt-text" style="left:70%;top:66%;width:6%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">-10%</span></div></div>
-<div class="ppt-text" style="left:51%;top:66%;width:6%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">-50%</span></div></div>
-<div class="ppt-text" style="left:31%;top:66%;width:6%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">-90%</span></div></div></div>
+<div class="ppt-canvas">
+<div class="corse-reduction-axis">% de réduction de l’impact du mix électrique</div>
+<div class="module-matrix corse-scenario-matrix" lang="fr" role="group" aria-label="Scénarios selon la réduction de l’impact du mix électrique">
+<div class="matrix-head" style="grid-column:1;grid-row:1;">Scénarios</div>
+<div class="matrix-head corse-threshold" style="grid-column:2;grid-row:1;"><strong>−96 %</strong><span>France métropole</span></div>
+<div class="matrix-head corse-threshold" style="grid-column:3;grid-row:1;"><strong>−51 %</strong><span>Italie</span></div>
+<div class="matrix-head corse-threshold" style="grid-column:4;grid-row:1;"><strong>−47 %</strong></div>
+<div class="matrix-head corse-threshold" style="grid-column:5;grid-row:1;"><strong>0 %</strong><span>Au-delà de −47 % et jusqu’à 0 %</span></div>
+<div class="matrix-label" style="grid-column:1;grid-row:2;">Batteries</div>
+<div class="matrix-label" style="grid-column:1;grid-row:3;">Hydrogène</div>
+<div class="matrix-label" style="grid-column:1;grid-row:4;">Diesel</div>
+<div class="matrix-module matrix-family-alim" style="grid-column:2 / 6;grid-row:2;" aria-label="Batteries : présentes dans les quatre colonnes"></div>
+<div class="matrix-module matrix-family-energie" style="grid-column:3 / 6;grid-row:3;" aria-label="Hydrogène : de la colonne moins 51 pour cent jusqu’à zéro"></div>
+<div class="matrix-module matrix-family-infra" style="grid-column:5;grid-row:4;" aria-label="Diesel : au-delà de moins 47 pour cent jusqu’à zéro"></div>
+</div>
+<div class="corse-mix-perspective"><strong>Perspectives</strong> : Stratégies de décarbonation du mix électrique corse</div>
+</div>
 
 ## Stratégies de décarbonation du mix électrique corse {.editorial data-part="3" data-subpart="3"}
 
@@ -1332,10 +1334,16 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 <div class="slide-title">Analyse de sensibilité globale</div>
 
-<div class="ppt-canvas"><div class="ppt-text" style="left:53%;top:12%;width:45%;height:73%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Variabilité:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Tirages </span><span style="font-size:var(--content-size)">sobol</span></div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left">&nbsp;</div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Incertitude:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Tirages Monte-Carlo</span></div></div>
-<img class="ppt-image" style="left:66%;top:54%;width:27%;height:37%;" src="assets/media/image79.png" alt="Picture 6">
-<img class="ppt-image" style="left:65%;top:10%;width:27%;height:37%;" src="assets/media/image80.png" alt="Picture 8"></div>
-
+<div class="ppt-canvas sampling-designs">
+<figure class="sampling-panel">
+<figcaption><strong>Variabilité</strong><span>Tirage de Sobol</span></figcaption>
+<img src="figures/sampling_sobol.svg" alt="Tirage de Sobol : 64 points sur le carré unité.">
+</figure>
+<figure class="sampling-panel">
+<figcaption><strong>Incertitude</strong><span>Tirage Monte-Carlo</span></figcaption>
+<img src="figures/sampling_monte_carlo.svg" alt="Tirage Monte-Carlo : 64 points uniformes sur le carré unité.">
+</figure>
+</div>
 
 ## Sobol total : ensemble des paramètres {.editorial data-part="3" data-subpart="3"}
 
@@ -1359,6 +1367,8 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 <div class="slide-title">Zones d’incomparabilité</div>
 
+<div class="ppt-text" style="top:20%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Batteries et éléctrification totales sont identifiées pour des distances entre arrêts de moins de 150km.<br> Le diesel devient pertinent au-delà de cette distance.</span></div></div>
+
 <div class="ppt-canvas">
 <img class="ppt-image" style="left:0%;top:10%;width:49%;height:80%;" src="figures/incomparability_heatmap_Plongueur_km__d_stop.svg" alt="Zones d’incomparabilité selon la longueur de ligne et la distance entre arrêts">
 <img class="ppt-image" style="left:51%;top:10%;width:49%;height:80%;" src="figures/incomparability_heatmap_v_max_ms__Pfrequentation_par_jour.svg" alt="Zones d’incomparabilité selon la vitesse maximale et la fréquentation par jour">
@@ -1371,19 +1381,38 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="divider-title">Conclusions et Perspectives</div>
 <div class="divider-subtitle">Synthèse des contributions et perspectives scientifiques et opérationnels.</div>
 
-## Conclusion {.editorial data-part="4" data-subpart="1"}
+## Conclusion {.editorial .conclusion-summary-slide data-part="4" data-subpart="1" refs="literature-1,literature-2,literature-3,literature-4,literature-5,tsvetkova-2019"}
 
 <div class="slide-title">Conclusion</div>
 <div class="perspective-grid">
-<div class="perspective-column"><div class="perspective-kicker">ORGANISATION DE LA DÉCISION</div><div class="perspective-title">Réorganisation des décisions publiques avec interactions publiques–privées</div><div class="perspective-list">Réduction des risques<br>Meilleure prise en compte de la temporalité<br>Organisation plus explicite des interventions</div></div>
-<div class="perspective-column"><div class="perspective-kicker">RECOMMANDATION TECHNOLOGIQUE</div><div class="perspective-title">Méthodologie de réduction d’impact environnemental des trains</div><div class="perspective-list">Adaptable à différents roulements, matériels roulants et technologies<br>Multicritère<br>Facile à interpréter pour des non-experts<br>Transparente grâce à des données publiques<br>Extensible à d’autres domaines de mobilité</div></div>
+<div class="perspective-column"><div class="perspective-kicker">ORGANISATION DE LA DÉCISION</div><div class="perspective-title">Réorganisation des décisions publiques avec interactions publiques–privées</div><div class="perspective-list">Réduction des risques<br>Permet l'analyse et l'organisation des acteurs dans un processus de décision public-privé</div></div>
+<div class="perspective-column"><div class="perspective-kicker">RECOMMANDATION TECHNOLOGIQUE</div><div class="perspective-title">Méthodologie de réduction d’impact environnemental des trains</div><div class="perspective-list">ACV adaptable à différents contextes<br>Facile à interpréter pour des non-experts<br>Transparence des données et incertitudes</div></div>
+</div>
+
+<div class="conclusion-visuals">
+<div class="module-matrix literature-module-matrix" lang="fr" role="group" aria-label="Répartition des références selon les acteurs et les domaines">
+<div class="matrix-head" style="grid-column:1;grid-row:1;">Acteurs</div>
+<div class="matrix-head" style="grid-column:2 / 5;grid-row:1;">Analyse des parties prenantes</div>
+<div class="matrix-head" style="grid-column:5 / 8;grid-row:1;">Organisation des relations entre parties prenantes</div>
+<div class="matrix-head" style="grid-column:8 / 11;grid-row:1;">Organisation du processus de décision</div>
+<div class="matrix-label" style="grid-column:1;grid-row:2 / 5;">Acteurs publics</div>
+<div class="matrix-label" style="grid-column:1;grid-row:5 / 8;">Acteurs industriels</div>
+<div class="literature-row-band" style="grid-column:2 / 11;grid-row:5 / 8;" aria-hidden="true"></div>
+<div class="matrix-module literature-reference" data-literature="literature-1" style="grid-column:6 / 11;grid-row:3 / 5;" title="Approche participative et gouvernance locale"><span data-cite="literature-1"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-2" style="grid-column:2 / 11;grid-row:2;" title="Modélisation graphique et cartographie des parties prenantes"><span data-cite="literature-2"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-3" style="grid-column:2;grid-row:3 / 8;" title="Évaluation des impacts organisationnels du changement"><span data-cite="literature-3"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-4" style="grid-column:5;grid-row:3 / 8;" title="Stratégies d’évaluation et de gestion des parties prenantes"><span data-cite="literature-4"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-5" style="grid-column:3;grid-row:3 / 8;" title="Influence des groupes d’intérêt et asymétrie d’information"><span data-cite="literature-5"></span></div>
+<div class="matrix-module literature-reference" data-literature="literature-6" style="grid-column:4;grid-row:5 / 8;" title="Modélisation des parties prenantes de l’entreprise"><span data-cite="tsvetkova-2019"></span></div>
+</div>
+<img class="conclusion-comput" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale.">
 </div>
 
 ## Perspectives {.editorial data-part="4" data-subpart="1"}
 
 <div class="slide-title">Perspectives scientifiques et opérationnelles</div>
 <div class="perspective-grid">
-<div class="perspective-column"><div class="perspective-kicker">MÉTHODE</div><div class="perspective-list">ADMC: Sensibilité au choixde méthode<br>Sensibilité aux poids et à la normalisation<br>Réduction des incertitudes<br>Développement aux critères sociaux et économiques</div></div>
+<div class="perspective-column"><div class="perspective-kicker">MÉTHODE</div><div class="perspective-list">ADMC: Sensibilité au choix de méthode<br>Sensibilité aux poids et à la normalisation<br>Réduction des incertitudes<br>Développement aux critères sociaux et économiques</div></div>
 <div class="perspective-column"><div class="perspective-kicker">APPLICATIONS</div><div class="perspective-list">Extension aux lignes non électrifiées<br>Extension à d’autres systèmes de mobilité<br>Outil opérationnel d’aide à la décision régionale</div></div>
 </div>
 
@@ -1499,21 +1528,21 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="ppt-table-wrap" style="left:56%;top:17%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div>
 <div class="ppt-text" style="left:61%;top:51%;width:28%;height:18%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size);font-weight:700">Comparaison brute des technologies, à ce stade pas de prise en compte:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Infrastructures ferroviaires </span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Exploitation des trains</span></div></div></div>
 
-## ORIEnT : modélisation des vitesses {.editorial .appendix-slide}
+##  modélisation des vitesses {.editorial .appendix-slide}
 
-<div class="slide-title">ORIEnT : modélisation des vitesses</div>
+<div class="slide-title"> modélisation des vitesses</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:24%;top:15%;width:51%;height:62%;" src="assets/vector/s35_Groupe_13.svg" alt="Groupe 13"></div>
 
-## ORIEnT : modélisation du roulement {.editorial .appendix-slide}
+##  modélisation du roulement {.editorial .appendix-slide}
 
-<div class="slide-title">ORIEnT : modélisation du roulement</div>
+<div class="slide-title"> modélisation du roulement</div>
 
 <div class="ppt-canvas"><div class="ppt-table-wrap" style="left:30%;top:27%;width:40%;height:63%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Phase</td><td style="font-size:var(--content-size);font-weight:700">Variable limitante</td><td style="font-size:var(--content-size);font-weight:700">Contrainte</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Accélération</td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a max</td><td style="font-size:var(--content-size)">a &lt; 0,3 m/s²</td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P max</td><td style="font-size:var(--content-size)">Pmax (1,6 MW pour le Régiolis)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Croisière</td><td style="font-size:var(--content-size)">P max, i</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Décélération</td><td style="font-size:var(--content-size)">V max</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a min</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P min (optionnel)</td><td style=""></td></tr></table></div></div>
 
-## ORIEnT : paramètres technologiques et ligne {.editorial .appendix-slide}
+##  paramètres technologiques et ligne {.editorial .appendix-slide}
 
-<div class="slide-title">ORIEnT : paramètres technologiques et ligne</div>
+<div class="slide-title"> paramètres technologiques et ligne</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:26%;width:91%;height:62%;" src="assets/vector/s37_Graphique_1.svg" alt="Graphique 1">
 <img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="assets/vector/s37_Groupe_7.svg" alt="Groupe 7"></div>
@@ -1607,3 +1636,4 @@ Champ de l’étude: Division en modules des scénarios </div>
 ```
 
 <div class="slide-references" role="note" aria-label="Référence">Bloch, F., Jackson, M. O., &amp; Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453.</div>
+

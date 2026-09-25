@@ -752,6 +752,42 @@ body {
   width: auto !important;
 }
 
+
+/* One continuous module per reference, spanning its actor/domain coverage. */
+.reveal .module-matrix.literature-module-matrix {
+  left: 51%; right: auto; top: 20%; bottom: auto; width: 49%; height: 58%;
+  grid-template-columns: 105px repeat(9, minmax(0, 1fr));
+  grid-template-rows: 110px repeat(6, minmax(0, 1fr));
+  gap: 7px;
+}
+.reveal .literature-module-matrix > .matrix-head {
+  font-size: 16px; line-height: 1.2; padding: 0 2px 8px;
+}
+.reveal .literature-module-matrix > .matrix-label {
+  font-size: 16px; padding: 4px;
+}
+.reveal .literature-module-matrix > .literature-reference {
+  padding: 4px 0; font-size: 18px;
+  --module-color: var(--part-1); --module-fill: rgba(68, 15, 118, .08);
+}
+.reveal .literature-reference[data-literature="literature-2"] {
+  --module-color: var(--part-2); --module-fill: rgba(148, 44, 128, .08);
+}
+.reveal .literature-reference[data-literature="literature-3"] {
+  --module-color: var(--part-3); --module-fill: rgba(228, 79, 100, .08);
+}
+.reveal .literature-reference[data-literature="literature-4"] {
+  --module-color: var(--part-4); --module-fill: rgba(254, 169, 115, .12); color: #000;
+}
+.reveal .literature-reference[data-literature="literature-5"] {
+  --module-color: #555; --module-fill: rgba(0, 0, 0, .04);
+}
+.reveal .literature-reference[data-literature="literature-6"] {
+  --module-color: #000; --module-fill: rgba(0, 0, 0, .08);
+}
+.reveal .literature-row-band { background: rgba(0, 0, 0, .025); border-top: 1px solid #aaa; }
+.reveal .literature-reference .citation-call { font-size: 1em; }
+
 .reveal .references-table table :is(th, td):first-child {
   width: 1%;
   white-space: nowrap;
@@ -1264,9 +1300,9 @@ body {
 .acv-definitions-slide .ppt-canvas { top: 145px; }
 .acv-choice .acv-types-table { left: 1%; top: 0; width: 98%; }
 .reveal .acv-choice .acv-types-table table { table-layout: fixed; }
-.reveal .acv-choice .acv-types-table th:nth-child(1) { width: 16%; }
-.reveal .acv-choice .acv-types-table th:nth-child(2) { width: 39%; }
-.reveal .acv-choice .acv-types-table th:nth-child(3) { width: 45%; }
+.reveal .acv-choice .acv-types-table th:nth-child(1) { width: 19%; }
+.reveal .acv-choice .acv-types-table th:nth-child(2) { width: 73%; }
+.reveal .acv-choice .acv-types-table th:nth-child(3) { width: 8%; }
 .reveal .acv-choice .acv-types-table table :is(td, th) {
   padding: 2px 7px; font-size: var(--content-size); line-height: 1.1;
 }
@@ -1485,7 +1521,7 @@ body {
 .reveal .speed-ranking-table tbody th { text-align: left; font-weight: 600; }
 .reveal .speed-ranking-table .speed-ranking-uncertainty { background: rgba(228, 79, 100, .09); font-size: 20px; }
 
-.reveal .acv-choice .acv-types-table td.acv-type-reference { font-size: 16px; line-height: 1.2; overflow-wrap: anywhere; background: transparent; font-weight: 400; }
+.reveal .acv-choice .acv-types-table td.acv-type-reference { text-align: center; font-size: 16px; line-height: 1.2; overflow-wrap: anywhere; background: transparent; font-weight: 400; }
 
 /* Illustration du processus de décision sur l’intercalaire ACV & ADMC. */
 .decision-divider .divider-number { margin-top: 70px; }
@@ -1522,11 +1558,14 @@ body {
 .mcdm-takeaway { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--hairline); font-size: 24px; }
 
 /* Géométrie fixe : seuls les apports successifs du SVG sont révélés. */
-.decision-reorganization .decision-progression-svg {
+.reveal .decision-reorganization .decision-progression-svg {
   position: absolute; left: 10%; top: 4%; width: 80%; height: 87%;
+  margin: 0; object-fit: contain;
 }
+.reveal .decision-reorganization .decision-progression-svg,
 .reveal .decision-progression-svg .decision-addition { transition: none; }
 @media print {
+  .reveal .decision-reorganization .decision-preliminary { display: none !important; }
   .reveal .decision-progression-svg .decision-addition { opacity: 1 !important; visibility: visible !important; }
 }
 
@@ -1544,3 +1583,71 @@ body {
 .reveal .network-indicators-selected .network-indicators tbody tr { height: 105px; }
 .reveal .indicator-results-selected .indicator-results-table,
 .reveal .indicator-results-selected .indicator-results-table th { font-size: var(--content-size); }
+
+
+/* Scenario coverage by electricity-mix impact reduction. */
+.reveal .corse-reduction-axis {
+  position: absolute; left: 19%; top: 5%; width: 77%;
+  font-size: 24px; font-weight: 700; text-align: center;
+}
+.reveal .module-matrix.corse-scenario-matrix {
+  left: 4%; right: auto; top: 17%; bottom: auto; width: 92%; height: 59%;
+  grid-template-columns: 180px repeat(4, minmax(0, 1fr));
+  grid-template-rows: 100px repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.reveal .corse-scenario-matrix > .corse-threshold {
+  flex-direction: column; gap: 8px;
+}
+.reveal .corse-threshold strong { font-size: 28px; }
+.reveal .corse-threshold span { font-size: 18px; font-weight: 400; }
+.reveal .corse-mix-perspective {
+  position: absolute; left: 8%; top: 85%; width: 84%;
+  font-size: 24px; text-align: center;
+}
+
+
+/* Transparent Matplotlib sampling plots with their associated descriptions. */
+.reveal .sampling-designs {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px; padding: 20px 40px; box-sizing: border-box;
+}
+.reveal .sampling-panel {
+  margin: 0; min-width: 0; min-height: 0;
+  display: flex; flex-direction: column; align-items: center;
+}
+.reveal .sampling-panel figcaption { text-align: center; line-height: 1.4; }
+.reveal .sampling-panel figcaption strong { display: block; font-size: 24px; }
+.reveal .sampling-panel figcaption span { display: block; font-size: 18px; }
+.reveal .sampling-panel img {
+  display: block; margin: 0; width: 100%; flex: 1; min-height: 0;
+  max-height: 100%; object-fit: contain;
+}
+
+
+/* Two contribution illustrations at the bottom of the conclusion. */
+.reveal .conclusion-summary-slide .perspective-grid { margin-top: 120px; }
+.reveal .conclusion-summary-slide .perspective-title { margin-top: 20px; }
+.reveal .conclusion-summary-slide .perspective-list { margin-top: 18px; }
+.reveal .conclusion-visuals {
+  position: absolute; left: var(--left); right: calc(var(--rail) + 64px);
+  top: 415px; bottom: calc(var(--references-space, 185px) + 12px);
+  grid-template-rows: minmax(0, 1fr);
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 72px;
+}
+.reveal .conclusion-visuals .literature-module-matrix {
+  position: relative; left: auto; right: auto; top: auto; bottom: auto;
+  width: 100%; height: 100%; min-height: 0;
+  grid-template-columns: 88px repeat(9, minmax(0, 1fr));
+  grid-template-rows: 60px 24px repeat(5, minmax(0, 1fr));
+  gap: 6px;
+}
+.reveal .conclusion-visuals .literature-module-matrix > .matrix-head,
+.reveal .conclusion-visuals .literature-module-matrix > .matrix-label { font-size: 14px; }
+.reveal .conclusion-visuals .literature-reference { font-size: 16px; }
+.reveal .conclusion-comput {
+  width: 100%; height: 100%; max-width: 100%; max-height: 100%;
+  min-height: 0; margin: 0; object-fit: contain;
+}
+
+.reveal .fu-database { margin-top: 16px; font-size: var(--content-size); }

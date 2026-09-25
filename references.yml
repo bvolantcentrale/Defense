@@ -1,28 +1,29 @@
 # Sources reprises du document existant. Completer les notices si necessaire.
 part-references:
+  volant-2026:
+    short: "Volant (2026)"
+    full: "Volant, B. (2026). Stakeholders Organization and Environmentally-Oriented Technological Substitution Recommendation: Application to Regional Railway Decarbonization."
   iso-14040:
     short: "ISO 14040 (2006)"
     full: "ISO (2006). ISO 14040 - Management environnemental - Analyse du cycle de vie - Principes et cadre."
   iso-14044:
     short: "ISO 14044 (2006)"
     full: "ISO (2006). ISO 14044 - Management environnemental - Analyse du cycle de vie - Exigences et lignes directrices."
-  tsvetkova-ouarda-2019:
-    short: "Tsvetkova & Ouarda (2019)"
-    full: "Tsvetkova, O., & Ouarda, T. B. M. J. (2019). Quasi-Monte Carlo technique in global sensitivity analysis of wind resource assessment with a study on UAE. Journal of Renewable and Sustainable Energy, 11(5)."
+  tsvetkova-2019:
+    short: "Tsvetkova et al. (2019)"
+    full: "Tsvetkova, A., Eriksson, K., Levitt, R. E., & Wikstrom, K. (2019). Workflow Interdependence Analysis of Projects in Business Ecosystems. Volume 8, 8(1). https://doi.org/10.25219/EPOJ.2018.00110"
   bloch-2023:
     short: "Bloch et al. (2023)"
     full: "Bloch, F., Jackson, M. O., & Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453."
   bolla-2011:
     short: "Bolla (2011)"
     full: "Bolla, M. (2011). Penalized versions of the Newman-Girvan modularity and their relation to normalized cuts and k-means clustering. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 84(1)"
-  # Le paragraphe fourni ne contient que les auteurs et l’année pour ces deux sources.
-  # Compléter leurs notices avec la bibliographie d’origine ; ne pas déduire de titre.
   giannikas-2022:
     short: "Giannikas et al. (2022)"
-    full: "Giannikas et al. (2022)."
+    full: "Giannikas, V., Ledwoch, A., Stojković, G., Costas, P., Brintrup, A., Al-Ali, A. A. S., Chauhan, V. K., & McFarlane, D. (2022). A data-driven method to assess the causes and impact of delay propagation in air transportation systems. Transportation Research Part C: Emerging Technologies, 143, 103862. https://doi.org/10.1016/J.TRC.2022.103862"
   riva-2023:
     short: "Riva et al. (2023)"
-    full: "Riva et al. (2023)."
+    full: "Riva, S. G., Myers, B., Cazzaniga, P., Buffa, F. M., & Tangherloni, A. (2023). Consensus Clustering Strategy for Cell Type Assignments of scRNA-seq Data. IEEE Conference on Computational Intelligence in Bioinformatics and Computational Biology. https://doi.org/10.1109/CIBCB56990.2023.10264908"
   li-2023:
     short: "Li et al. (2023)"
     full: "Li, Y., Nguyen, J., Anastasiu, D. C., & Arriaga, E. A. (2023). CosTaL: an accurate and scalable graph-based clustering algorithm for high-dimensional single-cell data analysis. Briefings in Bioinformatics, 24(3)"
@@ -33,23 +34,20 @@ part-references:
     short: "Wulf et al. (2021)"
     full: "Wulf, C., Zapp, P., Schreiber, A., & Kuckshinrichs, W. (2021). Setting thresholds to define indifferences and preferences in promethee for life cycle sustainability assessment of european hydrogen production. Sustainability (Switzerland), 13(13). https://doi.org/10.3390/SU13137009/S1"
   literature-1:
-    short: "Guillemot, 2012"
-    full: "Guillemot, 2012. Approche : Participatory approach and local governance."
+    short: "Guillemot (2012)"
+    full: "Guillemot, J. (2012). Participation et développement territorial à l’Isle-aux-Grues et l’Isle-aux-Coudres (Québec)."
   literature-2:
-    short: "Bonin et al., 2001"
-    full: "Bonin et al., 2001. Approche : Graphical modeling and stakeholder zoning."
+    short: "Bonin et al. (2001)"
+    full: "Bonin, M., Thinon, P., Caron, P., Cheylan, J.-P., & Clouet, Y. (2001). Territoire, zonage et modélisation graphique : recherche-action et apprentissage / Territory, zoning and graph modelling : concerted applied research and training. Géocarrefour, 76(3), 241–252. https://doi.org/10.3406/GEOCA.2001.2562"
   literature-3:
-    short: "Cameron et al., 2011"
-    full: "Cameron et al., 2011. Approche : Organizational impact assessment for change."
+    short: "Cameron et al. (2011)"
+    full: "Cameron, B. G., Seher, T., & Crawley, E. F. (2011). Goals for space exploration based on stakeholder value network considerations. Acta Astronautica, 68(11–12), 2088–2097. https://doi.org/10.1016/J.ACTAASTRO.2010.11.003"
   literature-4:
-    short: "Savage et al., 1991"
-    full: "Savage et al., 1991. Approche : Strategies for assessing And managing Organizational Stakeholders."
+    short: "Savage et al. (1991)"
+    full: "Savage, G. T., Nix, T. W., Whitehead, C. J., & Blair, J. D. (1991). Strategies for assessing and managing organizational stakeholders. 5(2), 61–75. https://doi.org/10.5465/AME.1991.4274682"
   literature-5:
-    short: "Potters & van Winden, 1992b"
-    full: "Potters & van Winden, 1992b. Approche : Lobbying and asymmetric information."
-  literature-6:
-    short: "A. Tsvetkova et al., 2019"
-    full: "A. Tsvetkova et al., 2019. Approche : Business stakeholders modeling."
+    short: "Potters & van Winden (1992)"
+    full: "Potters, J., & van Winden, F. (1992). Lobbying and asymmetric information. Public Choice, 74(3), 269–292. https://doi.org/10.1007/BF00149180"
   ciroth-2016:
     short: "Ciroth et al. (2016)"
     full: "Ciroth et al. (2016)."
@@ -84,3 +82,9 @@ part-references:
   ventura-2022:
     short: "Ventura (2022)"
     full: "Ventura, A. (2022). Transition life cycle assessment: A new method to face ecological transition. Frontiers in Sustainability, 3, 801668. https://doi.org/10.3389/frsus.2022.801668"
+  sala-2017-normalisation:
+    short: "Sala et al. (2017)"
+    full: "Sala, S., Crenna, E., Secchi, M., & Pant, R. (2017). Global normalisation factors for the Environmental Footprint and Life Cycle Assessment. https://doi.org/10.2760/88930"
+  sala-cerutti-2018-weighting:
+    short: "Sala & Cerutti (2018)"
+    full: "Sala, S., & Cerutti, A. K. (2018). Development of a weighting approach for the Environmental Footprint. https://doi.org/10.2760/446145"

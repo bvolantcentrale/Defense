@@ -85,6 +85,9 @@ function Pandoc(doc)
         for key in slide.attributes.refs:gmatch('[^,%s]+') do register(key) end
       end
     end
+    if block.t == 'RawBlock' then
+      block = inline_citations(block) or block
+    end
     block = block:walk({
       RawBlock=inline_citations,
       RawInline=inline_citations,
