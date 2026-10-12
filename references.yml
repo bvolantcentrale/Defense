@@ -63,7 +63,7 @@ part-references:
     full: "Lavisse (2024)."
   sune-2025:
     short: "Sune et al. (2025)"
-    full: "ADEME, SUNE Laure ; GINGKO 21, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène (2025). Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée. ACV comparative d’un trajet en train régional et d’un trajet en train de fret. Rapport final, juin 2025."
+    full: "SUNE Laure, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène (2025). Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée, ADEME."
   riondet-2023:
     short: "Riondet et al. (2023)"
     full: "Riondet, L., Rio, M., Perrot-Bernardet, V., & Zwolinski, P. (2023). Assessing energy technologies sustainability: upscaling photovoltaics using absolute LCA. Procedia CIRP, 116, 714–719. https://doi.org/10.1016/j.procir.2023.02.120"
@@ -88,3 +88,31 @@ part-references:
   sala-cerutti-2018-weighting:
     short: "Sala & Cerutti (2018)"
     full: "Sala, S., & Cerutti, A. K. (2018). Development of a weighting approach for the Environmental Footprint. https://doi.org/10.2760/446145"
+
+  aliyu-2025:
+    short: "Aliyu et al. (2025)"
+    full: "Aliyu, I., Clark, A., & Hardman, M. (2025). A systematic quality evaluation of public participation in Environmental Impact Statements (EIS): Reflecting on practice in Nigeria. Impact Assessment and Project Appraisal, 43(3), 229\u2013250. https://doi.org/10.1080/14615517.2025.2518781"
+
+  kapiriri-2021:
+    short: "Kapiriri & Razavi (2021)"
+    full: "Kapiriri, L., & Razavi, D. S. (2021). Salient stakeholders: Using the salience stakeholder model to assess stakeholders\u2019 influence in healthcare priority setting. Health Policy OPEN, 2, 100048. https://doi.org/10.1016/J.HPOPEN.2021.100048"
+
+  pagliara-2025:
+    short: "Pagliara et al. (2025)"
+    full: "Pagliara, F., El-Ansari, W., & Henke, I. (2025). A methodology to estimate the benefits and costs of stakeholder engagement in a transport decision-making process. Smart and Sustainable Built Environment, 14(2), 326\u2013341. https://doi.org/10.1108/SASBE-03-2023-0049"
+
+  knamiller-2024:
+    short: "Knamiller et al. (2024)"
+    full: "Knamiller, C., Rashid, R., Bryant, M., Bailey, E., & McEachan, R. R. C. (2024). Who shouts the loudest? A qualitative study exploring barriers and enablers to implementing a low emission zone in a Northern UK city. Transportation Research Interdisciplinary Perspectives, 25, 101112. https://doi.org/10.1016/J.TRIP.2024.101112"
+
+  marle-2019:
+    short: "Marle et al. (2019)"
+    full: "Marle, F., Jaber, H., & Pointurier, C. (2019). Organizing Project Actors for Collective Decision-Making about Interdependent Risks. Complexity, 2019(1), 8059372. https://doi.org/10.1155/2019/8059372"
+
+  edf-2024:
+    short: "EDF (2024)"
+    full: "EDF. (2024). OpenData."
+
+  rte-2022:
+    short: "RTE (2022)"
+    full: "RTE. (2022). Futurs énergétiques 2050."

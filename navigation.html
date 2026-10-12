@@ -2,14 +2,31 @@
 (function(){
  const S=[
   {id:1,code:"01",title:"Introduction",color:"#440F76",subparts:["Introduction"]},
-  {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Modélisation du réseau","Analyse des acteurs","Clustering et réorganisation"]},
-  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Modélisation","Résultats","Validation"]},
-  {id:4,code:"04",title:"Perspectives",color:"#FEA973",subparts:["Perspectives"]}
+  {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Modélisation du réseau","Analyse du réseau d’acteurs","Clustering et réorganisation"]},
+  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Modélisation","ADMC","Validation"]},
+  {id:4,code:"04",title:"Conclusions et perspectives",color:"#FEA973",subparts:["Conclusions et perspectives"]}
  ];
  const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
 
  function initializeNavigation() {
   const deck = window.Reveal;
+  // Deplacer les libelles ACV sans redimensionner leurs glyphes.
+  deck.configure({ autoAnimateMatcher: function(from, to) {
+   return this.getAutoAnimatePairs(from, to).map(pair => {
+    if (pair.to.matches('.acv-morph-label')) {
+     pair.options = { scale: false, styles: ['color'], measure: element => {
+      const box = element.getBoundingClientRect();
+      return { x: box.left, y: box.top, width: box.width, height: box.height };
+     }};
+    } else if (pair.to.matches('[data-id="decision-steps-morph"]')) {
+     pair.options = { measure: element => {
+      const box = element.getBoundingClientRect();
+      return { x: box.left, y: box.top, width: box.width, height: box.height };
+     }};
+    }
+    return pair;
+   });
+  }});
   const slides = deck.getSlides();
   const mainSlides = slides.filter(slide => !slide.matches('.appendix-slide'));
   const printMode = new URLSearchParams(location.search).has('print-pdf');
@@ -48,6 +65,12 @@
    if (!printMode) slide.setAttribute('data-auto-animate', 'true');
    const part = S.find(part => part.id === Number(slide.dataset.part));
    if (part) slide.style.setProperty('--accent', part.color);
+   if (slide.matches('.research-agenda')) {
+    const count = document.createElement('div');
+    count.className = 'rail-count summary-slide-count';
+    count.innerHTML = `<span class="rail-count-current">${String(mainSlides.indexOf(slide) + 1).padStart(2, '0')}</span><span class="rail-count-total"> / ${String(mainSlides.length).padStart(2, '0')}</span>`;
+    slide.appendChild(count);
+   }
   });
 
   function createTemplate() {
@@ -84,7 +107,7 @@
     Math.max(1, Math.min(Number(slide.dataset.subpart || 1), part.subparts.length));
    const subTitle = unnumbered ? '' : (slide.classList.contains('references-slide') ? 'Références' : part.subparts[sub - 1]);
    template.querySelector('.phd-location').hidden = unnumbered;
-   const partSlides = mainSlides.filter(item => item.dataset.part === slide.dataset.part);
+   const partSlides = mainSlides.filter(item => visibleOn(item) && item.dataset.part === slide.dataset.part);
    const progress = partSlides.length <= 1 ? 100 : partSlides.indexOf(slide) / (partSlides.length - 1) * 100;
    template.style.setProperty('--accent', part.color);
    template.style.setProperty('--part-progress', `${progress}%`);
@@ -206,13 +229,100 @@
   window.addEventListener('afterprint', () => {
    if (!printMode) document.querySelectorAll('.phd-template-print').forEach(node => node.remove());
   });
-  deck.on('slidechanged', refresh);
+  // Relier les disques de l'ouverture et du sommaire à la carte de navigation.
+  let mapMorphLayer = null;
+  function finishMapMorph() {
+   if (mapMorphLayer) mapMorphLayer.remove();
+   mapMorphLayer = null;
+   overlay.classList.remove('map-morphing');
+   document.querySelectorAll('.cover-map-morphing').forEach(slide => slide.classList.remove('cover-map-morphing'));
+  }
+  function localPosition(node, ancestor) {
+   let left = 0, top = 0;
+   for (let item = node; item && item !== ancestor; item = item.offsetParent) {
+    left += item.offsetLeft;
+    top += item.offsetTop;
+   }
+   return {left, top};
+  }
+  function morphOpeningMap(event) {
+   finishMapMorph();
+   const previous = event.previousSlide;
+   const current = event.currentSlide;
+   const incoming = previous && visibleOn(previous) && current.matches('.research-agenda');
+   const outgoing = previous && previous.matches('.defense-cover, .research-agenda') &&
+    visibleOn(current) && (!previous.matches('.defense-cover') || previous.querySelector('.agenda-part.visible'));
+   if (printMode || (!incoming && !outgoing) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    refresh();
+    return;
+   }
+   const agenda = incoming ? current : previous;
+   const sourceDiscs = [...(incoming ? overlay.querySelectorAll('.part-disc') : previous.querySelectorAll('.agenda-disc'))];
+   // Mesurer la navigation avant que le changement de diapo ne la masque.
+   const sources = sourceDiscs.map(source => {
+    const style = getComputedStyle(source);
+    return {
+     clone: source.cloneNode(true), position: localPosition(source, incoming ? overlay : previous),
+     width: source.offsetWidth, height: source.offsetHeight,
+     border: style.border, color: style.borderColor,
+     opacity: incoming ? getComputedStyle(source.parentElement).opacity : '1',
+     dots: [...source.children].map(dot => {
+      const style = getComputedStyle(dot);
+      return {width: style.width, height: style.height, background: style.backgroundColor, opacity: style.opacity};
+     })
+    };
+   });
+   refresh();
+   const destinationDiscs = [...(incoming ? current.querySelectorAll('.agenda-disc') : overlay.querySelectorAll('.part-disc'))];
+   const layer = document.createElement('div');
+   layer.className = 'opening-map-morph';
+   Object.assign(layer.style, {
+    width: overlay.style.width, height: overlay.style.height,
+    left: overlay.style.left, top: overlay.style.top, transform: overlay.style.transform
+   });
+   deck.getRevealElement().appendChild(layer);
+   mapMorphLayer = layer;
+   const timing = {duration: 850, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards'};
+   const animations = sources.map((source, index) => {
+    const destination = destinationDiscs[index];
+    const target = localPosition(destination, incoming ? current : overlay);
+    const targetStyle = getComputedStyle(destination);
+    const clone = source.clone;
+    clone.className = 'opening-morph-disc';
+    Object.assign(clone.style, {
+     left: `${source.position.left}px`, top: `${source.position.top}px`,
+     width: `${source.width}px`, height: `${source.height}px`,
+     border: source.border, color: source.color, boxSizing: 'border-box'
+    });
+    [...clone.children].forEach((dot, dotIndex) => {
+     const start = source.dots[dotIndex];
+     const nextStyle = getComputedStyle(destination.children[dotIndex]);
+     Object.assign(dot.style, {background: start.background, width: start.width, height: start.height});
+     dot.animate([
+      start,
+      {width: nextStyle.width, height: nextStyle.height, background: nextStyle.backgroundColor, opacity: nextStyle.opacity}
+     ], timing);
+    });
+    layer.appendChild(clone);
+    return clone.animate([
+     {left: `${source.position.left}px`, top: `${source.position.top}px`, width: `${source.width}px`, height: `${source.height}px`, borderColor: source.color, opacity: source.opacity},
+     {left: `${target.left}px`, top: `${target.top}px`, width: `${destination.offsetWidth}px`, height: `${destination.offsetHeight}px`, borderWidth: targetStyle.borderWidth, borderColor: targetStyle.borderColor, opacity: incoming ? '1' : getComputedStyle(destination.parentElement).opacity}
+    ], timing);
+   });
+   agenda.classList.add('cover-map-morphing');
+   overlay.classList.add('map-morphing');
+   Promise.all(animations.map(animation => animation.finished.catch(() => {}))).then(() => {
+    if (mapMorphLayer === layer) finishMapMorph();
+   });
+  }
+  deck.on('slidechanged', morphOpeningMap);
+  deck.on('resize', finishMapMorph);
   deck.on('resize', alignTemplate);
   deck.on('resize', fitReferences);
   deck.on('resize', fitActorTables);
   deck.on('pdf-ready', fitActorTables);
   deck.on('pdf-ready', fitReferences);
-  deck.on('overviewshown', () => { overlay.hidden = true; });
+  deck.on('overviewshown', () => { finishMapMorph(); overlay.hidden = true; });
   deck.on('overviewhidden', refresh);
   overlay.hidden = true;
   refresh();
