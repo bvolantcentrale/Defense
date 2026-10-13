@@ -657,7 +657,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 </div>
 </div>
 <div class="methodology-grid">
-<div class="methodology-item fragment fade-in" data-fragment-index="0">
+<div class="methodology-item fragment fade-in" data-fragment-index="1">
 <h3>
 Matrice de relation
 </h3>
@@ -744,7 +744,7 @@ Regroupement
 </div>
 </div>
 <div class="methodology-bottom">
-<div class="fragment fade-in" data-fragment-index="1">
+<div class="fragment fade-in" data-fragment-index="0">
 <h3>
 Temporalité de la décision
 </h3>
@@ -3885,18 +3885,15 @@ Validation : cas d’étude de l’ADEME <span class="citation-call">[12]</span>
 </div>
 <div class="slide-references" role="note" aria-label="Références de la diapositive"><span class="slide-reference-entry">[12] SUNE Laure, REBOURG Claire, DOLHEN Emil, HENNO Marc, TEULON Hélène (2025). Analyse de cycle de vie attributionnelle d’un trajet en train sur 100 km de ligne non-électrifiée, ADEME.</span></div>
 </section>
-<section id="analyse-des-résultats-impacts-normalisés" class="slide level2 editorial has-slide-references" data-part="3" data-subpart="3" data-refs="sune-2025">
+<section id="analyse-des-résultats-impacts-normalisés" class="slide level2 editorial normalized-results-slide has-slide-references" data-part="3" data-subpart="3" data-refs="sune-2025">
 <h2>Analyse des résultats : impacts normalisés</h2>
 <div class="slide-title">
 Comparaison du choix de scenario de décarbonation
 </div>
 <div class="ppt-canvas">
-<div class="ppt-text" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);">
+<div class="ppt-text results-cautions" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);">
 <div class="ppt-p" style="text-align:center">
-<span style="font-size:var(--content-size);font-weight:700"><br><br>« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span>
-</div>
-<div class="ppt-p" style="text-align:center">
-&nbsp;
+<span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span>
 </div>
 <div class="ppt-p" style="text-align:center">
 <span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span>
@@ -3968,12 +3965,12 @@ Diesel
 </tbody>
 </table>
 </div>
-<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);">
+<div class="ppt-text speed-ranking-heading" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);">
 <div class="ppt-p" style="text-align:center">
 <span style="font-size:var(--content-size);font-weight:700">Classement PROMETHEE selon la vitesse maximale</span>
 </div>
 </div>
-<div class="ppt-table-wrap" style="left:2%;top:23%;width:45%;height:31%;">
+<div class="ppt-table-wrap impact-ranking-table" style="left:2%;top:23%;width:45%;height:31%;">
 <table class="ppt-table">
 <tbody><tr>
 <td style="font-size:var(--content-size);font-weight:700">
@@ -4017,7 +4014,7 @@ Hydrogène, batteries et caténaires
 </tr>
 </tbody></table>
 </div>
-<img class="ppt-image" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Rapport ADEME">
+<img class="ppt-image ademe-results-cover" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Rapport ADEME">
 <div class="ppt-text" style="left:31%;top:8%;width:5%;height:5%;">
 <span class="citation-call">[12]</span>
 </div>
@@ -4218,22 +4215,28 @@ Analyse de sensibilité globale
 </figure>
 </div>
 </section>
-<section id="sobol-total-ensemble-des-paramètres" class="slide level2 editorial" data-part="3" data-subpart="3">
+<section id="sobol-total-ensemble-des-paramètres" class="slide level2 editorial sobol-readable-slide" data-part="3" data-subpart="3">
 <h2>Sobol total : ensemble des paramètres</h2>
 <div class="slide-title">
 Sobol total : ensemble des paramètres
 </div>
-<div class="ppt-canvas">
-<img class="ppt-image" style="left:52%;top:1%;width:44%;height:51%;" src="figures/hydrogen_ST_all_fr.svg" alt="Graphique 4"> <img class="ppt-image" style="left:1%;top:1%;width:44%;height:48%;" src="figures/diesel_ST_all_fr.svg" alt="Graphique 2"> <img class="ppt-image" style="left:2%;top:46%;width:44%;height:54%;" src="figures/battery_ST_all_fr.svg" alt="Graphique 1"> <img class="ppt-image" style="left:52%;top:49%;width:44%;height:48%;" src="figures/electrification_ST_all_fr.svg" alt="Graphique 3">
+<div class="ppt-canvas sobol-readable-content">
+<img src="figures/sobol-diesel-all-diagonal.svg" alt="Indices de Sobol : diesel">
+<img src="figures/sobol-hydrogen-all-diagonal.svg" alt="Indices de Sobol : hydrogen">
+<img src="figures/sobol-battery-all-diagonal.svg" alt="Indices de Sobol : battery">
+<img src="figures/sobol-electrification-all-diagonal.svg" alt="Indices de Sobol : electrification">
 </div>
 </section>
-<section id="sobol-total-paramètres-technologiques" class="slide level2 editorial" data-part="3" data-subpart="3">
+<section id="sobol-total-paramètres-technologiques" class="slide level2 editorial sobol-readable-slide" data-part="3" data-subpart="3">
 <h2>Sobol total : paramètres technologiques</h2>
 <div class="slide-title">
 Sobol total : paramètres technologiques
 </div>
-<div class="ppt-canvas">
-<img class="ppt-image" style="left:52%;top:7%;width:44%;height:41%;" src="figures/hydrogen_ST_technologies_fr.svg" alt="Graphique 1"> <img class="ppt-image" style="left:3%;top:7%;width:44%;height:43%;" src="figures/diesel_ST_technologies_fr.svg" alt="Graphique 1"> <img class="ppt-image" style="left:3%;top:50%;width:44%;height:42%;" src="figures/battery_ST_technologies_fr.svg" alt="Graphique 1"> <img class="ppt-image" style="left:51%;top:49%;width:44%;height:43%;" src="figures/electrification_ST_technologies_fr.svg" alt="Graphique 1">
+<div class="ppt-canvas sobol-readable-content">
+<img src="figures/sobol-diesel-technologies-diagonal.svg" alt="Indices de Sobol : diesel">
+<img src="figures/sobol-hydrogen-technologies-diagonal.svg" alt="Indices de Sobol : hydrogen">
+<img src="figures/sobol-battery-technologies-diagonal.svg" alt="Indices de Sobol : battery">
+<img src="figures/sobol-electrification-technologies-diagonal.svg" alt="Indices de Sobol : electrification">
 </div>
 </section>
 <section id="zones-dincomparabilité" class="slide level2 editorial incomparability-slide" data-part="3" data-subpart="3">
@@ -4425,23 +4428,6 @@ Questions
 <div class="cover-partner cover-ikos"><img class="cover-logo cover-ikos-logo" src="figures/logo_photo/logo ikos blanc.svg" alt="IKOS"><div class="cover-supervisors"><figure><img src="figures/logo_photo/photo Jeanne Marie.png" alt="Portrait de Jeanne-Marie Dalbavie"><figcaption>Jeanne-Marie Dalbavie</figcaption></figure></div></div>
 <div class="cover-author"><strong>Benoît Volant</strong><span></span></div>
 <div class="cover-partner cover-lgi"><div class="cover-academic-logos"><div class="cover-centrale-frame"><img class="cover-logo cover-centrale-logo" src="figures/logo_photo/logo centrale blanc.png" alt="CentraleSupélec"></div><img class="cover-logo cover-lgi-logo" src="figures/logo_photo/lgi-cover.svg" alt="Laboratoire Génie Industriel"></div><div class="cover-supervisors"><figure><img src="figures/logo_photo/photo franck.png" alt="Portrait de Franck Marle"><figcaption>Franck Marle</figcaption></figure><figure><img src="figures/logo_photo/photo yann.png" alt="Portrait de Yann Leroy"><figcaption>Yann Leroy</figcaption></figure></div></div>
-</div>
-</section>
-<section id="serment" class="slide level2 end-slide oath-slide">
-<h2>Serment</h2>
-<div class="end-title">
-Serment
-</div>
-<div class="oath-text">
-<p>
-En présence de mes pairs.
-</p>
-<p>
-Parvenu à l’issue de mon doctorat en Génie industriel, et ayant ainsi pratiqué, dans ma quête du savoir, l’exercice d’une recherche scientifique exigeante, en cultivant la rigueur intellectuelle, la réflexivité éthique et dans le respect des principes de l’intégrité scientifique, je m’engage, pour ce qui dépendra de moi, dans la suite de ma carrière professionnelle quel qu’en soit le secteur ou le domaine d’activité, à maintenir une conduite intègre dans mon rapport au savoir, mes méthodes et mes résultats.
-</p>
-</div>
-<div class="end-footer">
-<span>Benoît Volant · CentraleSupélec · LGI · IKOS</span><span>bvolant@ikosconsulting.com</span>
 </div>
 </section>
 <section id="limites-planétaires" class="slide level2 appendix-slide">
@@ -5549,6 +5535,23 @@ Modélisation des roulements : équations
 </table>
 </div>
 </div>
+</section>
+<section id="serment" class="slide level2 end-slide oath-slide">
+<h2>Serment</h2>
+<div class="end-title">
+Serment
+</div>
+<div class="oath-text">
+<p>
+En présence de mes pairs.
+</p>
+<p>
+Parvenu à l’issue de mon doctorat en Génie industriel, et ayant ainsi pratiqué, dans ma quête du savoir, l’exercice d’une recherche scientifique exigeante, en cultivant la rigueur intellectuelle, la réflexivité éthique et dans le respect des principes de l’intégrité scientifique, je m’engage, pour ce qui dépendra de moi, dans la suite de ma carrière professionnelle quel qu’en soit le secteur ou le domaine d’activité, à maintenir une conduite intègre dans mon rapport au savoir, mes méthodes et mes résultats.
+</p>
+</div>
+<div class="end-footer">
+<span>Benoît Volant · CentraleSupélec · LGI · IKOS</span><span>bvolant@ikosconsulting.com</span>
+</div>
 
 </section>
     </div>
@@ -5779,6 +5782,7 @@ Modélisation des roulements : équations
       {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Modélisation","ADMC","Validation"]},
 
       {id:4,code:"04",title:"Conclusions et perspectives",color:"#FEA973",subparts:["Conclusions et perspectives"]}
+
      ];
 
      const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
@@ -5788,23 +5792,41 @@ Modélisation des roulements : équations
      function initializeNavigation() {
 
       const deck = window.Reveal;
+
       // Deplacer les libelles ACV sans redimensionner leurs glyphes.
+
       deck.configure({ autoAnimateMatcher: function(from, to) {
+
        return this.getAutoAnimatePairs(from, to).map(pair => {
+
         if (pair.to.matches('.acv-morph-label')) {
+
          pair.options = { scale: false, styles: ['color'], measure: element => {
+
           const box = element.getBoundingClientRect();
+
           return { x: box.left, y: box.top, width: box.width, height: box.height };
+
          }};
+
         } else if (pair.to.matches('[data-id="decision-steps-morph"]')) {
+
          pair.options = { measure: element => {
+
           const box = element.getBoundingClientRect();
+
           return { x: box.left, y: box.top, width: box.width, height: box.height };
+
          }};
+
         }
+
         return pair;
+
        });
+
       }});
+
       const slides = deck.getSlides();
 
       const mainSlides = slides.filter(slide => !slide.matches('.appendix-slide'));
@@ -5966,6 +5988,7 @@ Modélisation des roulements : équations
        template.querySelector('.phd-location').hidden = unnumbered;
 
        const partSlides = mainSlides.filter(item => visibleOn(item) && item.dataset.part === slide.dataset.part);
+
        const progress = partSlides.length <= 1 ? 100 : partSlides.indexOf(slide) / (partSlides.length - 1) * 100;
 
        template.style.setProperty('--accent', part.color);
@@ -6248,11 +6271,13 @@ Modélisation des roulements : équations
 
        const current = event.currentSlide;
 
-       const incoming = previous && visibleOn(previous) && current.matches('.research-agenda');
+       const incoming = previous && visibleOn(previous) && current.matches('.research-agenda') &&
+
+        current.querySelector('.agenda-disc.visible');
 
        const outgoing = previous && previous.matches('.defense-cover, .research-agenda') &&
 
-        visibleOn(current) && (!previous.matches('.defense-cover') || previous.querySelector('.agenda-part.visible'));
+        visibleOn(current) && previous.querySelector('.agenda-part.visible, .agenda-disc.visible');
 
        if (printMode || (!incoming && !outgoing) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
 

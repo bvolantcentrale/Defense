@@ -249,9 +249,10 @@
    finishMapMorph();
    const previous = event.previousSlide;
    const current = event.currentSlide;
-   const incoming = previous && visibleOn(previous) && current.matches('.research-agenda');
+   const incoming = previous && visibleOn(previous) && current.matches('.research-agenda') &&
+    current.querySelector('.agenda-disc.visible');
    const outgoing = previous && previous.matches('.defense-cover, .research-agenda') &&
-    visibleOn(current) && (!previous.matches('.defense-cover') || previous.querySelector('.agenda-part.visible'));
+    visibleOn(current) && previous.querySelector('.agenda-part.visible, .agenda-disc.visible');
    if (printMode || (!incoming && !outgoing) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     refresh();
     return;

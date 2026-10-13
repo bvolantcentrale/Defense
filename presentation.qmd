@@ -186,8 +186,8 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 <div class="methodology-step fragment fade-in" data-fragment-index="5"><span>Clustering et<br>réorganisation</span></div>
 </div>
 
-<div class="methodology-grid"><div class="methodology-item fragment fade-in" data-fragment-index="0"><h3>Matrice de relation</h3><div class="methodology-visual"><img src="assets/vector/s09_Groupe_38.svg" alt="Matrice de relation"></div></div><div class="methodology-item fragment fade-in" data-fragment-index="2"><h3>Pondération</h3><div class="methodology-visual"><table><thead><tr><th>Type de relation</th><th>Poids</th></tr></thead><tbody><tr><td style="color:#FFC000">Interdépendance</td><td>1</td></tr><tr><td style="color:#4472C4">Dépendance séquentielle</td><td>2</td></tr><tr><td style="color:#C00000">Réciprocité conflictuelle</td><td>3</td></tr><tr><td style="color:#70AD47">Réciprocité compatible</td><td>−1</td></tr></tbody></table></div></div><div class="methodology-item fragment fade-in" data-fragment-index="3"><h3>Design Structure Matrix (DSM)</h3><div class="methodology-visual"><img src="assets/vector/s09_Image_1.svg" alt="Design Structure Matrix (DSM)"></div></div><div class="methodology-item fragment fade-in" data-fragment-index="4"><h3>Indicateurs</h3><div class="methodology-visual"><img src="figures/poids-methodology.svg" alt="Indicateurs"></div></div><div class="methodology-item fragment fade-in" data-fragment-index="5"><h3>Regroupement</h3><div class="methodology-visual"><img src="figures/clusters.svg" alt="Regroupement"></div></div></div>
-<div class="methodology-bottom"><div class="fragment fade-in" data-fragment-index="1"><h3>Temporalité de la décision</h3><img data-id="decision-steps-morph" src="figures/decision_steps.svg" alt="Temporalité de la décision"></div><div class="fragment fade-in" data-fragment-index="6"><h3>Allocation temporelle</h3><img src="figures/decision_steps_org.svg" alt="Allocation temporelle des interventions"></div></div>
+<div class="methodology-grid"><div class="methodology-item fragment fade-in" data-fragment-index="1"><h3>Matrice de relation</h3><div class="methodology-visual"><img src="assets/vector/s09_Groupe_38.svg" alt="Matrice de relation"></div></div><div class="methodology-item fragment fade-in" data-fragment-index="2"><h3>Pondération</h3><div class="methodology-visual"><table><thead><tr><th>Type de relation</th><th>Poids</th></tr></thead><tbody><tr><td style="color:#FFC000">Interdépendance</td><td>1</td></tr><tr><td style="color:#4472C4">Dépendance séquentielle</td><td>2</td></tr><tr><td style="color:#C00000">Réciprocité conflictuelle</td><td>3</td></tr><tr><td style="color:#70AD47">Réciprocité compatible</td><td>−1</td></tr></tbody></table></div></div><div class="methodology-item fragment fade-in" data-fragment-index="3"><h3>Design Structure Matrix (DSM)</h3><div class="methodology-visual"><img src="assets/vector/s09_Image_1.svg" alt="Design Structure Matrix (DSM)"></div></div><div class="methodology-item fragment fade-in" data-fragment-index="4"><h3>Indicateurs</h3><div class="methodology-visual"><img src="figures/poids-methodology.svg" alt="Indicateurs"></div></div><div class="methodology-item fragment fade-in" data-fragment-index="5"><h3>Regroupement</h3><div class="methodology-visual"><img src="figures/clusters.svg" alt="Regroupement"></div></div></div>
+<div class="methodology-bottom"><div class="fragment fade-in" data-fragment-index="0"><h3>Temporalité de la décision</h3><img data-id="decision-steps-morph" src="figures/decision_steps.svg" alt="Temporalité de la décision"></div><div class="fragment fade-in" data-fragment-index="6"><h3>Allocation temporelle</h3><img src="figures/decision_steps_org.svg" alt="Allocation temporelle des interventions"></div></div>
 
 ::::
 
@@ -1264,11 +1264,11 @@ Champ de l’étude: Division en modules des scénarios </div>
 ```
 
 
-## Analyse des résultats : impacts normalisés {.editorial data-part="3" data-subpart="3" refs="sune-2025"}
+## Analyse des résultats : impacts normalisés {.editorial .normalized-results-slide data-part="3" data-subpart="3" refs="sune-2025"}
 
 <div class="slide-title">Comparaison du choix de scenario de décarbonation</div>
 
-<div class="ppt-canvas"><div class="ppt-text" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700"><br><br>« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span></div><div class="ppt-p" style="text-align:center">&nbsp;</div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span></div></div>
+<div class="ppt-canvas"><div class="ppt-text results-cautions" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span></div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span></div></div>
 <div class="ppt-table-wrap speed-ranking-table">
 <table class="ppt-table" aria-label="Classement des scénarios selon la vitesse maximale">
 <thead>
@@ -1282,10 +1282,10 @@ Champ de l’étude: Division en modules des scénarios </div>
 </tbody>
 </table>
 </div>
-<div class="ppt-text" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Classement PROMETHEE selon la vitesse maximale</span></div></div>
+<div class="ppt-text speed-ranking-heading" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Classement PROMETHEE selon la vitesse maximale</span></div></div>
 
-<div class="ppt-table-wrap" style="left:2%;top:23%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
-<img class="ppt-image" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Rapport ADEME"><div class="ppt-text" style="left:31%;top:8%;width:5%;height:5%;"><span data-cite="sune-2025"></span></div></div>
+<div class="ppt-table-wrap impact-ranking-table" style="left:2%;top:23%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
+<img class="ppt-image ademe-results-cover" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Rapport ADEME"><div class="ppt-text" style="left:31%;top:8%;width:5%;height:5%;"><span data-cite="sune-2025"></span></div></div>
 
 ## Cas d’étude : Corse {.editorial data-part="3" data-subpart="3"}
 
@@ -1350,23 +1350,31 @@ Champ de l’étude: Division en modules des scénarios </div>
 </figure>
 </div>
 
-## Sobol total : ensemble des paramètres {.editorial data-part="3" data-subpart="3"}
+## Sobol total : ensemble des paramètres {.editorial .sobol-readable-slide data-part="3" data-subpart="3"}
 
 <div class="slide-title">Sobol total : ensemble des paramètres</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:52%;top:1%;width:44%;height:51%;" src="figures/hydrogen_ST_all_fr.svg" alt="Graphique 4">
-<img class="ppt-image" style="left:1%;top:1%;width:44%;height:48%;" src="figures/diesel_ST_all_fr.svg" alt="Graphique 2">
-<img class="ppt-image" style="left:2%;top:46%;width:44%;height:54%;" src="figures/battery_ST_all_fr.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:52%;top:49%;width:44%;height:48%;" src="figures/electrification_ST_all_fr.svg" alt="Graphique 3"></div>
+```{=html}
+<div class="ppt-canvas sobol-readable-content">
+<img src="figures/sobol-diesel-all-diagonal.svg" alt="Indices de Sobol : diesel">
+<img src="figures/sobol-hydrogen-all-diagonal.svg" alt="Indices de Sobol : hydrogen">
+<img src="figures/sobol-battery-all-diagonal.svg" alt="Indices de Sobol : battery">
+<img src="figures/sobol-electrification-all-diagonal.svg" alt="Indices de Sobol : electrification">
+</div>
+```
 
-## Sobol total : paramètres technologiques {.editorial data-part="3" data-subpart="3"}
+## Sobol total : paramètres technologiques {.editorial .sobol-readable-slide data-part="3" data-subpart="3"}
 
 <div class="slide-title">Sobol total : paramètres technologiques</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:52%;top:7%;width:44%;height:41%;" src="figures/hydrogen_ST_technologies_fr.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:3%;top:7%;width:44%;height:43%;" src="figures/diesel_ST_technologies_fr.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:3%;top:50%;width:44%;height:42%;" src="figures/battery_ST_technologies_fr.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:51%;top:49%;width:44%;height:43%;" src="figures/electrification_ST_technologies_fr.svg" alt="Graphique 1"></div>
+```{=html}
+<div class="ppt-canvas sobol-readable-content">
+<img src="figures/sobol-diesel-technologies-diagonal.svg" alt="Indices de Sobol : diesel">
+<img src="figures/sobol-hydrogen-technologies-diagonal.svg" alt="Indices de Sobol : hydrogen">
+<img src="figures/sobol-battery-technologies-diagonal.svg" alt="Indices de Sobol : battery">
+<img src="figures/sobol-electrification-technologies-diagonal.svg" alt="Indices de Sobol : electrification">
+</div>
+```
 
 ## Zones d’incomparabilité {.editorial .incomparability-slide data-part="3" data-subpart="3"}
 
@@ -1478,15 +1486,6 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="cover-partner cover-lgi"><div class="cover-academic-logos"><div class="cover-centrale-frame"><img class="cover-logo cover-centrale-logo" src="figures/logo_photo/logo centrale blanc.png" alt="CentraleSupélec"></div><img class="cover-logo cover-lgi-logo" src="figures/logo_photo/lgi-cover.svg" alt="Laboratoire Génie Industriel"></div><div class="cover-supervisors"><figure><img src="figures/logo_photo/photo franck.png" alt="Portrait de Franck Marle"><figcaption>Franck Marle</figcaption></figure><figure><img src="figures/logo_photo/photo yann.png" alt="Portrait de Yann Leroy"><figcaption>Yann Leroy</figcaption></figure></div></div>
 </div>
 ```
-
-## Serment {.end-slide .oath-slide}
-
-<div class="end-title">Serment</div>
-<div class="oath-text">
-<p>En présence de mes pairs.</p>
-<p>Parvenu à l’issue de mon doctorat en Génie industriel, et ayant ainsi pratiqué, dans ma quête du savoir, l’exercice d’une recherche scientifique exigeante, en cultivant la rigueur intellectuelle, la réflexivité éthique et dans le respect des principes de l’intégrité scientifique, je m’engage, pour ce qui dépendra de moi, dans la suite de ma carrière professionnelle quel qu’en soit le secteur ou le domaine d’activité, à maintenir une conduite intègre dans mon rapport au savoir, mes méthodes et mes résultats.</p>
-</div>
-<div class="end-footer"><span>Benoît Volant · CentraleSupélec · LGI · IKOS</span><span>bvolant@ikosconsulting.com</span></div>
 
 ## Limites planétaires {.appendix-slide}
 
@@ -1693,3 +1692,11 @@ Champ de l’étude: Division en modules des scénarios </div>
 :::
 ::::
 
+## Serment {.end-slide .oath-slide}
+
+<div class="end-title">Serment</div>
+<div class="oath-text">
+<p>En présence de mes pairs.</p>
+<p>Parvenu à l’issue de mon doctorat en Génie industriel, et ayant ainsi pratiqué, dans ma quête du savoir, l’exercice d’une recherche scientifique exigeante, en cultivant la rigueur intellectuelle, la réflexivité éthique et dans le respect des principes de l’intégrité scientifique, je m’engage, pour ce qui dépendra de moi, dans la suite de ma carrière professionnelle quel qu’en soit le secteur ou le domaine d’activité, à maintenir une conduite intègre dans mon rapport au savoir, mes méthodes et mes résultats.</p>
+</div>
+<div class="end-footer"><span>Benoît Volant · CentraleSupélec · LGI · IKOS</span><span>bvolant@ikosconsulting.com</span></div>
