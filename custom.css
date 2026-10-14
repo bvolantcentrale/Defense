@@ -443,6 +443,15 @@ body {
 .reveal .publication-details p { font-size:22px; line-height:1.35; margin:0 0 10px; }
 .publication-venue { color:#555; }
 .reveal .publication-doi { font-size:22px; color:var(--accent); overflow-wrap:anywhere; }
+.reveal .publications-slide .publication-contribution p,
+.reveal .publications-slide .publication-perspectives p { font-size:22px; line-height:1.4; }
+.reveal .publications-slide .publication-perspectives h3 { font-size:24px; }
+.reveal .publications-slide .publication-label,
+.reveal .publications-slide .publication-details h3 { font-size:22px; }
+.reveal .publications-slide .publication-details p,
+.reveal .publications-slide .publication-doi { font-size:16px; line-height:1.35; }
+.reveal .thanks-slide .publication-details p,
+.reveal .thanks-slide .publication-doi { font-size:16px; line-height:1.35; }
 
 .clustering-methods {
   position: absolute;
@@ -1313,6 +1322,26 @@ body {
 .appendix-slide {
   padding: 68px 90px !important;
 }
+.appendix-slide .ppt-canvas { right:70px; }
+.reveal .appendix-slide :is(.ppt-table td,.ppt-table th) { font-size:22px !important; line-height:1.25; padding:12px 10px; }
+.annex-speed-model .ppt-image { left:4% !important; top:4% !important; width:92% !important; height:88% !important; }
+.annex-rolling-model .ppt-table-wrap { left:8% !important; top:12% !important; width:84% !important; }
+.reveal .annex-rolling-model .ppt-table td { padding:20px 16px; font-size:24px !important; }
+.annex-technology-line .ppt-image:first-child { left:0 !important; top:25% !important; width:100% !important; height:70% !important; }
+.annex-technology-line .ppt-image:nth-child(2) { left:35% !important; top:2% !important; width:55% !important; height:20% !important; }
+.reveal .annex-parameter-label { position:absolute; left:3%; top:7%; width:30%; font-size:28px; line-height:1.5; }
+.annex-ranking .ppt-table-wrap:first-child { left:3% !important; top:3% !important; width:94% !important; }
+.annex-ranking .ppt-image { left:3% !important; top:59% !important; width:63% !important; height:30% !important; }
+.annex-ranking .ppt-table-wrap:last-child { left:71% !important; top:58% !important; width:26% !important; }
+.annex-battery-review .ppt-image:first-child { left:1% !important; top:2% !important; width:47% !important; height:92% !important; }
+.annex-battery-review .ppt-image:nth-child(2) { left:51% !important; top:3% !important; width:47% !important; height:55% !important; }
+.annex-battery-review .ppt-table-wrap { left:51% !important; top:65% !important; width:47% !important; }
+.annex-battery-sizing .ppt-table-wrap { left:56% !important; top:18% !important; width:42% !important; }
+.annex-battery-sizing .ppt-text { left:56% !important; top:58% !important; width:42% !important; height:auto !important; }
+.annex-ademe-results .ppt-image:nth-child(1), .annex-ademe-results .ppt-image:nth-child(2) { top:14% !important; height:62% !important; }
+.annex-ademe-results .ppt-image:last-child { left:13% !important; top:79% !important; width:74% !important; height:19% !important; }
+.annex-module-architecture .ppt-image:first-child { left:1% !important; top:5% !important; width:49% !important; height:88% !important; }
+.annex-module-architecture .ppt-image:last-child { left:53% !important; top:5% !important; width:46% !important; height:88% !important; }
 
 .appendix-label {
   font-size: 15px;
@@ -1586,21 +1615,19 @@ body {
 .reveal .inventory-types-table tbody td { font-weight:400; }
 .reveal .inventory-types-table tbody tr { height:48px; }
 .reveal .inventory-types-table tbody tr { background:transparent; }
-.reveal .inventory-types:has(.inventory-step-rte.visible) .inventory-common td { background:#dedede !important; color:#000; font-weight:700; }
+.reveal .inventory-types:has(.inventory-step-rte.visible) :is(.inventory-common, .inventory-prospective) td { background:#dedede !important; color:#000; font-weight:700; }
 .reveal .acv-morph-label { margin:0; font-size:var(--content-size); line-height:1.3; font-weight:inherit; }
 .inventory-types-table td { transition: background-color .25s ease, opacity .25s ease; }
 .reveal .inventory-types:has(.inventory-step-rte.visible):not(:has(.inventory-step-batteries.visible)) :is(.inventory-common, .inventory-prospective) td,
 .reveal .inventory-types:has(.inventory-step-batteries.visible):not(:has(.inventory-step-catenaries.visible)) .inventory-bibliographic td,
 .reveal .inventory-types:has(.inventory-step-catenaries.visible) .inventory-retrospective td { background: #dedede !important; color: #000; font-weight: 700; }
-.inventory-types:has(.inventory-step-rte.visible) .inventory-retrospective td { opacity: .3; }
-.inventory-types:has(.inventory-step-catenaries.visible) .inventory-retrospective td { opacity: 1; }
 .inventory-types .inventory-module-matrix {
   left: 10px; right: 54%; top: 350px; bottom: 24px; height: auto;
   grid-template-columns: 132px repeat(3, minmax(0, 1fr)) 110px 135px;
   grid-template-rows: 92px repeat(5, minmax(0, 1fr)); gap: 6px;
 }
-.reveal .inventory-module-matrix > :is(.matrix-head, .matrix-label) { padding: 2px; font-size:22px; overflow-wrap:normal; word-break:normal; hyphens:none; }
-.reveal .inventory-module-matrix > .matrix-module { padding: 3px; font-size:22px; overflow-wrap:normal; hyphens:none; transition: opacity .25s ease, box-shadow .25s ease; }
+.reveal .inventory-module-matrix > :is(.matrix-head, .matrix-label) { padding: 2px; font-size:var(--content-size); overflow-wrap:normal; word-break:normal; hyphens:none; }
+.reveal .inventory-module-matrix > .matrix-module { padding: 3px; font-size:var(--content-size); overflow-wrap:normal; hyphens:none; transition: opacity .25s ease, box-shadow .25s ease; }
 .inventory-types:has(.inventory-step-rte.visible) .inventory-module-matrix .matrix-module { opacity: .2; }
 .inventory-types:has(.inventory-step-rte.visible):not(:has(.inventory-step-batteries.visible)) .inventory-module-matrix .matrix-family-energie,
 .inventory-types:has(.inventory-step-batteries.visible):not(:has(.inventory-step-catenaries.visible)) .inventory-module-matrix .matrix-family-alim,
@@ -1643,6 +1670,9 @@ body {
 .ademe-validation figure { margin: 0; }
 .ademe-report { display: flex; flex-direction: column; align-items: center; min-height: 0; gap: 14px; }
 .ademe-report img { display: block; width: 100%; flex: 1; min-height: 0; object-fit: contain; margin: 0; }
+.ademe-report:has([data-id="ademe-report-morph"]) { justify-content:center; }
+.reveal .ademe-report img[data-id="ademe-report-morph"] { width:100%; height:auto; flex:none; max-height:100%; }
+.reveal .normalized-results-slide img[data-id="ademe-report-morph"] { width:auto !important; height:25% !important; }
 .ademe-report figcaption { font-size: 18px; color: #555; }
 .ademe-validation-content { display: flex; flex-direction: column; justify-content: center; gap: 48px; min-width: 0; }
 .ademe-validation-intro { border-left: 4px solid var(--accent); padding: 10px 0 12px 24px; }
@@ -1651,11 +1681,25 @@ body {
 .reveal .ademe-validation-intro p { font-size: 24px; margin: 8px 0; }
 .ademe-validation-intro strong { color: var(--accent); font-size: 36px; }
 .reveal .ademe-validation-intro .ademe-report-scope { font-size: 20px; color: #555; }
+.reveal .ademe-validation-intro .ademe-report-scope strong { font-size:24px; }
 .ademe-parameters figcaption { font-size: 22px; font-weight: 600; margin-bottom: 24px; }
 .ademe-parameters img { display: block; width: 100%; height: auto; margin: 0; }
 
 /* Classement des alternatives selon la vitesse maximale. */
 .speed-ranking-table { left: 51%; top: 23%; width: 47%; }
+.reveal .corsica-strategies-slide .corsica-chart-title { position:absolute; top:3%; width:45%; min-height:90px; display:flex; align-items:center; justify-content:center; flex-wrap:wrap; text-align:center; font-size:var(--content-title-size); font-weight:700; line-height:1.3; margin:0; }
+.corsica-chart-title-left { left:3%; }
+.corsica-chart-title-right { left:52%; }
+.corsica-chart-title .citation-call { font-size:.7em; margin-left:6px; }
+.reveal .corsica-strategies-slide .corsica-sacoi-note { top:94% !important; height:auto !important; padding:12px 18px; box-sizing:border-box; border-top:3px solid var(--accent); background:rgba(228,79,100,.08); font-size:22px !important; line-height:1.3; }
+.corsica-sacoi-note strong { color:var(--accent); }
+.biofuel-comparison { display:flex; flex-direction:column; justify-content:center; gap:12px; }
+.reveal .biofuel-comparison-table { width:100%; margin:0; table-layout:fixed; border-collapse:collapse; font-size:22px; line-height:1.15; }
+.reveal .biofuel-comparison-table :is(th,td) { padding:4px 10px; border:1px solid #aaa49c; vertical-align:middle; text-align:left; }
+.reveal .biofuel-comparison-table thead th { color:var(--part-3); background:#ede8e2; }
+.reveal .biofuel-comparison-table tbody th { font-weight:600; }
+.reveal .biofuel-comparison-table tbody tr:nth-child(even) { background:#eeeae4; }
+.reveal .biofuel-definitions { font-size:22px; line-height:1.25; margin:0; }
 .normalized-results-slide .ademe-results-cover { left:18% !important; top:2% !important; width:14% !important; height:25% !important; }
 .normalized-results-slide .impact-ranking-table { top:30% !important; height:auto !important; }
 .reveal .normalized-results-slide .impact-ranking-table td { font-size:24px !important; line-height:1.25; padding:16px 12px; }
@@ -1697,6 +1741,9 @@ body {
 /* Catégories d’impact : tableau à gauche, schéma A2 à droite. */
 .lcia-pathways .lcia-methods-table { left: 0; top: 15%; width: 45%; }
 .lcia-pathways .lcia-mcdm { left: 0; top: 57%; width: 45%; text-align: left; }
+.lcia-pathways .lcia-mcdm { border-left:4px solid var(--accent); padding:8px 0 8px 22px; box-sizing:border-box; }
+.reveal .lcia-mcdm .lcia-method-name { display:block; color:var(--accent); font-size:28px; margin-bottom:12px; }
+.reveal .lcia-mcdm p { font-size:22px; line-height:1.45; margin:0; }
 .reveal .lcia-pathway-figure { position: absolute; left: 48%; right: 0; top: 0; bottom: 0; margin: 0; }
 .reveal .lcia-pathway-figure img { width: 100%; height: 100%; object-fit: contain; margin: 0; }
 /* Introduction à l’ADMC. */
@@ -1859,6 +1906,8 @@ body {
 .reveal .constraints-findings p { margin:0; border-top:3px solid var(--part-1); padding-top:22px; font-size:24px; line-height:1.45; }
 .constraints-findings strong { color:var(--part-1); }
 .corse-impact-caption ~ .ppt-table-wrap { top:77% !important; }
+.corsica-case-slide > .ppt-table-wrap { left:47% !important; width:38% !important; }
+.reveal .corsica-case-slide .ppt-table :is(td,th) { font-size:22px !important; line-height:1.2; padding:8px 10px; }
 .reveal .cover-supervisors figure { width:155px; }
 .reveal .cover-lgi .cover-supervisors figure { width:125px; }
 .cover-partners { grid-template-columns:1fr .65fr 1.6fr; gap:24px; height:210px; }
@@ -1867,9 +1916,10 @@ body {
 .reveal .module-matrix.literature-module-matrix { grid-template-columns:120px repeat(9,minmax(0,1fr)); grid-template-rows:170px repeat(6,minmax(0,1fr)); }
 .module-focus-slide .module-matrix { left:70px; right:157px; grid-template-columns:150px repeat(10,minmax(0,1fr)); gap:6px; }
 .module-focus-slide .module-matrix > .matrix-module { padding-left:0; padding-right:0; }
+.reveal .module-focus-slide .module-matrix > .matrix-module { font-size:var(--content-size); }
 .module-focus-slide .module-matrix > .matrix-label { padding-left:0; padding-right:0; }
-.inventory-types .inventory-module-matrix { right:40%; grid-template-columns:150px repeat(3,minmax(0,1fr)) 125px 160px; grid-template-rows:120px repeat(5,minmax(0,1fr)); }
-.inventory-types .inventory-panel { left:62%; width:38%; }
+.inventory-types .inventory-module-matrix { right:54%; bottom:120px; grid-template-columns:110px repeat(3,minmax(0,1fr)) 105px 140px; grid-template-rows:92px repeat(5,minmax(0,1fr)); }
+.inventory-types .inventory-panel { left:48%; width:52%; }
 .defense-cover .cover-title { top:300px; }
 .defense-cover:has(.cover-method.visible) .cover-title { top:150px; }
 .defense-cover .cover-methods { top:450px; }

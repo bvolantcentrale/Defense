@@ -3,7 +3,7 @@
  const S=[
   {id:1,code:"01",title:"Introduction",color:"#440F76",subparts:["Introduction"]},
   {id:2,code:"02",title:"Organisation / parties prenantes",color:"#942C80",subparts:["Modélisation du réseau","Analyse du réseau d’acteurs","Clustering et réorganisation"]},
-  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Modélisation","ADMC","Validation"]},
+  {id:3,code:"03",title:"ACV & ADMC",color:"#E44F64",subparts:["Modélisation","ADMC","Application"]},
   {id:4,code:"04",title:"Conclusions et perspectives",color:"#FEA973",subparts:["Conclusions et perspectives"]}
  ];
  const POS={1:[[50,50]],2:[[35,50],[65,50]],3:[[50,28],[32,65],[68,65]],4:[[34,34],[66,34],[34,66],[66,66]]};
@@ -13,12 +13,12 @@
   // Deplacer les libelles ACV sans redimensionner leurs glyphes.
   deck.configure({ autoAnimateMatcher: function(from, to) {
    return this.getAutoAnimatePairs(from, to).map(pair => {
-    if (pair.to.matches('.acv-morph-label')) {
+    if (pair.to.matches('.acv-morph-label, [data-id="ademe-parameters-title"], [data-id="ademe-validation-label"]')) {
      pair.options = { scale: false, styles: ['color'], measure: element => {
       const box = element.getBoundingClientRect();
       return { x: box.left, y: box.top, width: box.width, height: box.height };
      }};
-    } else if (pair.to.matches('[data-id="decision-steps-morph"]')) {
+    } else if (pair.to.matches('[data-id="decision-steps-morph"], [data-id="ademe-report-morph"]')) {
      pair.options = { measure: element => {
       const box = element.getBoundingClientRect();
       return { x: box.left, y: box.top, width: box.width, height: box.height };
@@ -251,8 +251,8 @@
    const current = event.currentSlide;
    const incoming = previous && visibleOn(previous) && current.matches('.research-agenda') &&
     current.querySelector('.agenda-disc.visible');
-   const outgoing = previous && previous.matches('.defense-cover, .research-agenda') &&
-    visibleOn(current) && previous.querySelector('.agenda-part.visible, .agenda-disc.visible');
+   const outgoing = previous && previous.matches('.research-agenda') &&
+    visibleOn(current) && previous.querySelector('.agenda-disc.visible');
    if (printMode || (!incoming && !outgoing) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     refresh();
     return;

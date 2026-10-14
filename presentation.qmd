@@ -48,9 +48,9 @@ format:
 <div class="divider-title">Introduction</div>
 <div class="divider-subtitle"></div>
 
-## Décision publique de décarbonation : cadres climatiques {.editorial data-part="1" data-subpart="1"}
+## Accords publique de décarbonation {.editorial data-part="1" data-subpart="1"}
 
-<div class="slide-title">Décision publique de décarbonation : cadres climatiques</div>
+<div class="slide-title">Accords publiques de décarbonation</div>
 
 <!-- Même ordre que sur la diapo suivante : Paris, Pacte vert européen, SNBC.
      Cadres de même taille, entièrement dans le canevas ; object-fit:contain conserve les couvertures. -->
@@ -60,7 +60,7 @@ format:
 
 ## Décarbonation ferroviaire : changement technologique {.editorial data-part="1" data-subpart="1"}
 
-<div class="slide-title">Décarbonation ferroviaire : changement technologique</div>
+<div class="slide-title">Décarbonation ferroviaire : alternatives au diesel</div>
 
 <div class="ppt-canvas"><img class="ppt-image" data-id="climate-image10" style="left:4%;top:-6%;width:24%;height:66%;" src="figures/paris.png" alt="Image 9">
 <img class="ppt-image" data-id="climate-image11" style="left:4%;top:14%;width:24%;height:66%;" src="figures/green_deal.png" alt="Image 11">
@@ -69,14 +69,14 @@ format:
 
 ## Décideurs et niveaux institutionnels {.editorial data-part="1" data-subpart="1"}
 
-<div class="slide-title">Décideurs et niveaux institutionnels</div>
+<div class="slide-title">Décideurs et hiérarchie institutionnels</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:0%;width:28%;height:100%;" src="figures/public_actors.svg" alt="Groupe 78">
 <img class="ppt-image" style="left:34%;top:19%;width:66%;height:57%;" src="figures/intro_scope.svg" alt="Groupe 78"></div>
 
 ## Contraintes des services techniques régionaux {.editorial .constraints-slide data-part="1" data-subpart="1"}
 
-<div class="slide-title">Contraintes des services techniques régionaux</div>
+<div class="slide-title">Décision régionale</div>
 
 ```{=html}
 <div class="ppt-canvas constraints-content">
@@ -98,11 +98,11 @@ format:
 <table class="ppt-table" aria-label="Risques des interactions public-privé, manifestations et références">
 <thead><tr><th scope="col">Risque</th><th scope="col">Effets</th><th scope="col">Références</th></tr></thead>
 <tbody>
-<tr class="fragment fade-in" data-fragment-index="0"><th scope="row">Asymétrie d’information et dépendance technique</th><td><ul><li>Dépendance aux données industrielles</li><li>Biais d’évaluation</li><li>Alliances imposées</li></ul></td><td><span data-cite="aliyu-2025"></span></td></tr>
-<tr class="fragment fade-in" data-fragment-index="1"><th scope="row">Lobbying et captation des décisions</th><td><ul><li>Avantage du premier entrant</li><li>Négociations opaques</li><li>Déséquilibre d’influence</li></ul></td><td><span data-cite="kapiriri-2021,pagliara-2025"></span></td></tr>
-<tr class="fragment fade-in" data-fragment-index="2"><th scope="row">Inadéquation temporelle des interventions</th><td><ul><li>Participation trop précoce ou trop tardive</li><li>Sous-représentation aux moments clés</li></ul></td><td><span data-cite="knamiller-2024"></span></td></tr>
-<tr class="fragment fade-in" data-fragment-index="3"><th scope="row">Paralysie décisionnelle et fatigue participative</th><td><ul><li>Surcharge bureaucratique</li><li>Désengagement des acteurs</li></ul></td><td><span data-cite="pagliara-2025"></span></td></tr>
-<tr class="fragment fade-in" data-fragment-index="4"><th scope="row">Incohérences stratégiques et inefficacité financière</th><td><ul><li>Cloisonnement des connaissances</li><li>Contradictions internes</li><li>Gaspillage de ressources publiques</li></ul></td><td><span data-cite="marle-2019"></span></td></tr>
+<tr class="fragment fade-in" data-fragment-index="0"><th scope="row">Participation prématurée ou décalée</th><td><ul><li>Participation improductive</li></ul></td><td><span data-cite="aliyu-2025"></span></td></tr>
+<tr class="fragment fade-in" data-fragment-index="1"><th scope="row">Présence excessive ou insuffisante de certains acteurs</th><td><ul><li>Acteurs disposant de ressources sur-représentés : ils monopolisent l’attention et les ressources des décideurs et orientent la décision.</li><li>Acteurs disposant de moins de ressources sous-représentés : perte d’information.</li></ul></td><td><span data-cite="kapiriri-2021,pagliara-2025"></span></td></tr>
+<tr class="fragment fade-in" data-fragment-index="2"><th scope="row">Lobbying</th><td><ul><li>Une décision non organisée s’ouvre à des influences par des regroupements d’acteurs aux intérêts communs.</li><li>Avantage du premier entrant, qui oriente la décision.</li><li>Orientation des critères de choix et des scénarios considérés.</li></ul></td><td><span data-cite="knamiller-2024"></span></td></tr>
+<tr class="fragment fade-in" data-fragment-index="3"><th scope="row">Désengagement</th><td><ul><li>Surcharge bureaucratique</li><li>Sollicitations répétitives</li></ul></td><td><span data-cite="pagliara-2025"></span></td></tr>
+<tr class="fragment fade-in" data-fragment-index="4"><th scope="row">Processus inefficace</th><td><ul><li>Contradictions internes</li><li>Cloisonnement à un champ de connaissances</li><li>Gaspillage de ressources publiques</li></ul></td><td><span data-cite="marle-2019"></span></td></tr>
 </tbody>
 </table>
 </div>
@@ -150,11 +150,11 @@ format:
 
 ## Sommaire {.editorial .research-agenda}
 
-<div class="summary-title">Sommaire et questions de recherche</div>
+<div class="summary-title">Questions de recherche et sommaire</div>
 <div class="agenda-parts">
 <div class="agenda-part" style="--part-color:var(--part-1)"><div class="agenda-disc fragment fade-in" data-fragment-index="2" aria-hidden="true"><span style="left:50%;top:50%"></span></div><div class="agenda-part-content fragment fade-in" data-fragment-index="2"><div class="agenda-part-heading"><span>01</span><h3>Introduction</h3></div><div class="agenda-sections"><span>Contexte de la décarbonation ferroviaire et enjeux de la décision publique</span></div></div></div>
 <div class="agenda-part" style="--part-color:var(--part-2)"><div class="agenda-disc fragment fade-in" data-fragment-index="2" aria-hidden="true"><span style="left:50%;top:28%"></span><span style="left:32%;top:65%"></span><span style="left:68%;top:65%"></span></div><div class="agenda-part-content fragment fade-in" data-fragment-index="2"><div class="agenda-part-heading"><span>02</span><h3>Organisation &amp; parties prenantes</h3></div><div class="agenda-sections"><span>2.1 · Modélisation du réseau</span><span>2.2 · Analyse du réseau d’acteurs</span><span>2.3 · Clustering et réorganisation</span></div></div><div class="summary-research fragment fade-in" data-fragment-index="0"><div class="summary-question">Comment formaliser une méthodologie d’aide à la décision qui positionne l’intervention des différentes parties prenantes tout au long du processus décisionnel ?</div><p class="summary-method-name">Méthodologie de diagnostic, modélisation et réorganisation des contributions des parties prenantes au sein des processus décisionnels complexes</p></div></div>
-<div class="agenda-part" style="--part-color:var(--part-3)"><div class="agenda-disc fragment fade-in" data-fragment-index="2" aria-hidden="true"><span style="left:50%;top:28%"></span><span style="left:32%;top:65%"></span><span style="left:68%;top:65%"></span></div><div class="agenda-part-content fragment fade-in" data-fragment-index="2"><div class="agenda-part-heading"><span>03</span><h3>ACV &amp; ADMC</h3></div><div class="agenda-sections"><span>3.1 · Modélisation</span><span>3.2 · ADMC</span><span>3.3 · Validation</span></div></div><div class="summary-research fragment fade-in" data-fragment-index="1"><div class="summary-question">Comment évaluer les impacts environnementaux et classer des scénarios prospectifs dans des contextes opérationnels variés ?</div><p class="summary-method-name">Méthodologie pour l’évaluation environnementale paramétrique et prospective pour la comparaison de scénarios de réduction d’impact par l’analyse du cycle de vie (ACV) et l’aide à la décision multicritère (ADMC)</p></div></div>
+<div class="agenda-part" style="--part-color:var(--part-3)"><div class="agenda-disc fragment fade-in" data-fragment-index="2" aria-hidden="true"><span style="left:50%;top:28%"></span><span style="left:32%;top:65%"></span><span style="left:68%;top:65%"></span></div><div class="agenda-part-content fragment fade-in" data-fragment-index="2"><div class="agenda-part-heading"><span>03</span><h3>ACV &amp; ADMC</h3></div><div class="agenda-sections"><span>3.1 · Modélisation</span><span>3.2 · ADMC</span><span>3.3 · Application</span></div></div><div class="summary-research fragment fade-in" data-fragment-index="1"><div class="summary-question">Comment évaluer les impacts environnementaux et classer des scénarios prospectifs dans des contextes opérationnels variés ?</div><p class="summary-method-name">Méthodologie pour l’évaluation environnementale paramétrique et prospective pour la comparaison de scénarios de réduction d’impact par l’analyse du cycle de vie (ACV) et l’aide à la décision multicritère (ADMC)</p></div></div>
 <div class="agenda-part" style="--part-color:var(--part-4)"><div class="agenda-disc fragment fade-in" data-fragment-index="2" aria-hidden="true"><span style="left:50%;top:50%"></span></div><div class="agenda-part-content fragment fade-in" data-fragment-index="2"><div class="agenda-part-heading"><span>04</span><h3>Conclusions et perspectives</h3></div><div class="agenda-sections"><span>Synthèse des contributions et perspectives scientifiques et opérationnelles</span></div></div></div>
 </div>
 
@@ -633,8 +633,8 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
     <td style="font-size:var(--content-size);font-weight:700">Relation interdépendante</td>
     <td style="color:#FFC000;font-size:var(--content-size);font-weight:700">Commune</td>
     <td style="color:#4472C4;font-size:var(--content-size);font-weight:700">Séquentielle</td>
-    <td style="color:#70AD47;font-size:var(--content-size);font-weight:700">Compatible-réciproque</td>
-    <td style="color:#C00000;font-size:var(--content-size);font-weight:700">Contentieux-réciproque</td>
+    <td style="color:#70AD47;font-size:var(--content-size);font-weight:700">Réciproque-compatible</td>
+    <td style="color:#C00000;font-size:var(--content-size);font-weight:700">Réciproque-contentieux</td>
 
   </tr>
   <tr>
@@ -648,7 +648,7 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
   <tr>
     <td style="font-size:var(--content-size);font-weight:700">Définition</td>
-    <td style="font-size:var(--content-size);line-height:1.2"><span class="fragment fade-in" data-fragment-index="0">Activités toutes nécessaires au résultat commun, sans dépendance technique ni temporelle.</span></td>
+    <td style="font-size:var(--content-size);line-height:1.2"><span class="fragment fade-in" data-fragment-index="0">Activités nécessaires au résultat commun sans dépendance technique ni temporelle.</span></td>
     <td style="font-size:var(--content-size);line-height:1.2"><span class="fragment fade-in" data-fragment-index="1">Une tâche attend l’achèvement partiel ou complet d’une tâche préalable.</span></td>
     <td style="font-size:var(--content-size);line-height:1.2"><span class="fragment fade-in" data-fragment-index="2">Un ajustement mutuel aligne les résultats sans conflit d’objectifs.</span></td>
     <td style="font-size:var(--content-size);line-height:1.2"><span class="fragment fade-in" data-fragment-index="3">Un ajustement mutuel aligne les résultats malgré des objectifs conflictuels.</span></td>
@@ -899,13 +899,13 @@ Dimensions : width = largeur ; height = hauteur, en % du canevas.
 
 ## Objectif et champ de l’étude — unité fonctionnelle {.editorial .functional-unit-slide data-part="3" data-subpart="1"}
 
-<div class="slide-title">Objectif et unité fonctionnelle</div>
+<div class="slide-title">Unité fonctionnelle et périmètre de l'étude</div>
 <img class="ppt-image rolling-parameters" style="left:10%;top:41%;width:48%;height:50%;" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
 ```{=html}
 <div class="ppt-canvas functional-unit-canvas">
   <div class="fu-definition">
     <div class="fu-label">UNITÉ FONCTIONNELLE</div>
-    <div class="fu-statement">Chaîne d'alimentation énergétique nécessaire à l’exploitation d’un train régional<br>sur sa durée de vie restante.</div>
+    <div class="fu-statement">Fournir l’énergie nécessaire à l’exploitation d’un train régional<br>sur sa durée de vie restante.</div>
     <div class="fu-database">Base de données utilisée : <strong>ecoinvent 3.9.1</strong>.</div>
     <div class="fu-lifetime"><strong>16 à 24 ans</strong><span>Horizon fixé par les décideurs</span></div>
   </div>
@@ -1089,37 +1089,14 @@ Champ de l’étude: Division en modules des scénarios </div>
 <img src="figures/bibli_batteries.svg" alt="Résultats de la revue bibliographique sur les batteries">
 </figure>
 <figure class="inventory-panel inventory-catenaries">
-<figcaption>Caténaires : interview d'experts</figcaption>
+<figcaption>Modélisation des caténaires : interview d'experts</figcaption>
 <div class="inventory-catenary-pair">
-<figure><figcaption>1 500 V courant continu</figcaption><img src="figures/1500V.svg" alt="Données de la caténaire 1 500 V en courant continu"></figure>
-<figure><figcaption>25 kV courant alternatif</figcaption><img src="figures/25kV.svg" alt="Données de la caténaire 25 kV en courant alternatif"></figure>
+<figure><figcaption>Illustration d’une caténaire 1 500 V</figcaption><img src="figures/1500V.svg" alt="Données de la caténaire 1 500 V en courant continu"></figure>
+<figure><figcaption>Illustration d’une caténaire 25 kV</figcaption><img src="figures/25kV.svg" alt="Données de la caténaire 25 kV en courant alternatif"></figure>
 </div>
 </figure>
 </div>
 ```
-
-## Modélisation des roulements {.editorial .rolling-model-slide data-part="3" data-subpart="1"}
-
-<div class="slide-title">Modélisation des roulements</div>
-
-:::: {.ppt-canvas .rolling-equations}
-
-<img class="ppt-image rolling-parameters" style="left:27%;top:0%;width:73%;height:34%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
-
-<img class="ppt-image rolling-parameters" style="left:0%;top:0%;width:25%;height:34%;" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
-
-::: {.rolling-equations-table}
-
-| Modèle / phase | Paramètres et contraintes |
-|:--|:--|
-| **Résistance Davis** | Coefficients $A$ ; $B$ ; $C$ propres au train ; $v$ la vitesse |
-| **Seconde loi de Newton** |  $a$ accélération ; $m$ masse ; $i$ pente ; $P$ Puissance du train |
-| **Accélération** | $v_{\max}$ fonction de la distance entre arrêts ; $a<0{,}3\ \mathrm{m/s^2}$ ; $P<P_{\max}$ |
-| **Croisière** | $a=0$ ; distance avant freinage |
-| **Décélération** |  $-0{,}3\mathrm{m/s^2}<a\ $ ; $P>P_{\min}$ (si régénération au freinage) |
-
-:::
-::::
 
 ## Propagation des incertitudes {.editorial .uncertainty-slide data-part="3" data-subpart="1" refs="ciroth-2016,muller-2015"}
 
@@ -1182,7 +1159,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 </table>
 </div>
 <span class="fragment lcia-selection" data-fragment-index="0" aria-hidden="true"></span>
-<div class="lcia-mcdm">EF 3.0 apporte une méthode de normalisation et pondération valorisable pour l’ADMC</div>
+<div class="lcia-mcdm"><strong class="lcia-method-name">EF 3.0</strong><p>apporte une méthode de <strong>normalisation et de pondération</strong><br>valorisable pour l’<strong>ADMC</strong>.</p></div>
 <figure class="lcia-pathway-figure"><img src="figures/lcia/impact_pathways_fr.svg" alt="Schéma de l’annexe A2 : catégories d’impact intermédiaires, mécanismes de dommages et effets sur la santé humaine, les écosystèmes et les ressources."></figure>
 
 </div>
@@ -1225,17 +1202,17 @@ Champ de l’étude: Division en modules des scénarios </div>
 </div>
 ```
 
-## Validation {.editorial .validation-overview-slide data-part="3" data-subpart="3" refs="sune-2025"}
+## Application {.editorial .validation-overview-slide data-part="3" data-subpart="3" refs="sune-2025"}
 
-<div class="slide-title">Validation</div>
+<div class="slide-title">Application de la méthodologie</div>
 
 ```{=html}
 <div class="ppt-canvas validation-overview">
 <article class="validation-example">
-<h3>Comparaison avec l’étude de l'ADEME <span data-cite="sune-2025"></span></h3>
+<h3>Comparaison avec un rapport de l'ADEME <span data-cite="sune-2025"></span></h3>
 <div class="ademe-validation-content">
-<div class="ademe-validation-intro"><div class="ademe-validation-label">ADEME</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p></div>
-<figure class="ademe-parameters"><figcaption>Paramètres de la ligne</figcaption><img src="figures/param_ademe.svg" alt="Paramètres de la ligne du cas d’étude ADEME"></figure>
+<div class="ademe-validation-intro"><div class="ademe-validation-label" data-id="ademe-validation-label">ADEME</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p></div>
+<figure class="ademe-parameters"><figcaption data-id="ademe-parameters-title">Paramètres de la ligne</figcaption><img src="figures/param_ademe.svg" alt="Paramètres de la ligne du cas d’étude ADEME"></figure>
 </div>
 </article>
 <article class="validation-example">
@@ -1255,10 +1232,10 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 ```{=html}
 <div class="ppt-canvas ademe-validation">
-<figure class="ademe-report"><img src="figures/ademe.png" alt="Couverture du rapport final ADEME de juin 2025 : ACV attributionnelle d’un trajet en train sur 100 km de ligne non électrifiée"><figcaption></figcaption></figure>
+<figure class="ademe-report"><img data-id="ademe-report-morph" src="figures/ademe.png" alt="Couverture du rapport final ADEME de juin 2025 : ACV attributionnelle d’un trajet en train sur 100 km de ligne non électrifiée"><figcaption></figcaption></figure>
 <div class="ademe-validation-content">
-<div class="ademe-validation-intro"><div class="ademe-validation-label">ADEME</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p><p class="ademe-report-scope"></p></div>
-<figure class="ademe-parameters"><figcaption>Paramètres de la ligne </figcaption><img src="figures/param_ademe.svg" alt="Schéma de ligne : pente de 0 %, longueur de 50 km et distance entre arrêts de 5 km ; vitesse maximale à préciser"></figure>
+<div class="ademe-validation-intro"><div class="ademe-validation-label" data-id="ademe-validation-label">ADEME</div><h3>ACV attributionnelle d’un trajet en train</h3><p><strong>100 km</strong> de ligne non électrifiée</p><p class="ademe-report-scope"><strong>Unité fonctionnelle : 1 passager-kilomètre (p.km)</strong><br>Transporter un passager sur un kilomètre.</p></div>
+<figure class="ademe-parameters"><figcaption data-id="ademe-parameters-title">Paramètres de la ligne</figcaption><img src="figures/param_ademe.svg" alt="Schéma de ligne : pente de 0 %, longueur de 50 km et distance entre arrêts de 5 km ; vitesse maximale à préciser"></figure>
 </div>
 </div>
 ```
@@ -1266,7 +1243,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 ## Analyse des résultats : impacts normalisés {.editorial .normalized-results-slide data-part="3" data-subpart="3" refs="sune-2025"}
 
-<div class="slide-title">Comparaison du choix de scenario de décarbonation</div>
+<div class="slide-title">Comparaison des résultats des méthodologies</div>
 
 <div class="ppt-canvas"><div class="ppt-text results-cautions" style="left:1%;top:62%;width:47%;height:19%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Les résultats obtenus ne peuvent être généralisés à l’ensemble des configurations d’exploitation ferroviaire. » </span></div><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">« Cette étude ne remplace pas la réalisation d’une ACV spécifique au système étudié. » </span></div></div>
 <div class="ppt-table-wrap speed-ranking-table">
@@ -1285,9 +1262,9 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="ppt-text speed-ranking-heading" style="left:50%;top:13%;width:47%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size);font-weight:700">Classement PROMETHEE selon la vitesse maximale</span></div></div>
 
 <div class="ppt-table-wrap impact-ranking-table" style="left:2%;top:23%;width:45%;height:31%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Catégorie d’impact</td><td style="font-size:var(--content-size);font-weight:700">Scénario le plus impactant</td></tr><tr><td style="font-size:var(--content-size)">Changement climatique</td><td style="font-size:var(--content-size)">Diesel</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources fossiles</td><td style="font-size:var(--content-size)">Hydrogène produit par électrolyse avec le mix électrique français</td></tr><tr><td style="font-size:var(--content-size)">Micro-particules</td><td style="font-size:var(--content-size)">Biocarburant B100</td></tr><tr><td style="font-size:var(--content-size)">Utilisation des ressources minérales et métalliques</td><td style="font-size:var(--content-size)">Hydrogène, batteries et caténaires</td></tr></table></div>
-<img class="ppt-image ademe-results-cover" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Rapport ADEME"><div class="ppt-text" style="left:31%;top:8%;width:5%;height:5%;"><span data-cite="sune-2025"></span></div></div>
+<img data-id="ademe-report-morph" class="ppt-image ademe-results-cover" style="left:20%;top:0%;width:10%;height:20%;" src="figures/ademe.png" alt="Rapport ADEME"><div class="ppt-text" style="left:31%;top:8%;width:5%;height:5%;"><span data-cite="sune-2025"></span></div></div>
 
-## Cas d’étude : Corse {.editorial data-part="3" data-subpart="3"}
+## Cas d’étude : Corse {.editorial .corsica-case-slide data-part="3" data-subpart="3"}
 
 <div class="slide-title">Cas d’étude : Corse</div>
 
@@ -1324,16 +1301,16 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="corse-mix-perspective fragment fade-in" data-fragment-index="3"><strong>Perspectives</strong> : Stratégies de décarbonation du mix électrique corse</div>
 </div>
 
-## Stratégies de décarbonation du mix électrique corse {.editorial data-part="3" data-subpart="3" refs="edf-2024"}
+## Stratégies de décarbonation du mix électrique corse {.editorial .corsica-strategies-slide data-part="3" data-subpart="3" refs="edf-2024"}
 
 <div class="slide-title">Stratégies de décarbonation du mix électrique corse</div>
 
 <div class="ppt-canvas">
 <img class="ppt-image" style="left:3%;top:15%;width:45%;height:73%;" src="figures/s48_Espace_r_serv_du_contenu_6.svg" alt="Espace réservé du contenu 6">
-<div class="ppt-text" style="left:12%;top:7%;width:28%;height:8%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Evolution de l’impact en tonnes de CO2eq de la production d’électricité en Corse <span data-cite="edf-2024"></span></span></div></div>
+<h3 class="corsica-chart-title corsica-chart-title-left">Evolution de l’impact en tonnes de CO2eq de la production d’électricité en Corse <span data-cite="edf-2024"></span></h3>
 <img class="ppt-image" style="left:50%;top:16%;width:50%;height:79%;" src="figures/s48_Graphique_8.svg" alt="Graphique 8">
-<div class="ppt-text" style="left:57%;top:9%;width:32%;height:5%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:center"><span style="font-size:var(--content-size)">Modes de production d’électricité en Corse (MW) <span data-cite="edf-2024"></span></span></div></div>
-<div class="ppt-text" style="left:3%;top:96%;width:94%;height:4%;font-size:var(--content-size);text-align:center;">SACOI3 : 100 MW d’alimentation de l’Italie vers la Corse</div></div>
+<h3 class="corsica-chart-title corsica-chart-title-right">Modes de production d’électricité en Corse (MW) <span data-cite="edf-2024"></span></h3>
+<div class="ppt-text corsica-sacoi-note" style="left:3%;top:96%;width:94%;height:4%;font-size:var(--content-size);text-align:center;"><strong>SACOI3 : 100 MW</strong> d’alimentation de l’Italie vers la Corse</div></div>
 
 ## Analyse de sensibilité globale {.editorial data-part="3" data-subpart="3"}
 
@@ -1432,14 +1409,14 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="perspective-column fragment fade-in" data-fragment-index="0">
 <h3 class="perspective-kicker">Réorganisation des parties prenantes</h3>
 <div class="perspective-list">
-<p><strong>Temporalité de la décision</strong><br>Passer à une matrice multidomaine (MDM) pour mieux représenter la temporalité des interventions.</p>
+<p><strong>Temporalité de la décision</strong><br>Modéliser une DSM par étape pour mieux représenter la temporalité des interventions.</p>
 <p><strong>Représentation des acteurs</strong><br>Développer une modélisation à base d’agents (ABM) pour mieux représenter les acteurs et leurs interactions.</p>
 </div>
 </div>
 <div class="perspective-column fragment fade-in" data-fragment-index="1">
 <h3 class="perspective-kicker">ACV et aide à la décision multicritère</h3>
 <div class="perspective-list">
-<p><strong>Évaluation de la durabilité</strong><br>Ajouter l'analyse sociale et des coûts du cycle de vie pour une évaluation de la durabilité du cycle de vie.</p>
+<p><strong>Évaluation de la durabilité</strong><br>Ajouter l'analyse <strong>sociale</strong> et des <strong>coûts</strong> du cycle de vie pour une évaluation de la soutenabilité du cycle de vie.</p>
 <p><strong>Sensibilité aux méthodes</strong><br>Tester d’autres méthodes d’ADMC, de pondération et de normalisation pour évaluer la sensibilité du classement aux choix méthodologiques et comparer les résultats à une approche par score unique.</p>
 </div>
 </div>
@@ -1450,6 +1427,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <li>Étendre l’approche à d’autres régions à l’international confrontées à des enjeux similaires.</li>
 <li>Étendre l’approche à d’autres formes de mobilité lourde.</li>
 <li>Étendre l’approche à d’autres réseaux d’acteurs, pour des décisions publiques faisant intervenir des acteurs privés.</li>
+<li>Étendre l’approche à d’autres contextes associant énergie et infrastructures, comme l’aménagement du territoire ou la construction de bâtiments.</li>
 </ul>
 </div>
 
@@ -1523,7 +1501,6 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div><h3>Caractériser les impacts</h3><p>Choix des catégories<br>et indicateurs d’impact</p><p>Classification des flux<br>et caractérisation</p><div class="acv-deliverable">Profil environnemental</div></div>
 <div><h3>Éclairer la décision</h3><p>Contributions majeures,<br>sensibilité et cohérence</p><p>Limites, conclusions<br>et recommandations</p><div class="acv-deliverable">Résultats interprétés</div></div>
 </div>
-<div class="acv-iteration">↔ Démarche itérative : l’interprétation accompagne chaque phase et peut conduire à réviser les hypothèses, les données ou les modèles.</div>
 </div>
 <div class="slide-references" role="note"><span class="slide-reference-entry">ISO (2006). ISO 14040 - Management environnemental - Analyse du cycle de vie - Principes et cadre.</span><span class="slide-reference-entry">ISO (2006). ISO 14044 - Management environnemental - Analyse du cycle de vie - Exigences et lignes directrices.</span></div>
 
@@ -1533,7 +1510,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:25%;top:0%;width:50%;height:89%;" src="assets/media/image47.svg" alt="Graphique 10">
 <img class="ppt-image" style="left:78%;top:11%;width:18%;height:49%;transform:rotate(180.00deg);transform-origin:center;" src="assets/media/image48.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:-4%;top:19%;width:27%;height:37%;transform:rotate(90.00deg);transform-origin:center;" src="assets/vector/s26_Graphique_1.svg" alt="Graphique 1"></div>
+<img class="ppt-image" style="left:-4%;top:19%;width:27%;height:37%;transform:rotate(0deg);transform-origin:center;" src="assets/vector/s26_Graphique_1.svg" alt="Graphique 1"></div>
 
 ## Prospectif : mix électrique {.editorial .appendix-slide}
 
@@ -1543,7 +1520,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="ppt-text" style="left:4%;top:20%;width:34%;height:6%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Prospectives: scenarios de projection (RTE) </span></div></div>
 <img class="ppt-image" style="left:45%;top:1%;width:50%;height:94%;" src="assets/media/image50.svg" alt="Graphique 16"></div>
 
-## Batteries : revue bibliographique {.editorial .appendix-slide}
+## Batteries : revue bibliographique {.editorial .appendix-slide .annex-battery-review}
 
 <div class="slide-title">Batteries : revue bibliographique</div>
 
@@ -1552,7 +1529,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <img class="ppt-image" style="left:66%;top:17%;width:0%;height:25%;" src="assets/vector/s28_Connecteur_droit_9.svg" alt="Connecteur droit 9">
 <div class="ppt-table-wrap" style="left:52%;top:62%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">-</td><td style="font-size:var(--content-size)">-</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div></div>
 
-## Batteries : dimensionnement à masse constante {.editorial .appendix-slide}
+## Batteries : dimensionnement à masse constante {.editorial .appendix-slide .annex-battery-sizing}
 
 <div class="slide-title">Batteries : dimensionnement à masse constante</div>
 
@@ -1560,26 +1537,26 @@ Champ de l’étude: Division en modules des scénarios </div>
 <div class="ppt-table-wrap" style="left:56%;top:17%;width:37%;height:24%;"><table class="ppt-table"><tr><td style=""></td><td style="color:#440F76;font-size:var(--content-size)">LTO</td><td style="color:#B73779;font-size:var(--content-size)">NMC</td><td style="color:#FD9668;font-size:var(--content-size)">LFP</td></tr><tr><td style="font-size:var(--content-size)">Masse</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td><td style="font-size:var(--content-size)">1400 kg</td></tr><tr><td style="font-size:var(--content-size)">Energie kWh</td><td style="font-size:var(--content-size)">75</td><td style="font-size:var(--content-size)">220</td><td style="font-size:var(--content-size)">191</td></tr><tr><td style="font-size:var(--content-size)">Puissance kW</td><td style="font-size:var(--content-size)">300 à 600</td><td style="font-size:var(--content-size)">220 à 440</td><td style="font-size:var(--content-size)">191 à 383</td></tr></table></div>
 <div class="ppt-text" style="left:61%;top:51%;width:28%;height:18%;font-size:var(--content-title-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size);font-weight:700">Comparaison brute des technologies, à ce stade pas de prise en compte:</span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Infrastructures ferroviaires </span></div><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-title-size)">Exploitation des trains</span></div></div></div>
 
-##  modélisation des vitesses {.editorial .appendix-slide}
+## modélisation des vitesses {.editorial .appendix-slide .annex-speed-model}
 
-<div class="slide-title"> modélisation des vitesses</div>
+<div class="slide-title">Modélisation des vitesses</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:24%;top:15%;width:51%;height:62%;" src="assets/vector/s35_Groupe_13.svg" alt="Groupe 13"></div>
 
-##  modélisation du roulement {.editorial .appendix-slide}
+## modélisation du roulement {.editorial .appendix-slide .annex-rolling-model}
 
-<div class="slide-title"> modélisation du roulement</div>
+<div class="slide-title">Modélisation du roulement</div>
 
 <div class="ppt-canvas"><div class="ppt-table-wrap" style="left:30%;top:27%;width:40%;height:63%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Phase</td><td style="font-size:var(--content-size);font-weight:700">Variable limitante</td><td style="font-size:var(--content-size);font-weight:700">Contrainte</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Accélération</td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a max</td><td style="font-size:var(--content-size)">a &lt; 0,3 m/s²</td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P max</td><td style="font-size:var(--content-size)">Pmax (1,6 MW pour le Régiolis)</td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Croisière</td><td style="font-size:var(--content-size)">P max, i</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">Distance entre arrêts</td><td style=""></td></tr><tr><td style="font-size:var(--content-size);font-weight:700">Décélération</td><td style="font-size:var(--content-size)">V max</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">a min</td><td style=""></td></tr><tr><td style=""></td><td style="font-size:var(--content-size)">P min (optionnel)</td><td style=""></td></tr></table></div></div>
 
-##  paramètres technologiques et ligne {.editorial .appendix-slide}
+## paramètres technologiques et ligne {.editorial .appendix-slide .annex-technology-line}
 
-<div class="slide-title"> paramètres technologiques et ligne</div>
+<div class="slide-title">Paramètres technologiques et ligne</div>
 
 <div class="ppt-canvas"><img class="ppt-image" style="left:1%;top:26%;width:91%;height:62%;" src="assets/vector/s37_Graphique_1.svg" alt="Graphique 1">
-<img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="assets/vector/s37_Groupe_7.svg" alt="Groupe 7"></div>
+<img class="ppt-image" style="left:6%;top:5%;width:27%;height:14%;" src="figures/annex-technology-line-train.svg" alt="Train et profil de ligne"><div class="annex-parameter-label"><strong>Paramètres</strong><br>Technologiques et ligne</div></div>
 
-## Illustration d’un classement multicritère {.editorial .appendix-slide}
+## Illustration d’un classement multicritère {.editorial .appendix-slide .annex-ranking}
 
 <div class="slide-title">Illustration d’un classement multicritère</div>
 
@@ -1587,7 +1564,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <img class="ppt-image" style="left:13%;top:56%;width:50%;height:16%;" src="assets/vector/s38_Groupe_8.svg" alt="Groupe 8">
 <div class="ppt-table-wrap" style="left:76%;top:49%;width:15%;height:24%;"><table class="ppt-table"><tr><td style="font-size:var(--content-size);font-weight:700">Scenario</td><td style="font-size:var(--content-size);font-weight:700">Rank</td></tr><tr><td style="font-size:var(--content-size)">Diesel</td><td style="font-size:var(--content-size)">5</td></tr><tr><td style="font-size:var(--content-size)">Biofuel</td><td style="font-size:var(--content-size)">4</td></tr><tr><td style="font-size:var(--content-size)">Hybrid</td><td style="font-size:var(--content-size)">1</td></tr><tr><td style="font-size:var(--content-size)">Batteries</td><td style="font-size:var(--content-size)">3</td></tr><tr><td style="font-size:var(--content-size)">Hydrogen</td><td style="font-size:var(--content-size)">2</td></tr><tr><td style="font-size:var(--content-size)">Electrification</td><td style="font-size:var(--content-size)">6</td></tr></table></div></div>
 
-## Validation ADEME : changement climatique {.editorial .appendix-slide}
+## Validation ADEME : changement climatique {.editorial .appendix-slide .annex-ademe-results}
 
 <div class="slide-title">Validation ADEME : changement climatique</div>
 
@@ -1595,7 +1572,7 @@ Champ de l’étude: Division en modules des scénarios </div>
 <img class="ppt-image" style="left:0%;top:13%;width:49%;height:58%;" src="assets/media/image66.png" alt="Image 10">
 <div class="ppt-text" style="left:52%;top:8%;width:46%;height:4%;font-size:var(--content-size);"><div class="ppt-p" style="text-align:left"><span style="font-size:var(--content-size)">Comparaison des scénarios - changement climatique (gCO2eq pour 1 p.km)</span></div></div>
 <img class="ppt-image" style="left:19%;top:84%;width:54%;height:15%;" src="figures/param_ademe.svg" alt="Paramètres de la ligne pour la comparaison ADEME"></div>
-## Architecture modulaire des modèles {.editorial .appendix-slide}
+## Architecture modulaire des modèles {.editorial .appendix-slide .annex-module-architecture}
 
 <div class="slide-title">Architecture modulaire des modèles</div>
 
@@ -1691,6 +1668,34 @@ Champ de l’étude: Division en modules des scénarios </div>
 
 :::
 ::::
+
+## Biocarburant {.editorial .appendix-slide .biofuel-comparison-slide .has-slide-references}
+
+<div class="slide-title">Biocarburant</div>
+
+```{=html}
+<div class="ppt-canvas biofuel-comparison">
+<table class="biofuel-comparison-table">
+<colgroup><col style="width:22%"><col style="width:20%"><col style="width:58%"></colgroup>
+<thead><tr><th>Filière énergétique</th><th>Émissions de GES sur le cycle de vie (WtW)</th><th>Facteurs clés et remarques</th></tr></thead>
+<tbody>
+<tr><th>Carburants fossiles</th><td>Référence : élevées</td><td>Principale source des émissions anthropiques de CO₂.</td></tr>
+<tr><th>Biocarburants de 1ʳᵉ génération<br>(ex. : maïs)</th><td>Réduction modeste ; potentiellement élevées avec changement d’usage des sols</td><td>L’éthanol de maïs offre des réductions modestes en raison des intrants fossiles. Risque important d’émissions liées à l’ILUC. Le potentiel global de réduction des GES reste débattu.</td></tr>
+<tr><th>1ʳᵉ génération à faible LUC<br>(ex. : canne à sucre)</th><td>Réduction partielle</td><td>Les bénéfices dépendent fortement de l’absence de changement direct ou indirect d’usage des sols (LUC / ILUC).</td></tr>
+<tr><th>Biocarburants de 2ᵉ génération<br>(ex. : cellulosiques)</th><td>Potentiel de réduction plus élevé</td><td>Matières premières non alimentaires : moindre concurrence directe avec l’alimentation. Réduction potentiellement supérieure à la 1ʳᵉ génération, surtout sans ILUC. Prélèvement durable des résidus nécessaire pour éviter la dégradation des sols.</td></tr>
+<tr><th>Biocarburants de 3ᵉ génération<br>(algues)</th><td>Variables</td><td>Culture et récolte énergivores : les bénéfices peuvent être annulés si l’énergie est fossile. Les apports de nutriments (engrais) génèrent aussi des GES.</td></tr>
+<tr><th>Carburants issus de déchets<br>(plastiques / pneus)</th><td>Variables</td><td>Émissions potentiellement inférieures à l’incinération ; forte dépendance à l’efficacité du procédé et aux apports énergétiques.</td></tr>
+<tr><th>E-carburants<br>(source 100 % renouvelable)</th><td>Très faibles / quasi nulles</td><td>Réduction potentielle de 70 à 100 % par rapport aux carburants fossiles. Électricité 100 % renouvelable et CO₂ durable nécessaires. Inclure les émissions amont des infrastructures : photovoltaïque 20–80 ; éolien 10–30 gCO₂-éq/kWh.</td></tr>
+<tr><th>E-carburants<br>(mix du réseau / source fossile)</th><td>Variables ; potentiellement élevées</td><td>Forte dépendance à l’intensité carbone de l’électricité ; émissions élevées possibles avec une électricité fossile. Environ 60 % de l’électricité mondiale est d’origine fossile.</td></tr>
+<tr><th>Véhicule électrique<br>(réseau 100 % renouvelable)</th><td>Très faibles en phase d’utilisation</td><td>Émissions plus élevées lors de la fabrication des batteries ; réseau réellement bas carbone nécessaire. Plusieurs pays de l’UE dépassent 50 % d’électricité renouvelable.</td></tr>
+<tr><th>Véhicule électrique<br>(mix du réseau)</th><td>Variables ; potentiellement élevées</td><td>Peut être plus émetteur qu’un véhicule thermique avec un réseau très carboné (ex. : charbon). Inclure les émissions amont de la production électrique.</td></tr>
+</tbody></table>
+<p class="biofuel-definitions">GES : gaz à effet de serre · WtW : du puits à la roue · LUC : changement d’usage des sols · ILUC : changement indirect d’usage des sols.</p>
+</div>
+```
+
+<div class="slide-references" role="note">Yılbaşı, Z. (2025). Biofuels, E-Fuels, and Waste-Derived Fuels: Advances, Challenges, and Future Directions. <em>Sustainability</em>, 17, 6145, tableau 8. <a href="https://doi.org/10.3390/su17136145">https://doi.org/10.3390/su17136145</a></div>
+
 
 ## Serment {.end-slide .oath-slide}
 
