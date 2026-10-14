@@ -12,9 +12,9 @@ part-references:
   tsvetkova-2019:
     short: "Tsvetkova et al. (2019)"
     full: "Tsvetkova, A., Eriksson, K., Levitt, R. E., & Wikstrom, K. (2019). Workflow Interdependence Analysis of Projects in Business Ecosystems. Volume 8, 8(1). https://doi.org/10.25219/EPOJ.2018.00110"
-  bloch-2023:
-    short: "Bloch et al. (2023)"
-    full: "Bloch, F., Jackson, M. O., & Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453."
+  freeman-1978:
+    short: "Freeman (1978)"
+    full: "Freeman, L. C. (1978). Centrality in social networks conceptual clarification. Social Networks, 1(3), 215–239."
   bolla-2011:
     short: "Bolla (2011)"
     full: "Bolla, M. (2011). Penalized versions of the Newman-Girvan modularity and their relation to normalized cuts and k-means clustering. Physical Review E - Statistical, Nonlinear, and Soft Matter Physics, 84(1)"
@@ -116,3 +116,7 @@ part-references:
   rte-2022:
     short: "RTE (2022)"
     full: "RTE. (2022). Futurs énergétiques 2050."
+
+  bloch-2023:
+    short: "Bloch et al. (2023)"
+    full: "Bloch, F., Jackson, M. O., & Tebaldi, P. (2023). Centrality measures in networks. Social Choice and Welfare, 61(2), 413–453."
