@@ -5,7 +5,7 @@ filters:
   - part-references.lua
 format:
   revealjs:
-    css: custom.css
+    css: presentation.css
     include-after-body: navigation.html
     slide-number: false
     progress: false
@@ -16,7 +16,9 @@ format:
     auto-animate-duration: 0.3
     background-transition: fade
     center: false
-    width: 1600
+    output-file: presentation.html
+    embed-resources: true
+    width: 1920
     height: 1200
     margin: 0
 ---
@@ -24,7 +26,7 @@ format:
 ## {.cover .defense-cover background-color="#000000"}
 
 <div class="cover-kicker">SOUTENANCE DE THÈSE · 2026</div>
-<div class="cover-title">Organisation des Parties Prenantes et Recommandation De Substitution Technologique Respectueuse de l’Environnement : Application à la Décarbonation Ferroviaire Régionale</div>
+<div class="cover-title">Organisation des Parties Prenantes et Recommandation de Substitution Technologique Respectueuse de l’Environnement Application à la Décarbonation Ferroviaire Régionale</div>
 <div class="cover-methods">
 <div class="cover-method fragment fade-in" data-fragment-index="0"><span class="cover-method-label">01 · Organisation de la décision</span><p>Méthodologie de diagnostic, modélisation et réorganisation des contributions des parties prenantes au sein des processus décisionnels complexes</p></div>
 <div class="cover-method fragment fade-in" data-fragment-index="0"><span class="cover-method-label">02 · Évaluation environnementale</span><p>Méthodologie pour l’évaluation environnementale paramétrique et prospective pour la comparaison de scénarios de réduction d’impact par l’analyse du cycle de vie (ACV) et l’aide à la décision multicritère (ADMC)</p></div>
@@ -954,7 +956,7 @@ Champ de l’étude: Division des scénarios en modules</div>
      Pour ajouter un module, dupliquer un bloc et choisir une piste libre
      sur les lignes souhaitees. Ne pas repeter une propriete dans style.
      Couleurs : classes matrix-family-alim, matrix-family-energie, matrix-family-infra.
-     Palettes dans custom.css ; police et arrondi communs via .matrix-module.
+     Palettes dans presentation.css ; police et arrondi communs via .matrix-module.
 -->
 
 <div class="matrix-module matrix-focus-target matrix-family-energie" style="--track:7; --row:2; --end:6;">
@@ -1145,6 +1147,29 @@ Champ de l’étude: Division des scénarios en modules</div>
 </div>
 ```
 
+## Modélisation des roulements {.editorial .rolling-model-slide data-part="3" data-subpart="1"}
+
+<div class="slide-title">Modélisation des roulements</div>
+
+:::: {.ppt-canvas .rolling-equations}
+
+<img class="ppt-image rolling-parameters" style="left:27%;top:0%;width:73%;height:34%;" src="figures/param.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
+
+<img class="ppt-image rolling-parameters" style="left:0%;top:0%;width:25%;height:34%;" src="figures/comput_simpl.svg" alt="Paramètres du roulement : pente, longueur du roulement, distance entre arrêts et vitesse maximale">
+
+::: {.rolling-equations-table}
+
+| Modèle / phase | Paramètres et contraintes |
+|:--|:--|
+| **Résistance Davis** | Coefficients $A$ ; $B$ ; $C$ propres au train ; $v$ la vitesse |
+| **Seconde loi de Newton** |  $a$ accélération ; $m$ masse ; $i$ pente ; $P$ Puissance du train |
+| **Accélération** | $v_{\max}$ fonction de la distance entre arrêts ; $a<0{,}3\ \mathrm{m/s^2}$ ; $P<P_{\max}$ |
+| **Croisière** | $a=0$ ; distance avant freinage |
+| **Décélération** |  $-0{,}3\mathrm{m/s^2}<a\ $ ; $P>P_{\min}$ (si régénération au freinage) |
+
+:::
+::::
+
 ## méthodes de calcul d'impact {.editorial data-part="3" data-subpart="2"}
 
 <div class="slide-title">Méthodes de calcul d'impact d'ACV</div>
@@ -1229,7 +1254,7 @@ Champ de l’étude: Division des scénarios en modules</div>
 </article>
 <article class="validation-example">
 <h3>Application à un cas réel: la Corse</h3>
-<img class="validation-illustration" src="figures/corse.svg" alt="Carte topographique des lignes et gares ferroviaires corses">
+<img class="validation-illustration" src="figures/Corse.svg" alt="Carte topographique des lignes et gares ferroviaires corses">
 </article>
 <article class="validation-example">
 <h3>Analyse de sensibilité</h3>
@@ -1280,7 +1305,7 @@ Champ de l’étude: Division des scénarios en modules</div>
 
 <div class="slide-title">Cas d’étude : Corse</div>
 
-<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:2%;width:32%;height:82%;" src="figures/corse.svg" alt="Carte topographique du réseau ferroviaire corse">
+<div class="ppt-canvas"><img class="ppt-image" style="left:3%;top:2%;width:32%;height:82%;" src="figures/Corse.svg" alt="Carte topographique du réseau ferroviaire corse">
 <div class="corse-map-caption">Carte topographique du tracé des lignes et des gares ferroviaires corses</div>
 </div>
 

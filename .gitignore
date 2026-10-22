@@ -1,0 +1,9 @@
+# Fichiers temporaires de Quarto
+/.quarto/
+/.quarto-*/
+/presentation_files/
+
+# Fichiers locaux
+/.vscode/
+__pycache__/
+*.pyc

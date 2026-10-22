@@ -1,3 +1,4 @@
+/* Independent widescreen edition (1920 x 1200); original 4:3 stylesheet is untouched. */
 /* Palette et dimensions communes : couleurs, marge gauche et barre latérale. */
 
 :root {
@@ -2056,3 +2057,21 @@ body {
 .reveal .methodology-content .methodology-step { font-size:22px; }
 .reveal .acv-choice .acv-types-table th:nth-child(2) { width:46%; }
 .reveal .acv-choice .acv-types-table th:nth-child(3) { width:10%; }
+
+/* Widescreen: retain the original vertical space and expand horizontally. */
+.defense-cover .cover-title { width:calc(100% - 184px); }
+.agenda-parts { width:calc(100% - 184px); }
+.cover-method { width:calc((100% - 64px) / 2); }
+.cover-method + .cover-method { left:calc(50% + 32px); }
+.defense-cover:has(.agenda-part.visible) .cover-method { width:calc(100% - 86px); }
+.research-agenda .agenda-part { grid-template-columns:64px minmax(445px,.9fr) minmax(0,1.1fr); }
+.sobol-readable-content { grid-template-rows:repeat(2,minmax(0,1fr)); }
+.reveal .sobol-readable-content > img { height:100%; object-fit:contain; }
+.incomparability-content { justify-content:flex-start; }
+.incomparability-maps { flex:1; min-height:0; width:100%; }
+.reveal .incomparability-maps > img { height:100%; min-height:0; object-fit:contain; }
+.reveal .incomparability-legend { height:125px; flex:none; object-fit:contain; }
+.oath-text { max-width:calc(100% - 184px); }
+
+/* Keep the enlarged Corse chart clear of its caption. */
+.corsica-case-slide .corse-impact-caption { top:69%; }
