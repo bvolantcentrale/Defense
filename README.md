@@ -1,12 +1,7 @@
-# Soutenance de thèse — Benoît Volant
+# Soutenance de thèse Benoît Volant
 
 Présentation finale sur l’organisation des parties prenantes et la décarbonation ferroviaire régionale.
 
-## Diffusion
-
-Ouvrir ou partager `presentation.html` : ce fichier autonome contient les styles, les images et les bibliothèques nécessaires à la présentation. Il peut être consulté hors connexion dans un navigateur récent.
-
-Les deux publications liées depuis les diapositives restent des fichiers séparés : pour conserver leur accès, joindre le dossier `figures/` au HTML en respectant son emplacement relatif.
 
 ## Génération
 
