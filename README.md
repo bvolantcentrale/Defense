@@ -1,6 +1,6 @@
 # Soutenance de thèse Benoît Volant
 
-Présentation finale sur l’organisation des parties prenantes et la décarbonation ferroviaire régionale.
+Présentation de la défense de thèse "Organisation des Parties Prenantes et Recommandation de Substitution Technologique Respectueuse de l’Environnement : Application à la Décarbonation Ferroviaire Régionale".
 
 
 ## Génération
